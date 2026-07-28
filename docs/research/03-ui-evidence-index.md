@@ -208,7 +208,8 @@ PIONEER-A 只作跨构建语义对照，不进入 TEST-B／国服模板：
 
 - [英文开放世界连接失败链](../../research/evidence/video/twitch-vod-2540550896/manifest.json)：`OpenWorld → UnableToConnect 双按钮 → TitleScreen`；
 - [角色进入链](../../research/evidence/video/twitch-vod-2541630934/manifest.json)：`CharacterSelection → ControlModeSelection → OpenWorld`，只补充旧构建的三角色与操作模式语义；TEST-B 已另有单角色页，国服仍须重采；
-- [模拟对抗赛自动复活链](../../research/evidence/video/pioneer-simulation-revive-bv1qwtm6besg/manifest.json)：`AliveCombat → DeadCountdown → RevivePointWait → CountdownZero → RevivedHud`，只证明旧竞技模式状态机。
+- [模拟对抗赛自动复活链](../../research/evidence/video/pioneer-simulation-revive-bv1qwtm6besg/manifest.json)：`AliveCombat → DeadCountdown → RevivePointWait → CountdownZero → RevivedHud`，只证明旧竞技模式状态机；
+- [英文攻城双阶段自动回场链](../../research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/manifest.json)：`AliveCombat → AutoTeleportCountdown → RespawnCountdown → RevivedHud`，补出传送前／后的独立状态，但仍只属旧竞技模式。
 
 更早的 `GSTAR-2024` 也单独隔离：[官方首日舞台直播镜像](../../research/evidence/video/gstar-2024-boss-self-revive-bv1atmsy9erc/manifest.json)补到韩文 Boss 场 `AliveHud → 原地复活覆盖层 → RevivedHud`，但它既不归入 PIONEER-A，也不进入 TEST-B／国服模板。
 
@@ -227,6 +228,23 @@ PIONEER-A 只作跨构建语义对照，不进入 TEST-B／国服模板：
 | 01:30.70 | [HUD 恢复](../../research/evidence/video/pioneer-simulation-revive-bv1qwtm6besg/frames/0090.70-auto-revived-hud.png) | 生命条、目标框和技能栏重新出现，闭合自动复活链 | 不证明 AutoOn 恢复或角色会自动离开复活点 |
 
 约 `03:49–03:58` 还出现第二轮同类死亡／复活循环，说明首轮不是孤立剪辑帧。另一条 12:34 的[先锋公会战](https://www.bilibili.com/video/BV1WGbhz2EMB/)已全程按 2 秒复核；红／绿区域切换属于战场传送或控制点变化，没有找到可靠玩家死亡终态。两条都属于 PIONEER-A 竞争内容，既不能关闭 TEST-B 开放世界死亡缺口，也不能提高开放世界无人值守评分。
+
+### PIONEER-A 英文攻城双阶段自动回场对照
+
+来源：[Emperium Showdown 英文第一视角](https://www.bilibili.com/video/BV1Y7xPzmEyy/)，完整元数据和八帧见 [Manifest](../../research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/manifest.json)。全片 206 张十秒故事板显示至少六段重复死亡；首轮 81 张半秒帧和 0.02–0.05 秒边界精抽把传送前、传送后和 HUD 恢复拆开。
+
+| 时间 | 画面／状态 | 可确认事实 | 设计边界 |
+|---:|---|---|---|
+| 04:41.50 | [正常战斗 HUD](../../research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/frames/00281.50.png) | 技能栏仍完整，建立死亡前基线 | 不能识别致死攻击 |
+| 04:42.10 | [自动传送 10 秒](../../research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/frames/00282.10.png) | 技能栏消失，出现 Go to Respawn Point 与 Auto-teleporting 提示 | 第一阶段不是最终复活等待 |
+| 04:48.44 | [自动传送 0 秒](../../research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/frames/00288.44.png) | 第一阶段归零，HUD 仍未恢复 | 不能把归零当作成功 |
+| 04:48.46 | [复活等待 22 秒](../../research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/frames/00288.46.png) | 相邻帧切成 Respawn／Waiting 文案，证明进入第二阶段 | 转场运动模糊，不作 OCR 模板 |
+| 04:49.50 | [复活等待 20 秒](../../research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/frames/00289.50.png) | 第二阶段稳定显示且技能栏缺失 | 只属旧竞技规则 |
+| 05:02.50 | [复活等待 1 秒](../../research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/frames/00302.50.png) | 临近恢复仍不可操作 | 不得提前发送动作 |
+| 05:02.72 | [复活等待 0 秒](../../research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/frames/00302.72.png) | 第二阶段归零时技能栏仍未恢复 | 不能硬编码同步延迟 |
+| 05:02.88 | [HUD 恢复](../../research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/frames/00302.88.png) | 死亡文案消失、角色站立、技能栏回归 | 不证明 Auto／目标／位置保留 |
+
+裁图库为第一阶段新增 `siege_auto_teleport_countdown` 的 `10／0 秒`，并为 `siege_revive_countdown` 增加英文 `20／1 秒`。录像时间与画面倒计时并非一比一，疑似加速；数字只能帮助分类，不能换算成等待常量。另审的繁中线下赛只重复既有倒计时，泰文游侠剪辑只有旧技能／装备／普通背包，均不保存重复图。
 
 ### GSTAR-2024 Boss 场自身原地复活对照
 
@@ -272,6 +290,9 @@ PIONEER-A 只作跨构建语义对照，不进入 TEST-B／国服模板：
 | [攻城战初体验](https://www.bilibili.com/video/BV1QRTq61EHH/) | 12:08 | 两张 storyboard 已审阅 | 大量玩家、团队 UI、区域、器械与阶段 |
 | [PIONEER-A 模拟对抗赛第二场](https://www.bilibili.com/video/BV1QwTM6bESg/) | 05:21 | 全程 2 秒复核＋首轮 0.25／0.02 秒边界精抽＋7 帧入库 | 两轮竞技死亡自动复活；旧构建隔离，不替代开放世界证据 |
 | [PIONEER-A 先锋公会战](https://www.bilibili.com/video/BV1WGbhz2EMB/) | 12:34 | 全程 2 秒复核，负向登记 | 战场传送／控制点变化；无可靠玩家死亡 UI |
+| [PIONEER-A 英文攻城第一视角](https://www.bilibili.com/video/BV1Y7xPzmEyy/) | 34:11 | 206 张十秒故事板＋首轮半秒／0.02 秒边界精抽＋8 帧入库 | 至少六段死亡；首轮补出自动传送与复活等待双阶段、4 张英文状态裁图 |
+| [PIONEER-A 繁中线下赛台湾 VS 印尼](https://www.bilibili.com/video/BV1cas2zLEHw/) | 38:42 | 233 张十秒故事板＋61 张目标半秒帧，负向登记 | 繁中竞技倒计时与 HUD 恢复均重复既有状态，零图入库 |
+| [PIONEER-A 泰文游侠展示剪辑](https://www.bilibili.com/video/BV1catyz7EqT/) | 13:59 | 168 张五秒故事板，负向登记 | 旧技能树、配点、装备与普通背包；无目标异常，零图入库 |
 | [GSTAR-2024 首日直播镜像第二段](https://www.bilibili.com/video/BV1atmSY9ERC/) | 25:12 | 152 张十秒帧全审＋目标 81 张 0.25 秒帧＋4 帧入库 | Boss 场自身原地复活覆盖层与 HUD 恢复；比 PIONEER-A 更早且不替代开放世界证据 |
 | [TEST-B 七日心得转载剪版](https://www.bilibili.com/video/BV1wJTb6BEdY/) | 03:58 | 全程 2 秒复核，负向登记 | 副本、PVP、活动、商城与普通战斗；无目标异常或新图标 |
 | [经典 RO 标题误标](https://www.bilibili.com/video/BV1w9736mETV/) | 00:40 | 全程 0.5 秒复核，D 级排除 | 标题中的“小站Ro3”不是《仙境传说3》；画面为经典 RO，不保存模板 |

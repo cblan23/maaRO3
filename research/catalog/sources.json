@@ -2875,6 +2875,42 @@
       "tags": ["gstar_2024", "early_build", "official_livestream_mirror", "boss", "self_death", "self_revive_overlay", "hud_recovery", "full_storyboard_reviewed", "targeted_quarter_second_review", "evidence_saved", "excluded_from_test_b_templates"]
     },
     {
+      "id": "pioneer-english-siege-respawn-bv1y7xpzmeyy",
+      "kind": "legacy_test_video",
+      "grade": "B",
+      "status": "full_ten_second_storyboard_and_targeted_subsecond_review_with_two_stage_respawn_frames",
+      "title": "转载【仙境传说3】 Emperium Showdown!攻城战第一视角",
+      "url": "https://www.bilibili.com/video/BV1Y7xPzmEyy/",
+      "primary_author": "多巴胺归零（转载；原 YouTube 作者未定位）",
+      "published_at": "2025-10-26T10:10:09+08:00",
+      "duration_seconds": 2051,
+      "tags": ["pioneer_build", "offline_prelaunch_event", "english_ui", "gvg", "player_death", "auto_teleport_countdown", "respawn_countdown", "hud_recovery", "full_storyboard_reviewed", "targeted_subsecond_review", "repeated_death_cycles", "evidence_saved", "excluded_from_test_b_templates"]
+    },
+    {
+      "id": "pioneer-traditional-chinese-siege-bv1cas2zlehw",
+      "kind": "legacy_test_video",
+      "grade": "B",
+      "status": "full_ten_second_storyboard_and_half_second_death_window_reviewed_redundant_respawn_no_evidence_saved",
+      "title": "转载【仙境传说3 RO3】領地爭霸戰 線下體驗賽 台灣VS印尼 進攻方",
+      "url": "https://www.bilibili.com/video/BV1cas2zLEHw/",
+      "primary_author": "多巴胺归零（转载；原 YouTube 作者未定位）",
+      "published_at": "2025-10-27T14:37:21+08:00",
+      "duration_seconds": 2322,
+      "tags": ["pioneer_build", "offline_prelaunch_event", "traditional_chinese_ui", "gvg", "player_death", "respawn_countdown", "full_storyboard_reviewed", "targeted_half_second_review", "redundant_visual_state", "no_new_evidence", "excluded_from_test_b_templates"]
+    },
+    {
+      "id": "pioneer-ranger-showcase-bv1catyz7eqt",
+      "kind": "legacy_test_video",
+      "grade": "B",
+      "status": "full_five_second_storyboard_reviewed_old_build_skill_inventory_no_target_exception",
+      "title": "转载【仙境传说3】游戏展示 游侠视角",
+      "url": "https://www.bilibili.com/video/BV1catyz7EqT/",
+      "primary_author": "多巴胺归零（转载；画面含 iammaii）",
+      "published_at": "2025-08-08T09:54:03+08:00",
+      "duration_seconds": 839,
+      "tags": ["pioneer_build", "thai_ui", "ranger", "edited_stream", "facecam", "skill_tree", "inventory", "equipment", "full_storyboard_reviewed", "no_target_exception_state", "no_evidence_saved", "excluded_from_test_b_templates"]
+    },
+    {
       "id": "early-ui-overview-bv1tctvzbetw",
       "kind": "reposted_test_video",
       "grade": "B",

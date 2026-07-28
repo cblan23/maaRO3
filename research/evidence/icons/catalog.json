@@ -3765,6 +3765,158 @@
       "limitations": [
         "绿色勾只证明该里程碑奖励已领取，不表示对应楼层当前可进入或每日活动已完成。"
       ]
+    },
+    {
+      "id": "siege-auto-teleport-countdown-10-pioneer-a-en-01",
+      "icon_key": "siege_auto_teleport_countdown",
+      "state": "countdown_10_seconds_english",
+      "sample_type": "state_indicator",
+      "file": "crops/siege-auto-teleport-countdown-10-pioneer-a-en-01.png",
+      "sha256": "ae45f55d5a0804df476b4b2e2a88f6f3b04fa5d00e74d1825f434cc1042f9e79",
+      "dimensions": [
+        250,
+        78
+      ],
+      "source_id": "pioneer-english-siege-respawn-bv1y7xpzmeyy",
+      "source_timestamp_seconds": 282.1,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/frames/00282.10.png",
+      "parent_sha256": "247d27d93878696df58db5be76afaafcf0e392fd8e6ece1e0d929af58cdb31a1",
+      "crop": {
+        "x": 300,
+        "y": 392,
+        "width": 250,
+        "height": 78
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留复活点图标、Go to Respawn Point 和英文 10 秒自动传送提示；左侧同时包含两个常驻管理图标，转载水印、聊天、队伍栏及 UID 均在裁区外。"
+      },
+      "limitations": [
+        "PIONEER-A 英文旧攻城构建，只用于区分传送前等待与传送后复活等待；禁止混入 TEST-B／国服模板。"
+      ]
+    },
+    {
+      "id": "siege-auto-teleport-countdown-0-pioneer-a-en-01",
+      "icon_key": "siege_auto_teleport_countdown",
+      "state": "countdown_0_seconds_english",
+      "sample_type": "state_indicator",
+      "file": "crops/siege-auto-teleport-countdown-0-pioneer-a-en-01.png",
+      "sha256": "e8d48433eddb6abd1aad79998a83a0f1f6433d6fe03b7ee6ab4abb1fa0a38884",
+      "dimensions": [
+        250,
+        78
+      ],
+      "source_id": "pioneer-english-siege-respawn-bv1y7xpzmeyy",
+      "source_timestamp_seconds": 288.44,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/frames/00288.44.png",
+      "parent_sha256": "3d428c338b5e86ef8f94bcbea96b8af880957033dee801ebdd1474755ab11408",
+      "crop": {
+        "x": 300,
+        "y": 392,
+        "width": 250,
+        "height": 78
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "与 10 秒样本使用同一坐标，保留 Go to Respawn Point 和归零提示；左侧同时包含两个常驻管理图标，聊天、队伍栏、目标文本及 UID 均在裁区外。"
+      },
+      "limitations": [
+        "归零只是第一阶段结束；下一相邻父帧会进入独立 Respawn 倒计时，自动化不得把该状态当作已复活。"
+      ]
+    },
+    {
+      "id": "siege-revive-countdown-20-pioneer-a-en-03",
+      "icon_key": "siege_revive_countdown",
+      "state": "countdown_20_seconds_english",
+      "sample_type": "state_indicator",
+      "file": "crops/siege-revive-countdown-20-pioneer-a-en-03.png",
+      "sha256": "f4964b8f4f51941d1fac540071eb08fa9f9988cee6689880ccd6b306fea2da8d",
+      "dimensions": [
+        158,
+        36
+      ],
+      "source_id": "pioneer-english-siege-respawn-bv1y7xpzmeyy",
+      "source_timestamp_seconds": 289.5,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/frames/00289.50.png",
+      "parent_sha256": "394380d834736135caaf6dc17667bb415272b64d009ebb33405540b31b7e2223",
+      "crop": {
+        "x": 348,
+        "y": 382,
+        "width": 158,
+        "height": 36
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留英文 Respawn in 20 sec. 与 Waiting to be respawned 两行；聊天、队伍栏、场景目标和 UID 均在裁区外。"
+      },
+      "limitations": [
+        "PIONEER-A 英文旧攻城构建；20 秒为瞬时画面值，不得外推国服计时或开放世界规则。"
+      ]
+    },
+    {
+      "id": "siege-revive-countdown-1-pioneer-a-en-03",
+      "icon_key": "siege_revive_countdown",
+      "state": "countdown_1_second_english",
+      "sample_type": "state_indicator",
+      "file": "crops/siege-revive-countdown-1-pioneer-a-en-03.png",
+      "sha256": "c311631ec56369fa802d38b889ee0e356d542d9eba43e93b4291e0560d786ff0",
+      "dimensions": [
+        158,
+        36
+      ],
+      "source_id": "pioneer-english-siege-respawn-bv1y7xpzmeyy",
+      "source_timestamp_seconds": 302.5,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/frames/00302.50.png",
+      "parent_sha256": "5853d1dd6e10c39966f7dbbc1636e0ca550c810818438f2fc08a2894178b43a7",
+      "crop": {
+        "x": 348,
+        "y": 382,
+        "width": 158,
+        "height": 36
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "与 20 秒样本使用同一坐标，只保留英文 1 秒复活提示和等待文字；聊天、UID 与场景目标均在裁区外。"
+      },
+      "limitations": [
+        "1 秒仍是不可操作死亡等待态；必须等待提示消失及战斗 HUD 恢复，不能提前发送动作。"
+      ]
     }
   ]
 }

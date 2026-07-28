@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "source_id": "pioneer-english-siege-respawn-bv1y7xpzmeyy",
+  "primary_url": "https://www.bilibili.com/video/BV1Y7xPzmEyy/",
+  "capture_url": "https://www.bilibili.com/video/BV1Y7xPzmEyy/",
+  "bvid": "BV1Y7xPzmEyy",
+  "cid": "25891771042",
+  "source_title": "转载【仙境传说3】 Emperium Showdown!攻城战第一视角",
+  "source_author": "多巴胺归零（转载；原 YouTube 作者未定位）",
+  "source_published_at": "2025-10-26T10:10:09+08:00",
+  "captured_at": "2026-07-28",
+  "test_context": "2025 年 10 月 Emperium Showdown 亚洲线下体验赛的英文客户端第一视角录像，归入旧竞争构建 PIONEER-A，并与 2026 启燃测试 TEST-B 及国服严格隔离。全片按 10 秒抽取 206 张故事板，确认至少六段重复死亡等待；首段 275–315 秒再按 0.5 秒复核 81 帧，死亡触发、传送阶段切换和 HUD 恢复边界进一步按 0.02–0.05 秒精抽。录像形成 AliveCombat → AutoTeleportCountdown10/0 → RespawnCountdown22/20/1/0 → RevivedHud 的双阶段自动回场闭环。",
+  "copyright_note": "仅保留验证旧攻城战双阶段死亡／自动回场状态机所需的八帧。父帧仍含队伍昵称、聊天、战场目标和其他玩家信息；只供内部可追溯研究，公开训练集或再分发前必须另行完成授权、隐私与版权审查。",
+  "frames": [
+    {
+      "file": "frames/00281.50.png",
+      "timestamp_seconds": 281.5,
+      "sha256": "a7f0c71e83926bafb46301ea121d018a4215cfacbaceb8d391d5850d09f0f69e",
+      "dimensions": [852, 480],
+      "supports": [
+        "同一连续片段中，角色仍在攻城战斗，底部战斗技能栏完整可见",
+        "为随后技能栏消失和自动传送倒计时建立正常可操作 HUD 基线"
+      ],
+      "limitations": [
+        "战斗特效和单位重叠严重，单帧不能确定致死攻击或服务端伤害判定时间",
+        "这是 2025 英文旧构建竞技模式，不得用作 TEST-B 或国服视觉模板"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/00282.10.png",
+      "timestamp_seconds": 282.1,
+      "sha256": "247d27d93878696df58db5be76afaafcf0e392fd8e6ece1e0d929af58cdb31a1",
+      "dimensions": [852, 480],
+      "supports": [
+        "常规战斗技能栏已经消失，底部出现 Go to Respawn Point 图标和 Auto-teleporting to Respawn Point in 10 sec. 提示",
+        "证明死亡后的第一阶段是等待自动传送至复活点，而不是立即进入最终复活倒计时"
+      ],
+      "limitations": [
+        "画面没有输入设备叠层，不能绝对排除隐藏输入，但后续倒计时和切换均在同一连续录像中自动推进",
+        "英文旧构建文案和布局只用于状态语义与负例分类"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/00288.44.png",
+      "timestamp_seconds": 288.44,
+      "sha256": "3d428c338b5e86ef8f94bcbea96b8af880957033dee801ebdd1474755ab11408",
+      "dimensions": [852, 480],
+      "supports": [
+        "同一第一阶段的自动传送提示已经降到 0 sec.，战斗技能栏仍未恢复",
+        "与下一张相邻解码帧共同约束 AutoTeleportCountdown 到 RespawnCountdown 的页面切换边界"
+      ],
+      "limitations": [
+        "请求时间不等于原视频精确 PTS，只能把切换约束在相邻解码帧内",
+        "录像时间与画面倒计时并非严格一比一，可能经过加速，禁止据此硬编码等待秒数"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/00288.46.png",
+      "timestamp_seconds": 288.46,
+      "sha256": "16c9810d03dfaef02492e056a4a8eaf8f6d1893df096c29c3241e2dad02b8eaa",
+      "dimensions": [852, 480],
+      "supports": [
+        "第一阶段图标和 Auto-teleporting 文案消失，底部首次出现 Respawn in 22 sec.／Waiting to be respawned",
+        "证明传送到复活等待不是同一倒计时简单归零，而是进入第二套文案和计时状态"
+      ],
+      "limitations": [
+        "转场帧存在明显运动模糊，只适合证明页面语义边界，不适合作为高质量 OCR 样本",
+        "22 秒是本场旧攻城规则的瞬时值，不能外推其他模式或国服"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/00289.50.png",
+      "timestamp_seconds": 289.5,
+      "sha256": "394380d834736135caaf6dc17667bb415272b64d009ebb33405540b31b7e2223",
+      "dimensions": [852, 480],
+      "supports": [
+        "第二阶段稳定显示 Respawn in 20 sec.／Waiting to be respawned，常规技能栏仍缺失",
+        "与 22、1、0 秒父帧共同证明第二阶段数值持续变化而页面语义不变"
+      ],
+      "limitations": [
+        "852×480 转载压缩会限制小字 OCR 泛化能力",
+        "只能作为 PIONEER-A 英文状态样本，不能替代国服开放世界死亡页"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/00302.50.png",
+      "timestamp_seconds": 302.5,
+      "sha256": "5853d1dd6e10c39966f7dbbc1636e0ca550c810818438f2fc08a2894178b43a7",
+      "dimensions": [852, 480],
+      "supports": [
+        "第二阶段倒计时降到 Respawn in 1 sec.，角色仍倒地且技能栏尚未出现",
+        "提供临近自动恢复的英文 1 秒状态变体"
+      ],
+      "limitations": [
+        "1 秒不能视为已经可操作；必须继续等待死亡提示消失和 HUD 恢复",
+        "背景有大型黑色场景遮挡，不可用整屏模板匹配"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/00302.72.png",
+      "timestamp_seconds": 302.72,
+      "sha256": "7b0757225e4edf75e92dee78e8edc33f22fd940d4cb0490ce3a3d19d8d3cb3ce",
+      "dimensions": [852, 480],
+      "supports": [
+        "倒计时已显示 Respawn in 0 sec.，角色仍处于倒地等待且技能栏未恢复",
+        "再次交叉验证数值归零与可操作 HUD 不是同一状态"
+      ],
+      "limitations": [
+        "0 秒只是显示值，不代表客户端已经接受移动或技能输入",
+        "不能从相邻帧间隔推导服务端固定同步延迟"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/00302.88.png",
+      "timestamp_seconds": 302.88,
+      "sha256": "2ae1bbd423493864cfdaf01a77cf7f09962771da3c3bf2add47708d67dd1a957",
+      "dimensions": [852, 480],
+      "supports": [
+        "Respawn／Waiting 文案消失，角色站立、生命状态与底部技能栏重新出现",
+        "闭合 AliveCombat → AutoTeleportCountdown → RespawnCountdown → RevivedHud 的旧攻城自动回场链"
+      ],
+      "limitations": [
+        "HUD 恢复不证明自动战斗、原目标、队伍职责或死亡前位置均已恢复",
+        "该闭环只用于旧竞技模式的状态机研究，不授权开放世界无人值守复活"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

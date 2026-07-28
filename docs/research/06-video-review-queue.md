@@ -61,7 +61,7 @@
 
 已反查到 `0FyScW_0A90` 对应 `granthjs`、`fHqchpIkRLM` 对应 `ytdd1003`，以及 `happypp_520` 曾于 6 月 27 日直播 RO3，但六月 Twitch VOD 均已过期。`cadmiumsheep` 与“清燉小羔羊”不是同一主播，不再混用。
 
-公开 oEmbed 另核对到三条候选元数据：烈焰的 [`JhPGGgdXKr8`](https://www.youtube.com/watch?v=JhPGGgdXKr8)（商人开局／机械工匠／一周活动）、CHA LIN 的 [`C-LCo3b5zOY`](https://www.youtube.com/watch?v=C-LCo3b5zOY)（实况 #8 GVG）和 [`PUxs5mXClc4`](https://www.youtube.com/watch?v=PUxs5mXClc4)（实况 #2 营火晚会／狩猎挑战）。标准播放页仍返回 429，精确 ID 暂无合法公开镜像；三条只保留候选定位，不计已审画面、不保存图片，也不进入本快照 255 条正式来源总数。
+公开 oEmbed 另核对到三条候选元数据：烈焰的 [`JhPGGgdXKr8`](https://www.youtube.com/watch?v=JhPGGgdXKr8)（商人开局／机械工匠／一周活动）、CHA LIN 的 [`C-LCo3b5zOY`](https://www.youtube.com/watch?v=C-LCo3b5zOY)（实况 #8 GVG）和 [`PUxs5mXClc4`](https://www.youtube.com/watch?v=PUxs5mXClc4)（实况 #2 营火晚会／狩猎挑战）。标准播放页仍返回 429，精确 ID 暂无合法公开镜像；三条只保留候选定位，不计已审画面、不保存图片，也不进入本快照 258 条正式来源总数。
 
 ### 2.1 Twitch `Ragnarok Online 3` 分类补审
 
@@ -242,8 +242,11 @@ Twitch storyboard 的文件名时间是候选窗口起点，不保证等于事�
 | [BV1xeMw6TEub](https://www.bilibili.com/video/BV1xeMw6TEub/) | RO 老玩家启燃测试心得转载 | 07:41 | full 2 s timeline reviewed, commentary only | 230 张二秒采样全审；`68–78s` 是流派手册／配装方案，不是背包，也没有目标异常状态 |
 | [BV1RRMw6QEom](https://www.bilibili.com/video/BV1RRMw6QEom/) | RO 骨灰玩家启燃测试长评转载 | 21:52 | full 2 s timeline + local transcript + 4 frames | 657 张二秒采样全审并做亚秒回抽；`48–51.50s` 直接显示公会第四批 `4/8` 发车禁用 → `5/8` 可用，3 张父帧／裁图入库但未发车；`544.90s` 另存生存竞争模式队友复活弹窗，只作野外自身复活负例；`432–450s` 是 15v15 PVP 而非疲劳，普通背包也非满包 |
 | [BV1w9736mETV](https://www.bilibili.com/video/BV1w9736mETV/) | “小站Ro3”经典 RO 直播回放 | 00:40 | full 0.5 s timeline reviewed, D-grade exclusion | 标题命中精确 UI 检索，但“Ro3”不是游戏名；画面为经典 RO 深渊出卡，不属于《仙境传说3》，零帧入库 |
+| [BV1Y7xPzmEyy](https://www.bilibili.com/video/BV1Y7xPzmEyy/) | Emperium Showdown 英文攻城第一视角 | 34:11 | full 10 s storyboard + targeted 0.5／0.02 s review + 8 frames | 至少六段重复死亡；首轮补出 `AutoTeleport 10→0 → Respawn 22→0 → HUD`双阶段链和 4 张 PIONEER-A 裁图 |
+| [BV1cas2zLEHw](https://www.bilibili.com/video/BV1cas2zLEHw/) | 繁中线下体验赛台湾 VS 印尼进攻方 | 38:42 | full 10 s storyboard + targeted 0.5 s review | 繁中竞技复活倒计时与 HUD 恢复重复既有 PIONEER-A 状态；零图入库 |
+| [BV1catyz7EqT](https://www.bilibili.com/video/BV1catyz7EqT/) | 泰文 UI 早期游侠展示剪辑 | 13:59 | full 5 s storyboard reviewed | 技能树、配点、装备、普通低占用背包与战斗；无死亡、锁定目标、满包或核心异常，零图入库 |
 
-站内搜索触发公开接口 `-352/412` 风控后立即停止，没有使用 Cookie、验证码或规避手段。改由无需登录的公开相关推荐接口对 70 个已登记种子做一层枚举，得到 140 条标题／简介相关视频，其中 67 条尚未登记；上述三条新增长视频来自这批候选。后续只优先审能触达缺口的长实机，不因宣传复读或评论数量增加来源数字。
+站内搜索触发公开接口 `-352/412` 风控后立即停止，没有使用 Cookie、验证码或规避手段。改由无需登录的公开相关推荐接口对 70 个已登记种子做一层枚举，得到 140 条标题／简介相关视频，其中 67 条尚未登记；上述六条新增长视频分两批来自这组候选。后续只优先审能触达缺口的长实机，不因宣传复读或评论数量增加来源数字。
 
 上述评论／混剪与经典 RO 误标素材只补强排除台账。真正新增的 TEST-B 流程证据来自长实机回抽：公会商队单批、生活 `100/100`、高倍三态、耗尽时仍变化的经验／物品通知、背包正常基准、快捷用药和 GVG 自然断线恢复链；呆呆整轮、客户端命名的低倍／疲劳与掉率边界、真正满包、开放世界死亡，以及连接前半链／输入来源／开放世界状态保留仍未闭环。
 
@@ -262,6 +265,18 @@ Twitch storyboard 的文件名时间是候选窗口起点，不保证等于事�
 | [`BV1fj3B6NECz`](https://www.bilibili.com/video/BV1fj3B6NECz/) | 制作人活动时段回应切片 | 58 张／1 秒＋公会页 61 张／0.25 秒 | 彩色／灰色图标变化是剪辑过渡，不是选中／锁定状态；零帧入库 |
 
 `BV1atmSY9ERC` 的简介明确指向 Gravity 官方 YouTube `7wGQ1uv1XeQ`，因此原来“主源播放受阻”的官方条目已升级为“公开镜像完成目标复核”。四张父帧只有 852×480 且含舞台直播合成区，不生成现行图标裁图；它们只补早期 Boss 自身复活语义，不能关闭 TEST-B／国服开放世界费用、选项、落点、保护或 Auto 状态。
+
+### 3.2 相关推荐差集三条旧构建深审
+
+同日继续从上述 67 条未登记候选按“长连续实机、死亡／背包／技能状态可见”筛出三条，共生成并逐页查看 607 张全片故事板；命中窗口再以半秒和 0.02–0.05 秒精抽：
+
+| BVID | 构建／内容 | 审阅强度 | 结果 |
+|---|---|---|---|
+| [`BV1Y7xPzmEyy`](https://www.bilibili.com/video/BV1Y7xPzmEyy/) | PIONEER-A 英文攻城第一视角 | 206 张／10 秒＋81 张／0.5 秒＋边界 0.02–0.05 秒 | 至少六轮死亡；首轮八帧证明自动传送与复活等待是两个阶段，新增 4 张裁图；[Manifest](../../research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/manifest.json) |
+| [`BV1cas2zLEHw`](https://www.bilibili.com/video/BV1cas2zLEHw/) | PIONEER-A 繁中线下赛 | 233 张／10 秒＋61 张／0.5 秒 | 多轮竞技死亡，目标窗口 `9→1 秒→HUD`；与既有繁中状态重复，零图入库 |
+| [`BV1catyz7EqT`](https://www.bilibili.com/video/BV1catyz7EqT/) | PIONEER-A 泰文游侠剪辑 | 168 张／5 秒 | 旧技能树彩色／灰色节点、配点、装备与普通背包；剪辑／脸部叠层且无核心异常，零图入库 |
+
+英文链的显示倒计时比录像时间下降更快，说明素材疑似加速；Manifest 只记录可见状态顺序，不把显示秒数解释为真实等待常量。繁中和泰文来源仍登记负向结果，防止后续重复下载，但不进入 TEST-B／国服模板。
 
 ## 4. 野外挂机、自动战斗与 MVP
 
@@ -297,6 +312,9 @@ Twitch storyboard 的文件名时间是候选窗口起点，不保证等于事�
 | [BV1h2Kf6qEFz](https://www.bilibili.com/video/BV1h2Kf6qEFz/) | GVG 骑士视角 | 2026 启燃 | full reviewed + disconnect timeline + 9 frames | `重连中 → 双按钮失败 → 再次重连 → 要求重登 → 标题／公告／加载 → 回到 GVG`；只用于连接层分类 |
 | [BV1QwTM6bESg](https://www.bilibili.com/video/BV1QwTM6bESg/) | 模拟对抗赛机械工匠第二场 | PIONEER-A | full 2 s review + 0.25／0.02 s boundary extraction + 7 frames | 两轮 `死亡倒计时 → 复活点等待 → 0 秒 → HUD 恢复`；严格隔离旧构建 |
 | [BV1WGbhz2EMB](https://www.bilibili.com/video/BV1WGbhz2EMB/) | 先锋测试公会战 | PIONEER-A | full 2 s review, negative result | 全程未见可靠玩家死亡 UI；红／绿区域变化属于战场传送或控制点，不入证据帧 |
+| [BV1Y7xPzmEyy](https://www.bilibili.com/video/BV1Y7xPzmEyy/) | 英文攻城第一视角 | PIONEER-A | full 10 s review + targeted subsecond extraction + 8 frames | 至少六轮死亡；双阶段自动回场链与 4 张状态裁图，旧构建隔离 |
+| [BV1cas2zLEHw](https://www.bilibili.com/video/BV1cas2zLEHw/) | 繁中线下赛台湾 VS 印尼 | PIONEER-A | full 10 s review + targeted 0.5 s, negative result | 重复竞技倒计时；不另存父帧 |
+| [BV1catyz7EqT](https://www.bilibili.com/video/BV1catyz7EqT/) | 泰文游侠展示剪辑 | PIONEER-A | full 5 s review, negative result | 旧技能／装备／普通背包，无核心异常 |
 | [BV1EHYWzwESW](https://www.bilibili.com/video/BV1EHYWzwESW/) | 线下体验会游侠副本 | 2025 | queued | 旧构建职业和副本机制 |
 | [BV1YfbizSESM](https://www.bilibili.com/video/BV1YfbizSESM/) | 咒术师技能简介 | 2025 | queued | 技能视觉候选，不外推数值 |
 
