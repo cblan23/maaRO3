@@ -1,0 +1,6 @@
+{
+    "ResearchProbe": {
+        "recognition": "DirectHit",
+        "action": "DoNothing"
+    }
+}

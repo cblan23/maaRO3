@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "source_id": "gvg-knight-bv1h2kf6qefz",
+  "primary_url": "https://www.bilibili.com/video/BV1h2Kf6qEFz/",
+  "capture_url": "https://www.bilibili.com/video/BV1h2Kf6qEFz/",
+  "bvid": "BV1h2Kf6qEFz",
+  "cid": "39537018878",
+  "source_title": "RO3仙境传说3 公会战GVG骑士视角 2026.6.30",
+  "source_author": "单人旅团",
+  "source_published_at": "2026-06-30T20:57:05+08:00",
+  "captured_at": "2026-07-28",
+  "test_context": "台港澳启燃技术测试的 GVG 骑士视角完整录像；754.5 秒至 795.0 秒连续画面包含自然断线、自动重连尝试、短暂重试弹窗、重新登入要求、标题／公告／加载页及重新进入战场。",
+  "copyright_note": "仅保留证明连接恢复状态机所需的九帧；画面含作者水印、性能监控、聊天、队伍和测试 UID，后续公开数据集前必须完成隐私与授权审查。",
+  "frames": [
+    {
+      "file": "frames/0754.5-before-disconnect.png",
+      "timestamp_seconds": 754.5,
+      "sha256": "b4792857f6156bcd9c2387727491af4e424b5ffe3266bcb1d9d1838640b52257",
+      "dimensions": [852, 480],
+      "supports": [
+        "断线前角色仍处于正常 GVG 战斗场景，HUD、技能栏、队伍列表和比分均可见",
+        "为随后连接异常画面提供同一连续录像内的正常态基线"
+      ],
+      "limitations": [
+        "单帧不能说明断线原因是本地网络、服务器还是客户端故障",
+        "GVG 属竞争场景排除样本，只用来研究通用连接恢复，不授权自动参与战斗"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0755.0-reconnecting.png",
+      "timestamp_seconds": 755.0,
+      "sha256": "f52990d96d5ae1dfaceaa28b9de2c589f1845e44c1676744425ba603543669d8",
+      "dimensions": [852, 480],
+      "supports": [
+        "正常战斗后约 0.5 秒出现居中的角色图案、进度条和“重新连接伺服器中...”提示",
+        "客户端具有可视觉识别的连接恢复进行态"
+      ],
+      "limitations": [
+        "该状态不提供用户按钮，不能凭画面确定底层重试次数或网络超时参数",
+        "测试服繁体文本、图案和布局仍须在国服首测重新采样"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0774.8-retry-dialog.png",
+      "timestamp_seconds": 774.8,
+      "sha256": "24ae6ce9e0d1113903326fcb322e925a71f8c88cabb1e9d63fa6c5fac18735d6",
+      "dimensions": [852, 480],
+      "supports": [
+        "连接失败后出现“无法连接伺服器，是否尝试重新连接”提示",
+        "弹窗同时提供“返回登入”和“重新连接”两个可区分按钮"
+      ],
+      "limitations": [
+        "0.1 秒加密抽帧显示该双按钮态约在 774.6 至 775.2 秒间可见，仅维持约 0.7 秒",
+        "鼠标输入未被录像记录，不能断言后续重连是用户点击、键盘操作还是客户端自动选择；自动化必须先做多帧稳定确认"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0775.3-reconnecting-after-dialog.png",
+      "timestamp_seconds": 775.3,
+      "sha256": "fedbea24c0e09daad945bd73a402d358054d369f23392840fa85a55e935b09ac",
+      "dimensions": [852, 480],
+      "supports": [
+        "短暂双按钮弹窗消失后重新回到“重新连接伺服器中...”状态",
+        "连续时间轴证明连接恢复流程可能在重试提示后再次进入等待态"
+      ],
+      "limitations": [
+        "画面不显示触发该转换的输入来源，不能作为无人干预自动重试的证明",
+        "只观察到一个自然断线样本，尚不能建立重试次数上限分布"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0785.7-relogin-required.png",
+      "timestamp_seconds": 785.7,
+      "sha256": "c3efa18a03c45dbb9b9198a1a2324aba37f5a598092c7c238d7961e61e8cc577",
+      "dimensions": [852, 480],
+      "supports": [
+        "再次重连失败后出现“已与伺服器断开连接，请重新登入”提示",
+        "终止态弹窗只保留一个“重新登入”按钮，与可重试双按钮态可明确区分"
+      ],
+      "limitations": [
+        "没有录到点击热点或输入事件，不能证明“重新登入”按钮是自动触发",
+        "缺少账号失效、维护、封禁、排队等其他登录失败分支"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0787.0-title-screen.png",
+      "timestamp_seconds": 787.0,
+      "sha256": "9ca11d0e8e60cd314049af4cd1461c606985a656432934b7e9056e0c8572e9d7",
+      "dimensions": [852, 480],
+      "supports": [
+        "重新登入要求之后进入《仙境传说 3》标题页",
+        "证明失败恢复链会离开战斗世界并经过客户端启动／登录视觉阶段"
+      ],
+      "limitations": [
+        "标题页单帧未显示账号、服务器或角色选择控件",
+        "不能确定凭据是否缓存、是否需要人工认证或是否存在启动器前置步骤"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0792.0-notice-loading.png",
+      "timestamp_seconds": 792.0,
+      "sha256": "dbe5203ffc69e28f01a7e4acb7ff76fd26e09bf4560238acb41752f1f662d0e6",
+      "dimensions": [852, 480],
+      "supports": [
+        "标题页后出现公告窗口，窗口中央显示“载入中”状态",
+        "恢复链中存在可单独识别的公告／登录载入阶段"
+      ],
+      "limitations": [
+        "未观察公告关闭或确认的输入，不能确定此窗口在所有登录中是否自动通过",
+        "该测试公告内容和窗口布局可能在国服版本变化"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0794.0-scene-loading.png",
+      "timestamp_seconds": 794.0,
+      "sha256": "d79ec561762d3f5f94e17692e245a37b5c7c5597cd7fd90b2897cfd8804b5355",
+      "dimensions": [852, 480],
+      "supports": [
+        "公告载入后进入场景加载页，右下显示约 17% 的数值进度",
+        "加载页与重连等待、登录公告和世界 HUD 可通过整体布局区分"
+      ],
+      "limitations": [
+        "单帧不能给出加载时长上限，也不能覆盖加载卡死、资源校验失败或崩溃分支",
+        "背景图与进度布局可能随版本、地图和分辨率改变"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0795.0-returned-to-gvg.png",
+      "timestamp_seconds": 795.0,
+      "sha256": "fee37b24ababc5673574f5dc1e981ac3a84d41bc4e53cd245934890dbec56cf5",
+      "dimensions": [852, 480],
+      "supports": [
+        "场景加载后角色重新出现在带 GVG 比分、队伍和战斗 HUD 的世界画面",
+        "连续录像直接证明这次断线最终恢复到游戏世界，而非停留在登录页"
+      ],
+      "limitations": [
+        "恢复位置与断线前不同，且输入不可见，不能证明后半段是完全无人干预的恢复",
+        "未覆盖普通开放世界、固定挂机点恢复、技能／自动战斗开关保持和任务导航恢复"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

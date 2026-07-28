@@ -1,0 +1,14 @@
+{
+    "name": "maa-ro3-research",
+    "private": true,
+    "version": "0.0.0-research",
+    "description": "RO3 MaaFramework pre-client research scaffold",
+    "scripts": {
+        "maa:check": "maa-tools check"
+    },
+    "devDependencies": {
+        "@nekosu/maa-tools": "1.0.23",
+        "@types/node": "^25.5.2",
+        "prettier-plugin-multiline-arrays": "^3.0.6"
+    }
+}

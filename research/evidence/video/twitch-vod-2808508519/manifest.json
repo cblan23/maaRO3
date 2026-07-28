@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "source_id": "twitch-vod-2808508519",
+  "primary_url": "https://www.twitch.tv/videos/2808508519",
+  "capture_url": "https://www.twitch.tv/videos/2808508519",
+  "source_title": "RAGNAROK 3 DIGITE: ❗RAG para tirar todas suas dúvidas sobre Ragnarok 3",
+  "source_author": "OuluH",
+  "source_published_at": "2026-06-30T07:43:49+08:00",
+  "captured_at": "2026-07-28",
+  "test_context": "台港澳启燃技术测试后期 TEST-B 公开直播；稀疏故事板定位后以 720p60 连续分片回抽，画面为繁中旧测试。",
+  "copyright_note": "只保留证明后期通用背包正常容量与分类页签状态所需的一帧；画面含主播、聊天、测试 UID、角色与其他玩家，仅作内部可追溯研究证据。",
+  "frames": [
+    {
+      "file": "frames/08698.00-inventory-capacity-56-of-300.jpg",
+      "timestamp_seconds": 8698,
+      "sha256": "776363276cde1667eb3255bb07451998d8564213b238a873ceaa017aded3b00c",
+      "dimensions": [1280, 720],
+      "supports": [
+        "同一帧同时打开装备与通用背包，背包左下角清晰显示 56/300",
+        "通用道具分类页签处于金色选中态，另三类为灰色未选中态；物品格、滚动条、货币栏和合成与分解按钮均可见",
+        "这是测试后期账号的正常占用基准，比已保存的 0/300 与 36/300 更高，但仍远未满"
+      ],
+      "limitations": [
+        "56/300 不能证明接近满、真正满包、下一次拾取去向或扩容行为，满包缺口仍完全未关闭",
+        "物品格左上角蓝色角标语义未由该片段确认，不命名为绑定、锁定或不可交易",
+        "前后存在开箱或物品管理反馈，但本帧不支持推断 56/300 的具体增减原因"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

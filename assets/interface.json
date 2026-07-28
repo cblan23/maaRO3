@@ -1,0 +1,35 @@
+{
+    "interface_version": 2,
+    "name": "maaRO3 预研骨架",
+    "description": "RO3 的 MaaFramework Win32 预研项目。当前仅验证工程装载，不执行游戏输入。",
+    "version": "0.0.0-research",
+    "welcome": "当前处于 OFFLINE_RESEARCH 阶段：窗口参数、坐标、模板和业务任务均待 2026 年 8 月国服测试实机采样。",
+    "controller": [
+        {
+            "name": "RO3 Windows 客户端（待实机标定）",
+            "type": "Win32",
+            "display_short_side": 720,
+            "win32": {
+                "class_regex": "^RO3_CLASS_NOT_CAPTURED$",
+                "window_regex": "^RO3_TITLE_NOT_CAPTURED$",
+                "screencap": "PrintWindow",
+                "mouse": "PostMessageWithCursorPos",
+                "keyboard": "PostMessageWithCursorPos"
+            }
+        }
+    ],
+    "resource": [
+        {
+            "name": "预研资源（无 RO3 业务任务）",
+            "path": [
+                "./resource"
+            ]
+        }
+    ],
+    "task": [
+        {
+            "name": "预研占位：仅验证框架装载",
+            "entry": "ResearchProbe"
+        }
+    ]
+}

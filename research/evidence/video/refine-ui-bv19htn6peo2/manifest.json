@@ -1,0 +1,46 @@
+{
+    "schema_version": 1,
+    "source_id": "refine-ui-bv19htn6peo2",
+    "primary_url": "https://www.bilibili.com/video/BV19HTn6PEo2/",
+    "capture_url": "https://www.bilibili.com/video/BV19HTn6PEo2/",
+    "bvid": "BV19HTn6PEo2",
+    "cid": "39598361794",
+    "source_title": "RO仙境传说3：RO3 真的很烂吗",
+    "source_author": "谢财财",
+    "source_published_at": "2026-07-02T23:57:03+08:00",
+    "captured_at": "2026-07-26",
+    "test_context": "台港澳启燃技术测试精炼实机；成功率、材料、货币、属性与来源均属于 TEST-B 旧测试快照。",
+    "copyright_note": "仅保留证明精炼槽位、单次预览和材料来源导航所需的两帧；画面带中英字幕、频道标识和二维码，不用于再分发或公开训练集。",
+    "frames": [
+        {
+            "file": "frames/0182-refine-slot-level.png",
+            "timestamp_seconds": 182,
+            "sha256": "ec2704d8c48becf816146e5624e6130b4c2ec2516869db8925c355b8ebe80337",
+            "dimensions": [854, 426],
+            "supports": [
+                "精炼页左侧以主手、副手、铠甲、鞋子等装备槽列出各自精炼等级，而不是只展示当前物品图标",
+                "选中主手后右侧预览从 +3 到 +4、单次成功率、属性说明、材料和精炼按钮"
+            ],
+            "limitations": [
+                "槽位式布局支持精炼绑定部位的判断，但精炼在换装后的继承仍需连续换装实机或规则原文确认",
+                "50% 成功率、材料数量与货币均是 TEST-B 单个角色快照，不得写成国服常量"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0212-refine-material-sources.png",
+            "timestamp_seconds": 212,
+            "sha256": "de76e238386b59fd85e43c6e20b13eeeb3dad000da02b42128aba40e948fcd97",
+            "dimensions": [854, 426],
+            "supports": [
+                "精炼材料详情可展开获得途径列表，并与当前副手 +0 到 +1、HP 变化和材料预算同屏显示",
+                "精炼前可以读取目标槽、预期属性、成功率、现有材料和来源入口，适合做只读缺口报告"
+            ],
+            "limitations": [
+                "小字号来源名称不足以作为稳定 OCR 模板，也不能据此假定每个入口始终开放或免费",
+                "材料来源页可能通向商店、多人玩法或付费入口，MAA 不应自动前往、购买或执行精炼"
+            ],
+            "recheck_in_cn_test": true
+        }
+    ]
+}

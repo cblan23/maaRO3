@@ -1,0 +1,61 @@
+{
+    "schema_version": 1,
+    "source_id": "test-closeout-bv1ybny6feze",
+    "primary_url": "https://www.bilibili.com/video/BV1YbNy6fEzE/",
+    "capture_url": "https://www.bilibili.com/video/BV1YbNy6fEzE/",
+    "bvid": "BV1YbNy6fEzE",
+    "cid": "39910772028",
+    "source_title": "RO3 内测结束了，今天给大家来个小结",
+    "source_author": "刘村小董卓",
+    "source_published_at": "2026-07-13T18:03:56+08:00",
+    "captured_at": "2026-07-26",
+    "test_context": "台港澳启燃技术测试结束后的实机总结；宠物、活动日历和自动战斗界面均属于 TEST-B 旧测试快照。",
+    "copyright_note": "仅保留证明宠物助战槽、公会活动入口和自动战斗设置结构所需的三帧；画面带作者人像、字幕、聊天和测试 UID，不用于再分发或公开训练集。",
+    "frames": [
+        {
+            "file": "frames/0062-pet-support-five-slots.png",
+            "timestamp_seconds": 62,
+            "sha256": "fcd9f0663e881e5bce91f04c886068883f0a9074311ef8ee83c7dc7906b35342",
+            "dimensions": [852, 480],
+            "supports": [
+                "宠物功能页明确展示助战 1 号位至助战 5 号位五个独立槽位",
+                "各槽显示宠物稀有度、星级与名称，可作为未来只读编队审计的视觉字段"
+            ],
+            "limitations": [
+                "作者口述和字幕中的属性继承比例不是这张 UI 自身显示的事实，不能仅凭此帧固定为 30%",
+                "单帧不能证明助战槽的解锁顺序、属性计算、替换消耗或主战与支援关系"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0092-guild-activity-calendar.png",
+            "timestamp_seconds": 92,
+            "sha256": "6ab90b77554bdfc7dfaf24bf097a52c9d827f71779fb70d9a428cdd181025fc6",
+            "dimensions": [852, 480],
+            "supports": [
+                "公会活动页把领地争霸战、抢亲大作战、公会联赛、自然之神伊尔玛塔和狩猎挑战列为不同活动卡片",
+                "多个活动卡片带具体开放时段或前往入口，证明公会活动具有定时和竞争场景属性"
+            ],
+            "limitations": [
+                "480p 帧和作者人像遮挡不足以可靠转录每个开放日、时间与剩余次数",
+                "这些多人或竞争活动属于场景排除样本，不代表首期 MAA 应自动参与"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0107-auto-battle-settings.png",
+            "timestamp_seconds": 107,
+            "sha256": "94a731ae79eed7358997bfeb73854e1dd99bccf9bd73c81d09325f3911c5155e",
+            "dimensions": [852, 480],
+            "supports": [
+                "开放世界 HUD 上存在独立的自动战斗设置窗，窗内按类别列出全部技能及各自等级",
+                "设置窗与挂机统计、任务追踪和战斗 HUD 同屏，说明配置页不是独立的离线结算场景"
+            ],
+            "limitations": [
+                "单帧不能证明哪些技能已启用、施放优先级、索敌范围、用药逻辑或自动战斗是否正在运行",
+                "玩家报告称内挂只使用热键栏技能，但这一行为规则需要连续实机和国服再次验证"
+            ],
+            "recheck_in_cn_test": true
+        }
+    ]
+}

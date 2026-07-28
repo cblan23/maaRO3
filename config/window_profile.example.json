@@ -1,0 +1,19 @@
+{
+    "schema_version": 1,
+    "captured_at": null,
+    "client_build": null,
+    "process_name": null,
+    "window_title": null,
+    "window_class": null,
+    "client_area": null,
+    "dpi": null,
+    "ui_scale": null,
+    "display_mode": null,
+    "control_mode": null,
+    "screencap_trials": {
+        "PrintWindow": null,
+        "ScreenCapture": null,
+        "DXGI_DesktopDup": null
+    },
+    "notes": "2026 年 8 月拿到国服客户端后由人工采样填写，不要凭公开视频猜测。"
+}

@@ -1,0 +1,154 @@
+{
+    "schema_version": 1,
+    "source_id": "life-mining-bv18h756kehz",
+    "primary_url": "https://www.youtube.com/watch?v=1S8-6dr2lN4",
+    "capture_url": "https://www.bilibili.com/video/BV18H756KEhz/",
+    "bvid": "BV18H756KEhz",
+    "cid": "39427377082",
+    "source_title": "《RO 仙境传说 3》启燃测试 实机试玩",
+    "source_author": "巴哈姆特电玩疯（Bilibili 采样源为游戏大金刚转载）",
+    "source_published_at": "2026-06-26T19:13:21+08:00",
+    "captured_at": "2026-07-26",
+    "test_context": "台港澳启燃技术测试实机；生活职业、活力、配方和采矿参数均属于 TEST-B 旧测试快照。",
+    "copyright_note": "仅保留证明生活职业资源模型、采矿进度、五次连续成功及每日完成结果所需的九帧；画面包含转载水印、测试 UID、角色和聊天信息，不用于再分发或公开训练集。",
+    "frames": [
+        {
+            "file": "frames/0950-life-profession-overview.png",
+            "timestamp_seconds": 950,
+            "sha256": "93d82b2bf250d1a5539ec2b066c196116b9c4cac0206a29e29365867dc4799fb",
+            "dimensions": [852, 480],
+            "supports": [
+                "生活职业页同时展示第一职业厨师、第二职业矿工及各自的 1 级、0/5000 进度",
+                "该测试构建右上角明确展示共享可见的活力 700/5000，并提供生活职业全览入口"
+            ],
+            "limitations": [
+                "画面只能证明当前两个已选职业槽，不能推出可选职业总数或第二槽解锁规则",
+                "5000 上限和职业等级进度必须在国服重新采样"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0960-green-potion-recipe.png",
+            "timestamp_seconds": 960,
+            "sha256": "105138608b190b8507920f85ee5c9a1f274582b4083b340f60b75947a7897722",
+            "dimensions": [852, 480],
+            "supports": [
+                "厨师配方页展示绿色药水、材料槽、制作数量步进器、制作按钮和活力消耗 20",
+                "其他配方使用职业等级红字锁定，证明制作前至少要检查配方解锁状态"
+            ],
+            "limitations": [
+                "该帧没有执行制作，不能证明批量制作扣费、失败、背包满或材料不足时的结果",
+                "绿色药水的战斗快捷栏使用方式及自动补药能力未被这段录像证明"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/1000-mining-progress-45s.png",
+            "timestamp_seconds": 1000,
+            "sha256": "481f4d4fa082209305e9318702a7c1cb7ed6f6b5c05be2573f7d557ce9bc040a",
+            "dimensions": [852, 480],
+            "supports": [
+                "野外资源节点直接标注为 1 级矿脉，右侧出现镐子交互按钮",
+                "采集中底部进度条显示 3.7/4.5s，可作为等待完成而非固定盲点次数的 UI 证据"
+            ],
+            "limitations": [
+                "单帧不能证明采集期间受到攻击、移动或节点被抢时的中断行为",
+                "画面未证明节点导航或相邻节点连采由游戏内自动功能完成"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/1002-mining-yield-1-of-5.png",
+            "timestamp_seconds": 1002,
+            "sha256": "d1e56fe9b64bca39bdf29259117aacbbe57fbb9f63c3a154ee6a00fcef01b997",
+            "dimensions": [852, 480],
+            "supports": [
+                "第一次采矿完成后，日志显示活力值 -20（680/5000）和矿工经验 +220（220/5000）",
+                "与 950 秒的活力 700/5000、矿工经验 0/5000 基线一致，给出单次成功的资源变化"
+            ],
+            "limitations": [
+                "该帧没有每日必做页，不能单独证明本次消耗已经写入生活玩法每日进度",
+                "掉落材料种类与数量可能受节点、职业等级或随机结果影响，不能硬编码"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/1010-mining-yield-2-of-5.png",
+            "timestamp_seconds": 1010,
+            "sha256": "a7f57fa7cc04e2261aeddc8a62713ce2f20bb8db08c0d8324c58c72e8cb9f877",
+            "dimensions": [852, 480],
+            "supports": [
+                "第二次采矿完成后的累计值为活力 660/5000、矿工经验 440/5000，仍保持每次 -20 与 +220",
+                "角色已经开始下一节点的 0.6/4.5s 进度，证明重复流程包含完成确认、选取相邻节点和再次等待"
+            ],
+            "limitations": [
+                "连续操作由玩家逐节点触发，不证明游戏存在自动寻矿或自动连采功能",
+                "未发生节点被抢、角色移动中断或战斗打断，异常恢复仍待验证"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/1015-mining-yield-3-of-5.png",
+            "timestamp_seconds": 1015,
+            "sha256": "d4553e8b8ac9938e60f6d181f491907c48e7fb2811547b41589e7e98c594eb73",
+            "dimensions": [852, 480],
+            "supports": [
+                "第三次采矿完成后的累计值为活力 640/5000、矿工经验 660/5000",
+                "前三次结果形成 700→680→660→640 与 0→220→440→660 的严格等差序列，可用来校验重复计数"
+            ],
+            "limitations": [
+                "等差结果只属于 TEST-B 的 1 级矿脉和当前职业等级，国服数值必须重新采样",
+                "脚本不应只用内部循环次数认定成功，仍需等待每次进度完成和资源／掉落反馈"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/1021-mining-yield-4-of-5.png",
+            "timestamp_seconds": 1021,
+            "sha256": "e227fbfd935417732f68818efe9594cdbff351a2dc5988f7637d02c2604d1ca3",
+            "dimensions": [852, 480],
+            "supports": [
+                "第四次采矿完成后的累计值为活力 620/5000、矿工经验 880/5000",
+                "与下一帧组开始第五节点的连续画面结合，可明确划分前四次成功与第五次事务"
+            ],
+            "limitations": [
+                "该帧仍未打开每日页，因此只能证明第四次采集成功，不能把 620/5000解释为每日 80/100 文本",
+                "满包、工具不足或活力不足时是否仍显示相同进度条没有证据"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/1028-mining-yield-cumulative.png",
+            "timestamp_seconds": 1028,
+            "sha256": "48635a1e4ead55896f838b08a31cd09651b5fc20fbc17cccc55b8500198888a6",
+            "dimensions": [852, 480],
+            "supports": [
+                "第五次采矿后左侧日志明确显示活力值 -20（600/5000）和矿工经验 +220（1100/5000）",
+                "与前四个完成帧构成完整五次成功序列：活力累计减少 100、矿工经验累计增加 1100"
+            ],
+            "limitations": [
+                "录像不能排除每个节点均由玩家手动选择，因此不得写成游戏内自动连采",
+                "第五次后没有立即打开每日必做页，因此生活玩法 80/100→100/100／已完成与活跃度变化仍未直接拍到",
+                "节点刷新、归属、活力恢复、工具耐久和背包满行为均未覆盖"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/1150-daily-life-100-completed.png",
+            "timestamp_seconds": 1150,
+            "sha256": "98bdc77c2511116680f530faef45a3c4154a4e05a6462a7eb277c6b792f04f6d",
+            "dimensions": [852, 480],
+            "supports": [
+                "同一条连续实机稍后重新打开每日必做页，生活玩法明确显示消耗活力值 100/100 和已完成",
+                "页面活跃度为 60，20、40、60 三档均为绿色已领取勾选；生活完成状态与整页活跃奖励状态可同时识别",
+                "结合 950 秒活力 700/5000、五次逐次结果至 600/5000，可直接建立单次 -20、五次累计 -100 与每日 100/100 的闭环"
+            ],
+            "limitations": [
+                "玩家在第五次之后又开始了后续采集，且约两分钟后才打开每日页，因此没有逐帧拍到 80/100→100/100 的即时文字跳变",
+                "活跃度 60 还包含同页其他已完成任务，不能把全部 60 点都归因于生活玩法",
+                "国服可能调整每日目标、单次活力消耗或职业规则，脚本必须读取实际 UI 而非硬编码 TEST-B 数值"
+            ],
+            "recheck_in_cn_test": true
+        }
+    ]
+}

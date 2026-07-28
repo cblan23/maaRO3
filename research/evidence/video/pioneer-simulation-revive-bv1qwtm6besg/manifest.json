@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "source_id": "pioneer-simulation-revive-bv1qwtm6besg",
+  "primary_url": "https://www.bilibili.com/video/BV1QwTM6bESg/",
+  "capture_url": "https://www.bilibili.com/video/BV1QwTM6bESg/",
+  "bvid": "BV1QwTM6bESg",
+  "cid": "39477643634",
+  "source_title": "【转载】仙境传说3 模擬對抗賽 三轉 機械工匠 第二場",
+  "source_author": "多巴胺归零",
+  "source_published_at": "2026-06-28T17:10:48+08:00",
+  "captured_at": "2026-07-28",
+  "test_context": "旧先锋构建（PIONEER-A）模拟对抗赛录像。全片按 2 秒抽样复核，并对首轮约 80.3–94.0 秒按 0.25 秒、触发与恢复边界按 0.02–0.05 秒精抽；首轮形成战斗 HUD、死亡倒计时、复活点等待、倒计时归零和 HUD 恢复的连续链，约 229–238 秒还出现第二轮同类循环。该来源严格与 2026 台港澳启燃测试 TEST-B 隔离。",
+  "copyright_note": "仅保留验证旧竞技模式死亡／自动复活状态机所需的七帧。父帧仍含聊天、队伍昵称、UID 与其他玩家信息；任何公开训练集或分发用途都必须另行完成授权、隐私和再发布审查。",
+  "frames": [
+    {
+      "file": "frames/0080.58-alive-combat-hud.png",
+      "timestamp_seconds": 80.58,
+      "sha256": "765b6bff19b8b053d17059e43f64bfdbd0812523cb31eb9a9144e2bf03cb46a1",
+      "dimensions": [852, 480],
+      "supports": [
+        "死亡触发前最后一张明确保留生命／战斗信息与底部技能栏的观测帧",
+        "为后续技能栏消失、死亡提示和倒计时建立同一连续时间轴的正常态基线"
+      ],
+      "limitations": [
+        "画面特效密集，单帧不能定位造成死亡的技能或伤害来源",
+        "这是 PIONEER-A 竞技模式，不得作为 TEST-B 或国服视觉模板"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0080.85-dead-countdown-9.png",
+      "timestamp_seconds": 80.85,
+      "sha256": "e59bc16bc0f657dcad2784392d4f236dccc6d202b2c54f2b0f970a3932ea5bf4",
+      "dimensions": [852, 480],
+      "supports": [
+        "死亡态横幅和底部约 9 秒后自动复活提示已经出现，常规技能栏不再可用",
+        "0.02 秒级精抽把技能栏消失边界约束在 80.58 秒后紧邻的视频帧内"
+      ],
+      "limitations": [
+        "请求时间不是原视频帧的精确 PTS；只能把触发边界约束到相邻解码帧，不能声称毫秒级服务端事件时间",
+        "中央战斗遮挡较多，只适合作为全屏状态语义证据"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0082.00-dead-countdown-8.png",
+      "timestamp_seconds": 82,
+      "sha256": "fb90c91ad2d0229bf461a6f969d64e80b15aa5d2e132ec459c5179e1e447ccb8",
+      "dimensions": [852, 480],
+      "supports": [
+        "角色仍处于死亡观察态，底部自动复活倒计时显示约 8 秒",
+        "倒计时数值变化而战斗仍在背景继续，排除一次性静态死亡提示"
+      ],
+      "limitations": [
+        "顶部中央还有战场目标更新横幅，不能用整屏模板直接匹配死亡态",
+        "不能外推开放世界是否使用相同倒计时、复活点或惩罚"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0085.25-revive-point-countdown-5.png",
+      "timestamp_seconds": 85.25,
+      "sha256": "b6545e97f9ae5b92cc6e1bc191313ddc3991b5f903cc4bc250624f37d1ecd841",
+      "dimensions": [852, 480],
+      "supports": [
+        "倒计时尚有约 5 秒时，视角已经切换到熔岩复活台，底部死亡标志与倒计时继续保留",
+        "死亡观察战场与复活点等待是可区分的两个画面阶段"
+      ],
+      "limitations": [
+        "录像不显示输入设备，不能仅凭视角切换证明客户端没有隐藏输入",
+        "不能确定复活台切换由固定秒数、战场规则还是其他条件触发"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0088.00-revive-point-countdown-2.png",
+      "timestamp_seconds": 88,
+      "sha256": "f20f952b24c46d1f764a0d8f48de8f196a04dab1b85848d3db03b631876daee6",
+      "dimensions": [852, 480],
+      "supports": [
+        "同一复活点等待阶段的倒计时降到约 2 秒",
+        "复活点布局和死亡标志位置稳定，可与战斗观察态分开识别"
+      ],
+      "limitations": [
+        "只验证本场模拟对抗赛的临近复活状态",
+        "文本尺寸仍不足以直接成为国服 OCR 字体样本"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0090.00-revive-point-countdown-0.png",
+      "timestamp_seconds": 90,
+      "sha256": "1209b1d86a8386faea7be49825384d1375659cd9865ec3956426be204bbe0a1c",
+      "dimensions": [852, 480],
+      "supports": [
+        "倒计时达到约 0 秒时仍处于死亡等待画面，技能栏尚未恢复",
+        "证明 0 秒不是与可操作 HUD 同一帧出现的瞬时状态"
+      ],
+      "limitations": [
+        "0 秒到 HUD 恢复仍有短暂客户端动画／同步间隔，不能把 0 当作立即可输入条件",
+        "不得据此硬编码固定等待 0.70 秒"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0090.70-auto-revived-hud.png",
+      "timestamp_seconds": 90.7,
+      "sha256": "15e7840a740a3aa669a0bad5c20f9347815cbc3339547b39222f8f934fd18359",
+      "dimensions": [852, 480],
+      "supports": [
+        "倒计时归零后角色生命条、目标框和底部技能栏重新出现，死亡提示消失",
+        "与前六帧形成 AliveCombat → DeadCountdown → RevivePointWait → CountdownZero → RevivedHud 闭环"
+      ],
+      "limitations": [
+        "恢复 HUD 不等于自动战斗已恢复，也不证明角色会自动离开复活点",
+        "该闭环只能用于旧构建竞技模式的状态机研究和负例设计"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

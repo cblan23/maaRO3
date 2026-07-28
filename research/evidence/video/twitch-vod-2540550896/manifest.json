@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "source_id": "twitch-vod-2540550896",
+  "primary_url": "https://www.twitch.tv/videos/2540550896",
+  "capture_url": "https://www.twitch.tv/videos/2540550896",
+  "source_title": "GX",
+  "source_author": "LittleFattyGG",
+  "captured_at": "2026-07-28",
+  "test_context": "旧先锋构建（PIONEER-A）公开直播末段；连续画面显示开放世界正常态、英文连接失败双按钮弹窗，以及未操作重连后返回标题页。与 TEST-B 严格隔离。",
+  "copyright_note": "仅保存验证连接异常状态机所需的三张连续关键帧。画面含主播摄像头、聊天、角色与 UID 等信息，仅作内部可追溯研究证据，不作素材再分发或训练集使用。",
+  "frames": [
+    {
+      "file": "frames/0816.50-open-world-before-disconnect.jpg",
+      "timestamp_seconds": 816.5,
+      "sha256": "efc7944b4f06167296827f6c648b41184b8fc9d7b31b239e053c989c361430d9",
+      "dimensions": [1280, 720],
+      "supports": [
+        "连接失败弹窗出现前约一秒，角色仍处于开放世界，常规 HUD、技能栏和小地图可见。",
+        "为随后异常弹窗提供同一连续时间轴上的正常前态。"
+      ],
+      "limitations": [
+        "单帧不揭示断线根因，也不能证明客户端已经检测到网络异常。",
+        "这是 PIONEER-A 英文界面，不可作为 TEST-B 或未来国服视觉模板。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0817.50-unable-to-connect-dialog.jpg",
+      "timestamp_seconds": 817.5,
+      "sha256": "f2f139c02010dc2c2df6d6e4f89bd52c75d7c57b209429a848afd3fd1c653bd7",
+      "dimensions": [1280, 720],
+      "supports": [
+        "居中 Reminder 弹窗明确显示 Unable to connect to the server. Try again?。",
+        "弹窗同时提供 Return to Login 与 Reconnect 两个可区分按钮，证明旧构建存在连接失败后的二分恢复入口。"
+      ],
+      "limitations": [
+        "录像没有展示点击 Reconnect 后能否成功恢复，也不能推断自动重试次数、超时或退避策略。",
+        "英文 PIONEER-A 的文字、尺寸、按钮位置和配色必须在国服测试中重新采样。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0820.50-returned-to-title.jpg",
+      "timestamp_seconds": 820.5,
+      "sha256": "d465fc6dc6b4758f7072aa5ef97f42778c6fe990aaa170c8bc8ba680c9e71b22",
+      "dimensions": [1280, 720],
+      "supports": [
+        "连接失败弹窗消失后三秒内画面已回到游戏标题页。",
+        "与前两帧组成 OpenWorld → RetryDialog → TitleScreen 的连续退出路径。"
+      ],
+      "limitations": [
+        "鼠标轨迹受直播画面遮挡，不能断言返回标题页由玩家点击 Return to Login、超时或其他输入触发。",
+        "序列没有继续展示账号登录、角色选择或原场景恢复。"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

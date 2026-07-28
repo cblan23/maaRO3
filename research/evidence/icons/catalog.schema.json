@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/maaRO3/icon-evidence-catalog.schema.json",
+  "title": "maaRO3 icon and UI-state crop evidence catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "game", "created_at", "samples"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "game": { "type": "string", "minLength": 1 },
+    "created_at": { "type": "string", "format": "date" },
+    "samples": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "icon_key",
+          "state",
+          "sample_type",
+          "file",
+          "sha256",
+          "dimensions",
+          "source_id",
+          "build",
+          "parent_frame",
+          "parent_sha256",
+          "crop",
+          "scale",
+          "confidence",
+          "recheck_in_cn_test",
+          "contamination",
+          "limitations"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+          "icon_key": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_]*$" },
+          "state": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_]*$" },
+          "sample_type": {
+            "enum": ["icon", "state_indicator", "state_row", "dialog"]
+          },
+          "file": { "type": "string", "pattern": "^crops/[a-z0-9][a-z0-9._-]*\\.png$" },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "dimensions": {
+            "type": "array",
+            "prefixItems": [
+              { "type": "integer", "minimum": 1 },
+              { "type": "integer", "minimum": 1 }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "source_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "source_timestamp_seconds": { "type": "number", "minimum": 0 },
+          "source_image_index": { "type": "integer", "minimum": 0 },
+          "build": { "enum": ["TEST-B", "PIONEER-A"] },
+          "parent_frame": {
+            "type": "string",
+            "pattern": "^research/evidence/(video/.+/frames|still/.+/images)/.+\\.(png|jpg|jpeg|webp)$"
+          },
+          "parent_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "crop": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["x", "y", "width", "height"],
+            "properties": {
+              "x": { "type": "integer", "minimum": 0 },
+              "y": { "type": "integer", "minimum": 0 },
+              "width": { "type": "integer", "minimum": 1 },
+              "height": { "type": "integer", "minimum": 1 }
+            }
+          },
+          "scale": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["applied", "algorithm"],
+            "properties": {
+              "applied": { "type": "boolean" },
+              "algorithm": {
+                "enum": ["none", "nearest", "bilinear", "bicubic", "lanczos"]
+              },
+              "output_width": { "type": "integer", "minimum": 1 },
+              "output_height": { "type": "integer", "minimum": 1 }
+            },
+            "allOf": [
+              {
+                "if": { "properties": { "applied": { "const": true } } },
+                "then": {
+                  "required": ["output_width", "output_height"],
+                  "properties": { "algorithm": { "not": { "const": "none" } } }
+                },
+                "else": {
+                  "properties": { "algorithm": { "const": "none" } }
+                }
+              }
+            ]
+          },
+          "confidence": { "enum": ["direct_clear", "contextual_candidate"] },
+          "recheck_in_cn_test": { "const": true },
+          "contamination": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["watermark", "subtitles", "streamer_overlay", "notes"],
+            "properties": {
+              "watermark": { "type": "boolean" },
+              "subtitles": { "type": "boolean" },
+              "streamer_overlay": { "type": "boolean" },
+              "notes": { "type": "string" }
+            }
+          },
+          "limitations": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "minLength": 1 }
+          }
+        },
+        "oneOf": [
+          {
+            "required": ["source_timestamp_seconds"],
+            "not": {"required": ["source_image_index"]}
+          },
+          {
+            "required": ["source_image_index"],
+            "not": {"required": ["source_timestamp_seconds"]}
+          }
+        ]
+      }
+    }
+  }
+}

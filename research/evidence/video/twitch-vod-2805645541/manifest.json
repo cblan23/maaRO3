@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "source_id": "twitch-vod-2805645541",
+  "primary_url": "https://www.twitch.tv/videos/2805645541",
+  "capture_url": "https://www.twitch.tv/videos/2805645541",
+  "source_title": "仙境傳說 RO3 🍗 電費要爆，忘記關冷氣開著門吹了八小時 阿嗚ww =͟͟͞( •̀д•́)",
+  "source_author": "烤雞麻の野望",
+  "source_published_at": "2026-06-26T14:35:26+08:00",
+  "captured_at": "2026-07-27",
+  "test_context": "台港澳启燃技术测试 TEST-B 的第二日公开直播；连续画面覆盖每日活跃奖励、公会商队入口、物资装载、满载奖励与下一批次。",
+  "copyright_note": "仅保存证明自动化状态机所需的最少连续关键帧。原画面含主播形象、直播贴图、测试 UID、角色及聊天信息，仅作为内部可追溯研究证据，不作素材再分发或训练集使用。",
+  "frames": [
+    {
+      "file": "frames/1328-daily-activity-claimable.jpg",
+      "timestamp_seconds": 1328,
+      "sha256": "5bc1b1c8c52a7e650b0d1fd3e0fcc2201c22f745ffa95e58718747156acdbd74",
+      "dimensions": [1280, 720],
+      "supports": [
+        "每日必做页显示活跃度 44；呆呆委托和公会商队均为 1/1、已完成，MVP 为 1/5，野外挂机为 0/60，生活玩法为 0/100。",
+        "20 档奖励已经是绿色勾选，40 档宝箱呈金色发光态，给出同页的已领取与可领取两种视觉状态。"
+      ],
+      "limitations": [
+        "这是 TEST-B 繁体中文界面；国服任务名称、阈值、排序和图标必须重新采样。",
+        "单帧不证明所有条目都会贡献固定活跃度，也不证明发光宝箱在所有分辨率下具有相同动画相位。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1330-daily-activity-claimed.jpg",
+      "timestamp_seconds": 1330,
+      "sha256": "4409ce46a5d0df1f812b3461782cc92481276a01b3f541b7afd808ed2fddb6c9",
+      "dimensions": [1280, 720],
+      "supports": [
+        "与 1328 秒同一页面相比，40 档发光宝箱已经变为绿色勾选，20 和 40 两档均处于已领取态。",
+        "两秒连续窗口把可领取与已领取状态直接关联，可用于设计点击后的视觉确认而不是依赖固定延时。"
+      ],
+      "limitations": [
+        "一秒级父序列没有保留鼠标按下的精确帧；只能确认状态发生变化，不能测量服务器响应时延。",
+        "画面没有显示奖励明细弹窗，不能仅凭绿色勾选推断具体奖励内容。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1331.70-guild-caravan-detail.jpg",
+      "timestamp_seconds": 1331.7,
+      "sha256": "1798890ca02b1bec87dceda897a8b80d0954a5e8de8724b2e1f5ff71887a4836",
+      "dimensions": [1280, 720],
+      "supports": [
+        "每日页选择公会商队后弹出详情层，明确显示等级 Lv34、形式为单人、活动时间全天、奖励图标及金色参加按钮。",
+        "背景条目仍可见参加商队 1/1 和已完成，证明已完成条目仍能打开详情并进入业务页。"
+      ],
+      "limitations": [
+        "该帧不证明未完成状态下是否存在额外前置条件、入会限制或二次确认。",
+        "详情层与国服简中版本的文字、坐标和参加按钮样式需要重采。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1334.40-guild-material-ready-load.jpg",
+      "timestamp_seconds": 1334.4,
+      "sha256": "bc298951b8cef272ccdb6810e62efa951911cf0c4735c9a909372f66f127d4d3",
+      "dimensions": [1280, 720],
+      "supports": [
+        "公会商队装运商队 1/4 页面选中煤矿石，需求／库存显示 6/6，右侧装载按钮可用且鼠标位于按钮上。",
+        "底部载货量为 7/8，并显示装载档位奖励；页面同时提供求助和一键购买入口。"
+      ],
+      "limitations": [
+        "6/6 只能解释为当前候选材料满足画面要求；在没有背包前后帧时，不把它写成确定的库存扣除规则。",
+        "自动化不得默认使用一键购买或求助，两者都可能产生货币消耗或社交副作用。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1334.60-guild-material-submitted-full.jpg",
+      "timestamp_seconds": 1334.6,
+      "sha256": "5a812177972e5ea55f4ead47f553bbf3c5dd12c22bb2b2a1de28d53d5134a7d1",
+      "dimensions": [1280, 720],
+      "supports": [
+        "装载操作后 0.2 秒，右侧出现绿色物品已提交，载货量由 7/8 变为 8/8。",
+        "材料列表自动切换到另一个带绿色勾选的已提交条目，证明完成确认不能只依赖原选中行保持不变。"
+      ],
+      "limitations": [
+        "序列没有显示煤矿石提交后的剩余背包数量，因此不支持精确的扣物数量断言。",
+        "0.2 秒只描述本次录像观察值，脚本必须等待状态变化并设置超时，不能硬编码为响应上限。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1335.60-guild-submit-rewards.jpg",
+      "timestamp_seconds": 1335.6,
+      "sha256": "3fcbf4d644797a728c05b48a58b5a5702849254b0ed9d997e2df5bdd31b17727",
+      "dimensions": [1280, 720],
+      "supports": [
+        "满载 8/8 后，左侧连续出现个人公会贡献 200 与钱币 5000 的变化提示，底部金色后续按钮出现红点。",
+        "物品已提交仍保留在右侧，可作为奖励前的稳定提交完成状态。"
+      ],
+      "limitations": [
+        "左侧同时存在可能由背景战斗或其他系统产生的物品通知，只有公会贡献与钱币字段可与右侧装载奖励相互印证。",
+        "不根据按钮文字模糊区域推断操作名称；下一帧序列只证明玩家触发了后续奖励。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1336.40-guild-caravan-reward-overlay.jpg",
+      "timestamp_seconds": 1336.4,
+      "sha256": "cb1b1f9a88a3f853e402eed9cb58168546c56c58ffa352bea304529932157a3d",
+      "dimensions": [1280, 720],
+      "supports": [
+        "满载后的后续操作出现恭喜获得覆盖层和三种奖励图标。",
+        "覆盖层背景已经切换为装运商队 2/4，证明满载奖励确认与下一批次刷新发生在同一连续流程。"
+      ],
+      "limitations": [
+        "奖励图标的具体物品名称在该帧不可读，不能用图形相似度推断内容。",
+        "覆盖层关闭方式和超时行为未单独验证，自动化应先识别再采用保守的通用确认策略。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1336.80-guild-caravan-next-batch.jpg",
+      "timestamp_seconds": 1336.8,
+      "sha256": "46a6aacaf6c2b4732f7193ed897f0ed68a6a8986c33bc467797707cdacf55cb9",
+      "dimensions": [1280, 720],
+      "supports": [
+        "奖励层消失后稳定显示装运商队 2/4，并刷新为锐利鳞片、铁矿石、番茄汤汤、盐、番茄、香菇、红色药水等新需求。",
+        "部分需求显示 275/10、7/30、4/30 等可满足数量，另一些为 0/6、0/1、0/10、0/2，证明下一轮必须逐项判断材料是否满足。"
+      ],
+      "limitations": [
+        "该序列只覆盖 1/4 到 2/4，没有覆盖全部四批完成、每日条目变化或最终公会奖励。",
+        "材料种类和需求量属于 TEST-B 当次随机或配置结果，不能硬编码到国服脚本。"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

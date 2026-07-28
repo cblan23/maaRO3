@@ -1,0 +1,151 @@
+{
+    "schema_version": 1,
+    "source_id": "day1-guide-bv1yqtk6oekk",
+    "primary_url": "https://www.youtube.com/watch?v=SNpXR5F2UXc",
+    "capture_url": "https://www.bilibili.com/video/BV1YqTK6oEkk/",
+    "bvid": "BV1YqTK6oEkk",
+    "cid": "39472335804",
+    "source_title": "RO仙境传说3 开服第1天：职业、宠物、生活职业、每日必做",
+    "source_author": "阿翊（Bilibili 采样源为转载）",
+    "source_published_at": "2026-06-25T15:22:20+08:00",
+    "captured_at": "2026-07-26",
+    "test_context": "台港澳启燃技术测试首日；视频中的等级、次数、入口和 UI 均是旧测试快照。",
+    "copyright_note": "仅保留支撑研究结论所需的少量完整帧；包含原视频字幕、水印与后期标注，不用于再分发。",
+    "frames": [
+        {
+            "file": "frames/0048-control-mode-selection.png",
+            "timestamp_seconds": 48,
+            "sha256": "4e612fefe4dbb9cbbf803d3e9ea28bd499f26a631def54515b985fc2c9f4f272",
+            "dimensions": [854, 480],
+            "supports": [
+                "PC 构建曾提供经典、现代和行动三种操作模式",
+                "经典模式展示鼠标点地，现代模式展示 WASD"
+            ],
+            "limitations": [
+                "行动模式在该帧中处于不可选状态",
+                "不能证明国服测试仍保留相同名称、默认值或快捷键"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0333-auto-battle-hud.png",
+            "timestamp_seconds": 333,
+            "sha256": "a7ff5ead90a7de52c1b575e3da393369a03f5a2dcd8f1e851f4b26dfe70ed7dc",
+            "dimensions": [854, 480],
+            "supports": [
+                "旧测试构建存在游戏内自动战斗",
+                "战斗 HUD 同时显示角色、目标血量、技能栏、任务栏、队伍与聊天"
+            ],
+            "limitations": [
+                "字幕声称的解锁等级与快捷键属于讲解者转述",
+                "单帧不能证明自动战斗的全部触发和停止条件"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0364-life-profession-selection.png",
+            "timestamp_seconds": 364,
+            "sha256": "fe674c931ea714c61ee06d65346b997ea736f8843aa5413dc31ce2f3809a8605",
+            "dimensions": [854, 480],
+            "supports": [
+                "旧测试构建存在生活职业选择界面",
+                "界面包含第一职业与第二职业槽位"
+            ],
+            "limitations": [
+                "当前画面没有展开全部生活职业",
+                "解锁等级与槽位规则必须在国服复验"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0392-daily-panel.png",
+            "timestamp_seconds": 392,
+            "sha256": "645c6d43fb38a36e7c2caf4d0397039801f88043d26ec4ff9ad536003dbdf119",
+            "dimensions": [854, 480],
+            "supports": [
+                "旧测试的每日必做页包含呆呆委托、公会商队、生活玩法和精灵之塔",
+                "每项具有进度、活跃度值和前往入口，底部有阶段宝箱"
+            ],
+            "limitations": [
+                "右侧限时活动和底部重置时间只代表当次技术测试",
+                "任务种类、数量、顺序与活跃度不能写死"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0409-five-player-dungeon.png",
+            "timestamp_seconds": 409,
+            "sha256": "5080c94a5327919b5fa7e51a19506e7e792210a5baae5348ec73bd8156d4be6d",
+            "dimensions": [854, 480],
+            "supports": [
+                "旧测试的副本页明确标注五人副本",
+                "卡片展示奖励、人数要求和当日奖励次数"
+            ],
+            "limitations": [
+                "该画面仅证明入口信息，不证明匹配、战斗与结算流程",
+                "每日次数和开放等级属于易变参数"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0430-stall-listing.png",
+            "timestamp_seconds": 430,
+            "sha256": "63d67a91af1aa18a3a9b5d41128f3d1c65442e4650676ea3cb7b3a51bc99a673",
+            "dimensions": [854, 480],
+            "supports": [
+                "旧测试存在个人摊位与背包选品上架界面",
+                "界面包含摊位槽位、今日税率、背包容量和货币"
+            ],
+            "limitations": [
+                "交易和定价具有不可逆经济风险，不属于首期自动化范围",
+                "上架数量、税率和可交易物品会随运营版本变化"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0448-farming-panel.png",
+            "timestamp_seconds": 448,
+            "sha256": "7b6b25fa23d10422e4600ccb0adfea0dd49cc23bb88fee5a5c5cd973b8df59e8",
+            "dimensions": [854, 480],
+            "supports": [
+                "野外挂机面板可选择地图等级区间和目标魔物",
+                "面板展示加倍剩余时间并提供开始入口"
+            ],
+            "limitations": [
+                "该帧不能证明开始后的所有状态、死亡恢复和背包满处理",
+                "加倍时长和累计上限必须版本化"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0456-farming-rules.png",
+            "timestamp_seconds": 456,
+            "sha256": "23504289c522ffe0dbdde72d6e0eaea398805e8f17526e16a0f4255dec6aec4f",
+            "dimensions": [854, 480],
+            "supports": [
+                "挂机面板曾提供可展开的加倍挂机规则",
+                "规则文本涉及组队、奖励归属、累计时长和击杀计数"
+            ],
+            "limitations": [
+                "原始分辨率不足以把每条小字作为无歧义证据",
+                "具体规则需结合更高清截图和国服客户端内说明复验"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0466-daily-panel-expanded.png",
+            "timestamp_seconds": 466,
+            "sha256": "5ff69a7ecd600605455660fdf5538d0299455f1c8c6ae5a7b979cb84b183cbce",
+            "dimensions": [854, 480],
+            "supports": [
+                "每日页后续可出现 MVP 与野外挂机条目",
+                "同一页面同时呈现完成态、计数态、活跃度与限时活动"
+            ],
+            "limitations": [
+                "视频中任务随升级解锁，不能假设面板在所有账号上固定不变",
+                "MVP 数量、挂机计时和奖励阈值均需国服复验"
+            ],
+            "recheck_in_cn_test": true
+        }
+    ]
+}

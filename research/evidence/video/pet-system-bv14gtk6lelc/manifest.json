@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "source_id": "pet-system-bv14gtk6lelc",
+  "primary_url": "https://www.bilibili.com/video/BV14gTK6LELc/",
+  "capture_url": "https://www.bilibili.com/video/BV14gTK6LELc/",
+  "bvid": "BV14gTK6LELc",
+  "cid": "39473580544",
+  "source_title": "RO3的宠物系统是什么？",
+  "source_author": "大卷海豹",
+  "source_published_at": "2026-06-28T14:23:40+08:00",
+  "captured_at": "2026-07-27",
+  "test_context": "台港澳启燃技术测试的宠物系统实机讲解；孵化房和宠物阵容界面均属于 TEST-B 旧测试快照。",
+  "copyright_note": "仅保留证明孵化房升级字段和主战／支援槽结构所需的两帧；画面带作者字幕、水印、聊天和测试 UID，不用于再分发或公开训练集。",
+  "frames": [
+    {
+      "file": "frames/0210-pet-incubation-level-probability.png",
+      "timestamp_seconds": 210,
+      "sha256": "3f59ec8d422bdfece654f4d98b0d17d9cf5583ca9977471166b3799bb1fb30cd",
+      "dimensions": [852, 480],
+      "supports": [
+        "孵化房页面明确展示从 6 级提升至 7 级的预览",
+        "升级预览同时展示总熟练度进度和多个品质概率的升级前后变化"
+      ],
+      "limitations": [
+        "单帧不能证明熟练度的具体获取链、升级是否自动发生、孵化耗时或蛋的消耗规则",
+        "画面中的等级、进度和概率只属于 TEST-B，不得作为国服固定数值"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0510-pet-main-support-slots.png",
+      "timestamp_seconds": 510,
+      "sha256": "a216f286ad26410f2f3070b9b379e10a06bc08a2e1c17c0da92457e9fa838643",
+      "dimensions": [852, 480],
+      "supports": [
+        "宠物阵容页明确区分一个主战位和支援 1、支援 2、支援 3 三个槽位",
+        "支援 3 槽位在该画面处于锁定状态，并直接显示 Base 等级达到 50 的门槛"
+      ],
+      "limitations": [
+        "单帧不能证明主战技能、支援效果、替换消耗或前两个支援槽的解锁条件",
+        "作者口述的属性继承比例不是这张 UI 自身显示的事实，不能据此固定为 30%"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

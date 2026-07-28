@@ -1,0 +1,106 @@
+{
+    "schema_version": 1,
+    "source_id": "hard-five-player-bv1wztn6qeke",
+    "primary_url": "https://www.bilibili.com/video/BV1WzTn6QEkE/",
+    "capture_url": "https://www.bilibili.com/video/BV1WzTn6QEkE/",
+    "bvid": "BV1WzTn6QEkE",
+    "cid": "39598820907",
+    "source_title": "RO3仙境传说3 困难蛮荒5人本开荒 2026.7.2",
+    "source_author": "单人旅团",
+    "source_published_at": "2026-07-03T00:07:05+08:00",
+    "captured_at": "2026-07-26",
+    "test_context": "台港澳启燃技术测试困难五人副本；完整录像包含正常战斗、个人死亡、复活、团灭、再战和胜利。",
+    "copyright_note": "仅保留支撑异常状态分类所需的六帧；含作者水印、测试 UID、聊天和队员信息，后续公开数据集前必须完成隐私与授权审查。",
+    "frames": [
+        {
+            "file": "frames/0149-party-wipe-retry.png",
+            "timestamp_seconds": 149.6,
+            "sha256": "b5774aefa546a89264392917e1a34f7daad84ef4c740da6130072bd9bce80733",
+            "dimensions": [852, 480],
+            "supports": [
+                "全队失败后出现独立的副本重整覆盖层",
+                "覆盖层包含队员状态、倒计时以及两个决策按钮"
+            ],
+            "limitations": [
+                "低清帧不足以把所有小字作为 OCR 基准",
+                "按钮的具体后果需结合前后录像，不能只凭单帧判断"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0160-boss-reset-after-retry.png",
+            "timestamp_seconds": 160,
+            "sha256": "34aa1365f377df4a58648b6f223e1697e80972dfb1f747eba036023b3b114493",
+            "dimensions": [852, 480],
+            "supports": [
+                "再战流程后全队返回战斗场景",
+                "Boss 血条回到 100%，与上一场失败状态明显不同"
+            ],
+            "limitations": [
+                "该帧没有展示投票和加载全过程",
+                "不能证明所有副本或难度都采用相同重置规则"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0738-dead-wait.png",
+            "timestamp_seconds": 738.5,
+            "sha256": "2663540079163df90489a1ef8efe8ec064456747eeb8d65229b503e0c527ab90",
+            "dimensions": [852, 480],
+            "supports": [
+                "个人死亡后画面变暗并在底部显示等待复活",
+                "队友战斗仍继续，不能把此状态视为团灭"
+            ],
+            "limitations": [
+                "该帧没有显示野外死亡或自行复活选项",
+                "聊天和队员信息属于视频画面，不应进入公开训练集"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0754-revive-invite.png",
+            "timestamp_seconds": 754.5,
+            "sha256": "58191b79c25f20a684b141a96b99f2fd019f34987235ac11b3ea8ae9e2c29137",
+            "dimensions": [852, 480],
+            "supports": [
+                "等待复活期间可出现队友发起的复活邀请",
+                "弹窗具有邀请者头像、说明、拒绝和同意按钮"
+            ],
+            "limitations": [
+                "单帧无法确定倒计时总长、超时结果和多个邀请的优先级",
+                "自动接受会消耗团队资源并影响队友，默认必须人工处理"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0760-revived-fighting.png",
+            "timestamp_seconds": 760.5,
+            "sha256": "05b706520a19092891a311dd42b62d026ebd07dc8eb6df456f2d127e2140cbf3",
+            "dimensions": [852, 480],
+            "supports": [
+                "接受复活后技能栏和正常战斗 HUD 恢复",
+                "复活后立即处于仍有 AOE 的战斗环境"
+            ],
+            "limitations": [
+                "无法仅凭该帧确定复活资源扣减值和无敌时间",
+                "不能外推到野外或十人本复活"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/1582-victory-reward.png",
+            "timestamp_seconds": 1582.5,
+            "sha256": "1ead71bdd67c6d34418880b354d3eb821b36b1ed293f490f7332de5961813ff4",
+            "dimensions": [852, 480],
+            "supports": [
+                "Boss 胜利后首先进入独立的战斗胜利／获得奖励覆盖层",
+                "胜利状态仍包含奖励详情和倒计时，并非立即回到城镇"
+            ],
+            "limitations": [
+                "该帧不展示后续队拍、退出或再次挑战",
+                "奖励内容和倒计时属于旧测试构建"
+            ],
+            "recheck_in_cn_test": true
+        }
+    ]
+}

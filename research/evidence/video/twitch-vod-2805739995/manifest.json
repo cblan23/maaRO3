@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "source_id": "twitch-vod-2805739995",
+  "primary_url": "https://www.twitch.tv/videos/2805739995",
+  "capture_url": "https://www.twitch.tv/videos/2805739995",
+  "source_title": "【阿海】有測試玩一下 @oceanstars",
+  "source_author": "阿海",
+  "source_published_at": "2026-06-26T19:31:49+08:00",
+  "captured_at": "2026-07-27",
+  "test_context": "台港澳启燃技术测试 TEST-B 的公开直播；720p60 目标区间展示高倍挂机可开启页面，并展示快捷用药的自动使用配置、数量变化和背包缺药反馈。",
+  "copyright_note": "仅保留证明高倍挂机可用状态与快捷用药状态链所需的五张原始关键帧。画面含玩家名、聊天、测试 UID 与其他角色，仅作内部可追溯研究证据，不作素材再分发或训练集使用。",
+  "frames": [
+    {
+      "file": "frames/5895.00-farming-boost-available-clean.jpg",
+      "timestamp_seconds": 5895,
+      "sha256": "2f268caae3d9ff7fcbfd54e88672832d3324f2aafddf4a0729d6bab877bfd75d",
+      "dimensions": [1280, 720],
+      "supports": [
+        "挂机的加倍时间页明确显示剩余时间 60分/180分和金色开启加倍按钮",
+        "鼠标位于目标状态裁区之外，可为剩余时间、按钮与绿色组队说明提供较干净的原像素样本"
+      ],
+      "limitations": [
+        "只证明按钮在该 TEST-B 页面可见，未记录玩家点击后的启动反馈或战斗状态",
+        "60分/180分属于当次测试配置，国服不得直接写死该数值"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/5895.50-farming-boost-available.jpg",
+      "timestamp_seconds": 5895.5,
+      "sha256": "54cfb0888f8b7e8cf6696c7a26f80481254a6bbae5c5d45f9288b01b2f18c149",
+      "dimensions": [1280, 720],
+      "supports": [
+        "挂机的加倍时间页明确显示剩余时间 60分/180分，页面下方存在金色开启加倍按钮",
+        "右侧可见挂机推荐、Lv.31-40 魔物列表与普通标签；按钮下方另有同地图组队挂机可共享收益的绿色说明"
+      ],
+      "limitations": [
+        "该帧只证明 TEST-B 中存在尚有额度且按钮可见的页面，不证明点击后的启动反馈、自动战斗状态或收益倍率",
+        "背景位于城镇且没有连续记录从点击到野外战斗；国服按钮文字、坐标、分钟数和开放条件必须重新采样"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/6110.50-quick-potion-auto-use-before.jpg",
+      "timestamp_seconds": 6110.5,
+      "sha256": "e7c7bd83dcbe0f4ca6e2764dc5348f17724af0dcb273f9343ec8297d38792849",
+      "dimensions": [1280, 720],
+      "supports": [
+        "快捷用药窗口明确勾选 HP 低于 70% 时自动使用，并显示阈值滑条、一个已配置药品槽和两个可新增空槽",
+        "已配置槽中的药品数量为 36，窗口保持打开时背景仍有野外战斗和伤害数字，可作为消耗前基准"
+      ],
+      "limitations": [
+        "该帧不证明 70% 是固定或推荐阈值，国服必须读取实际文字并由用户配置安全阈值",
+        "只看到一个已配置槽，不能推出全部药品兼容性、槽位解锁条件或优先级"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/6111.00-quick-potion-auto-use-consumed.jpg",
+      "timestamp_seconds": 6111,
+      "sha256": "823652917dd135d03a2ebccfbeda727f62fe969055887d43375f9b7019cf3ef1",
+      "dimensions": [1280, 720],
+      "supports": [
+        "同一窗口 0.5 秒后，自动使用勾选和阈值保持不变，已配置药品数量由 36 降为 35",
+        "鼠标仍停留在药品列表而背景战斗持续，数量变化与启用的低血量自动用药配置相互印证"
+      ],
+      "limitations": [
+        "录像没有键盘输入可视化，不能完全排除主播同时按下药品热键；该序列可确认启用态与消耗变化，但自动触发仍需国服受控复测",
+        "单次变化不能确定检测频率、冷却、连续低血量时的节流或药品耗尽后的行为"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/6114.50-quick-potion-missing-item-toast.jpg",
+      "timestamp_seconds": 6114.5,
+      "sha256": "e1b057d517e6d06458112eee1bcd24e7558c5ea09544e2c7ca3a7a076e026148",
+      "dimensions": [1280, 720],
+      "supports": [
+        "尝试从商城快捷用药页添加当前没有的道具后，顶部出现背包中没有该道具、无法添加的稳定可读反馈",
+        "功能道具和材料道具标签仍可见，说明缺药反馈发生在明确的快捷用药配置上下文中"
+      ],
+      "limitations": [
+        "这是添加配置时缺少道具的反馈，不等同于战斗中药品从 1 消耗到 0 的耗尽提示",
+        "页面来自 TEST-B 商城入口；国服入口、分类、提示位置和文案都必须重新采样"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

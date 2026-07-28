@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "source_id": "twitch-vod-2807782689",
+  "primary_url": "https://www.twitch.tv/videos/2807782689",
+  "capture_url": "https://www.twitch.tv/videos/2807782689",
+  "source_title": "RAGNAROK 3 DIGITE: ❗RAG para tirar todas suas dúvidas sobre Ragnarok 3",
+  "source_author": "OuluH",
+  "source_published_at": "2026-06-29T07:57:14+08:00",
+  "captured_at": "2026-07-28",
+  "test_context": "台港澳启燃技术测试 TEST-B 的公开实机直播；0.1 秒抽帧复核每日活跃度奖励领取，并在补充稀疏审阅后以 720p60 回抽测试后期背包页面。",
+  "copyright_note": "仅保存每日奖励状态转换所需的三帧及最高已观测正常背包容量基准一帧。画面含主播摄像头、二维码、测试 UID、队伍和聊天信息，仅用于内部可追溯研究，不作素材再分发或训练集使用。",
+  "frames": [
+    {
+      "file": "frames/0815.20-activity-reward-claimable.jpg",
+      "timestamp_seconds": 815.2,
+      "sha256": "6b48a5fadc1edd0b587155570ade6d6acaa17b13894fa722138265d52dc98e0c",
+      "dimensions": [1280, 720],
+      "supports": [
+        "每日必做页的活跃度为 20，20 档宝箱呈金色发光可领取态，后续 40、60、80、100 档仍为普通宝箱。",
+        "同页明确显示呆呆委托 1/1 已完成、公会商队 0/1、MVP 0/5、野外挂机 0/60 和生活玩法 0/100。"
+      ],
+      "limitations": [
+        "左侧有主播摄像头和二维码，正式模板只能使用不受遮挡的中央游戏 UI 裁区。",
+        "该帧仅覆盖 20 档可领取态，其他阈值是否复用完全相同动画需国服采样。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0815.60-activity-reward-claimed.jpg",
+      "timestamp_seconds": 815.6,
+      "sha256": "385a4a243298a0711b7d8b9038676bf43e8c9ba6e0ee0ce3c6e301efe66ae9f6",
+      "dimensions": [1280, 720],
+      "supports": [
+        "与 815.2 秒相比，20 档仍保持金色宝箱；该帧处在领取输入后的短暂过渡窗口，持久已领取状态尚未出现。",
+        "该过渡帧说明脚本不能把点击动作本身当作成功，必须继续等待绿色勾选或明确反馈。"
+      ],
+      "limitations": [
+        "仅凭单帧无法精确确定鼠标按下、服务器确认和画面刷新各自发生的时刻。",
+        "文件名保留了早期定位时的 claimed 描述，但画面事实是领取反馈出现前的过渡态；以 Manifest 文字为准。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0817.00-activity-reward-received.jpg",
+      "timestamp_seconds": 817,
+      "sha256": "a6d666f38613984e0a057d5f47bb674d71f00d48bb58421bb640fbfb696faf20",
+      "dimensions": [1280, 720],
+      "supports": [
+        "领取后页面继续保留 20 档绿色勾选，并出现奖励已领取、Base Lv Up 51 与属性增加的即时覆盖反馈。",
+        "该反馈证明领取不会自动关闭每日页面，脚本可在原页面继续处理其他条目或奖励档位。"
+      ],
+      "limitations": [
+        "等级提升可能由奖励经验或并发角色状态触发，不能把所有数值变化都归因于 20 档宝箱。",
+        "瞬时覆盖动画不是稳定的唯一成功判据，应以绿色已领取勾选作为持久确认。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/06757.00-inventory-capacity-62-of-300.jpg",
+      "timestamp_seconds": 6757,
+      "sha256": "3c914e0951dbc7a8393c5653da55b682c5aec133a0e734ad02743b506ff20bb5",
+      "dimensions": [1280, 720],
+      "supports": [
+        "同一帧同时打开装备与通用背包，背包左下角清晰显示 62/300",
+        "通用道具页展示四行可见物品格、滚动条、货币栏及合成与分解按钮，可作为测试后期正常非满状态基准",
+        "62/300 是当前正式视频证据中最高的通用背包占用读数，高于已保存的 0/300、36/300 与 56/300"
+      ],
+      "limitations": [
+        "62/300 仅占显示上限约 20.7%，不能证明接近满、真正满、扩容或下一次掉落去向",
+        "论坛文字所称接近满载特指卡片及灵魂残响背包，不能拿本帧通用背包读数直接证实或反驳该说法",
+        "页面只短暂打开约三秒，未执行拾取、清理或扩容动作"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

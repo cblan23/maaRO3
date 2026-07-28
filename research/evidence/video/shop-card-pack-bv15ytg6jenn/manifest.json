@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "source_id": "shop-card-pack-bv15ytg6jenn",
+  "primary_url": "https://www.bilibili.com/video/BV15yTG6jENn/",
+  "capture_url": "https://www.bilibili.com/video/BV15yTG6jENn/",
+  "bvid": "BV15yTG6jENn",
+  "cid": "39492389664",
+  "source_title": "RO3仙境传说3 赌卡册",
+  "source_author": "单人旅团",
+  "source_published_at": "2026-06-29T08:31:39+08:00",
+  "captured_at": "2026-07-27",
+  "test_context": "台港澳启燃技术测试 TEST-B 的 18 秒实机短片；连续画面覆盖积分商城限购卡册的选中购买态与购买后已售罄态。",
+  "copyright_note": "仅保留区分同一商品选中可买和已售罄状态所需的两帧；画面含转载水印和测试 UID，只作内部可追溯研究证据，不作素材再分发或训练集使用。",
+  "frames": [
+    {
+      "file": "frames/0004-shop-card-pack-selected.png",
+      "timestamp_seconds": 4,
+      "sha256": "77a5f8b8ea6fdb91fdde0bfd9639dfcf2b3b6a159c2abb629458f0b799c9ab9f",
+      "dimensions": [854, 480],
+      "supports": [
+        "积分商城右侧限购卡册呈明亮金色选中边框，商品卡显示限购角标、价格 2,000，并同时打开数量与购买确认层",
+        "同页左侧另一卡册保持未选中的普通商品卡，可用于确认金色外框不是整个列表的固定装饰"
+      ],
+      "limitations": [
+        "该页面涉及货币消费，当前只作为状态识别样本，不授权或建议自动购买",
+        "商品名称、价格、限购次数和商城分类都属于 TEST-B 配置，不能外推到国服"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0007-shop-card-pack-sold-out.png",
+      "timestamp_seconds": 7,
+      "sha256": "cdf925dbbe38c28add8242add8642d34598e9174d1c18099c41d374fe0ae1016",
+      "dimensions": [854, 480],
+      "supports": [
+        "同一右侧卡册在购买后变暗，价格区被已售罄替代，形成同一商品的稳定业务终态",
+        "顶部出现购买成功反馈，左上货币数值由购买前的 2,000 变为 0，与售罄状态相互印证"
+      ],
+      "limitations": [
+        "短片没有覆盖余额不足、取消购买、服务器失败或限购刷新后的恢复态",
+        "已售罄样本不得泛化为所有锁定或禁用控件；只能用于商城商品卡状态字典"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

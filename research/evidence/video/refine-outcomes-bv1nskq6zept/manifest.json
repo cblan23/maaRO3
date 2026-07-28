@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "source_id": "refine-outcomes-bv1nskq6zept",
+  "primary_url": "https://www.bilibili.com/video/BV1NsKQ6zEPt/",
+  "capture_url": "https://www.bilibili.com/video/BV1NsKQ6zEPt/",
+  "bvid": "BV1NsKQ6zEPt",
+  "cid": "39508249920",
+  "source_title": "RO3仙境传说3 精炼",
+  "source_author": "单人旅团",
+  "source_published_at": "2026-06-29T19:50:55+08:00",
+  "captured_at": "2026-07-28",
+  "test_context": "台港澳启燃技术测试精炼实录；7.0 至 18.5 秒连续画面内先出现两次失败，再出现一次成功。0.1 秒加密抽帧用于确定结果覆盖层的稳定可见区间。",
+  "copyright_note": "仅保留证明精炼前态、失败态和成功态所需的四帧；画面含作者水印及测试服界面，不用于再分发或公开训练集。",
+  "frames": [
+    {
+      "file": "frames/0007.0-before-failed-attempt.png",
+      "timestamp_seconds": 7.0,
+      "sha256": "db43fbff765eb861c68784af7402aa8670ae04904beb257d8f013b6ab8052d17",
+      "dimensions": [852, 480],
+      "supports": [
+        "精炼前主手为 +6，右侧预览显示目标 +7、成功率和属性变化",
+        "右下材料区与黄色“精炼”按钮构成结果出现前的稳定基线"
+      ],
+      "limitations": [
+        "成功率、材料数量与属性值只绑定该账号和 TEST-B 当次状态",
+        "精炼会消耗资源且结果随机，属于默认禁止自动执行的不可逆动作"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0008.5-refine-failed.png",
+      "timestamp_seconds": 8.5,
+      "sha256": "a3657ee48ec55e5c324143840e1c6916d5cdefb478009f6ad6fb804d40499d35",
+      "dimensions": [852, 480],
+      "supports": [
+        "精炼动画后出现居中的深色烟雾覆盖层与“精炼失败”文字",
+        "失败后主手仍显示 +6，右侧仍预览 +6 到 +7，与随后成功态不同"
+      ],
+      "limitations": [
+        "0.1 秒抽帧中失败文字约在 8.0 至 9.7 秒完整可读，不能把动画起始闪光误判为结果",
+        "该帧不能概括保护道具、降级、破损或更高等级的失败规则"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0015.0-before-successful-attempt.png",
+      "timestamp_seconds": 15.0,
+      "sha256": "3fffedf09b4d30d9961d81008d9e2a1655ce2199f33bbd7a6d04f16bc8082eb8",
+      "dimensions": [852, 480],
+      "supports": [
+        "第二次失败覆盖层消失后界面恢复为主手 +6、目标 +7 的可操作状态",
+        "同一连续录像随后在不切换装备槽的情况下进入成功结果"
+      ],
+      "limitations": [
+        "材料计数已因前序尝试变化，不能拿本帧作为初始成本模板",
+        "鼠标点击与键盘输入未显式记录，流程只证明视觉状态转换"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0017.0-refine-succeeded.png",
+      "timestamp_seconds": 17.0,
+      "sha256": "78cd676304e1449b84d853b0640d84f354b80d1c859cfa415e78b57a593e0ede",
+      "dimensions": [852, 480],
+      "supports": [
+        "成功动画后出现居中的金色覆盖层与“精炼成功”文字",
+        "主手等级变为 +7，右侧下一目标同步变为 +8，形成可见的业务后置条件"
+      ],
+      "limitations": [
+        "0.1 秒抽帧中成功文字约在 16.4 至 18.1 秒完整可读，识别器应等待稳定文字而非只看金色闪光",
+        "该成功链用于状态识别和审计，不授权自动消耗材料继续精炼"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

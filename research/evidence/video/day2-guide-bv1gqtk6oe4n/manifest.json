@@ -1,0 +1,76 @@
+{
+    "schema_version": 1,
+    "source_id": "day2-guide-bv1gqtk6oe4n",
+    "primary_url": "https://www.youtube.com/watch?v=HazCobJ2yU0",
+    "capture_url": "https://www.bilibili.com/video/BV1GqTK6oE4n/",
+    "bvid": "BV1GqTK6oE4n",
+    "cid": "39472336110",
+    "source_title": "RO仙境传说3 开服第2天：二转、精炼、嘉奖宝库、挂机与疲劳",
+    "source_author": "阿翊（Bilibili 采样源为转载）",
+    "source_published_at": "2026-06-28T13:21:57+08:00",
+    "captured_at": "2026-07-26",
+    "test_context": "台港澳启燃技术测试第二日；挂机分钟数、击杀阈值、掉落和界面均属于旧测试快照。",
+    "copyright_note": "仅保留证明挂机状态分层、收益统计和计时界面所需的四帧；包含原视频字幕、水印、测试 UID 和聊天，不用于再分发或公开训练集。",
+    "frames": [
+        {
+            "file": "frames/0242-farming-three-stages.png",
+            "timestamp_seconds": 242,
+            "sha256": "bf18b0ee3e79fd55bd5ddbffa805b97fcdaa7819075cbb63aa8b7555e1cb7e98",
+            "dimensions": [852, 480],
+            "supports": [
+                "挂机页内置加倍挂机规则，并非只有一个开始按钮",
+                "规则文本分别描述加倍、一般收益及疲劳相关条件，证明挂机需要按阶段建模"
+            ],
+            "limitations": [
+                "原始 480p 画面不足以把每条小字作为精确 OCR 基准",
+                "三阶段名称、阈值和掉落集合必须由国服规则原文重新核对"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0257-farming-yield-statistics.png",
+            "timestamp_seconds": 257,
+            "sha256": "a2029a7ddb1c8bf709de4fab2c424a04072c4d1e46d7425701399ee2d39f2c2e",
+            "dimensions": [852, 480],
+            "supports": [
+                "挂机收益窗口按日期展示今日魔物击杀数和今日队友击杀数",
+                "窗口分开汇总 Base、Job 经验与逐项掉落，可作为挂机后只读报告的数据来源"
+            ],
+            "limitations": [
+                "单帧不能证明队友击杀如何计入疲劳阈值或掉落归属",
+                "物品名称和具体数值不应从 480p 画面写死"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0272-farming-rules-fatigue.png",
+            "timestamp_seconds": 272,
+            "sha256": "2a6fa30656a2effafacd188db2815f0b47e3dd57c4dcdf3cf646c25dad551425",
+            "dimensions": [852, 480],
+            "supports": [
+                "同一挂机规则页明确把组队、奖励、低倍收益和疲劳限制放在统一说明中",
+                "目标魔物列表同时标注等级区间与难度，挂机计划至少依赖地图和魔物选择"
+            ],
+            "limitations": [
+                "视频解说对卡片掉落的概括与社区文字存在冲突，不能只凭解说定案",
+                "疲劳按击杀数还是其他条件触发及其准确范围仍待连续录像验证"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0317-farming-current-status.png",
+            "timestamp_seconds": 317,
+            "sha256": "af9bf8727f6e61346f2b246862961c9e8336dc1a2a4d686b3ec1c12087aafa3e",
+            "dimensions": [852, 480],
+            "supports": [
+                "挂机面板用沙漏和文字展示当前加倍状态",
+                "旧测试画面显示剩余时间同时带累计上限，且有独立的开启／关闭加倍操作"
+            ],
+            "limitations": [
+                "画面中的每日 60 分钟和累计 180 分钟只代表启燃测试",
+                "该帧未覆盖加倍归零后的低倍界面及进入疲劳时的状态变化"
+            ],
+            "recheck_in_cn_test": true
+        }
+    ]
+}

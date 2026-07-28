@@ -1,0 +1,61 @@
+{
+    "schema_version": 1,
+    "source_id": "auto-blocked-terrain-bv1rg376ue6k",
+    "primary_url": "https://www.bilibili.com/video/BV1rg376UE6k/",
+    "capture_url": "https://www.bilibili.com/video/BV1rg376UE6k/",
+    "bvid": "BV1rg376UE6k",
+    "cid": "40307655135",
+    "source_title": "RO3仙境传说3 近战职业自动挂机会被地形卡的反复左右",
+    "source_author": "单人旅团",
+    "source_published_at": "2026-07-26T13:44:53+08:00",
+    "captured_at": "2026-07-26",
+    "test_context": "作者于启燃测试结束后发布的 14 秒 TEST-B 实机片段；任务栏可见 2026-07-02 测试期文本。标题称近战职业自动挂机被地形卡住，画面事实与作者归因分开记录。",
+    "copyright_note": "仅保留证明 13 秒无位移／反复动作候选异常所需的首、中、末三帧；画面含聊天、玩家名和测试 UID，仅作内部研究证据。",
+    "frames": [
+        {
+            "file": "frames/0000-auto-blocked-start.png",
+            "timestamp_seconds": 0.5,
+            "sha256": "11290597cfdeaf152775b294502e6fafe3297ac7184b3a2b8807bb8f0fff5a05",
+            "dimensions": [852, 480],
+            "supports": [
+                "序列起点中角色位于狭窄走廊边缘，附近存在多个魔物，技能栏、任务追踪和开放世界 HUD 可见",
+                "为后续中、末帧提供位置、朝向、技能与周围魔物的比较基线"
+            ],
+            "limitations": [
+                "此帧本身不能证明自动战斗已开启，也不能证明角色已经卡位",
+                "480p 画质不足以可靠读取全部任务、聊天和状态小图标"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0006-auto-blocked-middle.png",
+            "timestamp_seconds": 6.5,
+            "sha256": "067081370bda59b725651f5d7c2d327f4559054699524f210fd59a9ea8f7c2de",
+            "dimensions": [852, 480],
+            "supports": [
+                "经过约六秒角色仍在同一狭窄位置，画面出现动作轨迹和伤害数字，说明画面并非静态冻结",
+                "位置不进展但动作／伤害仍变化，是 `AutoOnBlockedCandidate` 可用的多信号样本"
+            ],
+            "limitations": [
+                "无法仅凭该帧区分角色攻击、受击或寻路转向，也不能确认碰撞体具体位置",
+                "作者标题把现象归因于近战自动挂机卡地形；归因仍需连续国服录像与状态标志复核"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0013-auto-blocked-end.png",
+            "timestamp_seconds": 13.5,
+            "sha256": "8b4062041ac5f9d41eafa72a77af764100d742c77900d8437176dd76e9ba76f4",
+            "dimensions": [852, 480],
+            "supports": [
+                "序列末端角色仍未离开起点附近，周围魔物位置和角色动作已变化，可排除整段视频完全冻结",
+                "首、中、末帧共同支持用时间窗判断位置无进展，而不能以单帧无目标或单次转身判断卡位"
+            ],
+            "limitations": [
+                "14 秒样本过短，不能确定游戏内功能是否随后自行恢复，也不能据此设定 14 秒报警阈值",
+                "不能外推所有近战职业、地图、自动寻路或国服 8 月构建都会发生同一问题"
+            ],
+            "recheck_in_cn_test": true
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "source_id": "hard-ten-player-boss4-bv1wwte6seev",
+  "primary_url": "https://www.bilibili.com/video/BV1WwTe6sEEV/",
+  "capture_url": "https://www.bilibili.com/video/BV1WwTe6sEEV/",
+  "bvid": "BV1WwTe6sEEV",
+  "cid": "39551176662",
+  "source_title": "RO3仙境传说3 首通困难10人本老4 2026.7.1",
+  "source_author": "单人旅团",
+  "source_published_at": "2026-07-01T12:30:15+08:00",
+  "captured_at": "2026-07-28",
+  "test_context": "台港澳启燃技术测试困难十人本老四完整录像；开头角色在战斗中打开通用背包，容量直接显示为 110/300。",
+  "copyright_note": "仅保留证明通用背包容量读数所需的一帧；画面含作者水印、聊天、队伍信息和测试 UID，后续公开数据集前必须完成隐私与授权审查。",
+  "frames": [
+    {
+      "file": "frames/0002.0-inventory-110-of-300.png",
+      "timestamp_seconds": 2.0,
+      "sha256": "d6e669dbdecd491e0bb277271f5b1f12e0439625104f2164b69918a2a9811ff3",
+      "dimensions": [852, 480],
+      "supports": [
+        "通用背包左下角直接显示 110/300，分母与既有样本一致为 300",
+        "这是当前正式视频证据中最高的通用背包已用格读数，约占容量 36.7%"
+      ],
+      "limitations": [
+        "110/300 远未接近满包，不能推断 300/300 时掉落、邮件、地面物品或提示行为",
+        "战斗中打开背包不等于挂机时自动整理安全，出售、分解和丢弃仍属不可逆动作"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

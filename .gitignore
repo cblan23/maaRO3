@@ -1,0 +1,23 @@
+# Local research downloads are intentionally not committed.
+research/raw/
+research/work/
+*.m4s
+*.mp4
+*.webm
+*.wav
+
+# Python research-tool caches.
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+
+# Node / Maa checker dependencies.
+node_modules/
+npm-debug.log*
+
+# Runtime output reserved for the future application.
+runtime/
+logs/
+install/

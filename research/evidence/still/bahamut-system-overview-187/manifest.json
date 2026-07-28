@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "source_id": "bahamut-system-overview-187",
+  "primary_url": "https://forum.gamer.com.tw/Co.php?bsn=81475&sn=187",
+  "capture_url": "https://truth.bahamut.com.tw/s01/202607/forum/81475/2eba1a4cf9d39266a7d94464e425d6d8.JPG",
+  "source_title": "RO3 测试体验 Part 2 系统概观简评",
+  "source_author": "悠浪猫（magicyeats）",
+  "source_published_at": "2026-07-04T22:08:08+08:00",
+  "captured_at": "2026-07-27",
+  "test_context": "启燃测试参与者发布在巴哈姆特一手长文中的客户端原图；画面水印明确标示测试版本，衣橱页同时展示分类普通／选中和商品已装备／锁定状态。",
+  "copyright_note": "只保存包含目标状态的原始论坛图片，不保存文章装饰图或广告；原图含测试 UID，仅用于内部可追溯研究与像素裁切，不作素材再分发或训练集使用。",
+  "images": [
+    {
+      "file": "images/wardrobe-lock-selected-states.jpg",
+      "image_index": 0,
+      "sha256": "5326053a3b3be28311fed017c5fa2bdbf3263503bfd7f9235351d87d26e5fa2a",
+      "dimensions": [1920, 1080],
+      "supports": [
+        "衣橱左侧分类同时出现普通紫色分类与金色选中分类，可在同一构建同一父页面内比较",
+        "脸饰网格同时出现绿色已装备标签和多个白色挂锁覆盖层，提供真实锁定与已装备视觉样本"
+      ],
+      "limitations": [
+        "这些状态属于衣橱页面，不能直接当作每日、商城或背包控件的通用模板",
+        "静态原图没有操作前后序列，不能证明解锁条件、点击反馈、购买动作或装备切换结果"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

@@ -1,0 +1,3200 @@
+{
+  "schema_version": 1,
+  "game": "RO 仙境传说 3 / Ragnarok Online 3",
+  "created_at": "2026-07-27",
+  "samples": [
+    {
+      "id": "daily-daidai-entry-icon-test-b-01",
+      "icon_key": "daily_daidai_commission",
+      "state": "entry_icon",
+      "sample_type": "icon",
+      "file": "crops/daily-daidai-entry-icon-test-b-01.png",
+      "sha256": "86589fb859cc65682e25cc0338db646b2e72c1b81535ceecc2c3fa9cc041aebe",
+      "dimensions": [
+        40,
+        41
+      ],
+      "source_id": "day1-guide-bv1yqtk6oekk",
+      "source_timestamp_seconds": 466,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day1-guide-bv1yqtk6oekk/frames/0466-daily-panel-expanded.png",
+      "parent_sha256": "5ff69a7ecd600605455660fdf5538d0299455f1c8c6ae5a7b979cb84b183cbce",
+      "crop": {
+        "x": 129,
+        "y": 152,
+        "width": 40,
+        "height": 41
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区避开右上角模拟器广告与底部字幕。"
+      },
+      "limitations": [
+        "只证明 TEST-B 条目徽记外观；不证明国服名称、位置或状态颜色。"
+      ]
+    },
+    {
+      "id": "daily-guild-caravan-entry-icon-test-b-01",
+      "icon_key": "daily_guild_caravan",
+      "state": "entry_icon",
+      "sample_type": "icon",
+      "file": "crops/daily-guild-caravan-entry-icon-test-b-01.png",
+      "sha256": "34c8cfb34d2c44800850a32d05e4177a373e3271316ca9e59f701048d0e604bc",
+      "dimensions": [
+        31,
+        41
+      ],
+      "source_id": "day1-guide-bv1yqtk6oekk",
+      "source_timestamp_seconds": 466,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day1-guide-bv1yqtk6oekk/frames/0466-daily-panel-expanded.png",
+      "parent_sha256": "5ff69a7ecd600605455660fdf5538d0299455f1c8c6ae5a7b979cb84b183cbce",
+      "crop": {
+        "x": 347,
+        "y": 152,
+        "width": 31,
+        "height": 41
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区避开右上角模拟器广告与底部字幕。"
+      },
+      "limitations": [
+        "这是入口徽记，不包含需求、库存、提交或完成状态。"
+      ]
+    },
+    {
+      "id": "daily-mvp-entry-icon-test-b-01",
+      "icon_key": "daily_mvp",
+      "state": "entry_icon",
+      "sample_type": "icon",
+      "file": "crops/daily-mvp-entry-icon-test-b-01.png",
+      "sha256": "d9218bff016535c66b15d365d7105613209fa75642c7f7166b76b045b1b7be31",
+      "dimensions": [
+        40,
+        41
+      ],
+      "source_id": "day1-guide-bv1yqtk6oekk",
+      "source_timestamp_seconds": 466,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day1-guide-bv1yqtk6oekk/frames/0466-daily-panel-expanded.png",
+      "parent_sha256": "5ff69a7ecd600605455660fdf5538d0299455f1c8c6ae5a7b979cb84b183cbce",
+      "crop": {
+        "x": 129,
+        "y": 211,
+        "width": 40,
+        "height": 41
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区内只有游戏 UI。"
+      },
+      "limitations": [
+        "MVP 属竞争场景排除类；该裁图不授权或支持自动参与。"
+      ]
+    },
+    {
+      "id": "daily-field-farming-entry-icon-test-b-01",
+      "icon_key": "daily_field_farming",
+      "state": "entry_icon",
+      "sample_type": "icon",
+      "file": "crops/daily-field-farming-entry-icon-test-b-01.png",
+      "sha256": "6f002a78504d67c362cb0c6ab651d3ff2cc4091b18eb455b7edcf2c9a4126985",
+      "dimensions": [
+        31,
+        41
+      ],
+      "source_id": "day1-guide-bv1yqtk6oekk",
+      "source_timestamp_seconds": 466,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day1-guide-bv1yqtk6oekk/frames/0466-daily-panel-expanded.png",
+      "parent_sha256": "5ff69a7ecd600605455660fdf5538d0299455f1c8c6ae5a7b979cb84b183cbce",
+      "crop": {
+        "x": 347,
+        "y": 211,
+        "width": 31,
+        "height": 41
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区内只有游戏 UI。"
+      },
+      "limitations": [
+        "入口徽记不能证明加倍、低倍或疲劳阶段。"
+      ]
+    },
+    {
+      "id": "daily-life-entry-icon-test-b-01",
+      "icon_key": "daily_life_play",
+      "state": "entry_icon",
+      "sample_type": "icon",
+      "file": "crops/daily-life-entry-icon-test-b-01.png",
+      "sha256": "ea2516ea6958bca5da1682f0626292fab7036f91c3471a7def71f43cc7b8afd6",
+      "dimensions": [
+        40,
+        41
+      ],
+      "source_id": "day1-guide-bv1yqtk6oekk",
+      "source_timestamp_seconds": 466,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day1-guide-bv1yqtk6oekk/frames/0466-daily-panel-expanded.png",
+      "parent_sha256": "5ff69a7ecd600605455660fdf5538d0299455f1c8c6ae5a7b979cb84b183cbce",
+      "crop": {
+        "x": 129,
+        "y": 270,
+        "width": 40,
+        "height": 41
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区内只有游戏 UI。"
+      },
+      "limitations": [
+        "入口徽记不包含 4/5、5/5、活力不足或满包状态。"
+      ]
+    },
+    {
+      "id": "daily-spirit-tower-entry-icon-test-b-01",
+      "icon_key": "daily_spirit_tower",
+      "state": "entry_icon",
+      "sample_type": "icon",
+      "file": "crops/daily-spirit-tower-entry-icon-test-b-01.png",
+      "sha256": "3f617bf677525d4e5120a07f9a1e525216870a812e12d0b4781a97e0136418db",
+      "dimensions": [
+        31,
+        41
+      ],
+      "source_id": "day1-guide-bv1yqtk6oekk",
+      "source_timestamp_seconds": 466,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day1-guide-bv1yqtk6oekk/frames/0466-daily-panel-expanded.png",
+      "parent_sha256": "5ff69a7ecd600605455660fdf5538d0299455f1c8c6ae5a7b979cb84b183cbce",
+      "crop": {
+        "x": 347,
+        "y": 270,
+        "width": 31,
+        "height": 41
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区内只有游戏 UI。"
+      },
+      "limitations": [
+        "只保存入口徽记；层数、失败和结算状态仍缺。"
+      ]
+    },
+    {
+      "id": "daily-daidai-completed-row-test-b-01",
+      "icon_key": "daily_daidai_commission",
+      "state": "completed_label_visible",
+      "sample_type": "state_row",
+      "file": "crops/daily-daidai-completed-row-test-b-01.png",
+      "sha256": "56e41f7dcd90aa4964a7e5dc8e0f188e83a1522829fd63715628179760801208",
+      "dimensions": [
+        225,
+        59
+      ],
+      "source_id": "day1-guide-bv1yqtk6oekk",
+      "source_timestamp_seconds": 466,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day1-guide-bv1yqtk6oekk/frames/0466-daily-panel-expanded.png",
+      "parent_sha256": "5ff69a7ecd600605455660fdf5538d0299455f1c8c6ae5a7b979cb84b183cbce",
+      "crop": {
+        "x": 108,
+        "y": 141,
+        "width": 225,
+        "height": 59
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含完整游戏内条目，不含视频字幕。"
+      },
+      "limitations": [
+        "只证明“已完成”行状态；没有接取到交付的连续过程。"
+      ]
+    },
+    {
+      "id": "activity-reward-green-check-test-b-01",
+      "icon_key": "activity_reward_chest",
+      "state": "green_check_candidate",
+      "sample_type": "state_indicator",
+      "file": "crops/activity-reward-green-check-test-b-01.png",
+      "sha256": "d18b9cb8cb8287722ecfe62f6cc831268bcd4e88e1a5184cd3b631df8ab7a3f3",
+      "dimensions": [
+        40,
+        41
+      ],
+      "source_id": "day1-guide-bv1yqtk6oekk",
+      "source_timestamp_seconds": 466,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day1-guide-bv1yqtk6oekk/frames/0466-daily-panel-expanded.png",
+      "parent_sha256": "5ff69a7ecd600605455660fdf5538d0299455f1c8c6ae5a7b979cb84b183cbce",
+      "crop": {
+        "x": 230,
+        "y": 340,
+        "width": 40,
+        "height": 41
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "contextual_candidate",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区避开底部视频字幕。"
+      },
+      "limitations": [
+        "单帧无法区分“达到可领”与“已经领取”，因此保持候选态。"
+      ]
+    },
+    {
+      "id": "activity-reward-locked-chest-test-b-01",
+      "icon_key": "activity_reward_chest",
+      "state": "threshold_not_reached_closed_chest",
+      "sample_type": "state_indicator",
+      "file": "crops/activity-reward-locked-chest-test-b-01.png",
+      "sha256": "8885a9f413fbacab9996311d1ee7c64e092dd2eab3456266c967896dbacad4fa",
+      "dimensions": [
+        40,
+        41
+      ],
+      "source_id": "day1-guide-bv1yqtk6oekk",
+      "source_timestamp_seconds": 466,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day1-guide-bv1yqtk6oekk/frames/0466-daily-panel-expanded.png",
+      "parent_sha256": "5ff69a7ecd600605455660fdf5538d0299455f1c8c6ae5a7b979cb84b183cbce",
+      "crop": {
+        "x": 299,
+        "y": 340,
+        "width": 40,
+        "height": 41
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区避开底部视频字幕。"
+      },
+      "limitations": [
+        "只覆盖一个未达阈值的闭合宝箱，不覆盖悬停、可领、已领和禁用变体。"
+      ]
+    },
+    {
+      "id": "life-profession-cook-icon-test-b-01",
+      "icon_key": "life_profession_cook",
+      "state": "selected_profession_icon",
+      "sample_type": "icon",
+      "file": "crops/life-profession-cook-icon-test-b-01.png",
+      "sha256": "463f436f4e0cd88be072702cf28dd8b4217f77fbe4f16434a43f19bebdf7a975",
+      "dimensions": [
+        76,
+        77
+      ],
+      "source_id": "life-mining-bv18h756kehz",
+      "source_timestamp_seconds": 950,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/life-mining-bv18h756kehz/frames/0950-life-profession-overview.png",
+      "parent_sha256": "93d82b2bf250d1a5539ec2b066c196116b9c4cac0206a29e29365867dc4799fb",
+      "crop": {
+        "x": 423,
+        "y": 177,
+        "width": 76,
+        "height": 77
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "左上角转载水印位于裁区外。"
+      },
+      "limitations": [
+        "TEST-B 已选职业徽记；普通、锁定和国服简中变体待采。"
+      ]
+    },
+    {
+      "id": "life-profession-miner-icon-test-b-01",
+      "icon_key": "life_profession_miner",
+      "state": "selected_profession_icon",
+      "sample_type": "icon",
+      "file": "crops/life-profession-miner-icon-test-b-01.png",
+      "sha256": "c6fb0508ff3df7f0607d987f90edc7f1063d8510adaf7ddcf1c8624745251788",
+      "dimensions": [
+        80,
+        80
+      ],
+      "source_id": "life-mining-bv18h756kehz",
+      "source_timestamp_seconds": 950,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/life-mining-bv18h756kehz/frames/0950-life-profession-overview.png",
+      "parent_sha256": "93d82b2bf250d1a5539ec2b066c196116b9c4cac0206a29e29365867dc4799fb",
+      "crop": {
+        "x": 589,
+        "y": 174,
+        "width": 80,
+        "height": 80
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "左上角转载水印位于裁区外。"
+      },
+      "limitations": [
+        "TEST-B 已选职业徽记；普通、锁定和国服简中变体待采。"
+      ]
+    },
+    {
+      "id": "life-vitality-value-test-b-01",
+      "icon_key": "life_vitality",
+      "state": "value_visible",
+      "sample_type": "state_indicator",
+      "file": "crops/life-vitality-value-test-b-01.png",
+      "sha256": "528edd11f6a45f5d3a626676a6e976ffcd081b8c4b842f259f66aa5c59cbe7ca",
+      "dimensions": [
+        70,
+        29
+      ],
+      "source_id": "life-mining-bv18h756kehz",
+      "source_timestamp_seconds": 950,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/life-mining-bv18h756kehz/frames/0950-life-profession-overview.png",
+      "parent_sha256": "93d82b2bf250d1a5539ec2b066c196116b9c4cac0206a29e29365867dc4799fb",
+      "crop": {
+        "x": 744,
+        "y": 3,
+        "width": 70,
+        "height": 29
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区为纯游戏 UI。"
+      },
+      "limitations": [
+        "700/5000 只代表单个 TEST-B 快照，上限与恢复规则不得固化。"
+      ]
+    },
+    {
+      "id": "pet-rarity-s-badge-test-b-01",
+      "icon_key": "pet_rarity_badge",
+      "state": "s_badge",
+      "sample_type": "state_indicator",
+      "file": "crops/pet-rarity-s-badge-test-b-01.png",
+      "sha256": "0f2d2a7275ecd512573757aadef514f8e18eebcca02a15a92fb137a0aa20159f",
+      "dimensions": [
+        32,
+        48
+      ],
+      "source_id": "test-closeout-bv1ybny6feze",
+      "source_timestamp_seconds": 62,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/test-closeout-bv1ybny6feze/frames/0062-pet-support-five-slots.png",
+      "parent_sha256": "fcd9f0663e881e5bce91f04c886068883f0a9074311ef8ee83c7dc7906b35342",
+      "crop": {
+        "x": 151,
+        "y": 119,
+        "width": 32,
+        "height": 48
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "人像与字幕位于裁区外。"
+      },
+      "limitations": [
+        "仅覆盖助战卡片上的 S 角标；颜色和等级规则需国服复验。"
+      ]
+    },
+    {
+      "id": "pet-rarity-a-badge-test-b-01",
+      "icon_key": "pet_rarity_badge",
+      "state": "a_badge",
+      "sample_type": "state_indicator",
+      "file": "crops/pet-rarity-a-badge-test-b-01.png",
+      "sha256": "44cb257ad16cb2a1305e6defac37c59d6b9dce456208a1b65ca7d81064e16511",
+      "dimensions": [
+        48,
+        48
+      ],
+      "source_id": "test-closeout-bv1ybny6feze",
+      "source_timestamp_seconds": 62,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/test-closeout-bv1ybny6feze/frames/0062-pet-support-five-slots.png",
+      "parent_sha256": "fcd9f0663e881e5bce91f04c886068883f0a9074311ef8ee83c7dc7906b35342",
+      "crop": {
+        "x": 628,
+        "y": 119,
+        "width": 48,
+        "height": 48
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "人像与字幕位于裁区外。"
+      },
+      "limitations": [
+        "仅覆盖助战卡片上的 A 角标；颜色和等级规则需国服复验。"
+      ]
+    },
+    {
+      "id": "revive-invite-dialog-test-b-01",
+      "icon_key": "revive_invite",
+      "state": "awaiting_player_choice",
+      "sample_type": "dialog",
+      "file": "crops/revive-invite-dialog-test-b-01.png",
+      "sha256": "61baf6bd5f74c5f0dec092f2de413b6b608b00e66cee880f270ce85c09785c46",
+      "dimensions": [
+        157,
+        87
+      ],
+      "source_id": "hard-five-player-bv1wztn6qeke",
+      "source_timestamp_seconds": 754.5,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/hard-five-player-bv1wztn6qeke/frames/0754-revive-invite.png",
+      "parent_sha256": "58191b79c25f20a684b141a96b99f2fd019f34987235ac11b3ea8ae9e2c29137",
+      "crop": {
+        "x": 690,
+        "y": 107,
+        "width": 157,
+        "height": 87
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "Bilibili 水印位于弹窗上方；裁区只含游戏弹窗。"
+      },
+      "limitations": [
+        "这是困难五人副本的队友复活邀请，不能外推为野外死亡／复活界面。"
+      ]
+    },
+    {
+      "id": "refine-main-hand-slot-icon-test-b-01",
+      "icon_key": "refine_equipment_slot",
+      "state": "main_hand_selected",
+      "sample_type": "icon",
+      "file": "crops/refine-main-hand-slot-icon-test-b-01.png",
+      "sha256": "af2878c0ee79287db433e9a77ed25755e5b4130905acac21fefee0c7d7ad5f51",
+      "dimensions": [
+        38,
+        43
+      ],
+      "source_id": "refine-ui-bv19htn6peo2",
+      "source_timestamp_seconds": 182,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/refine-ui-bv19htn6peo2/frames/0182-refine-slot-level.png",
+      "parent_sha256": "ec2704d8c48becf816146e5624e6130b4c2ec2516869db8925c355b8ebe80337",
+      "crop": {
+        "x": 29,
+        "y": 108,
+        "width": 38,
+        "height": 43
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "字幕、频道标识和二维码均位于裁区外。"
+      },
+      "limitations": [
+        "选中态带行背景影响；普通、悬停和禁用态仍需独立样本。"
+      ]
+    },
+    {
+      "id": "refine-off-hand-slot-icon-test-b-01",
+      "icon_key": "refine_equipment_slot",
+      "state": "off_hand_normal",
+      "sample_type": "icon",
+      "file": "crops/refine-off-hand-slot-icon-test-b-01.png",
+      "sha256": "fe0acaac9759d933d446532a124fd8d6625534ffe7ece01c45f77784324134f1",
+      "dimensions": [
+        38,
+        43
+      ],
+      "source_id": "refine-ui-bv19htn6peo2",
+      "source_timestamp_seconds": 182,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/refine-ui-bv19htn6peo2/frames/0182-refine-slot-level.png",
+      "parent_sha256": "ec2704d8c48becf816146e5624e6130b4c2ec2516869db8925c355b8ebe80337",
+      "crop": {
+        "x": 29,
+        "y": 160,
+        "width": 38,
+        "height": 43
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "字幕、频道标识和二维码均位于裁区外。"
+      },
+      "limitations": [
+        "只覆盖 TEST-B 普通行上的副手部位徽记。"
+      ]
+    },
+    {
+      "id": "refine-shoes-slot-icon-test-b-01",
+      "icon_key": "refine_equipment_slot",
+      "state": "shoes_normal",
+      "sample_type": "icon",
+      "file": "crops/refine-shoes-slot-icon-test-b-01.png",
+      "sha256": "2dd5b4efe47e87fb2af45b3771ad56bb23f05c662de93d566a962acdd789fa05",
+      "dimensions": [
+        37,
+        48
+      ],
+      "source_id": "refine-ui-bv19htn6peo2",
+      "source_timestamp_seconds": 212,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/refine-ui-bv19htn6peo2/frames/0212-refine-material-sources.png",
+      "parent_sha256": "de76e238386b59fd85e43c6e20b13eeeb3dad000da02b42128aba40e948fcd97",
+      "crop": {
+        "x": 29,
+        "y": 283,
+        "width": 37,
+        "height": 48
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "字幕、频道标识和二维码均位于裁区外。"
+      },
+      "limitations": [
+        "只覆盖 TEST-B 普通行上的鞋子部位徽记。"
+      ]
+    },
+    {
+      "id": "refine-level-badge-test-b-01",
+      "icon_key": "refine_level_badge",
+      "state": "level_zero",
+      "sample_type": "state_indicator",
+      "file": "crops/refine-level-badge-test-b-01.png",
+      "sha256": "5ed9b714fa2474c1a0a85fa4aa6dc939c26aa16d897ea2cbffd53b25b0b90441",
+      "dimensions": [
+        58,
+        61
+      ],
+      "source_id": "refine-ui-bv19htn6peo2",
+      "source_timestamp_seconds": 182,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/refine-ui-bv19htn6peo2/frames/0182-refine-slot-level.png",
+      "parent_sha256": "ec2704d8c48becf816146e5624e6130b4c2ec2516869db8925c355b8ebe80337",
+      "crop": {
+        "x": 68,
+        "y": 34,
+        "width": 58,
+        "height": 61
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区为纯游戏 UI。"
+      },
+      "limitations": [
+        "仅覆盖当前页面顶部的 0 级徽记，其他等级与成功状态待采。"
+      ]
+    },
+    {
+      "id": "notification-red-dot-refine-test-b-01",
+      "icon_key": "notification_red_dot",
+      "state": "visible_candidate",
+      "sample_type": "state_indicator",
+      "file": "crops/notification-red-dot-refine-test-b-01.png",
+      "sha256": "fd26a5e8c22f433254a83349b095e55656c77acbaf5089f7fcdd76047342822d",
+      "dimensions": [
+        20,
+        20
+      ],
+      "source_id": "refine-ui-bv19htn6peo2",
+      "source_timestamp_seconds": 182,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/refine-ui-bv19htn6peo2/frames/0182-refine-slot-level.png",
+      "parent_sha256": "ec2704d8c48becf816146e5624e6130b4c2ec2516869db8925c355b8ebe80337",
+      "crop": {
+        "x": 163,
+        "y": 230,
+        "width": 20,
+        "height": 20
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "contextual_candidate",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区为游戏内红点及邻近行背景。"
+      },
+      "limitations": [
+        "连续画面未验证红点语义，只能作为“可处理／未查看”候选态。"
+      ]
+    },
+    {
+      "id": "activity-reward-claimable-test-b-01",
+      "icon_key": "activity_reward_chest",
+      "state": "claimable_gold_glow",
+      "sample_type": "state_indicator",
+      "file": "crops/activity-reward-claimable-test-b-01.png",
+      "sha256": "dd92d24a8d3d282b163ab54ea330be9181fc420741a0be6cc01f5139611ca39f",
+      "dimensions": [
+        86,
+        86
+      ],
+      "source_id": "twitch-vod-2807782689",
+      "source_timestamp_seconds": 815.2,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2807782689/frames/0815.20-activity-reward-claimable.jpg",
+      "parent_sha256": "6b48a5fadc1edd0b587155570ade6d6acaa17b13894fa722138265d52dc98e0c",
+      "crop": {
+        "x": 392,
+        "y": 468,
+        "width": 86,
+        "height": 86
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只含游戏内 20 档奖励、金色发光和阈值数字；主播画面及二维码在裁区外。"
+      },
+      "limitations": [
+        "动效亮度会随帧相位改变；运行时必须容忍发光范围变化，并在国服重新采样。"
+      ]
+    },
+    {
+      "id": "activity-reward-claimed-test-b-01",
+      "icon_key": "activity_reward_chest",
+      "state": "claimed_green_check",
+      "sample_type": "state_indicator",
+      "file": "crops/activity-reward-claimed-test-b-01.png",
+      "sha256": "16505efc292a496f05802b7f80da389e315c3484a60cc1753f08134600b8d7c1",
+      "dimensions": [
+        86,
+        86
+      ],
+      "source_id": "twitch-vod-2807782689",
+      "source_timestamp_seconds": 817,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2807782689/frames/0817.00-activity-reward-received.jpg",
+      "parent_sha256": "a6d666f38613984e0a057d5f47bb674d71f00d48bb58421bb640fbfb696faf20",
+      "crop": {
+        "x": 392,
+        "y": 468,
+        "width": 86,
+        "height": 86
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "与可领取样本采用相同原图坐标，只含游戏 UI。"
+      },
+      "limitations": [
+        "只直接对应 20 档；40、60、80、100 档是否完全复用同一外观需国服逐档采样。"
+      ]
+    },
+    {
+      "id": "guild-material-ready-count-test-b-01",
+      "icon_key": "guild_material_requirement",
+      "state": "selected_inventory_sufficient_6_of_6",
+      "sample_type": "state_row",
+      "file": "crops/guild-material-ready-count-test-b-01.png",
+      "sha256": "26c2d30b507ecee52b1bdb6ade25b68e3cf24b21dce2d1cc67e16a3593e29aa6",
+      "dimensions": [
+        177,
+        60
+      ],
+      "source_id": "twitch-vod-2805645541",
+      "source_timestamp_seconds": 1334.4,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805645541/frames/1334.40-guild-material-ready-load.jpg",
+      "parent_sha256": "bc298951b8cef272ccdb6810e62efa951911cf0c4735c9a909372f66f127d4d3",
+      "crop": {
+        "x": 399,
+        "y": 217,
+        "width": 177,
+        "height": 60
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区为选中材料行及 6/6 数量，避开主播贴图和测试 UID。"
+      },
+      "limitations": [
+        "6/6 仅代表本次煤矿石候选满足页面要求，不应硬编码材料名称或需求数量。"
+      ]
+    },
+    {
+      "id": "guild-material-submitted-test-b-01",
+      "icon_key": "guild_material_submission",
+      "state": "submitted_confirmation_visible",
+      "sample_type": "state_indicator",
+      "file": "crops/guild-material-submitted-test-b-01.png",
+      "sha256": "0f0b6024b6276e5f7916647d98cf5cf24cd4bac8edfe42d8a93e7a257b4e1195",
+      "dimensions": [
+        82,
+        51
+      ],
+      "source_id": "twitch-vod-2805645541",
+      "source_timestamp_seconds": 1334.6,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805645541/frames/1334.60-guild-material-submitted-full.jpg",
+      "parent_sha256": "5a812177972e5ea55f4ead47f553bbf3c5dd12c22bb2b2a1de28d53d5134a7d1",
+      "crop": {
+        "x": 830,
+        "y": 400,
+        "width": 82,
+        "height": 51
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只含右侧游戏面板中的绿色物品已提交文字，并避开鼠标指针。"
+      },
+      "limitations": [
+        "确认文字不包含扣除后的背包数量，不能用它推导具体库存变化。"
+      ]
+    },
+    {
+      "id": "guild-caravan-load-7-of-8-test-b-01",
+      "icon_key": "guild_caravan_load",
+      "state": "seven_of_eight_before_submit",
+      "sample_type": "state_indicator",
+      "file": "crops/guild-caravan-load-7-of-8-test-b-01.png",
+      "sha256": "7e4401a9146e740fccab6c06fa216920af82fb9d6e2dd764ba56563acff83f70",
+      "dimensions": [
+        145,
+        61
+      ],
+      "source_id": "twitch-vod-2805645541",
+      "source_timestamp_seconds": 1334.4,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805645541/frames/1334.40-guild-material-ready-load.jpg",
+      "parent_sha256": "bc298951b8cef272ccdb6810e62efa951911cf0c4735c9a909372f66f127d4d3",
+      "crop": {
+        "x": 800,
+        "y": 497,
+        "width": 145,
+        "height": 61
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含载货量 7/8 与装载按钮，右侧主播贴图在裁区外。"
+      },
+      "limitations": [
+        "该裁图不单独证明按钮点击会成功，必须与提交确认和 8/8 状态联合判断。"
+      ]
+    },
+    {
+      "id": "guild-caravan-load-8-of-8-test-b-01",
+      "icon_key": "guild_caravan_load",
+      "state": "eight_of_eight_after_submit",
+      "sample_type": "state_indicator",
+      "file": "crops/guild-caravan-load-8-of-8-test-b-01.png",
+      "sha256": "a738f9cea131434a1ba05c6f0f7becd9a70aec9343bc28ac118db15177824b56",
+      "dimensions": [
+        145,
+        61
+      ],
+      "source_id": "twitch-vod-2805645541",
+      "source_timestamp_seconds": 1334.6,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805645541/frames/1334.60-guild-material-submitted-full.jpg",
+      "parent_sha256": "5a812177972e5ea55f4ead47f553bbf3c5dd12c22bb2b2a1de28d53d5134a7d1",
+      "crop": {
+        "x": 800,
+        "y": 497,
+        "width": 145,
+        "height": 61
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "与 7/8 样本使用相同坐标，包含 8/8 与满载后的按钮区域。"
+      },
+      "limitations": [
+        "8/8 只表示当前批次满载；后续奖励层和下一批刷新仍需分别确认。"
+      ]
+    },
+    {
+      "id": "guild-caravan-reward-overlay-test-b-01",
+      "icon_key": "guild_caravan_reward",
+      "state": "reward_overlay_visible",
+      "sample_type": "dialog",
+      "file": "crops/guild-caravan-reward-overlay-test-b-01.png",
+      "sha256": "b825d973afcab8a48f9ab481b973c781c8434255a46a77b2e49abbb3d639c18d",
+      "dimensions": [
+        235,
+        200
+      ],
+      "source_id": "twitch-vod-2805645541",
+      "source_timestamp_seconds": 1336.4,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805645541/frames/1336.40-guild-caravan-reward-overlay.jpg",
+      "parent_sha256": "cb1b1f9a88a3f853e402eed9cb58168546c56c58ffa352bea304529932157a3d",
+      "crop": {
+        "x": 524,
+        "y": 208,
+        "width": 235,
+        "height": 200
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区含恭喜获得标题与三项奖励图标，避开主播贴图和聊天。"
+      },
+      "limitations": [
+        "奖励物品名称在原帧中不可读；只把该层用作流程完成反馈，不识别具体奖励内容。"
+      ]
+    },
+    {
+      "id": "guild-caravan-next-batch-test-b-01",
+      "icon_key": "guild_caravan_batch",
+      "state": "batch_two_of_four_refreshed",
+      "sample_type": "state_row",
+      "file": "crops/guild-caravan-next-batch-test-b-01.png",
+      "sha256": "0a93e0a7de3632fafb9397cb4d2a3220279bff10277ba3e4c112d5c4c647bef1",
+      "dimensions": [
+        354,
+        101
+      ],
+      "source_id": "twitch-vod-2805645541",
+      "source_timestamp_seconds": 1336.8,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805645541/frames/1336.80-guild-caravan-next-batch.jpg",
+      "parent_sha256": "46a6aacaf6c2b4732f7193ed897f0ed68a6a8986c33bc467797707cdacf55cb9",
+      "crop": {
+        "x": 397,
+        "y": 178,
+        "width": 354,
+        "height": 101
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含装运商队 2/4 标题和新一批首行材料计数。"
+      },
+      "limitations": [
+        "材料清单和数量会随批次或配置变化；只能识别批次刷新，不应硬编码该行内容。"
+      ]
+    },
+    {
+      "id": "daily-life-100-completed-test-b-01",
+      "icon_key": "daily_life_play",
+      "state": "vitality_100_of_100_completed",
+      "sample_type": "state_row",
+      "file": "crops/daily-life-100-completed-test-b-01.png",
+      "sha256": "d002477f2ddcef0f08d3da7a1f6338ed2aacf2bc2099d6b9723cdb308ceaecdc",
+      "dimensions": [
+        168,
+        61
+      ],
+      "source_id": "life-mining-bv18h756kehz",
+      "source_timestamp_seconds": 1150,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/life-mining-bv18h756kehz/frames/1150-daily-life-100-completed.png",
+      "parent_sha256": "98bdc77c2511116680f530faef45a3c4154a4e05a6462a7eb277c6b792f04f6d",
+      "crop": {
+        "x": 194,
+        "y": 213,
+        "width": 168,
+        "height": 61
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只含每日页生活玩法行、100/100 与绿色已完成文字。"
+      },
+      "limitations": [
+        "第五次采集后约两分钟才打开该页，因此它是稳定完成态，不是 80/100 到 100/100 的即时转换帧。"
+      ]
+    },
+    {
+      "id": "farming-boost-available-test-b-01",
+      "icon_key": "farming_boost",
+      "state": "available_60_of_180_start_button_visible",
+      "sample_type": "state_indicator",
+      "file": "crops/farming-boost-available-test-b-01.png",
+      "sha256": "7b130b7bf05178616362e9008a199f7f7674618e70c930970b252b55d51b92a1",
+      "dimensions": [
+        220,
+        82
+      ],
+      "source_id": "twitch-vod-2805739995",
+      "source_timestamp_seconds": 5895,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805739995/frames/5895.00-farming-boost-available-clean.jpg",
+      "parent_sha256": "2f268caae3d9ff7fcbfd54e88672832d3324f2aafddf4a0729d6bab877bfd75d",
+      "crop": {
+        "x": 445,
+        "y": 460,
+        "width": 220,
+        "height": 82
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含 60分/180分、开启加倍按钮及组队说明，外部聊天和角色均在裁区外。"
+      },
+      "limitations": [
+        "没有保留按钮点击后的运行态，不能把按钮存在直接解释成已经开启高倍挂机。"
+      ]
+    },
+    {
+      "id": "farming-boost-active-countdown-test-b-01",
+      "icon_key": "farming_boost",
+      "state": "active_countdown_59m40s_close_button_visible",
+      "sample_type": "state_indicator",
+      "file": "crops/farming-boost-active-countdown-test-b-01.png",
+      "sha256": "b249dcdc7c624c254f626e30913636ce572a54961d061ef83860232a750b8636",
+      "dimensions": [
+        220,
+        82
+      ],
+      "source_id": "twitch-vod-2804892798",
+      "source_timestamp_seconds": 11140,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2804892798/frames/11140.00-farming-boost-active-countdown-later.jpg",
+      "parent_sha256": "e816cb18bbe6708529a7417db9ae5265bb785bc8f8d30e7d15b86c17a008252d",
+      "crop": {
+        "x": 445,
+        "y": 460,
+        "width": 220,
+        "height": 82
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含 59分40秒/180分、关闭加倍按钮及组队说明；鼠标位于裁区上方的沙漏，聊天和主播画面均在裁区外。"
+      },
+      "limitations": [
+        "该状态来自 TEST-B；国服仍需重新采样文案、颜色、坐标和时间上限，不能直接把 180 分钟硬编码为发布规则。"
+      ]
+    },
+    {
+      "id": "farming-boost-exhausted-test-b-01",
+      "icon_key": "farming_boost",
+      "state": "exhausted_0_seconds_of_180_next_reset_0500",
+      "sample_type": "state_indicator",
+      "file": "crops/farming-boost-exhausted-test-b-01.png",
+      "sha256": "d66512ab6d85a8516b7ed591fce5dd7931fb876e7eacf5dbc8189da823bf600a",
+      "dimensions": [
+        235,
+        80
+      ],
+      "source_id": "twitch-vod-2804807809",
+      "source_timestamp_seconds": 24411,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2804807809/frames/24411.00-farming-boost-exhausted.jpg",
+      "parent_sha256": "a21b9d158d3f4cf3662746a4cf96e5f1cdf67dd39a658dffd541896704def2aa",
+      "crop": {
+        "x": 408,
+        "y": 481,
+        "width": 235,
+        "height": 80
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只含剩余时间归零与高倍耗尽／次日 5:00 补充文字，并避开右侧鼠标指针。"
+      },
+      "limitations": [
+        "这不是疲劳提示；脚本最多据此安全停止高倍托管，不能推断后续低倍掉落规则。"
+      ]
+    },
+    {
+      "id": "farming-reward-feed-post-boost-exhaustion-test-b-01",
+      "icon_key": "farming_reward_feed",
+      "state": "boost_exhausted_base_exp_currency_and_item_visible",
+      "sample_type": "state_indicator",
+      "file": "crops/farming-reward-feed-post-boost-exhaustion-test-b-01.png",
+      "sha256": "886f06d5718b469027dba0e19367991fc5ed26945c5a2f577c6249a6732d78d2",
+      "dimensions": [
+        224,
+        136
+      ],
+      "source_id": "twitch-vod-2804807809",
+      "source_timestamp_seconds": 24420,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2804807809/frames/24420.00-farming-boost-exhausted-reward-feed.jpg",
+      "parent_sha256": "52365032db0e3538953edeae471b449739dc0ceeee36d965f4b423d1817aabd1",
+      "crop": {
+        "x": 31,
+        "y": 284,
+        "width": 224,
+        "height": 136
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留高倍耗尽页左侧同步出现的四条奖励通知：齿轮 X50、Base经验 X3、齿轮 X70 和物品 X1；聊天、角色、UID 与主播立绘均在裁区外。"
+      },
+      "limitations": [
+        "该裁区本身不含 0秒/180分 文字，必须与可追溯父帧联合判断；它证明耗尽期间奖励通知仍变化，但不能命名低倍阶段、估算掉率或识别疲劳。"
+      ]
+    },
+    {
+      "id": "inventory-capacity-normal-test-b-01",
+      "icon_key": "inventory_capacity",
+      "state": "normal_36_of_300",
+      "sample_type": "state_indicator",
+      "file": "crops/inventory-capacity-normal-test-b-01.png",
+      "sha256": "b78028066703284c0130a533c9875a7d72c067f359727d7d11cb4c287b2d736f",
+      "dimensions": [
+        72,
+        30
+      ],
+      "source_id": "twitch-vod-2804807809",
+      "source_timestamp_seconds": 18092,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2804807809/frames/18092.00-inventory-capacity-normal-36-of-300.jpg",
+      "parent_sha256": "ecaf38f1ea77fcf89e7a40be4849286247638a8e66fa4710a8b4e326cff6db13",
+      "crop": {
+        "x": 807,
+        "y": 538,
+        "width": 72,
+        "height": 30
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区仅包含背包容量图形与 36/300 文本，避开角色、聊天、主播人像和物品格。"
+      },
+      "limitations": [
+        "这是正常容量基准，不是接近满或满包状态；不得据此推断满包阻断与掉落去向。"
+      ]
+    },
+    {
+      "id": "inventory-capacity-empty-test-b-01",
+      "icon_key": "inventory_capacity",
+      "state": "empty_0_of_300",
+      "sample_type": "state_indicator",
+      "file": "crops/inventory-capacity-empty-test-b-01.png",
+      "sha256": "8839a31ee51c15c6cebbdd9ce3280ea5e923bf51bb1260e74bc92371334624a4",
+      "dimensions": [
+        78,
+        32
+      ],
+      "source_id": "twitch-vod-2804892798",
+      "source_timestamp_seconds": 445,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2804892798/frames/0445.00-inventory-capacity-empty-0-of-300.jpg",
+      "parent_sha256": "809cadd6f9611bf4ccf0a76cfc03d2b9d5a3da6004820ee7fc0f320418f425d1",
+      "crop": {
+        "x": 832,
+        "y": 505,
+        "width": 78,
+        "height": 32
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只含背包容量图形与 0/300 文本，避开大号鼠标、聊天和主播摄像头。"
+      },
+      "limitations": [
+        "这是空背包基准，不是满包状态，也不能证明所有账号的上限固定为 300。"
+      ]
+    },
+    {
+      "id": "hud-backpack-entry-icon-test-b-01",
+      "icon_key": "hud_backpack_entry",
+      "state": "normal_with_alt_b_label",
+      "sample_type": "icon",
+      "file": "crops/hud-backpack-entry-icon-test-b-01.png",
+      "sha256": "48004db47849f1d493a17f9f01014a4b6bc86025adf86860a41b00768479b6be",
+      "dimensions": [
+        58,
+        64
+      ],
+      "source_id": "twitch-vod-2804892798",
+      "source_timestamp_seconds": 445,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2804892798/frames/0445.00-inventory-capacity-empty-0-of-300.jpg",
+      "parent_sha256": "809cadd6f9611bf4ccf0a76cfc03d2b9d5a3da6004820ee7fc0f320418f425d1",
+      "crop": {
+        "x": 1177,
+        "y": 655,
+        "width": 58,
+        "height": 64
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含右下角背包入口图形、Alt+B 与背包文字，主播摄像头位于画面左侧。"
+      },
+      "limitations": [
+        "只保存普通入口态；悬停、按下、选中、锁定或禁用变体仍未采到。"
+      ]
+    },
+    {
+      "id": "potion-auto-use-enabled-test-b-01",
+      "icon_key": "potion_auto_use",
+      "state": "enabled_hp_below_70_percent",
+      "sample_type": "state_indicator",
+      "file": "crops/potion-auto-use-enabled-test-b-01.png",
+      "sha256": "f9d3622d584488bbd7c4049853b17ffb91d58c268e1a42cb925ed209e4e251a0",
+      "dimensions": [
+        226,
+        44
+      ],
+      "source_id": "twitch-vod-2805739995",
+      "source_timestamp_seconds": 6110.5,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805739995/frames/6110.50-quick-potion-auto-use-before.jpg",
+      "parent_sha256": "e7c7bd83dcbe0f4ca6e2764dc5348f17724af0dcb273f9343ec8297d38792849",
+      "crop": {
+        "x": 752,
+        "y": 449,
+        "width": 226,
+        "height": 44
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含已勾选框、HP 低于 70% 自动使用文字和阈值滑条，不含背景战斗。"
+      },
+      "limitations": [
+        "70% 是该账号 TEST-B 配置，不是脚本应写死的推荐阈值。"
+      ]
+    },
+    {
+      "id": "potion-quick-slot-count-36-test-b-01",
+      "icon_key": "potion_quick_slot",
+      "state": "configured_count_36_before_consumption",
+      "sample_type": "state_indicator",
+      "file": "crops/potion-quick-slot-count-36-test-b-01.png",
+      "sha256": "d403e50ad6dac8d257464abf5078e5e30887cb253f82de2580c402dc1459bf44",
+      "dimensions": [
+        73,
+        63
+      ],
+      "source_id": "twitch-vod-2805739995",
+      "source_timestamp_seconds": 6110.5,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805739995/frames/6110.50-quick-potion-auto-use-before.jpg",
+      "parent_sha256": "e7c7bd83dcbe0f4ca6e2764dc5348f17724af0dcb273f9343ec8297d38792849",
+      "crop": {
+        "x": 760,
+        "y": 518,
+        "width": 73,
+        "height": 63
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含已配置药品槽、数量 36 和移除小按钮。"
+      },
+      "limitations": [
+        "药品名称不在裁区内；它只用于识别槽位和数量变化。"
+      ]
+    },
+    {
+      "id": "potion-quick-slot-count-35-test-b-01",
+      "icon_key": "potion_quick_slot",
+      "state": "configured_count_35_after_consumption",
+      "sample_type": "state_indicator",
+      "file": "crops/potion-quick-slot-count-35-test-b-01.png",
+      "sha256": "576643c20932c510522311af61ceaa5ddab5af210957e2f8c77d8b4b5d0b6ea1",
+      "dimensions": [
+        73,
+        63
+      ],
+      "source_id": "twitch-vod-2805739995",
+      "source_timestamp_seconds": 6111,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805739995/frames/6111.00-quick-potion-auto-use-consumed.jpg",
+      "parent_sha256": "823652917dd135d03a2ebccfbeda727f62fe969055887d43375f9b7019cf3ef1",
+      "crop": {
+        "x": 760,
+        "y": 518,
+        "width": 73,
+        "height": 63
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "与上一样本同坐标，药品数量已由 36 变为 35。"
+      },
+      "limitations": [
+        "没有键盘输入可视化，不能仅凭数量变化排除同时发生的手动热键使用。"
+      ]
+    },
+    {
+      "id": "potion-missing-item-toast-test-b-01",
+      "icon_key": "potion_quick_slot",
+      "state": "missing_item_cannot_add_toast",
+      "sample_type": "state_indicator",
+      "file": "crops/potion-missing-item-toast-test-b-01.png",
+      "sha256": "c02f9cf75e2a2f59aad11b1a90643b99a46a718f76b6c613fa1d3f9bede4459c",
+      "dimensions": [
+        288,
+        36
+      ],
+      "source_id": "twitch-vod-2805739995",
+      "source_timestamp_seconds": 6114.5,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805739995/frames/6114.50-quick-potion-missing-item-toast.jpg",
+      "parent_sha256": "e1b057d517e6d06458112eee1bcd24e7558c5ea09544e2c7ca3a7a076e026148",
+      "crop": {
+        "x": 516,
+        "y": 119,
+        "width": 288,
+        "height": 36
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只含背包没有该道具、无法添加的顶部反馈条。"
+      },
+      "limitations": [
+        "这是配置阶段的缺药反馈，不是战斗中最后一瓶消耗后的耗尽状态。"
+      ]
+    },
+    {
+      "id": "shop-card-pack-selected-test-b-01",
+      "icon_key": "shop_card_pack",
+      "state": "selected_available_price_2000",
+      "sample_type": "state_indicator",
+      "file": "crops/shop-card-pack-selected-test-b-01.png",
+      "sha256": "6d5ee784fd34e682371dd3896487ab764f4f6f04cb230f08906305abff44aceb",
+      "dimensions": [
+        110,
+        145
+      ],
+      "source_id": "shop-card-pack-bv15ytg6jenn",
+      "source_timestamp_seconds": 4,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/shop-card-pack-bv15ytg6jenn/frames/0004-shop-card-pack-selected.png",
+      "parent_sha256": "77a5f8b8ea6fdb91fdde0bfd9639dfcf2b3b6a159c2abb629458f0b799c9ab9f",
+      "crop": {
+        "x": 226,
+        "y": 90,
+        "width": 110,
+        "height": 145
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含限购角标、商品图、明亮选中框和价格；右上转载水印在裁区外。"
+      },
+      "limitations": [
+        "这是商城商品卡选中态，不得当作日常条目或其他控件的通用选中模板。"
+      ]
+    },
+    {
+      "id": "shop-card-pack-sold-out-test-b-01",
+      "icon_key": "shop_card_pack",
+      "state": "sold_out_after_purchase",
+      "sample_type": "state_indicator",
+      "file": "crops/shop-card-pack-sold-out-test-b-01.png",
+      "sha256": "a369dbb6457c5e83ab2250514d9b3de63894608f09822bf1751cbcb5494097c3",
+      "dimensions": [
+        110,
+        145
+      ],
+      "source_id": "shop-card-pack-bv15ytg6jenn",
+      "source_timestamp_seconds": 7,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/shop-card-pack-bv15ytg6jenn/frames/0007-shop-card-pack-sold-out.png",
+      "parent_sha256": "cdf925dbbe38c28add8242add8642d34598e9174d1c18099c41d374fe0ae1016",
+      "crop": {
+        "x": 226,
+        "y": 90,
+        "width": 110,
+        "height": 145
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "与选中态使用同一坐标；商品卡整体变暗且底部显示已售罄。"
+      },
+      "limitations": [
+        "已售罄是商城业务终态，不等同于等级锁、材料不足或通用禁用态。"
+      ]
+    },
+    {
+      "id": "wardrobe-category-normal-test-b-01",
+      "icon_key": "wardrobe_category_tab",
+      "state": "normal_headwear",
+      "sample_type": "state_indicator",
+      "file": "crops/wardrobe-category-normal-test-b-01.png",
+      "sha256": "1b88033720ddbbe5d1afc54dc010760a625cfc63b976f8682ab27eeff72c05fc",
+      "dimensions": [
+        126,
+        92
+      ],
+      "source_id": "bahamut-system-overview-187",
+      "source_image_index": 0,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/still/bahamut-system-overview-187/images/wardrobe-lock-selected-states.jpg",
+      "parent_sha256": "5326053a3b3be28311fed017c5fa2bdbf3263503bfd7f9235351d87d26e5fa2a",
+      "crop": {
+        "x": 0,
+        "y": 218,
+        "width": 126,
+        "height": 92
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含衣橱头饰分类的普通紫色背景、图形和文字；底部测试水印在裁区外。"
+      },
+      "limitations": [
+        "普通态与下一样本的选中态属于不同分类内容，只能比较控件背景和边框，不可把内部图形当作同一图标。"
+      ]
+    },
+    {
+      "id": "wardrobe-category-selected-test-b-01",
+      "icon_key": "wardrobe_category_tab",
+      "state": "selected_facewear",
+      "sample_type": "state_indicator",
+      "file": "crops/wardrobe-category-selected-test-b-01.png",
+      "sha256": "98e47d49083d724e85a03b6b6b71ea906ccd57f072262bca5a0fcdd06bf6ff77",
+      "dimensions": [
+        128,
+        92
+      ],
+      "source_id": "bahamut-system-overview-187",
+      "source_image_index": 0,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/still/bahamut-system-overview-187/images/wardrobe-lock-selected-states.jpg",
+      "parent_sha256": "5326053a3b3be28311fed017c5fa2bdbf3263503bfd7f9235351d87d26e5fa2a",
+      "crop": {
+        "x": 0,
+        "y": 318,
+        "width": 128,
+        "height": 92
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含衣橱脸饰分类的金色选中背景、图形和文字。"
+      },
+      "limitations": [
+        "衣橱分类的金色选中态不能替代其他页面的选中模板。"
+      ]
+    },
+    {
+      "id": "wardrobe-face-item-equipped-test-b-01",
+      "icon_key": "wardrobe_face_item",
+      "state": "equipped",
+      "sample_type": "state_indicator",
+      "file": "crops/wardrobe-face-item-equipped-test-b-01.png",
+      "sha256": "178e0b9388ea212a510a0b2e5944ab55140631990a83e46ab29e5e7036f69210",
+      "dimensions": [
+        116,
+        175
+      ],
+      "source_id": "bahamut-system-overview-187",
+      "source_image_index": 0,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/still/bahamut-system-overview-187/images/wardrobe-lock-selected-states.jpg",
+      "parent_sha256": "5326053a3b3be28311fed017c5fa2bdbf3263503bfd7f9235351d87d26e5fa2a",
+      "crop": {
+        "x": 177,
+        "y": 195,
+        "width": 116,
+        "height": 175
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留完整商品卡与绿色已装备标签。"
+      },
+      "limitations": [
+        "静态截图不能证明点击该卡后的装备或卸下流程。"
+      ]
+    },
+    {
+      "id": "wardrobe-face-item-locked-test-b-01",
+      "icon_key": "wardrobe_face_item",
+      "state": "locked",
+      "sample_type": "state_indicator",
+      "file": "crops/wardrobe-face-item-locked-test-b-01.png",
+      "sha256": "f5c637951c0c98e50a06b3c89e05fb7200c4f1e828266cd0bbf392fe44c6db1b",
+      "dimensions": [
+        116,
+        175
+      ],
+      "source_id": "bahamut-system-overview-187",
+      "source_image_index": 0,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/still/bahamut-system-overview-187/images/wardrobe-lock-selected-states.jpg",
+      "parent_sha256": "5326053a3b3be28311fed017c5fa2bdbf3263503bfd7f9235351d87d26e5fa2a",
+      "crop": {
+        "x": 309,
+        "y": 195,
+        "width": 116,
+        "height": 175
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留完整商品卡和中央白色挂锁覆盖层。"
+      },
+      "limitations": [
+        "该挂锁只证明衣橱商品未解锁；不能直接解释为等级锁、任务锁或按钮禁用。"
+      ]
+    },
+    {
+      "id": "auto-battle-skill-grid-test-b-01",
+      "icon_key": "auto_battle_skill_grid",
+      "state": "mixed_colored_and_desaturated_choices",
+      "sample_type": "state_indicator",
+      "file": "crops/auto-battle-skill-grid-test-b-01.png",
+      "sha256": "af1a0e42a7724bd0b7ea1d6e912728d3705b370381da5da8b7fc3aa4b6c5f2da",
+      "dimensions": [
+        190,
+        268
+      ],
+      "source_id": "day3-guide-bv1yqtk6oehf",
+      "source_timestamp_seconds": 25,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day3-guide-bv1yqtk6oehf/frames/00025.00.png",
+      "parent_sha256": "f5425de67b5689af9fd9d7412c5d6cd902042c1fa5f8aa1ec06c9155e4aeebbe",
+      "crop": {
+        "x": 538,
+        "y": 116,
+        "width": 190,
+        "height": 268
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "contextual_candidate",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留自动战斗窗、两个分类页签和七个技能选择；底部双语字幕位于裁区外。"
+      },
+      "limitations": [
+        "彩色与灰阶技能格的精确语义仍需点击前后验证，不能直接命名为启用或禁用。",
+        "该样本不证明拖放顺序、保存状态或实际施放优先级。"
+      ]
+    },
+    {
+      "id": "farming-kill-counter-test-b-01",
+      "icon_key": "farming_kill_counter",
+      "state": "personal_10711_party_19680",
+      "sample_type": "state_indicator",
+      "file": "crops/farming-kill-counter-test-b-01.png",
+      "sha256": "d48323d9746a8e57af3bc6b777b1af0f92a657af6cb948140524b3b2402da2f5",
+      "dimensions": [
+        300,
+        30
+      ],
+      "source_id": "day3-guide-bv1yqtk6oehf",
+      "source_timestamp_seconds": 151,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day3-guide-bv1yqtk6oehf/frames/00151.00.png",
+      "parent_sha256": "327e4087a438eacbfa93419ab6ca4d308094404720717a6444575398994c1f5a",
+      "crop": {
+        "x": 185,
+        "y": 139,
+        "width": 300,
+        "height": 30
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只含今日个人／队友击杀字段、数值与说明图标，鼠标已移到下方空白处。"
+      },
+      "limitations": [
+        "计数是累计快照，不代表疲劳阈值，也不说明击杀发生在高倍、低倍还是疲劳阶段。"
+      ]
+    },
+    {
+      "id": "farming-reward-summary-test-b-01",
+      "icon_key": "farming_reward_summary",
+      "state": "cumulative_personal_and_party_items",
+      "sample_type": "state_indicator",
+      "file": "crops/farming-reward-summary-test-b-01.png",
+      "sha256": "1e2312113ba7ac1389e3c509ee63cde74cd8e6301bcd4e87da987b2f49fb2c51",
+      "dimensions": [
+        405,
+        135
+      ],
+      "source_id": "day3-guide-bv1yqtk6oehf",
+      "source_timestamp_seconds": 151,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day3-guide-bv1yqtk6oehf/frames/00151.00.png",
+      "parent_sha256": "327e4087a438eacbfa93419ab6ca4d308094404720717a6444575398994c1f5a",
+      "crop": {
+        "x": 218,
+        "y": 226,
+        "width": 405,
+        "height": 135
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含材料、货币、卡片的数量及个人／队友贡献标签；底部字幕在裁区外。"
+      },
+      "limitations": [
+        "累计清单不能证明任一物品在加倍归零后掉落，不能用于推断低倍或疲劳掉率。"
+      ]
+    },
+    {
+      "id": "card-item-selected-test-b-01",
+      "icon_key": "card_item",
+      "state": "selected_in_inventory",
+      "sample_type": "state_indicator",
+      "file": "crops/card-item-selected-test-b-01.png",
+      "sha256": "f5e5497239576188524480316c73a18ffc172b91980f46baa350d411eb92a883",
+      "dimensions": [
+        55,
+        78
+      ],
+      "source_id": "day3-guide-bv1yqtk6oehf",
+      "source_timestamp_seconds": 175,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day3-guide-bv1yqtk6oehf/frames/00175.00.png",
+      "parent_sha256": "d656ca8561a3d2db5f7e40d6134dfc9f9ea64729bb81c93b6215e217976e26c1",
+      "crop": {
+        "x": 65,
+        "y": 58,
+        "width": 55,
+        "height": 78
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区为左侧库存当前选中卡；对应大图出现在中央左上。"
+      },
+      "limitations": [
+        "只证明卡片库存页的选中边框，不可替代其他页面的通用选中模板。"
+      ]
+    },
+    {
+      "id": "card-item-equipped-test-b-01",
+      "icon_key": "card_item",
+      "state": "equipped_in_inventory",
+      "sample_type": "state_indicator",
+      "file": "crops/card-item-equipped-test-b-01.png",
+      "sha256": "28d1147b95f0d15e62739a681b704fd2bfe46e97200c42df80f09ad116e9fb55",
+      "dimensions": [
+        55,
+        78
+      ],
+      "source_id": "day3-guide-bv1yqtk6oehf",
+      "source_timestamp_seconds": 175,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day3-guide-bv1yqtk6oehf/frames/00175.00.png",
+      "parent_sha256": "d656ca8561a3d2db5f7e40d6134dfc9f9ea64729bb81c93b6215e217976e26c1",
+      "crop": {
+        "x": 120,
+        "y": 58,
+        "width": 55,
+        "height": 78
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留库存卡、金色边框与卡面已装备标记。"
+      },
+      "limitations": [
+        "未记录装上或卸下动作，不能把单帧标签当作事务成功链。"
+      ]
+    },
+    {
+      "id": "card-item-locked-test-b-01",
+      "icon_key": "card_item",
+      "state": "selected_detail_locked",
+      "sample_type": "state_indicator",
+      "file": "crops/card-item-locked-test-b-01.png",
+      "sha256": "48e55b685af70303a6115144680ab5bccb7a7ef05b1d89c026ee5825cb2e1661",
+      "dimensions": [
+        110,
+        148
+      ],
+      "source_id": "day3-guide-bv1yqtk6oehf",
+      "source_timestamp_seconds": 175,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day3-guide-bv1yqtk6oehf/frames/00175.00.png",
+      "parent_sha256": "d656ca8561a3d2db5f7e40d6134dfc9f9ea64729bb81c93b6215e217976e26c1",
+      "crop": {
+        "x": 286,
+        "y": 58,
+        "width": 110,
+        "height": 148
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区为中央选中卡大图，左上角有蓝色挂锁状态标志。"
+      },
+      "limitations": [
+        "该锁标志属于卡片保护／锁定语境，不等同于槽位未解锁或材料不足。"
+      ]
+    },
+    {
+      "id": "life-profession-miner-card-test-b-01",
+      "icon_key": "life_profession_miner",
+      "state": "available_level_2_progress_1920_of_15000",
+      "sample_type": "state_indicator",
+      "file": "crops/life-profession-miner-card-test-b-01.png",
+      "sha256": "c2302e56e648475b18fbbaa9b01efc063f6a6610cbf7a788aed5aa5af809a364",
+      "dimensions": [
+        150,
+        250
+      ],
+      "source_id": "day3-guide-bv1yqtk6oehf",
+      "source_timestamp_seconds": 260,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day3-guide-bv1yqtk6oehf/frames/00260.00.png",
+      "parent_sha256": "ee919f8d030fa6b6f750f4120738b2bd1fa5196813eb13e2a0f16a8152448763",
+      "crop": {
+        "x": 389,
+        "y": 133,
+        "width": 150,
+        "height": 250
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留矿工徽记、名称、等级、进度和三种核心产出；字幕在裁区下方。"
+      },
+      "limitations": [
+        "这是职业选择页的可见卡片，未证明当前激活、切换消耗或领取状态。"
+      ]
+    },
+    {
+      "id": "life-profession-gardener-card-test-b-01",
+      "icon_key": "life_profession_gardener",
+      "state": "available_level_2_progress_500_of_15000",
+      "sample_type": "state_indicator",
+      "file": "crops/life-profession-gardener-card-test-b-01.png",
+      "sha256": "51c4ff324d3318a677de4d66247a5d5e9fc7fdb99c8e397f755e58da8176d378",
+      "dimensions": [
+        150,
+        250
+      ],
+      "source_id": "day3-guide-bv1yqtk6oehf",
+      "source_timestamp_seconds": 260,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day3-guide-bv1yqtk6oehf/frames/00260.00.png",
+      "parent_sha256": "ee919f8d030fa6b6f750f4120738b2bd1fa5196813eb13e2a0f16a8152448763",
+      "crop": {
+        "x": 562,
+        "y": 133,
+        "width": 150,
+        "height": 250
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留园艺师徽记、名称、等级、进度和三种核心产出。"
+      },
+      "limitations": [
+        "首次保存园艺师卡片，但仍缺选中、锁定、切换成功和国服简中变体。"
+      ]
+    },
+    {
+      "id": "life-profession-rank-selected-test-b-01",
+      "icon_key": "life_profession_miner_rank",
+      "state": "selected_rank_1",
+      "sample_type": "state_row",
+      "file": "crops/life-profession-rank-selected-test-b-01.png",
+      "sha256": "c37c5eedcaee5c4e7bd0dd8fe654c56a325dae39668c0b2d5310c4f9a640c229",
+      "dimensions": [
+        171,
+        54
+      ],
+      "source_id": "day3-guide-bv1yqtk6oehf",
+      "source_timestamp_seconds": 280,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day3-guide-bv1yqtk6oehf/frames/00280.00.png",
+      "parent_sha256": "1efa1c8fc176743d12b443afca576f1afb4165b1789e5087d27085cfde550889",
+      "crop": {
+        "x": 20,
+        "y": 70,
+        "width": 171,
+        "height": 54
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含 1 级矿脉图标、文字和金色选中边框。"
+      },
+      "limitations": [
+        "只证明矿工层级列表的选中态，不代表节点可采或任务已完成。"
+      ]
+    },
+    {
+      "id": "life-profession-rank-locked-test-b-01",
+      "icon_key": "life_profession_miner_rank",
+      "state": "locked_rank_2_with_requirement",
+      "sample_type": "state_row",
+      "file": "crops/life-profession-rank-locked-test-b-01.png",
+      "sha256": "988a2dae657150b61c31ad5807fa71da34b0787e7ec4159a1be0d4c5981e40be",
+      "dimensions": [
+        171,
+        45
+      ],
+      "source_id": "day3-guide-bv1yqtk6oehf",
+      "source_timestamp_seconds": 280,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/day3-guide-bv1yqtk6oehf/frames/00280.00.png",
+      "parent_sha256": "1efa1c8fc176743d12b443afca576f1afb4165b1789e5087d27085cfde550889",
+      "crop": {
+        "x": 20,
+        "y": 128,
+        "width": 171,
+        "height": 45
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含 2 级矿脉的挂锁覆盖层和红色解锁要求。"
+      },
+      "limitations": [
+        "红色要求分辨率不足以安全硬编码等级；必须把锁定行视为停止而非尝试升级。"
+      ]
+    },
+    {
+      "id": "inventory-capacity-normal-test-b-02",
+      "icon_key": "inventory_capacity",
+      "state": "normal_56_of_300_late_test",
+      "sample_type": "state_indicator",
+      "file": "crops/inventory-capacity-normal-test-b-02.png",
+      "sha256": "77a590ec272af0374e1852612e87bfe5615658b1867f8bd09daa51649629c10d",
+      "dimensions": [
+        80,
+        33
+      ],
+      "source_id": "twitch-vod-2808508519",
+      "source_timestamp_seconds": 8698,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2808508519/frames/08698.00-inventory-capacity-56-of-300.jpg",
+      "parent_sha256": "776363276cde1667eb3255bb07451998d8564213b238a873ceaa017aded3b00c",
+      "crop": {
+        "x": 832,
+        "y": 500,
+        "width": 80,
+        "height": 33
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只含容量图形与 56/300 文本；主播人像、聊天和物品格均在裁区外。"
+      },
+      "limitations": [
+        "这是测试后期正常容量基准，仍远未满；不得用于训练或模拟满包提示。"
+      ]
+    },
+    {
+      "id": "inventory-category-selected-test-b-01",
+      "icon_key": "inventory_category_tab",
+      "state": "selected_general_items_gold_underline",
+      "sample_type": "state_indicator",
+      "file": "crops/inventory-category-selected-test-b-01.png",
+      "sha256": "e71a4f2667eb471caf0d051171d00507d063d5a6dae9709cdd45d8b563029466",
+      "dimensions": [
+        65,
+        62
+      ],
+      "source_id": "twitch-vod-2808508519",
+      "source_timestamp_seconds": 8698,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2808508519/frames/08698.00-inventory-capacity-56-of-300.jpg",
+      "parent_sha256": "776363276cde1667eb3255bb07451998d8564213b238a873ceaa017aded3b00c",
+      "crop": {
+        "x": 827,
+        "y": 210,
+        "width": 65,
+        "height": 62
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含通用道具图标、金色高亮、底部选中线和道具文字。"
+      },
+      "limitations": [
+        "只证明通用道具分类的选中视觉；不能外推为所有页面的通用选中模板。"
+      ]
+    },
+    {
+      "id": "inventory-category-normal-test-b-01",
+      "icon_key": "inventory_category_tab",
+      "state": "unselected_second_category_gray",
+      "sample_type": "state_indicator",
+      "file": "crops/inventory-category-normal-test-b-01.png",
+      "sha256": "47c85fc9dcca90ca4f8a8af65c48824f1c7cabb61f22f6deb5f3da5fce44347e",
+      "dimensions": [
+        58,
+        62
+      ],
+      "source_id": "twitch-vod-2808508519",
+      "source_timestamp_seconds": 8698,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2808508519/frames/08698.00-inventory-capacity-56-of-300.jpg",
+      "parent_sha256": "776363276cde1667eb3255bb07451998d8564213b238a873ceaa017aded3b00c",
+      "crop": {
+        "x": 895,
+        "y": 210,
+        "width": 58,
+        "height": 62
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含同一背包页第二分类的灰色图标与分隔线，没有金色底线。"
+      },
+      "limitations": [
+        "第二分类的业务名称未由该帧文字确认；与选中样本图形内容不同，只可比较状态样式。"
+      ]
+    },
+    {
+      "id": "inventory-capacity-normal-test-b-03",
+      "icon_key": "inventory_capacity",
+      "state": "normal_62_of_300_highest_observed",
+      "sample_type": "state_indicator",
+      "file": "crops/inventory-capacity-normal-test-b-03.png",
+      "sha256": "312854399fb7a544e12804497a981187e537fc422fa2eed5bd10049e41386319",
+      "dimensions": [
+        80,
+        33
+      ],
+      "source_id": "twitch-vod-2807782689",
+      "source_timestamp_seconds": 6757,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2807782689/frames/06757.00-inventory-capacity-62-of-300.jpg",
+      "parent_sha256": "3c914e0951dbc7a8393c5653da55b682c5aec133a0e734ad02743b506ff20bb5",
+      "crop": {
+        "x": 968,
+        "y": 438,
+        "width": 80,
+        "height": 33
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只含容量图形与 62/300 文本；主播人像、二维码、聊天和物品格均在裁区外。"
+      },
+      "limitations": [
+        "这是当前最高已观测正常读数，但仍只有显示上限约 20.7%，不是接近满或满包样本。"
+      ]
+    },
+    {
+      "id": "inventory-capacity-normal-test-b-04",
+      "icon_key": "inventory_capacity",
+      "state": "normal_110_of_300_highest_observed",
+      "sample_type": "state_indicator",
+      "file": "crops/inventory-capacity-normal-test-b-04.png",
+      "sha256": "d6fe462733a4795a052fde9a85fea68eb8a01bf21ee170c73778ca412da04733",
+      "dimensions": [
+        62,
+        25
+      ],
+      "source_id": "hard-ten-player-boss4-bv1wwte6seev",
+      "source_timestamp_seconds": 2.0,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/hard-ten-player-boss4-bv1wwte6seev/frames/0002.0-inventory-110-of-300.png",
+      "parent_sha256": "d6e669dbdecd491e0bb277271f5b1f12e0439625104f2164b69918a2a9811ff3",
+      "crop": {
+        "x": 468,
+        "y": 357,
+        "width": 62,
+        "height": 25
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只包含背包容量图形与 110/300 文本，避开物品格、聊天、队伍列表和作者水印。"
+      },
+      "limitations": [
+        "这是目前最高已观测正常读数，但仍仅为上限约 36.7%，不是接近满或满包状态。"
+      ]
+    },
+    {
+      "id": "connection-reconnecting-test-b-01",
+      "icon_key": "connection_recovery",
+      "state": "reconnecting",
+      "sample_type": "state_indicator",
+      "file": "crops/connection-reconnecting-test-b-01.png",
+      "sha256": "ea333ff747e2dc911a2d6f0e42b8fa300d240b33ab84a1ef0132f300d12d618b",
+      "dimensions": [
+        125,
+        104
+      ],
+      "source_id": "gvg-knight-bv1h2kf6qefz",
+      "source_timestamp_seconds": 755.0,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/gvg-knight-bv1h2kf6qefz/frames/0755.0-reconnecting.png",
+      "parent_sha256": "f52990d96d5ae1dfaceaa28b9de2c589f1845e44c1676744425ba603543669d8",
+      "crop": {
+        "x": 370,
+        "y": 188,
+        "width": 125,
+        "height": 104
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含居中重连图案、进度条和“重新连接伺服器中...”文字；背景只保留模糊游戏场景。"
+      },
+      "limitations": [
+        "仅证明 TEST-B 重连进行态外观，不揭示底层网络错误、重试次数或无人干预属性。"
+      ]
+    },
+    {
+      "id": "connection-retry-dialog-test-b-01",
+      "icon_key": "connection_recovery",
+      "state": "retry_dialog",
+      "sample_type": "dialog",
+      "file": "crops/connection-retry-dialog-test-b-01.png",
+      "sha256": "0f313d59257734d9af5659805de44c26edd5e8b144b1f7fccb73eb79b11af386",
+      "dimensions": [
+        230,
+        129
+      ],
+      "source_id": "gvg-knight-bv1h2kf6qefz",
+      "source_timestamp_seconds": 774.8,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/gvg-knight-bv1h2kf6qefz/frames/0774.8-retry-dialog.png",
+      "parent_sha256": "24ae6ce9e0d1113903326fcb322e925a71f8c88cabb1e9d63fa6c5fac18735d6",
+      "crop": {
+        "x": 311,
+        "y": 176,
+        "width": 230,
+        "height": 129
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区完整包含提示标题、连接失败正文、“返回登入”与“重新连接”双按钮；作者水印和聊天均在裁区外。"
+      },
+      "limitations": [
+        "该状态在本次 0.1 秒加密时间轴中仅稳定可见约 0.7 秒；识别与动作必须设置多帧稳定阈值。"
+      ]
+    },
+    {
+      "id": "connection-relogin-required-dialog-test-b-01",
+      "icon_key": "connection_recovery",
+      "state": "relogin_required",
+      "sample_type": "dialog",
+      "file": "crops/connection-relogin-required-dialog-test-b-01.png",
+      "sha256": "38a038c781945efb2a20ed30703e961dc6c31b07d66a1141fb5c739483537292",
+      "dimensions": [
+        230,
+        129
+      ],
+      "source_id": "gvg-knight-bv1h2kf6qefz",
+      "source_timestamp_seconds": 785.7,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/gvg-knight-bv1h2kf6qefz/frames/0785.7-relogin-required.png",
+      "parent_sha256": "c3efa18a03c45dbb9b9198a1a2324aba37f5a598092c7c238d7961e61e8cc577",
+      "crop": {
+        "x": 311,
+        "y": 176,
+        "width": 230,
+        "height": 129
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区完整包含断开连接正文与单一“重新登入”按钮；作者水印、聊天和性能栏均在裁区外。"
+      },
+      "limitations": [
+        "该弹窗只覆盖一次会话断开样本；账号失效、维护、排队及角色选择等分支仍未取样。"
+      ]
+    },
+    {
+      "id": "refine-result-failure-test-b-01",
+      "icon_key": "refine_result_overlay",
+      "state": "failure",
+      "sample_type": "state_indicator",
+      "file": "crops/refine-result-failure-test-b-01.png",
+      "sha256": "d17ea23bd122de9dbf161174a5fe52037302e1d490dfc2b04cb02b987a98573c",
+      "dimensions": [
+        216,
+        155
+      ],
+      "source_id": "refine-outcomes-bv1nskq6zept",
+      "source_timestamp_seconds": 8.5,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/refine-outcomes-bv1nskq6zept/frames/0008.5-refine-failed.png",
+      "parent_sha256": "a3657ee48ec55e5c324143840e1c6916d5cdefb478009f6ad6fb804d40499d35",
+      "crop": {
+        "x": 318,
+        "y": 165,
+        "width": 216,
+        "height": 155
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含中央深色烟雾、结果纹章与“精炼失败”文字，避开材料按钮、装备列表及作者水印。"
+      },
+      "limitations": [
+        "只证明 TEST-B 主手 +6 尝试 +7 的失败结果外观；更高等级、保护道具、降级或破损分支仍需单独取样。"
+      ]
+    },
+    {
+      "id": "refine-result-success-test-b-01",
+      "icon_key": "refine_result_overlay",
+      "state": "success",
+      "sample_type": "state_indicator",
+      "file": "crops/refine-result-success-test-b-01.png",
+      "sha256": "19b7ccc762df1ea08639cd44654f134c75db04362ebab0fa5f028fd8cd0cdf56",
+      "dimensions": [
+        216,
+        155
+      ],
+      "source_id": "refine-outcomes-bv1nskq6zept",
+      "source_timestamp_seconds": 17.0,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/refine-outcomes-bv1nskq6zept/frames/0017.0-refine-succeeded.png",
+      "parent_sha256": "78cd676304e1449b84d853b0640d84f354b80d1c859cfa415e78b57a593e0ede",
+      "crop": {
+        "x": 318,
+        "y": 165,
+        "width": 216,
+        "height": 155
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区包含中央金色结果纹章、光效与“精炼成功”文字，避开材料按钮、装备列表及作者水印。"
+      },
+      "limitations": [
+        "只证明 TEST-B 主手 +6 到 +7 的成功结果外观；不得据此推断国服成功率、成本或自动精炼安全性。"
+      ]
+    },
+    {
+      "id": "siege-revive-countdown-27-pioneer-a-01",
+      "icon_key": "siege_revive_countdown",
+      "state": "countdown_27_seconds",
+      "sample_type": "state_indicator",
+      "file": "crops/siege-revive-countdown-27-pioneer-a-01.png",
+      "sha256": "502048dfdbc8e89316d82a1db1f16daef1ded48195d8d1a9d0995db99de17b18",
+      "dimensions": [
+        95,
+        75
+      ],
+      "source_id": "pioneer-siege-mechanic-bv1fftq6wegr",
+      "source_timestamp_seconds": 208,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-siege-mechanic-bv1fftq6wegr/frames/0208-revive-countdown-27.png",
+      "parent_sha256": "f05478f567d90eedd5c8d5e16cfc37d68ce60156d492edfef21430c5eb520291",
+      "crop": {
+        "x": 380,
+        "y": 397,
+        "width": 95,
+        "height": 75
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留复活点标志与底部 27 秒复活倒计时；左侧聊天、右上转载标记和队伍栏均在裁区外。"
+      },
+      "limitations": [
+        "PIONEER-A 旧构建攻城战样本，只用于状态语义和负例研究；禁止混入 TEST-B 或国服模板集。"
+      ]
+    },
+    {
+      "id": "siege-revive-countdown-15-pioneer-a-01",
+      "icon_key": "siege_revive_countdown",
+      "state": "countdown_15_seconds",
+      "sample_type": "state_indicator",
+      "file": "crops/siege-revive-countdown-15-pioneer-a-01.png",
+      "sha256": "402fea9c2e02edc3c7a56b1b30d8f44611d5c1ac9e672f6fc276d48d0a594408",
+      "dimensions": [
+        95,
+        75
+      ],
+      "source_id": "pioneer-siege-mechanic-bv1fftq6wegr",
+      "source_timestamp_seconds": 220,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-siege-mechanic-bv1fftq6wegr/frames/0220-revive-countdown-15.png",
+      "parent_sha256": "4f895411310855983f873aa4dc608527343cb67a913f1f996d2fc93978c6f295",
+      "crop": {
+        "x": 380,
+        "y": 397,
+        "width": 95,
+        "height": 75
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留相同复活点标志与 15 秒倒计时，用于确认数值随时间变化。"
+      },
+      "limitations": [
+        "PIONEER-A 旧构建攻城战样本，只用于状态语义和负例研究；禁止混入 TEST-B 或国服模板集。"
+      ]
+    },
+    {
+      "id": "siege-revive-countdown-3-pioneer-a-01",
+      "icon_key": "siege_revive_countdown",
+      "state": "countdown_3_seconds",
+      "sample_type": "state_indicator",
+      "file": "crops/siege-revive-countdown-3-pioneer-a-01.png",
+      "sha256": "d2f825c4d7b8cb01b48f8d3ced657b4b4530f98df266b46d7a9d6a22df7d1eca",
+      "dimensions": [
+        95,
+        75
+      ],
+      "source_id": "pioneer-siege-mechanic-bv1fftq6wegr",
+      "source_timestamp_seconds": 232,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-siege-mechanic-bv1fftq6wegr/frames/0232-revive-countdown-3.png",
+      "parent_sha256": "d3063e10505bbf8754e648d24fb1726374e30a7c800742d65103738fc2cbd670",
+      "crop": {
+        "x": 380,
+        "y": 397,
+        "width": 95,
+        "height": 75
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留相同复活点标志与 3 秒倒计时，用于确认临近自动回场状态。"
+      },
+      "limitations": [
+        "PIONEER-A 旧构建攻城战样本，只用于状态语义和负例研究；禁止混入 TEST-B 或国服模板集。"
+      ]
+    },
+    {
+      "id": "connection-retry-dialog-pioneer-a-01",
+      "icon_key": "connection_recovery",
+      "state": "retry_dialog",
+      "sample_type": "dialog",
+      "file": "crops/connection-retry-dialog-pioneer-a-01.png",
+      "sha256": "02ba769e70c4463406002a26e8b213e99d5c275bdb604675b7c9f5de72c06866",
+      "dimensions": [
+        589,
+        309
+      ],
+      "source_id": "twitch-vod-2540550896",
+      "source_timestamp_seconds": 817.5,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/twitch-vod-2540550896/frames/0817.50-unable-to-connect-dialog.jpg",
+      "parent_sha256": "f2f139c02010dc2c2df6d6e4f89bd52c75d7c57b209429a848afd3fd1c653bd7",
+      "crop": {
+        "x": 346,
+        "y": 198,
+        "width": 589,
+        "height": 309
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区完整保留 Reminder 标题、连接失败正文及 Return to Login／Reconnect 双按钮；主播摄像头和聊天均在裁区外。"
+      },
+      "limitations": [
+        "PIONEER-A 英文旧构建样本，只用于跨构建状态语义对照；禁止混入 TEST-B 或国服模板集。"
+      ]
+    },
+    {
+      "id": "login-character-selection-pioneer-a-01",
+      "icon_key": "login_character_selection",
+      "state": "character_selection",
+      "sample_type": "state_indicator",
+      "file": "crops/login-character-selection-pioneer-a-01.png",
+      "sha256": "e181d3f48ef84512f31db8eb3406344101be5b00b2fcef306b6ff47a284f8f00",
+      "dimensions": [
+        550,
+        490
+      ],
+      "source_id": "twitch-vod-2541630934",
+      "source_timestamp_seconds": 6254,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/twitch-vod-2541630934/frames/6254.00-character-selection.jpg",
+      "parent_sha256": "db39d0c5d04775249370bf66faa0569cf192a2c566e21405e6b3f9500820a41c",
+      "crop": {
+        "x": 602,
+        "y": 183,
+        "width": 550,
+        "height": 490
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留三个已有角色、Recent 标签、Create Character 空位和 Enter 按钮；左侧聊天、顶部社交条与右下虚拟主播均在裁区外。"
+      },
+      "limitations": [
+        "PIONEER-A 英文旧构建样本，只证明角色选择状态外观；TEST-B 与国服仍须重新采样。"
+      ]
+    },
+    {
+      "id": "daily-life-0-of-100-incomplete-test-b-01",
+      "icon_key": "daily_life_play",
+      "state": "vitality_0_of_100_incomplete",
+      "sample_type": "state_row",
+      "file": "crops/daily-life-0-of-100-incomplete-test-b-01.png",
+      "sha256": "eadbeff7a07e1e70bbe4418ccde627e8e20ba2c05b891b076b1ae7dce761403d",
+      "dimensions": [
+        300,
+        92
+      ],
+      "source_id": "twitch-vod-2805645541",
+      "source_timestamp_seconds": 1328,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805645541/frames/1328-daily-activity-claimable.jpg",
+      "parent_sha256": "5bc1b1c8c52a7e650b0d1fd3e0fcc2201c22f745ffa95e58718747156acdbd74",
+      "crop": {
+        "x": 220,
+        "y": 402,
+        "width": 300,
+        "height": 92
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区完整保留生活玩法条目、消耗活力值 0/100、活跃 20 与前往入口。"
+      },
+      "limitations": [
+        "只证明 TEST-B 未完成起点；不能凭该行推断第五次采集后的即时动画。"
+      ]
+    },
+    {
+      "id": "daily-field-farming-0-of-60-incomplete-test-b-01",
+      "icon_key": "daily_field_farming",
+      "state": "progress_0_of_60_incomplete",
+      "sample_type": "state_row",
+      "file": "crops/daily-field-farming-0-of-60-incomplete-test-b-01.png",
+      "sha256": "83662844edde6bf8a40e15241b2f640c6adef829b2a89489a99d7dc126b6cae9",
+      "dimensions": [
+        295,
+        93
+      ],
+      "source_id": "twitch-vod-2805645541",
+      "source_timestamp_seconds": 1328,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805645541/frames/1328-daily-activity-claimable.jpg",
+      "parent_sha256": "5bc1b1c8c52a7e650b0d1fd3e0fcc2201c22f745ffa95e58718747156acdbd74",
+      "crop": {
+        "x": 507,
+        "y": 301,
+        "width": 295,
+        "height": 93
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区完整保留野外挂机条目、加倍挂机 0/60、活跃 40 与前往入口。"
+      },
+      "limitations": [
+        "每日条目 0/60 不等于高倍剩余分钟，也不能代表低倍或疲劳状态。"
+      ]
+    },
+    {
+      "id": "daily-mvp-1-of-5-incomplete-test-b-01",
+      "icon_key": "daily_mvp",
+      "state": "report_1_of_5_incomplete",
+      "sample_type": "state_row",
+      "file": "crops/daily-mvp-1-of-5-incomplete-test-b-01.png",
+      "sha256": "2c7ca6e93ef9e3cc0444b5c42a92fa03f8e4bf8c795537e73377535b42196a69",
+      "dimensions": [
+        300,
+        90
+      ],
+      "source_id": "twitch-vod-2805645541",
+      "source_timestamp_seconds": 1328,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805645541/frames/1328-daily-activity-claimable.jpg",
+      "parent_sha256": "5bc1b1c8c52a7e650b0d1fd3e0fcc2201c22f745ffa95e58718747156acdbd74",
+      "crop": {
+        "x": 220,
+        "y": 304,
+        "width": 300,
+        "height": 90
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区完整保留 MVP 条目、击杀 MVP 1/5、活跃 4/20 与前往入口。"
+      },
+      "limitations": [
+        "MVP 属竞争内容排除类；该样本只供面板读取和场景阻断。"
+      ]
+    },
+    {
+      "id": "daily-guild-caravan-completed-row-test-b-01",
+      "icon_key": "daily_guild_caravan",
+      "state": "participation_1_of_1_completed",
+      "sample_type": "state_row",
+      "file": "crops/daily-guild-caravan-completed-row-test-b-01.png",
+      "sha256": "7cffeb9e914db4b617587130ffe6e6f40afc02ff3864254d693339b5e59bba80",
+      "dimensions": [
+        295,
+        90
+      ],
+      "source_id": "twitch-vod-2805645541",
+      "source_timestamp_seconds": 1328,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805645541/frames/1328-daily-activity-claimable.jpg",
+      "parent_sha256": "5bc1b1c8c52a7e650b0d1fd3e0fcc2201c22f745ffa95e58718747156acdbd74",
+      "crop": {
+        "x": 507,
+        "y": 208,
+        "width": 295,
+        "height": 90
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区完整保留公会商队条目、参加商队 1/1 与已完成标签。"
+      },
+      "limitations": [
+        "条目完成不证明全部四批由同一角色完成，也不能反推材料扣除规则。"
+      ]
+    },
+    {
+      "id": "guild-material-insufficient-0-of-6-test-b-01",
+      "icon_key": "guild_material_requirement",
+      "state": "unselected_inventory_insufficient_0_of_6",
+      "sample_type": "state_row",
+      "file": "crops/guild-material-insufficient-0-of-6-test-b-01.png",
+      "sha256": "48b2cf7417cd5912b69e75cd0978888458f4e8bc157b23682692afad4d06ac2d",
+      "dimensions": [
+        174,
+        56
+      ],
+      "source_id": "twitch-vod-2805645541",
+      "source_timestamp_seconds": 1336.8,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805645541/frames/1336.80-guild-caravan-next-batch.jpg",
+      "parent_sha256": "46a6aacaf6c2b4732f7193ed897f0ed68a6a8986c33bc467797707cdacf55cb9",
+      "crop": {
+        "x": 579,
+        "y": 219,
+        "width": 174,
+        "height": 56
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只含未选中的铁矿石需求行和库存／需求 0/6。"
+      },
+      "limitations": [
+        "只证明库存不足行存在；没有选择该行或触发购买／求助／提交失败。"
+      ]
+    },
+    {
+      "id": "login-title-screen-test-b-01",
+      "icon_key": "login_title_screen",
+      "state": "title_logo_visible",
+      "sample_type": "state_indicator",
+      "file": "crops/login-title-screen-test-b-01.png",
+      "sha256": "918217f710b74560615c16c25ed57d8583a1b5afc781816a291fdd0aef487791",
+      "dimensions": [
+        390,
+        210
+      ],
+      "source_id": "gvg-knight-bv1h2kf6qefz",
+      "source_timestamp_seconds": 787,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/gvg-knight-bv1h2kf6qefz/frames/0787.0-title-screen.png",
+      "parent_sha256": "9ca11d0e8e60cd314049af4cd1461c606985a656432934b7e9056e0c8572e9d7",
+      "crop": {
+        "x": 245,
+        "y": 75,
+        "width": 390,
+        "height": 210
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留居中游戏标题标志与背景，避开右上作者水印和顶部性能叠层。"
+      },
+      "limitations": [
+        "标题页不等于账号已登录，也不证明会自动进入公告或场景加载。"
+      ]
+    },
+    {
+      "id": "login-notice-loading-test-b-01",
+      "icon_key": "login_notice_loading",
+      "state": "notice_panel_loading",
+      "sample_type": "state_indicator",
+      "file": "crops/login-notice-loading-test-b-01.png",
+      "sha256": "c3c7554cdb01ffc3cb4118c0d411f13ccdf820b61c750bc45f601705d675ab95",
+      "dimensions": [
+        427,
+        242
+      ],
+      "source_id": "gvg-knight-bv1h2kf6qefz",
+      "source_timestamp_seconds": 792,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/gvg-knight-bv1h2kf6qefz/frames/0792.0-notice-loading.png",
+      "parent_sha256": "dbe5203ffc69e28f01a7e4acb7ff76fd26e09bf4560238acb41752f1f662d0e6",
+      "crop": {
+        "x": 212,
+        "y": 132,
+        "width": 427,
+        "height": 242
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区完整保留公告窗口、公告列表、关闭控件与中央载入中状态。"
+      },
+      "limitations": [
+        "未观察公告关闭输入；不能假设所有公告会自动通过。"
+      ]
+    },
+    {
+      "id": "login-scene-loading-test-b-01",
+      "icon_key": "login_scene_loading",
+      "state": "loading_17_percent",
+      "sample_type": "state_indicator",
+      "file": "crops/login-scene-loading-test-b-01.png",
+      "sha256": "a6d8240b9e7db52e8a74694a954b126ad4f87f76645733d90e4e9f2d4e960b6f",
+      "dimensions": [
+        190,
+        72
+      ],
+      "source_id": "gvg-knight-bv1h2kf6qefz",
+      "source_timestamp_seconds": 794,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/gvg-knight-bv1h2kf6qefz/frames/0794.0-scene-loading.png",
+      "parent_sha256": "d79ec561762d3f5f94e17692e245a37b5c7c5597cd7fd90b2897cfd8804b5355",
+      "crop": {
+        "x": 655,
+        "y": 385,
+        "width": 190,
+        "height": 72
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留右下场景载入文字、进度条、17% 和资源序号。"
+      },
+      "limitations": [
+        "17% 只是本次瞬时数值；不能作为进度阈值或加载时长上限。"
+      ]
+    },
+    {
+      "id": "siege-revive-countdown-8-pioneer-a-02",
+      "icon_key": "siege_revive_countdown",
+      "state": "countdown_8_seconds",
+      "sample_type": "state_indicator",
+      "file": "crops/siege-revive-countdown-8-pioneer-a-02.png",
+      "sha256": "ae7169fbcf5318a572a384ef673e89751aefbbf0cf45b32f21694c5f6410e514",
+      "dimensions": [
+        95,
+        75
+      ],
+      "source_id": "pioneer-simulation-revive-bv1qwtm6besg",
+      "source_timestamp_seconds": 82,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-simulation-revive-bv1qwtm6besg/frames/0082.00-dead-countdown-8.png",
+      "parent_sha256": "fb90c91ad2d0229bf461a6f969d64e80b15aa5d2e132ec459c5179e1e447ccb8",
+      "crop": {
+        "x": 380,
+        "y": 397,
+        "width": 95,
+        "height": 75
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区仅保留底部复活标志与约 8 秒自动复活倒计时；聊天、队伍栏、UID 和战场横幅均在裁区外。"
+      },
+      "limitations": [
+        "PIONEER-A 旧构建模拟对抗赛样本；只用于倒计时变体和状态机研究，禁止混入 TEST-B 或国服模板集。"
+      ]
+    },
+    {
+      "id": "siege-revive-countdown-5-pioneer-a-02",
+      "icon_key": "siege_revive_countdown",
+      "state": "countdown_5_seconds_revive_point",
+      "sample_type": "state_indicator",
+      "file": "crops/siege-revive-countdown-5-pioneer-a-02.png",
+      "sha256": "1b1b6ce9fd9d0b90795594c8143f0732f3f1b18619dd64f06d522713f0e90270",
+      "dimensions": [
+        95,
+        75
+      ],
+      "source_id": "pioneer-simulation-revive-bv1qwtm6besg",
+      "source_timestamp_seconds": 85.25,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-simulation-revive-bv1qwtm6besg/frames/0085.25-revive-point-countdown-5.png",
+      "parent_sha256": "b6545e97f9ae5b92cc6e1bc191313ddc3991b5f903cc4bc250624f37d1ecd841",
+      "crop": {
+        "x": 380,
+        "y": 397,
+        "width": 95,
+        "height": 75
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留相同复活标志与约 5 秒倒计时；父帧已切换到复活台，但环境不在裁区内。"
+      },
+      "limitations": [
+        "该裁图不能单独区分战场观察态与复活点等待态，流程识别仍须结合全屏场景；禁止混入 TEST-B 或国服模板集。"
+      ]
+    },
+    {
+      "id": "siege-revive-countdown-2-pioneer-a-02",
+      "icon_key": "siege_revive_countdown",
+      "state": "countdown_2_seconds_revive_point",
+      "sample_type": "state_indicator",
+      "file": "crops/siege-revive-countdown-2-pioneer-a-02.png",
+      "sha256": "957e3e2396e84d66378a133cbedd2c3f168e69a08bcac5735321eee701137f76",
+      "dimensions": [
+        95,
+        75
+      ],
+      "source_id": "pioneer-simulation-revive-bv1qwtm6besg",
+      "source_timestamp_seconds": 88,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-simulation-revive-bv1qwtm6besg/frames/0088.00-revive-point-countdown-2.png",
+      "parent_sha256": "f20f952b24c46d1f764a0d8f48de8f196a04dab1b85848d3db03b631876daee6",
+      "crop": {
+        "x": 380,
+        "y": 397,
+        "width": 95,
+        "height": 75
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留相同复活标志与约 2 秒倒计时，用于补齐临近自动恢复的数值变体。"
+      },
+      "limitations": [
+        "PIONEER-A 旧构建竞技模式样本；数值变体不能替代国服实机的普通／临界／归零采样。"
+      ]
+    },
+    {
+      "id": "siege-revive-countdown-0-pioneer-a-02",
+      "icon_key": "siege_revive_countdown",
+      "state": "countdown_0_seconds_waiting",
+      "sample_type": "state_indicator",
+      "file": "crops/siege-revive-countdown-0-pioneer-a-02.png",
+      "sha256": "4168b1b3ff1d0e4fbf1fb0ad0798ca3fb466232bde281b9276d4da6033806fbf",
+      "dimensions": [
+        95,
+        75
+      ],
+      "source_id": "pioneer-simulation-revive-bv1qwtm6besg",
+      "source_timestamp_seconds": 90,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-simulation-revive-bv1qwtm6besg/frames/0090.00-revive-point-countdown-0.png",
+      "parent_sha256": "1209b1d86a8386faea7be49825384d1375659cd9865ec3956426be204bbe0a1c",
+      "crop": {
+        "x": 380,
+        "y": 397,
+        "width": 95,
+        "height": 75
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留倒计时归零但 HUD 尚未恢复的短暂等待态；无聊天、UID、队伍栏或字幕污染。"
+      },
+      "limitations": [
+        "0 秒后仍有短暂恢复间隔；自动化不得只凭该数值立即发送操作，也不得外推国服时序。"
+      ]
+    },
+    {
+      "id": "dungeon-dead-wait-test-b-01",
+      "icon_key": "dungeon_dead_wait",
+      "state": "ten_player_waiting_for_revive",
+      "sample_type": "state_indicator",
+      "file": "crops/dungeon-dead-wait-test-b-01.png",
+      "sha256": "663776f24164ce3c025635cac099e7b250bdb1e0866338fe0469285e49f32317",
+      "dimensions": [
+        160,
+        190
+      ],
+      "source_id": "twitch-clip-test-b-raid-dead-wait-g93cchbtrszole42",
+      "source_timestamp_seconds": 0,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-clip-test-b-raid-dead-wait-g93cchbtrszole42/frames/0000.00-ten-player-dead-wait.png",
+      "parent_sha256": "1c1de1bc2754886eed59053052f8f10038f149d468bd9a5c0f5649ba310e3d7f",
+      "crop": {
+        "x": 560,
+        "y": 530,
+        "width": 160,
+        "height": 190
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留底部中央复活标志、复活标签和等待复活文案；主播立绘、聊天、技术测试横幅、UID 与队伍栏均在裁区外。"
+      },
+      "limitations": [
+        "这是 TEST-B 十人副本的持续等待态；没有死亡触发、复活邀请或 HUD 恢复边界，不能替代野外死亡／复活选项样本。"
+      ]
+    }
+  ]
+}

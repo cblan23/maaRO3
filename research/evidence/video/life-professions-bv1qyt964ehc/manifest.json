@@ -1,0 +1,31 @@
+{
+    "schema_version": 1,
+    "source_id": "test-critique-bv1qyt964ehc",
+    "primary_url": "https://www.bilibili.com/video/BV1QyT964EHc/",
+    "capture_url": "https://www.bilibili.com/video/BV1QyT964EHc/",
+    "bvid": "BV1QyT964EHc",
+    "cid": "39705054893",
+    "source_title": "《RO仙境传说3》这款游戏为什么让玩家失望",
+    "source_author": "和东东一起战斗吧",
+    "source_published_at": "2026-07-06T19:39:56+08:00",
+    "captured_at": "2026-07-26",
+    "test_context": "台港澳启燃技术测试总结视频；职业名称、职业槽和活力均属于 TEST-B 旧测试快照。",
+    "copyright_note": "仅保留证明生活职业全览正式标签所需的一帧；画面带作者字幕、水印、测试 UID 和资源数，不用于再分发或公开训练集。",
+    "frames": [
+        {
+            "file": "frames/0347-life-profession-overview.png",
+            "timestamp_seconds": 347,
+            "sha256": "97ffbd73ea53d13768a1ff292b012cecc24c2b98cbf3e5ac49a61a54d8ee3ad5",
+            "dimensions": [852, 480],
+            "supports": [
+                "客户端职业全览画面直接显示矿工、厨师、园艺师三个正式 UI 标签",
+                "画面把矿工和厨师标为已有等级的职业槽，并把园艺师显示为尚未选用状态，证明职业选择存在状态差异"
+            ],
+            "limitations": [
+                "作者字幕遮挡了下方部分画面，不能从这一帧推出更换职业、第二槽解锁或重置规则",
+                "论坛把职业概括为采药、制药、挖矿的说法与此 UI 标签不同，国服本地化仍须重新核对"
+            ],
+            "recheck_in_cn_test": true
+        }
+    ]
+}

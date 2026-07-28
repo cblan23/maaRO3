@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "source_id": "twitch-vod-2541630934",
+  "primary_url": "https://www.twitch.tv/videos/2541630934",
+  "capture_url": "https://www.twitch.tv/videos/2541630934",
+  "source_title": "Destacado: Ragnarok Online 3: Pioner Testing! Probamos la fase de testeo del sucesor del RO!",
+  "source_author": "xBastitox",
+  "captured_at": "2026-07-28",
+  "test_context": "旧先锋构建（PIONEER-A）公开长直播；连续片段显示三角色角色选择页、进入角色后的 Classic PC／Modern PC 操作模式选择，以及恢复开放世界。与 TEST-B 严格隔离。",
+  "copyright_note": "仅保存验证登录恢复边界与角色选择状态所需的三张连续关键帧。画面含主播贴图、聊天、角色与 UID 等信息，仅作内部可追溯研究证据，不作素材再分发或训练集使用。",
+  "frames": [
+    {
+      "file": "frames/6254.00-character-selection.jpg",
+      "timestamp_seconds": 6254,
+      "sha256": "db39d0c5d04775249370bf66faa0569cf192a2c566e21405e6b3f9500820a41c",
+      "dimensions": [1720, 720],
+      "supports": [
+        "Select Character 页面直接显示三个 Lv.99 角色、一个 Create Character 空位、Recent 标签与 Enter 按钮。",
+        "证明 PIONEER-A 已存在可稳定区分的角色选择状态，可作为重登录状态机的语义参考。"
+      ],
+      "limitations": [
+        "录像未证明角色数量上限、删除流程、默认焦点或键盘导航规则。",
+        "这是 PIONEER-A 英文界面且带直播叠层，不可作为 TEST-B 或未来国服模板。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/6258.00-control-mode-selection.jpg",
+      "timestamp_seconds": 6258,
+      "sha256": "e8e78f5d3640dc214a747a583f35fcb28be41f696a3dbfd876245692c3b41dd2",
+      "dimensions": [1720, 720],
+      "supports": [
+        "进入角色后出现 Please select a mode 弹层，提供 Classic PC Mode 与 Modern PC Mode 两个选项及 Confirm。",
+        "该页位于角色选择与开放世界之间，说明重登录恢复不能假设选角后必然直接进入可操作场景。"
+      ],
+      "limitations": [
+        "该弹层是操作模式选择，不是连接、死亡或复活弹窗。",
+        "是否只在首次进入、设备变化或设置重置后出现，录像无法确定。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/6270.00-open-world-returned.jpg",
+      "timestamp_seconds": 6270,
+      "sha256": "4e044d0c5f659fd2271c10c54d3179a2202a4e507e702f5e4982117598644b34",
+      "dimensions": [1720, 720],
+      "supports": [
+        "模式选择结束后角色回到 Prontera South Gate 开放世界，常规 HUD 和技能栏恢复。",
+        "与前两帧组成 CharacterSelection → ControlModeSelection → OpenWorld 的连续进入链。"
+      ],
+      "limitations": [
+        "不能确认回到的是断线前坐标、保存点还是固定登录落点。",
+        "录像未展示自动战斗开关、组队、任务寻路等运行状态是否被保留。"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

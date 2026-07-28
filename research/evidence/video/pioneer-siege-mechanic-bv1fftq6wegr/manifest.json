@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "source_id": "pioneer-siege-mechanic-bv1fftq6wegr",
+  "primary_url": "https://www.bilibili.com/video/BV1FFTq6WEgR/",
+  "capture_url": "https://www.bilibili.com/video/BV1FFTq6WEgR/",
+  "bvid": "BV1FFTq6WEgR",
+  "cid": "39567887039",
+  "source_title": "【转载】仙境传说3攻城戰 三轉 機械工匠",
+  "source_author": "多巴胺归零",
+  "source_published_at": "2026-07-01T22:25:12+08:00",
+  "captured_at": "2026-07-28",
+  "test_context": "旧先锋构建（PIONEER-A）攻城战录像；连续片段显示录制角色战斗、死亡、自动传送至复活点、27/15/3 秒复活倒计时以及自动恢复战斗 HUD。与 2026 台港澳启燃测试 TEST-B 严格隔离。",
+  "copyright_note": "仅保留验证旧竞技模式死亡状态机所需的六帧；画面含转载水印、角色、队伍、聊天与 UID 信息，公开训练集使用前必须完成授权和隐私审查。",
+  "frames": [
+    {
+      "file": "frames/0200-alive-fighting.png",
+      "timestamp_seconds": 200,
+      "sha256": "1b47b1ba2a4b6152e53b23e63bc30176717ea8461656bc4b72b9156c78a46093",
+      "dimensions": [852, 480],
+      "supports": [
+        "死亡事件前角色仍在攻城战中，技能栏和正常战斗 HUD 可见",
+        "为后续死亡画面提供同一连续时间轴的前置状态"
+      ],
+      "limitations": [
+        "这是旧先锋构建的竞技模式，不能作为 TEST-B 或国服视觉模板",
+        "单帧本身不证明随后死亡的触发原因"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0204-dead-auto-transfer.png",
+      "timestamp_seconds": 204,
+      "sha256": "3beb6504826f35634968f82ccf8df81bf3c40564adab0142e7684e282be013cc",
+      "dimensions": [852, 480],
+      "supports": [
+        "角色死亡后常规技能栏消失并进入独立死亡状态",
+        "底部出现自动传送至复活点的秒数提示"
+      ],
+      "limitations": [
+        "小字只用于确认状态类别，不作为精确 OCR 字体模板",
+        "不能外推开放世界死亡选项、惩罚或复活位置"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0208-revive-countdown-27.png",
+      "timestamp_seconds": 208,
+      "sha256": "f05478f567d90eedd5c8d5e16cfc37d68ce60156d492edfef21430c5eb520291",
+      "dimensions": [852, 480],
+      "supports": [
+        "传送后底部显示 27 秒复活倒计时",
+        "角色处于复活点等待区，战斗技能栏仍未恢复"
+      ],
+      "limitations": [
+        "这是攻城战固定回场逻辑，不证明玩家可以选择原地或据点复活",
+        "旧构建布局不得混入 TEST-B 模板集"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0220-revive-countdown-15.png",
+      "timestamp_seconds": 220,
+      "sha256": "4f895411310855983f873aa4dc608527343cb67a913f1f996d2fc93978c6f295",
+      "dimensions": [852, 480],
+      "supports": [
+        "同一等待状态的倒计时降至 15 秒",
+        "倒计时与上一帧位置和语义一致，排除一次性提示"
+      ],
+      "limitations": [
+        "录像不能证明倒计时是否受复活技能或战场规则动态修改",
+        "不能外推其他竞技模式或副本"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0232-revive-countdown-3.png",
+      "timestamp_seconds": 232,
+      "sha256": "d3063e10505bbf8754e648d24fb1726374e30a7c800742d65103738fc2cbd670",
+      "dimensions": [852, 480],
+      "supports": [
+        "同一等待状态的倒计时降至 3 秒",
+        "连续时间轴支持以数值变化识别临近自动回场，而非依赖单一图标"
+      ],
+      "limitations": [
+        "低清转载压缩会降低小字 OCR 稳定性",
+        "这只是旧构建状态语义样本"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0236-auto-returned-fighting.png",
+      "timestamp_seconds": 236,
+      "sha256": "7e0bbc4f66c6eaf783f778aba4ace115775430832591ca1940f6d70cb1831298",
+      "dimensions": [852, 480],
+      "supports": [
+        "倒计时结束后角色自动恢复，常规技能栏和角色状态重新出现",
+        "形成 Alive → DeadTransfer → ReviveCountdown → AutoReturned 的闭环"
+      ],
+      "limitations": [
+        "不能仅凭此帧确定复活后的生命比例、保护时间或出生点规则",
+        "不能作为 TEST-B 或国服自动点击依据"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

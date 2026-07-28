@@ -1,0 +1,46 @@
+{
+    "schema_version": 1,
+    "source_id": "official-cn-pv-bv1fmkh63ept",
+    "primary_url": "https://www.bilibili.com/video/BV1fmKH63EPT/",
+    "capture_url": "https://www.bilibili.com/video/BV1fmKH63EPT/",
+    "bvid": "BV1fmKH63EPT",
+    "cid": "40139229142",
+    "source_title": "RO正统续作《仙境传说3》首曝PV&实机演示——二十载情怀再续新章！",
+    "source_author": "RO仙境传说3",
+    "source_published_at": "2026-07-21T10:55:00+08:00",
+    "captured_at": "2026-07-26",
+    "test_context": "Bilibili 国服官方账号的首曝宣传片；属于 CN-A 发行与宣传证据。片中实机为剪辑素材，未给出国服客户端 build，不能据此认定为 8 月重逢测试客户端。",
+    "copyright_note": "仅保留证明国服官方招募日期与宣传片中开放世界 HUD 形态所需的两帧；宣传素材只用于内部研究和版本对照，不作为可再分发素材集。",
+    "frames": [
+        {
+            "file": "frames/0016-cn-promotional-openworld-hud.png",
+            "timestamp_seconds": 16,
+            "sha256": "5eac69bcb33b85c69f7d8e4010edc874ce9d10dc1e3eb6a9a114ad32535e07cf",
+            "dimensions": [852, 480],
+            "supports": [
+                "国服官方首曝片采用简体中文开放世界战斗 HUD 作为宣传实机素材",
+                "该素材同时出现角色 Base/Job、目标血条、小地图、掉落日志、技能栏和自动相关图标候选，可用于建立国服首测差异对照清单"
+            ],
+            "limitations": [
+                "宣传片经过剪辑且未标明客户端 build，不能证明画面直接录自 2026-08-27 国服重逢测试",
+                "单帧不证明自动战斗状态、按钮功能、坐标、技能配置、掉落规则或最终 UI 布局"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0151-cn-reunion-test-date.png",
+            "timestamp_seconds": 151,
+            "sha256": "4582616c45b2a024501d546c795e3d4ef590a67c5494e4258a386d4dfcd047fb",
+            "dimensions": [852, 480],
+            "supports": [
+                "国服官方片尾明确显示 8 月 27 日“重逢首测”招募开启",
+                "画面使用《仙境传说3》简体中文名称，可作为国服渠道与测试日期的官方视频证据"
+            ],
+            "limitations": [
+                "片尾不说明资格数量、预下载时间、测试时长、平台、计费或删档规则，这些字段必须引用国服招募公告",
+                "测试日期属于运营信息，临近开测仍需检查延期或补充公告"
+            ],
+            "recheck_in_cn_test": true
+        }
+    ]
+}

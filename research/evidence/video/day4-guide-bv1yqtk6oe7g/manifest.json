@@ -1,0 +1,151 @@
+{
+    "schema_version": 1,
+    "source_id": "day4-guide-bv1yqtk6oe7g",
+    "primary_url": "https://www.youtube.com/watch?v=tLAS_yvY0UU",
+    "capture_url": "https://www.bilibili.com/video/BV1YqTK6oE7g/",
+    "bvid": "BV1YqTK6oE7g",
+    "cid": "39472398385",
+    "source_title": "RO仙境传说3 开服第4天：三转、流派共鸣与灵魂残响",
+    "source_author": "阿翊（Bilibili 采样源为转载）",
+    "source_published_at": "2026-06-28T13:24:09+08:00",
+    "captured_at": "2026-07-26",
+    "test_context": "台港澳启燃技术测试第四日；等级节奏、技能、元素、数值和养成材料均属于旧测试快照。",
+    "copyright_note": "仅保留证明系统结构所需的九帧；包含原视频字幕、水印和角色构筑信息，不用于再分发或公开训练集。",
+    "frames": [
+        {
+            "file": "frames/0047-soul-resonance-overview.png",
+            "timestamp_seconds": 47,
+            "sha256": "d0da26898993e072bf733b1eb02cfbe10623936e5a5fc67130b933db77aa2372",
+            "dimensions": [852, 480],
+            "supports": [
+                "灵魂残响页具有五个环形装备位和独立的共鸣等级说明",
+                "右侧规则把元素图标按等级分组，并显示未启用状态"
+            ],
+            "limitations": [
+                "具体效果数值和元素图标名称无法仅由该帧无歧义确认",
+                "不能证明国服会沿用五槽布局和同一共鸣门槛"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0107-build-resonance-trigger.png",
+            "timestamp_seconds": 107,
+            "sha256": "e86f54a50720540666c01d9ba8279db6a49877d206627d9be507a540fe47e522",
+            "dimensions": [852, 480],
+            "supports": [
+                "三转后的流派选择页分别列出优先技能、流派共鸣效果和启动条件",
+                "启动条件由多个技能及其等级共同组成，不能只凭职业名判断流派是否生效"
+            ],
+            "limitations": [
+                "画面只展示十字军的一个旧测试流派",
+                "技能等级、伤害百分比和条件组合均是易变参数"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0122-build-counter-relations.png",
+            "timestamp_seconds": 122,
+            "sha256": "91b818b21b76b7fbdc0975a4f26244a5a550894d49ffe5a12b72b49a384cd9e1",
+            "dimensions": [852, 480],
+            "supports": [
+                "流派共鸣说明页把四种流派画成定向克制关系",
+                "同页展示克制加成、被克制减益和流派启动条件"
+            ],
+            "limitations": [
+                "流派名称和百分比只代表启燃测试",
+                "克制系统涉及战斗决策，不由初期 MAA 自动选择或切换"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0137-talent-tree.png",
+            "timestamp_seconds": 137,
+            "sha256": "9999f7dfd25c0cf4f6af12265e444b4fd45c9a6ae523adf9ad51604773967977",
+            "dimensions": [852, 480],
+            "supports": [
+                "天赋系统按阶段分页，并以分支节点组成树状解锁路径",
+                "升级需要专门材料，视频画面将其与生活职业产出联系起来"
+            ],
+            "limitations": [
+                "材料来源同时含画面和解说信息，仍需用客户端道具来源页交叉验证",
+                "天赋加点是不可逆或高代价决策候选，默认只读提醒"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0197-soul-resonance-five-slots.png",
+            "timestamp_seconds": 197,
+            "sha256": "9d9a5a37ffa73f6e4966669f490fe5500cf3a975650c0495d48708ef6d09b90d",
+            "dimensions": [852, 480],
+            "supports": [
+                "灵魂残响背包与五槽装配页同时显示品质、等级、元素和基础属性",
+                "每个已装残响周围可出现多枚元素标记，五件共同参与中央共鸣"
+            ],
+            "limitations": [
+                "解说推荐金色品质属于玩家建议，不是系统硬规则",
+                "单帧不能确定替换、分解、锁定及背包满时的行为"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0257-element-levels.png",
+            "timestamp_seconds": 257,
+            "sha256": "a8a7f5dbfc4197dbd2530c8d07907f7a25a5ae6f0ba4b93a9e9b2cbf9a004ba6",
+            "dimensions": [852, 480],
+            "supports": [
+                "元素共鸣提示把同一元素划分为三个效果等级",
+                "等级由五件残响累计的元素数量触发，而非单件残响独立激活"
+            ],
+            "limitations": [
+                "3／6／10 等数量门槛来自该旧构建的画面与解说，必须国服复验",
+                "小字效果不足以作为技能数值 OCR 样本"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0287-level-three-resonance.png",
+            "timestamp_seconds": 287,
+            "sha256": "914f91afd7700fb8e2682950dcccca271b368245ad3f66731d3d4d7022f1668b",
+            "dimensions": [852, 480],
+            "supports": [
+                "装配方案可同时把不同元素堆到三级共鸣",
+                "元素图标围绕每件残响和中央槽显示，适合以后只读识别构筑完整性"
+            ],
+            "limitations": [
+                "该画面是玩家成型示例，不能推导推荐构筑",
+                "自动替换残响会改变角色强度并消耗资源，默认排除"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0317-random-affix-refresh.png",
+            "timestamp_seconds": 317,
+            "sha256": "02f6baf47615ee84eb7c157828176ccd1605a54737ff2ccd230417a1e5e7d063",
+            "dimensions": [852, 480],
+            "supports": [
+                "残响升级页存在待随机揭示／刷新的问号属性位",
+                "升级前后同时涉及等级进度、基础属性与随机附加属性"
+            ],
+            "limitations": [
+                "单帧不证明随机池、保底、锁定词条和材料返还规则",
+                "随机升级属于不可逆养成动作，不作为日常自动化候选"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0347-basic-attribute-comparison.png",
+            "timestamp_seconds": 347,
+            "sha256": "b68b9c6eb39aa603eef5b2fb0bc23e0b4bdf5883f8616f7a32aaebab1d477a74",
+            "dimensions": [852, 480],
+            "supports": [
+                "灵魂残响筛选器可按品质、元素、随机属性和词条数量过滤",
+                "残响管理不仅要识别战力，还需区分元素与多种基础／随机属性"
+            ],
+            "limitations": [
+                "筛选项名称和布局会随本地化及版本变化",
+                "该帧不展示确认筛选后的结果排序和空结果状态"
+            ],
+            "recheck_in_cn_test": true
+        }
+    ]
+}

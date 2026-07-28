@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "source_id": "twitch-clip-test-b-raid-dead-wait-g93cchbtrszole42",
+  "primary_url": "https://www.twitch.tv/fans1021/clip/AggressiveAmusedCodChocolateRain-G93cCHbtRSzole42",
+  "capture_url": "https://www.twitch.tv/fans1021/clip/AggressiveAmusedCodChocolateRain-G93cCHbtRSzole42",
+  "source_title": "lost ark",
+  "source_author": "天晴雨不晴（fans1021）",
+  "source_published_at": "2026-06-29T21:45:41+08:00",
+  "captured_at": "2026-07-28",
+  "test_context": "台港澳启燃技术测试 TEST-B 的十人副本 Twitch 公开 Clip。全片按 1 秒间隔复核；录像开始时玩家已经死亡，随后约 59 秒持续处于画面变暗、技能栏消失并等待复活的观察状态，队友和 Boss 战斗仍继续。",
+  "copyright_note": "仅保留一张用于证明 TEST-B 十人副本个人死亡等待状态的父帧。原画面含主播字幕／聊天叠层、角色名、队伍列表和测试 UID，仅作内部可追溯研究证据，不作素材再分发或公开训练集使用。",
+  "frames": [
+    {
+      "file": "frames/0000.00-ten-player-dead-wait.png",
+      "timestamp_seconds": 0,
+      "sha256": "1c1de1bc2754886eed59053052f8f10038f149d468bd9a5c0f5649ba310e3d7f",
+      "dimensions": [1280, 720],
+      "supports": [
+        "TEST-B 十人副本中，个人死亡后主画面整体变暗、常规技能栏消失，底部中央出现复活标志和等待复活文案",
+        "同帧 Boss、队友和战斗机制仍在运行，可把个人死亡等待与全队团灭／结算状态分开"
+      ],
+      "limitations": [
+        "Clip 从死亡后开始并在复活前结束，没有记录 HP 归零、邀请弹窗、玩家输入或恢复 HUD 的边界",
+        "这只补充十人副本的死亡等待上下文；不能外推野外死亡、自行复活选项、费用、落点或 Auto 状态是否保留"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

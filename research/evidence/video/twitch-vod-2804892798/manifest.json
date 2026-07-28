@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "source_id": "twitch-vod-2804892798",
+  "primary_url": "https://www.twitch.tv/videos/2804892798",
+  "capture_url": "https://www.twitch.tv/videos/2804892798",
+  "source_title": "6/25 跟我一起來RO3封測! !( ๑>◡<๑)۶💖掛台忠誠點數兌換大獎｡🌟電競周邊/Switch2/PS5! ✧一個月一台！魔儲MYCARD 93折",
+  "source_author": "米餅미빈",
+  "source_published_at": "2026-06-25T15:48:02+08:00",
+  "captured_at": "2026-07-27",
+  "test_context": "台港澳启燃技术测试 TEST-B 的公开直播；720p 连续目标区间展示空背包容量基准，以及挂机高倍已开启、剩余时间递减且背景战斗持续的状态。",
+  "copyright_note": "仅保留证明空背包容量和高倍挂机运行态所需的三张原始关键帧。画面含主播摄像头、聊天、测试 UID 与其他角色，仅作内部可追溯研究证据，不作素材再分发或训练集使用。",
+  "frames": [
+    {
+      "file": "frames/0445.00-inventory-capacity-empty-0-of-300.jpg",
+      "timestamp_seconds": 445,
+      "sha256": "809cadd6f9611bf4ccf0a76cfc03d2b9d5a3da6004820ee7fc0f320418f425d1",
+      "dimensions": [1280, 720],
+      "supports": [
+        "背包页底部清晰显示 0/300，物品格为空，可作为 TEST-B 空背包容量状态的直接基准",
+        "同帧右下角保留背包 HUD 入口图标和快捷键文字，可单独裁出入口视觉样本"
+      ],
+      "limitations": [
+        "0/300 来自测试初期账号，不能证明扩容前后所有账号都固定为 300 格",
+        "空包状态不能回答接近满、真正满包、掉落邮件或临时背包行为"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/11130.00-farming-boost-active-countdown-start.jpg",
+      "timestamp_seconds": 11130,
+      "sha256": "bdf4ef72ffc5342557114422deaa99644f002438e1136e6db3f8395372bb441e",
+      "dimensions": [1280, 720],
+      "supports": [
+        "挂机的加倍时间页显示剩余时间 59分50秒/180分，原先的开启按钮已变为关闭加倍，构成高倍已开启的直接页面状态。",
+        "页面打开期间背景仍可见战斗目标、伤害与技能状态，说明查看挂机页不会必然暂停后台战斗。"
+      ],
+      "limitations": [
+        "该帧的鼠标指针靠近关闭加倍按钮，正式识别裁图改用十秒后的干净状态；本帧主要承担倒计时起点和上下文证据。",
+        "只证明 TEST-B 中的页面状态，不能据此固定国服按钮文案、分钟上限或开放条件。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/11140.00-farming-boost-active-countdown-later.jpg",
+      "timestamp_seconds": 11140,
+      "sha256": "e816cb18bbe6708529a7417db9ae5265bb785bc8f8d30e7d15b86c17a008252d",
+      "dimensions": [1280, 720],
+      "supports": [
+        "同一直播同一页面十秒后显示 59分40秒/180分，且关闭加倍按钮持续可见；相对 11130 秒恰好减少十秒。",
+        "鼠标已移至中央沙漏，剩余时间、关闭加倍按钮和绿色组队说明均无指针遮挡，可制作运行态的精确状态裁图。"
+      ],
+      "limitations": [
+        "没有记录该账号从开启前跨到归零后的完整三小时连续过程；可开启态和已耗尽态来自同一测试的其他账号。",
+        "倒计时递减只证明高倍计时正在消费，不等价于已确认低倍、疲劳、满包或掉线后的处理规则。"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

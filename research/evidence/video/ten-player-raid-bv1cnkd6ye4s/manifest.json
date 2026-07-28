@@ -1,0 +1,106 @@
+{
+    "schema_version": 1,
+    "source_id": "ten-player-raid-bv1cnkd6ye4s",
+    "primary_url": "https://www.bilibili.com/video/BV1CNKD6YE4s/",
+    "capture_url": "https://www.bilibili.com/video/BV1CNKD6YE4s/",
+    "bvid": "BV1CNKD6YE4s",
+    "cid": "39499795016",
+    "source_title": "RO3仙境传说3 十人副本",
+    "source_author": "单人旅团",
+    "source_published_at": "2026-06-29T14:27:40+08:00",
+    "captured_at": "2026-07-26",
+    "test_context": "台港澳启燃技术测试十人副本完整录像；包含多次战斗、重整、机制 AOE、胜利后场景和团队拍卖。",
+    "copyright_note": "仅保留用于证明多人机制、场景切换和经济确认风险的六帧；含作者水印、测试 UID、聊天和队员信息，不能直接作为公开训练集。",
+    "frames": [
+        {
+            "file": "frames/0060-ten-player-combat-hud.png",
+            "timestamp_seconds": 60,
+            "sha256": "76367a83179e69c2dcd4278a68bfbd40bfc4896c6a983f90b434ea8291e66399",
+            "dimensions": [852, 480],
+            "supports": [
+                "十人战斗 HUD 同时显示分组队员列表、Boss 血条、任务、伤害统计和技能栏",
+                "多人副本场景比野外挂机具有更密集且动态的遮挡"
+            ],
+            "limitations": [
+                "画面中的 10/40 等数字不能脱离上下文解释为正式团队上限",
+                "聊天、玩家名和性能叠加层会干扰 OCR"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0300-dense-circle-aoe.png",
+            "timestamp_seconds": 300,
+            "sha256": "445285017c757e3134058575cba143f6ad5144fccb0d2972628fd4e9ecd7a93a",
+            "dimensions": [852, 480],
+            "supports": [
+                "Boss 战中可同时出现大量红色圆形地面预警与其他机制物体",
+                "十人机制需要玩家观察位置，而非只看 Boss 血条"
+            ],
+            "limitations": [
+                "单帧不能给出预警到伤害的时序",
+                "不应从画面推导自动走位策略"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/0900-waiting-for-leader.png",
+            "timestamp_seconds": 900,
+            "sha256": "462ce31672e04195b2d446ee56d4c108f767326906658f8624734a644d3ebad9",
+            "dimensions": [852, 480],
+            "supports": [
+                "副本中存在等待队长开启战斗的独立过渡状态",
+                "Boss 仍在场但战斗尚未开始，不能仅以 Boss 可见判断 Fighting"
+            ],
+            "limitations": [
+                "该帧不证明谁可开战或等待超时规则",
+                "不同 Boss、难度和国服版本可能使用不同提示"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/1500-grid-aoe.png",
+            "timestamp_seconds": 1500,
+            "sha256": "63d04d86bf88bc22492ea4c5cde5421a35694be19c43f17c7a1ba89538a2a370",
+            "dimensions": [852, 480],
+            "supports": [
+                "另一 Boss 阶段出现覆盖大部分场地的交叉线／网格预警",
+                "不同 Boss 的机制视觉并非同一种圆形 AOE 模板"
+            ],
+            "limitations": [
+                "单帧不足以解释安全区、伤害顺序或机制解法",
+                "该类机制默认只用于识别并提示人工接管"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/1720-team-auction-panel.png",
+            "timestamp_seconds": 1720,
+            "sha256": "765bcb11b3a39ff06a58236c7dd67cf83324627fe9efa3d98fec7eac320bf4a8",
+            "dimensions": [852, 480],
+            "supports": [
+                "胜利后玩家仍位于副本场景，右侧出现团队拍卖面板",
+                "面板包含多个物品、操作按钮和拍卖倒计时"
+            ],
+            "limitations": [
+                "不能从单帧确认分红、流拍和退出规则",
+                "团队拍卖是经济行为，当前及首期自动化默认排除"
+            ],
+            "recheck_in_cn_test": true
+        },
+        {
+            "file": "frames/1740-auction-confirmation.png",
+            "timestamp_seconds": 1740,
+            "sha256": "ca9ad3697005c1e417a449a5f7ff8a31f71a2d145a7f8cc975758e4c68ed40d1",
+            "dimensions": [852, 480],
+            "supports": [
+                "点击团队拍卖操作后还会出现带价格的二次确认弹窗",
+                "结算阶段可能包含不可逆货币支出，而不是普通奖励确认"
+            ],
+            "limitations": [
+                "这是录像作者的人工操作，不是建议流程",
+                "价格、货币和按钮文案属于旧测试快照"
+            ],
+            "recheck_in_cn_test": true
+        }
+    ]
+}

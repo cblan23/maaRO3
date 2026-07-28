@@ -1,0 +1,35 @@
+{
+    "schema_version": 1,
+    "phase": "OFFLINE_RESEARCH",
+    "reviewed_at": "2026-07-26",
+    "online_game_input_enabled": false,
+    "authorized_test_input_enabled": false,
+    "allowed": [
+        "public_source_cataloging",
+        "offline_video_review",
+        "minimal_research_frame_extraction",
+        "offline_image_recognition_experiments",
+        "manual_client_capture_with_tester's_consent",
+        "framework_and_replay_test_scaffolding"
+    ],
+    "blocked": [
+        "production_server_unattended_automation",
+        "mouse_or_keyboard_injection_into_ro3",
+        "pvp_or_gvg_automation",
+        "market_sniping_or_currency_transfer",
+        "multi_account_farming",
+        "captcha_or_anti_cheat_bypass",
+        "risk_control_evasion",
+        "client_modification_or_private_protocol_access"
+    ],
+    "authorization_gate": {
+        "required_before_any_online_input": true,
+        "requirements": [
+            "archive_and_review_the_in_client_cn_test_eula",
+            "archive_and_review_the_cn_anti_cheat_and_operation_rules",
+            "obtain_written_permission_covering_the_exact_test_scope",
+            "record_server_environment_accounts_dates_and_allowed_actions",
+            "enable_input_only_in_a_separate_non_default_profile"
+        ]
+    }
+}

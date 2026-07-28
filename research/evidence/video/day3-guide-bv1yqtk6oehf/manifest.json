@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "source_id": "day3-guide-bv1yqtk6oehf",
+  "primary_url": "https://www.youtube.com/watch?v=P6hP8FrkV04",
+  "capture_url": "https://www.bilibili.com/video/BV1YqTK6oEHf/",
+  "bvid": "BV1YqTK6oEHf",
+  "cid": "39472336633",
+  "source_title": "RO仙境传说3 开服第3天：49等、刷卡片、PVP与公会联赛",
+  "source_author": "阿翊（原作者；Bilibili 转载：多巴胺归零）",
+  "source_published_at": "2026-06-28T13:23:34+08:00",
+  "captured_at": "2026-07-28",
+  "test_context": "台港澳启燃技术测试第 3 日 TEST-B 攻略实机；画面为繁中旧测试，不能替代国服同 build 复采。",
+  "copyright_note": "只保留证明自动战斗技能格、挂机独立计数、卡片状态和生活职业锁定层级所需的六帧；底部含原作者后期字幕，不保存完整视频。",
+  "frames": [
+    {
+      "file": "frames/00025.00.png",
+      "timestamp_seconds": 25,
+      "sha256": "f5425de67b5689af9fd9d7412c5d6cd902042c1fa5f8aa1ec06c9155e4aeebbe",
+      "dimensions": [852, 480],
+      "supports": [
+        "开放世界战斗 HUD 上可打开独立的自动战斗技能配置窗，窗内同时出现彩色和灰阶技能格",
+        "配置窗出现时背景仍有目标、伤害数字、任务追踪和战斗 HUD，不能把打开设置页等同于暂停"
+      ],
+      "limitations": [
+        "单帧不能把彩色／灰阶外观直接解释成启用、禁用、冷却或施放优先级",
+        "没有记录技能拖放、保存、战斗中换格或各职业热键映射的连续动作"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/00144.00.png",
+      "timestamp_seconds": 144,
+      "sha256": "b28faecd07f781b5448eb2fb9b57f4eb5b4aeca0a6cfc8ecaf4b739d9778fbd3",
+      "dimensions": [852, 480],
+      "supports": [
+        "同一账号挂机页明确显示加倍时间剩余 0 秒／180 分，并注明次日 5:00 补充",
+        "加倍页右侧仍列出挂机地点与多个指定魔物，说明加倍资源和目标选择是两个独立字段"
+      ],
+      "limitations": [
+        "加倍归零不是疲劳状态；本帧没有显示低倍／疲劳名称、阈值或归零后的单次掉落",
+        "该状态与既有 Twitch 耗尽样本交叉验证，但仍不是从正数跨到零的同账号连续序列"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/00151.00.png",
+      "timestamp_seconds": 151,
+      "sha256": "327e4087a438eacbfa93419ab6ca4d308094404720717a6444575398994c1f5a",
+      "dimensions": [852, 480],
+      "supports": [
+        "挂机收益页把今日个人魔物击杀数 10711 与今日队友击杀数 19680 分开显示",
+        "同页按个人／队友贡献汇总 Job／Base 经验、材料、货币和白蚁卡片等物品，证明客户端存在可读的累计统计字段"
+      ],
+      "limitations": [
+        "这是累计快照，没有归零前后的收益差分；白蚁卡片 x19 不能被解释为高倍耗尽后仍掉卡",
+        "计数继续增长不等于仍未疲劳，也不能据 10711 反推出疲劳阈值或个人／队友击杀的归属公式"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/00175.00.png",
+      "timestamp_seconds": 175,
+      "sha256": "d656ca8561a3d2db5f7e40d6134dfc9f9ea64729bb81c93b6215e217976e26c1",
+      "dimensions": [852, 480],
+      "supports": [
+        "卡片页同时展示左侧库存网格、中央四个装配位和右侧卡片效果详情",
+        "同屏可见当前选中卡、库存中的已装备标记、详情卡左上锁定图标以及右侧已装备状态文字"
+      ],
+      "limitations": [
+        "单帧不能证明锁定／解锁、装上／卸下、升星或替换的动作后置条件",
+        "这些视觉状态只适用于 TEST-B 卡片页，不能泛化成日常、商城或国服所有控件的通用模板"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/00260.00.png",
+      "timestamp_seconds": 260,
+      "sha256": "ee919f8d030fa6b6f750f4120738b2bd1fa5196813eb13e2a0f16a8152448763",
+      "dimensions": [852, 480],
+      "supports": [
+        "生活职业选择页并列展示矿工与园艺师两类职业卡，二者均为 2 级但进度分别为 1920／15000 与 500／15000",
+        "每张职业卡具有独立徽记、等级、进度条和核心产出图标，可作为职业识别与进度 OCR 的父样本"
+      ],
+      "limitations": [
+        "没有记录选择、切换或确认动作，不能仅凭并列卡片判断当前激活职业",
+        "测试期职业等级、上限、产出和切换道具都必须在国服重采"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/00280.00.png",
+      "timestamp_seconds": 280,
+      "sha256": "1efa1c8fc176743d12b443afca576f1afb4165b1789e5087d27085cfde550889",
+      "dimensions": [852, 480],
+      "supports": [
+        "矿工升级页把 1 级矿脉显示为金色选中行，把 2 至 4 级矿脉显示为带挂锁和红色要求文字的锁定行",
+        "页面同时显示矿工 2 级、1920／15000 进度、当前产出与右侧选中层级详情"
+      ],
+      "limitations": [
+        "锁定要求文字分辨率有限，不能据此硬编码具体生活等级门槛",
+        "未记录满足条件后的解锁、升级消耗、确认弹窗或失败反馈"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}
