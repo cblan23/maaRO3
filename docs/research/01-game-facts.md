@@ -286,6 +286,8 @@ MVP 具有争抢、公平性、死亡和队伍影响，当前及未来首期默�
 
 一条 59 秒 TEST-B 十人副本 [Twitch Clip](../../research/evidence/video/twitch-clip-test-b-raid-dead-wait-g93cchbtrszole42/manifest.json)又显示：玩家从 Clip 开始到结束都保持画面变暗、技能栏消失和“等待复活”，而队友与 Boss 战继续。这只把个人死亡等待态交叉验证到十人本；录像没有死亡触发或复活结尾，不能扩展为野外复活规则。
 
+PIONEER-A [印尼语十人本长直播](../../research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/manifest.json)进一步提供旧副本的完整队友复活链：存活时 `Kesempatan Respawn: 2`；死亡后画面变暗、技能栏消失并出现小幽灵和 `SOS`；队友邀请含 `Tolak／Setuju`；指针位于同意后相邻帧恢复 HUD，再出现明确成功提示，次数降到 `1`。Boss 血量在前后仍约 45%，不是团灭重置。该事实说明接受队友复活可能消耗有限资源，自动接受必须保持人工门；资源归属和国服规则未知，且旧副本链仍不能外推开放世界自身复活。
+
 另一条 TEST-B 长评在 `544.90s` 直接显示[生存竞争模式救护车队友复活提示](../../research/evidence/video/test-b-long-review-bv1rrmw6qeom/frames/0544.90-survival-teammate-revive-prompt.png)：弹窗含身份牌样式图标和单个“复活”按钮。画面没有点击、资源扣除或队友恢复；它证明的是存活玩家复活队友的模式交互，绝不能替代玩家自身野外死亡页。
 
 这些至少是四种场景，而不是一个通用“复活弹窗”：

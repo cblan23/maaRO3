@@ -126,6 +126,7 @@ AutoEndedByTimeOrFatigue
 | 个人死亡等待 | 困难五人本约 02:06、12:18 | `DungeonDeadWait` |
 | 队友复活邀请 | 约 12:34，拒绝／同意及倒计时 | `ReviveInvite` |
 | 接受后原地复活 | 约 12:40，共享复活数减少 | `FightingAfterRevive` |
+| PIONEER-A 十人本幽灵／SOS → 队友邀请 → 成功 | 35:54–37:05，印尼语次数 `2→1` | `LegacyDungeonTeammateRevive` |
 | 生存模式救护车复活队友提示 | 长评 09:04.90，身份牌样式图标＋单个复活按钮；未点击 | `CompetitiveTeammateRevivePrompt` |
 | 团灭重整 | 约 02:29，放弃／再战 | `PartyWipe` |
 | 再战投票／准备 | 团灭后 | `RetryVote` |
@@ -137,6 +138,7 @@ AutoEndedByTimeOrFatigue
 
 - 野外死亡与复活费用／惩罚；
 - 复活邀请超时、拒绝和多人同时邀请；
+- PIONEER-A 可复活次数究竟按个人、队伍、Boss 还是难度共享，以及 TEST-B／国服是否保留同类资源；
 - 投票不通过、有人未准备和队长退出；
 - 团灭后自动战斗状态；
 - 拍卖结束、无人出价、背包满和真正退出按钮；

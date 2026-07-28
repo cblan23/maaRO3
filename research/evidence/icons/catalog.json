@@ -3917,6 +3917,196 @@
       "limitations": [
         "1 秒仍是不可操作死亡等待态；必须等待提示消失及战斗 HUD 恢复，不能提前发送动作。"
       ]
+    },
+    {
+      "id": "dungeon-revive-sos-pioneer-a-id-01",
+      "icon_key": "dungeon_revive_sos",
+      "state": "available_after_death_indonesian",
+      "sample_type": "state_indicator",
+      "file": "crops/dungeon-revive-sos-pioneer-a-id-01.png",
+      "sha256": "54fed40b3ac4f451ae01abd69deb912e0db18ea6ee18f53e055f70684751803b",
+      "dimensions": [
+        58,
+        58
+      ],
+      "source_id": "pioneer-ten-player-revive-bv1d4t8zseqw",
+      "source_timestamp_seconds": 2154,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/frames/02154.00-dead-sos.png",
+      "parent_sha256": "882c3136e1b4217a2d7e92e93878624a3e84203d769324594197e0066d474b6a",
+      "crop": {
+        "x": 588,
+        "y": 418,
+        "width": 58,
+        "height": 58
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留死亡暗层中的蓝色十字 SOS 圆形按钮；转载水印、聊天、队伍栏和 Boss 信息均在裁区外。"
+      },
+      "limitations": [
+        "该轮没有点击 SOS；只能确认旧十人副本死亡后按钮存在，不能推断请求对象、冷却、资源消耗或国服行为。"
+      ]
+    },
+    {
+      "id": "revive-invite-dialog-pioneer-a-id-02",
+      "icon_key": "revive_invite",
+      "state": "awaiting_player_choice_indonesian",
+      "sample_type": "dialog",
+      "file": "crops/revive-invite-dialog-pioneer-a-id-02.png",
+      "sha256": "131c9d3f57552a8c50be09edf2138b1af7e591ff7200d0538984fd16a086431d",
+      "dimensions": [
+        161,
+        78
+      ],
+      "source_id": "pioneer-ten-player-revive-bv1d4t8zseqw",
+      "source_timestamp_seconds": 2223.6,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/frames/02223.60-revive-invite.png",
+      "parent_sha256": "1bcd50a88b084cd9ae08f0742c8902fec8f4cf1003cbb11566a73f8488321c51",
+      "crop": {
+        "x": 687,
+        "y": 98,
+        "width": 161,
+        "height": 78
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只含游戏内印尼语复活邀请、头像、时限条和 Tolak／Setuju 两个按钮。"
+      },
+      "limitations": [
+        "这是 PIONEER-A 印尼语十人副本的跨语言布局样本；不得替代 TEST-B／国服文本，也不能外推野外复活。"
+      ]
+    },
+    {
+      "id": "dungeon-respawn-opportunities-2-pioneer-a-id-01",
+      "icon_key": "dungeon_respawn_opportunities",
+      "state": "remaining_2_before_accept_indonesian",
+      "sample_type": "state_indicator",
+      "file": "crops/dungeon-respawn-opportunities-2-pioneer-a-id-01.png",
+      "sha256": "653ce289a6126c09cff921507f5562c0382e14f32f59b2a221dd32184fdd227e",
+      "dimensions": [
+        108,
+        14
+      ],
+      "source_id": "pioneer-ten-player-revive-bv1d4t8zseqw",
+      "source_timestamp_seconds": 2225.3,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/frames/02225.30-accept-pointer.png",
+      "parent_sha256": "567b96c1a6083f4ec762bd0aebb78dee5a7bd429c7a3561934cb45e6fe773e93",
+      "crop": {
+        "x": 8,
+        "y": 220,
+        "width": 108,
+        "height": 14
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留左侧 Kesempatan Respawn: 2 状态行；聊天、水印和邀请弹窗均在裁区外。"
+      },
+      "limitations": [
+        "2 是该旧副本瞬时剩余值；录像不能确定资源归属、初始上限、重置条件或国服数值。"
+      ]
+    },
+    {
+      "id": "dungeon-respawn-opportunities-1-pioneer-a-id-01",
+      "icon_key": "dungeon_respawn_opportunities",
+      "state": "remaining_1_after_revive_indonesian",
+      "sample_type": "state_indicator",
+      "file": "crops/dungeon-respawn-opportunities-1-pioneer-a-id-01.png",
+      "sha256": "6850a34947440cda5bec10698d6600b758c2904dda38b7cd2a1aadbbbde2e06b",
+      "dimensions": [
+        108,
+        14
+      ],
+      "source_id": "pioneer-ten-player-revive-bv1d4t8zseqw",
+      "source_timestamp_seconds": 2225.9,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/frames/02225.90-revive-success.png",
+      "parent_sha256": "3493773c35ebcb6e45db4746a264743a1d1e07f5080d10eff916c72defe23823",
+      "crop": {
+        "x": 8,
+        "y": 220,
+        "width": 108,
+        "height": 14
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "与接受前样本使用同一坐标，只保留 Kesempatan Respawn: 1；复活成功提示和战斗区在裁区外。"
+      },
+      "limitations": [
+        "只证明这次接受复活后可见值由 2 变为 1；不能把资源归属或单次消耗规则推广到其他模式。"
+      ]
+    },
+    {
+      "id": "dungeon-revive-success-pioneer-a-id-01",
+      "icon_key": "dungeon_revive_success",
+      "state": "revived_by_teammate_indonesian",
+      "sample_type": "state_indicator",
+      "file": "crops/dungeon-revive-success-pioneer-a-id-01.png",
+      "sha256": "29c2b234b776fa117d713f15f5a7754bfb0cfbbcd1f19450b400f2eb5303b129",
+      "dimensions": [
+        196,
+        24
+      ],
+      "source_id": "pioneer-ten-player-revive-bv1d4t8zseqw",
+      "source_timestamp_seconds": 2225.9,
+      "build": "PIONEER-A",
+      "parent_frame": "research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/frames/02225.90-revive-success.png",
+      "parent_sha256": "3493773c35ebcb6e45db4746a264743a1d1e07f5080d10eff916c72defe23823",
+      "crop": {
+        "x": 331,
+        "y": 84,
+        "width": 196,
+        "height": 24
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留 Kamu telah berhasil di-Respawn oleh Hroar! 游戏内成功提示；Boss 血条、队伍栏与水印均在裁区外。"
+      },
+      "limitations": [
+        "旧构建印尼语提示只能作为成功状态交叉样本；自动化仍须同时检查死亡层消失和可操作 HUD 恢复。"
+      ]
     }
   ]
 }

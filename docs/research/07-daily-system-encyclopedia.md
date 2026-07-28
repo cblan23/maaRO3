@@ -340,7 +340,7 @@ Day2 录像约 04:44–04:59 展示地图魔物图鉴和分阶段击杀目标。
 
 ## 11. 死亡与复活
 
-现有玩家自身死亡帧仍只来自副本，包含个人等待、队友复活邀请、团灭和再战。另有[生存竞争模式队友复活弹窗](../../research/evidence/video/test-b-long-review-bv1rrmw6qeom/frames/0544.90-survival-teammate-revive-prompt.png)：存活玩家在救护车交互中看到身份牌样式图标和“复活”按钮，但没有点击或结果。两类画面都不能外推野外玩家自身死亡，因为按钮、费用、惩罚、落点和自动战斗恢复可能完全不同。
+现有玩家自身死亡帧仍只来自副本，包含个人等待、队友复活邀请、团灭和再战。PIONEER-A [印尼语十人本](../../research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/manifest.json)又补到幽灵／SOS、队友邀请、接受后 HUD 恢复、成功提示，以及可复活次数 `2→1`；这说明旧副本接受动作可能消耗有限资源，默认人工处理。另有[生存竞争模式队友复活弹窗](../../research/evidence/video/test-b-long-review-bv1rrmw6qeom/frames/0544.90-survival-teammate-revive-prompt.png)：存活玩家在救护车交互中看到身份牌样式图标和“复活”按钮，但没有点击或结果。这些画面都不能外推野外玩家自身死亡，因为按钮、费用、惩罚、落点和自动战斗恢复可能完全不同。
 
 | 字段 | 当前结论 |
 |---|---|

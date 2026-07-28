@@ -2969,6 +2969,18 @@
       "published_at": "2026-07-28T18:44:41+08:00",
       "duration_seconds": 58,
       "tags": ["test_b", "producer_qa", "planned_changes", "guild_activity", "secondary_edit", "edited_overlay", "full_timeline_reviewed", "targeted_quarter_second_review", "no_new_ui_state", "no_evidence_saved"]
+    },
+    {
+      "id": "pioneer-ten-player-revive-bv1d4t8zseqw",
+      "kind": "reposted_test_video",
+      "grade": "B",
+      "status": "full_ten_second_storyboard_and_targeted_subsecond_review_with_teammate_revive_chain",
+      "title": "RO 仙境传说3 正统IP续作 先锋测试 轻松愉悦的10人团本体验",
+      "url": "https://www.bilibili.com/video/BV1D4t8zsEqW/",
+      "primary_author": "bili_20550801865（转载；原直播作者未定位）",
+      "published_at": "2025-08-10T00:16:26+08:00",
+      "duration_seconds": 4022,
+      "tags": ["pioneer_build", "indonesian_ui", "ten_player_dungeon", "player_death", "ghost_wait", "sos_button", "teammate_revive_invite", "respawn_opportunity_decrement", "hud_recovery", "full_storyboard_reviewed", "targeted_subsecond_review", "evidence_saved", "excluded_from_test_b_templates"]
     }
   ]
 }

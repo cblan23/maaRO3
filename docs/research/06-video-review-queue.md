@@ -61,7 +61,7 @@
 
 已反查到 `0FyScW_0A90` 对应 `granthjs`、`fHqchpIkRLM` 对应 `ytdd1003`，以及 `happypp_520` 曾于 6 月 27 日直播 RO3，但六月 Twitch VOD 均已过期。`cadmiumsheep` 与“清燉小羔羊”不是同一主播，不再混用。
 
-公开 oEmbed 另核对到三条候选元数据：烈焰的 [`JhPGGgdXKr8`](https://www.youtube.com/watch?v=JhPGGgdXKr8)（商人开局／机械工匠／一周活动）、CHA LIN 的 [`C-LCo3b5zOY`](https://www.youtube.com/watch?v=C-LCo3b5zOY)（实况 #8 GVG）和 [`PUxs5mXClc4`](https://www.youtube.com/watch?v=PUxs5mXClc4)（实况 #2 营火晚会／狩猎挑战）。标准播放页仍返回 429，精确 ID 暂无合法公开镜像；三条只保留候选定位，不计已审画面、不保存图片，也不进入本快照 258 条正式来源总数。
+公开 oEmbed 另核对到三条候选元数据：烈焰的 [`JhPGGgdXKr8`](https://www.youtube.com/watch?v=JhPGGgdXKr8)（商人开局／机械工匠／一周活动）、CHA LIN 的 [`C-LCo3b5zOY`](https://www.youtube.com/watch?v=C-LCo3b5zOY)（实况 #8 GVG）和 [`PUxs5mXClc4`](https://www.youtube.com/watch?v=PUxs5mXClc4)（实况 #2 营火晚会／狩猎挑战）。标准播放页仍返回 429，精确 ID 暂无合法公开镜像；三条只保留候选定位，不计已审画面、不保存图片，也不进入本快照 259 条正式来源总数。
 
 ### 2.1 Twitch `Ragnarok Online 3` 分类补审
 
@@ -245,8 +245,9 @@ Twitch storyboard 的文件名时间是候选窗口起点，不保证等于事�
 | [BV1Y7xPzmEyy](https://www.bilibili.com/video/BV1Y7xPzmEyy/) | Emperium Showdown 英文攻城第一视角 | 34:11 | full 10 s storyboard + targeted 0.5／0.02 s review + 8 frames | 至少六段重复死亡；首轮补出 `AutoTeleport 10→0 → Respawn 22→0 → HUD`双阶段链和 4 张 PIONEER-A 裁图 |
 | [BV1cas2zLEHw](https://www.bilibili.com/video/BV1cas2zLEHw/) | 繁中线下体验赛台湾 VS 印尼进攻方 | 38:42 | full 10 s storyboard + targeted 0.5 s review | 繁中竞技复活倒计时与 HUD 恢复重复既有 PIONEER-A 状态；零图入库 |
 | [BV1catyz7EqT](https://www.bilibili.com/video/BV1catyz7EqT/) | 泰文 UI 早期游侠展示剪辑 | 13:59 | full 5 s storyboard reviewed | 技能树、配点、装备、普通低占用背包与战斗；无死亡、锁定目标、满包或核心异常，零图入库 |
+| [BV1D4t8zsEqW](https://www.bilibili.com/video/BV1D4t8zsEqW/) | 印尼语先锋测试十人本长直播转载 | 67:02 | full 10 s storyboard + four targeted 1／0.5／0.25／0.1 s windows + 6 frames | `存活 → 幽灵/SOS → 队友邀请 → 指针移至同意 → HUD 恢复 → 成功提示＋复活次数 2→1`；5 张 PIONEER-A 裁图入库，旧副本隔离 |
 
-站内搜索触发公开接口 `-352/412` 风控后立即停止，没有使用 Cookie、验证码或规避手段。改由无需登录的公开相关推荐接口对 70 个已登记种子做一层枚举，得到 140 条标题／简介相关视频，其中 67 条尚未登记；上述六条新增长视频分两批来自这组候选。后续只优先审能触达缺口的长实机，不因宣传复读或评论数量增加来源数字。
+站内搜索触发公开接口 `-352/412` 风控后立即停止，没有使用 Cookie、验证码或规避手段。改由无需登录的公开相关推荐接口做差集枚举；上述七条新增长视频分三批来自候选集。后续只优先审能触达缺口的长实机，不因宣传复读或评论数量增加来源数字。
 
 上述评论／混剪与经典 RO 误标素材只补强排除台账。真正新增的 TEST-B 流程证据来自长实机回抽：公会商队单批、生活 `100/100`、高倍三态、耗尽时仍变化的经验／物品通知、背包正常基准、快捷用药和 GVG 自然断线恢复链；呆呆整轮、客户端命名的低倍／疲劳与掉率边界、真正满包、开放世界死亡，以及连接前半链／输入来源／开放世界状态保留仍未闭环。
 
@@ -278,6 +279,23 @@ Twitch storyboard 的文件名时间是候选窗口起点，不保证等于事�
 
 英文链的显示倒计时比录像时间下降更快，说明素材疑似加速；Manifest 只记录可见状态顺序，不把显示秒数解释为真实等待常量。繁中和泰文来源仍登记负向结果，防止后续重复下载，但不进入 TEST-B／国服模板。
 
+### 3.3 相关推荐差集十人本队友复活深审
+
+在已有来源继续扩展后，公开相关推荐快照对 106 个已登记 BVID 种子返回 68 条标题／简介仍与 RO3 相关的未登记项；其中混有宣传复读、经典 RO 误标和其他旧构建。先对 17 条较长或 UI 密度较高的候选扫描 500 条公开弹幕与 785 条公开评论：两边各有 7 条关键词命中，评论命中均属普通语义噪声；只有 `BV1D4t8zsEqW @ 1074–1159s` 的复活／死亡弹幕对应真实客户端死亡段。弹幕和评论只用于定位，不作为画面证据。
+
+[`BV1D4t8zsEqW`](https://www.bilibili.com/video/BV1D4t8zsEqW/)随后完成 403 张十秒全片故事板复核。候选窗口分别按 0.5 秒 321 帧、0.25 秒 141 帧、1 秒 101 帧复核，并在 `2223.0–2226.2s` 再按 0.1 秒精抽 33 帧。最完整一轮见[六帧 Manifest](../../research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/manifest.json)：
+
+```text
+AliveCombat + RespawnOpportunities2 @ 2153.00
+→ DeadGhostWithSOS @ 2154.00
+→ TeammateReviveInvite(Tolak / Setuju) @ 2223.60
+→ PointerOnAccept @ 2225.30
+→ HudRestored @ 2225.40
+→ ReviveSuccess + RespawnOpportunities1 @ 2225.90
+```
+
+Boss 血量在恢复前后仍约 45%，排除团灭重置；成功提示明确写明由队友 Hroar 复活，左侧可复活次数随后由 2 降到 1。正式裁图保存 SOS、印尼语邀请弹窗、同坐标 `2／1` 次数和成功提示五种状态。录像没有输入日志，且同意按钮未观察到可稳定分离的悬停／按下外观，因此只记录“指针位于按钮＋相邻帧恢复＋成功提示”的联合证据，不虚构 hover／pressed 模板。该链属于 2025 `PIONEER-A` 旧十人本，只补充队友复活和资源消耗反例，不能关闭 TEST-B／国服开放世界自身复活缺口，也不授权自动接受。
+
 ## 4. 野外挂机、自动战斗与 MVP
 
 | BVID／链接 | 内容 | 时长 | 状态 | 需要继续标注 |
@@ -299,6 +317,7 @@ Twitch storyboard 的文件名时间是候选窗口起点，不保证等于事�
 | [BV1CNKD6YE4s](https://www.bilibili.com/video/BV1CNKD6YE4s/) | 十人副本完整录像 | 29:27 | storyboard reviewed + 6 frames | 战斗 HUD、AOE、等待队长、胜利后队拍与确认；竞争／经济排除类 |
 | [BV1teNM6SEeM](https://www.bilibili.com/video/BV1teNM6SEeM/) | 伊尔莫普通攻略 | 02:57 | storyboard + text reviewed | 音符颜色、占位人数、弹出和换色冷却 |
 | [BV1WzTn6QEkE](https://www.bilibili.com/video/BV1WzTn6QEkE/) | 困难蛮荒五人本开荒 | 27:00 | anomaly timeline reviewed | 个人死亡、复活邀请、团灭、再战投票、Boss 重置、胜利 |
+| [BV1D4t8zsEqW](https://www.bilibili.com/video/BV1D4t8zsEqW/) | 印尼语先锋十人本长直播转载 | 67:02 | full 10 s storyboard + targeted subsecond review + 6 frames | 队友复活邀请、SOS、HUD 恢复、成功提示与可复活次数 `2→1`；PIONEER-A 旧构建反例 |
 | [BV1QvT46UEEQ](https://www.bilibili.com/video/BV1QvT46UEEQ/) | 困难十人本老三 | 29:38 | continuous timeline reviewed | 多次重置后胜利；没有玩家死亡终态，不补开放世界复活 |
 | [BV19SaqzxELJ](https://www.bilibili.com/video/BV19SaqzxELJ/) | 先锋测试奈莎十人本 | 06:13 | queued, older build | 节奏机制；只作历史差异 |
 | [BV1x4Tj65E2T](https://www.bilibili.com/video/BV1x4Tj65E2T/) | 生存者之战／吃鸡 | 10:02 | continuous timeline reviewed | 只作竞争模式排除样本；胜利结束且没有玩家死亡终态 |

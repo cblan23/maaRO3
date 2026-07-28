@@ -436,7 +436,7 @@ finished_at:
 | 低倍／疲劳挂机 | 高倍可用、运行、耗尽已拍到；`0秒`页内奖励通知仍连续变化，但没有低倍／疲劳标签，奖励集合仍冲突 | 同账号跨零、同怪同队伍的阶段名／掉率对照与疲劳稳定录像 |
 | 满包／掉落去向 | 可能丢失收益或触发邮件／临时包 | 接近满、满、下一掉落去向 |
 | 药尽 | 已见“HP 低于 70% 自动使用”启用态与数量 `36 → 35`，但决定最终死亡风险的归零行为未知 | `1 → 0`、战斗内耗尽提示、低血量行为和补槽规则 |
-| 野外死亡／复活 | TEST-B 副本按钮、PIONEER-A 竞技自动复活与 GSTAR-2024 Boss 场“原地复活”覆盖层都不能复用为开放世界动作 | TEST-B／国服开放世界 HP 归零前、全部选项／费用、玩家人工复活、落点、保护和 Auto 状态全程 |
+| 野外死亡／复活 | TEST-B 副本按钮、PIONEER-A 竞技自动复活、旧十人本队友邀请／次数消耗与 GSTAR-2024 Boss 场“原地复活”覆盖层都不能复用为开放世界动作 | TEST-B／国服开放世界 HP 归零前、全部选项／费用、玩家人工复活、落点、保护和 Auto 状态全程 |
 | 掉线／重连 | TEST-B 已有失败到回世界链和独立正常进入链，但输入来源与开放世界保留未知 | 认证／排队／维护、输入事件，以及开放世界原点／任务／Auto 前后值 |
 | 卡位自恢复 | 14 秒候选过短 | 清晰 AutoOn、目标、击杀、位置与最终恢复／停止 |
 
@@ -492,8 +492,8 @@ UNOBSERVED / BLOCKED_BY_POLICY / REMOVED
 - 机器可读来源目录：[sources.json](../../research/catalog/sources.json)；
 - 国服官方宣传与日期帧：[国服首曝 Manifest](../../research/evidence/video/official-cn-pv-bv1fmkh63ept/manifest.json)；
 - 每日、挂机、生活、精炼、宠物、公会、异常等多组视频证据及哈希；
-- 33 份视频 Manifest／150 张关键帧、1 份静态图 Manifest／1 张论坛一手原图；
-- 103 张可逐像素回溯到父图的正式图标／状态裁图，覆盖 53 个键：[裁图目录](../../research/evidence/icons/README.md)；
+- 34 份视频 Manifest／156 张关键帧、1 份静态图 Manifest／1 张论坛一手原图；
+- 108 张可逐像素回溯到父图的正式图标／状态裁图，覆盖 56 个键：[裁图目录](../../research/evidence/icons/README.md)；
 - 宠物孵化房与主战／支援结构：[宠物系统 Manifest](../../research/evidence/video/pet-system-bv14gtk6lelc/manifest.json)；
 - 首个自动挂机卡位候选序列：[卡位 Manifest](../../research/evidence/video/auto-blocked-terrain-bv1rg376ue6k/manifest.json)；
 - 流程缺口与负向检索：[08-direct-evidence-gap-log.md](08-direct-evidence-gap-log.md)；
@@ -526,6 +526,8 @@ Twitch Clip 的完整 VOD 引用又反查到分类字段误标为 Corepunk 的 `
 定向 Bilibili 复检又新增两条 PIONEER-A 来源：[模拟对抗赛第二场](../../research/evidence/video/pioneer-simulation-revive-bv1qwtm6besg/manifest.json)保存 `Alive → 9／8／5／2／0 秒 → HUD 恢复`七帧链，并裁出 `8／5／2／0 秒`四个数值变体；另一条 12:34 公会战全程复核后没有可靠死亡 UI。前者证明旧竞技模式存在自动复活状态机及 `0 秒`后的短等待，仍不能替代 TEST-B／国服开放世界页面、费用、落点或 Auto 状态证据，也不提高开放世界无人值守评分。
 
 后续相关推荐差集又完整复核三条 2025 旧构建录像，共 607 张全片故事板。34:11 [英文攻城第一视角](../../research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/manifest.json)至少六次出现死亡等待，首轮进一步精抽为 `Alive → Auto-teleport 10／0 秒 → Respawn 22／20／1／0 秒 → HUD 恢复`八帧双阶段闭环；裁图库新增自动传送 `10／0 秒`和后续复活等待 `20／1 秒`四图。38:42 繁中攻城录像只重复既有 PIONEER-A 倒计时，13:59 泰文游侠剪辑只有旧技能树、装备与普通背包，二者不为凑数保存图片。英文录像疑似加速，显示秒数不能转成固定等待；三条都不能替代 TEST-B／国服开放世界复活证据。
+
+同一差集随后深审 67:02 [印尼语先锋十人本](../../research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/manifest.json)。403 张十秒故事板和四组加密窗口补出 `存活/次数2 → 幽灵/SOS → 队友邀请 → 指针位于同意 → HUD 恢复 → 成功提示/次数1`六帧链，另存 SOS、邀请、次数 2／1 和成功提示五张裁图。Boss 血量在恢复前后未重置，确认是战斗中队友复活；但录像无输入日志，按钮也无可稳定分离的悬停／按下外观。次数消耗意味着自动接受可能影响有限团队资源，必须保持人工门。全部画面标为 PIONEER-A，不能替代 TEST-B／国服开放世界自身复活。
 
 随后从 Bilibili 公开搜索差集反查到 G-STAR 2024 首日官方直播两段镜像，解除了官方 YouTube 主源的画面审阅阻塞。第一段 92 张十秒故事板只覆盖教程、职业与技能树；第二段 152 张十秒故事板中，Boss 场 `1360–1380s` 再按 0.25 秒复核 81 帧，并保存[四帧自身原地复活链](../../research/evidence/video/gstar-2024-boss-self-revive-bv1atmsy9erc/manifest.json)：`AliveHud → 韩文原地复活覆盖层 → 覆盖层持续 → RevivedHud`。该 852×480 官方舞台直播属于 `GSTAR-2024`，比 PIONEER-A 更早、无按钮／费用／输入／Auto 信息，只作旧副本语义与开放世界负例，不新增裁图模板。
 

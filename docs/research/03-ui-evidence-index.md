@@ -172,6 +172,19 @@
 | 28:40 | [团队拍卖面板](../../research/evidence/video/ten-player-raid-bv1cnkd6ye4s/frames/1720-team-auction-panel.png) | `TeamAuction`，物品和倒计时 | 经济行为默认排除 |
 | 29:00 | [拍卖二次确认](../../research/evidence/video/ten-player-raid-bv1cnkd6ye4s/frames/1740-auction-confirmation.png) | 带货币价格的确认弹窗 | 不可当作普通奖励确认 |
 
+### PIONEER-A 十人本队友复活与次数消耗对照
+
+来源：[印尼语先锋测试十人本长直播转载](https://www.bilibili.com/video/BV1D4t8zsEqW/)，完整元数据与审阅强度见[六帧 Manifest](../../research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/manifest.json)。该来源只作旧副本分类反例，禁止进入 TEST-B／国服模板。
+
+| 时间 | 画面／状态 | 支持的状态 | 设计边界 |
+|---:|---|---|---|
+| 35:53.00 | [正常战斗＋次数 2](../../research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/frames/02153.00-alive-combat.png) | 技能栏完整；`Kesempatan Respawn: 2` | 旧十人本资源基线，归属未知 |
+| 35:54.00 | [幽灵观察＋SOS](../../research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/frames/02154.00-dead-sos.png) | 暗层、技能栏消失、小幽灵和蓝色十字 `SOS` | SOS 未点击；不能推断请求后果 |
+| 37:03.60 | [印尼语队友复活邀请](../../research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/frames/02223.60-revive-invite.png) | 头像、时限条、`Tolak／Setuju` | 超时、多邀请和资源规则未知 |
+| 37:05.30 | [指针位于同意](../../research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/frames/02225.30-accept-pointer.png) | 指针在 `Setuju`，死亡态仍存在 | 无输入日志；不登记虚构的 hover／pressed 外观 |
+| 37:05.40 | [战斗 HUD 恢复](../../research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/frames/02225.40-hud-restored.png) | 弹窗／SOS／暗层消失，Boss 仍约 45% | 次数此瞬间尚未刷新，不能单帧判最终成功 |
+| 37:05.90 | [复活成功＋次数 1](../../research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/frames/02225.90-revive-success.png) | 明确“由 Hroar 复活”提示，次数 `2→1` | 可见资源消耗使自动接受必须人工授权；不外推野外 |
+
 ### TEST-B 生存竞争模式队友复活负例
 
 来源：[骨灰玩家启燃长评转载](https://www.bilibili.com/video/BV1RRMw6QEom/)，完整元数据见[长评 Manifest](../../research/evidence/video/test-b-long-review-bv1rrmw6qeom/manifest.json)。
@@ -209,7 +222,8 @@ PIONEER-A 只作跨构建语义对照，不进入 TEST-B／国服模板：
 - [英文开放世界连接失败链](../../research/evidence/video/twitch-vod-2540550896/manifest.json)：`OpenWorld → UnableToConnect 双按钮 → TitleScreen`；
 - [角色进入链](../../research/evidence/video/twitch-vod-2541630934/manifest.json)：`CharacterSelection → ControlModeSelection → OpenWorld`，只补充旧构建的三角色与操作模式语义；TEST-B 已另有单角色页，国服仍须重采；
 - [模拟对抗赛自动复活链](../../research/evidence/video/pioneer-simulation-revive-bv1qwtm6besg/manifest.json)：`AliveCombat → DeadCountdown → RevivePointWait → CountdownZero → RevivedHud`，只证明旧竞技模式状态机；
-- [英文攻城双阶段自动回场链](../../research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/manifest.json)：`AliveCombat → AutoTeleportCountdown → RespawnCountdown → RevivedHud`，补出传送前／后的独立状态，但仍只属旧竞技模式。
+- [英文攻城双阶段自动回场链](../../research/evidence/video/pioneer-english-siege-respawn-bv1y7xpzmeyy/manifest.json)：`AliveCombat → AutoTeleportCountdown → RespawnCountdown → RevivedHud`，补出传送前／后的独立状态，但仍只属旧竞技模式；
+- [印尼语十人本队友复活链](../../research/evidence/video/pioneer-ten-player-revive-bv1d4t8zseqw/manifest.json)：`DeadGhostWithSOS → ReviveInvite → HudRestored → Success／机会2→1`，只补旧副本交互与有限资源反例。
 
 更早的 `GSTAR-2024` 也单独隔离：[官方首日舞台直播镜像](../../research/evidence/video/gstar-2024-boss-self-revive-bv1atmsy9erc/manifest.json)补到韩文 Boss 场 `AliveHud → 原地复活覆盖层 → RevivedHud`，但它既不归入 PIONEER-A，也不进入 TEST-B／国服模板。
 
@@ -272,6 +286,7 @@ PIONEER-A 只作跨构建语义对照，不进入 TEST-B／国服模板：
 | [十人副本完整录像](https://www.bilibili.com/video/BV1CNKD6YE4s/) | 29:27 | 三张 storyboard 已审阅 | 团队列表、Boss 阶段、AOE、机制和结算 |
 | [伊尔莫普通攻略](https://www.bilibili.com/video/BV1teNM6SEeM/) | 02:57 | storyboard 与画面文字已审阅 | 音符颜色、人数占位、弹人、换色冷却 |
 | [困难五人本开荒](https://www.bilibili.com/video/BV1WzTn6QEkE/) | 27:00 | 异常时间轴复核 + 6 帧入库 | 团灭、Boss 重置、个人死亡、复活邀请、复活后战斗与胜利 |
+| [印尼语先锋十人本长直播转载](https://www.bilibili.com/video/BV1D4t8zsEqW/) | 67:02 | 403 张十秒故事板＋四组目标精抽＋6 帧入库 | PIONEER-A 队友复活、SOS、成功提示与次数 `2→1`；旧构建隔离 |
 | [恶魔波利 MVP](https://www.bilibili.com/video/BV1hG7G6eEoE/) | 00:50 | storyboard 已审阅 | 野外多人 Boss 与奖励结算 |
 | [黄金虫 MVP](https://www.bilibili.com/video/BV1yp7Y67Eko/) | 07:11 | 已快速审阅 | Boss 战、多人参与、长战斗状态 |
 | [敏骑挂机螳螂](https://www.bilibili.com/video/BV1HgTi6oEra/) | 02:45 | 连续时间轴已审阅 | 自动战斗、目标切换、掉落、地图 HUD；无死亡或低倍／疲劳边界 |

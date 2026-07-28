@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "source_id": "pioneer-ten-player-revive-bv1d4t8zseqw",
+  "primary_url": "https://www.bilibili.com/video/BV1D4t8zsEqW/",
+  "capture_url": "https://www.bilibili.com/video/BV1D4t8zsEqW/",
+  "bvid": "BV1D4t8zsEqW",
+  "cid": "31591827484",
+  "source_title": "RO 仙境传说3 正统IP续作 先锋测试 轻松愉悦的10人团本体验",
+  "source_author": "bili_20550801865（转载；原直播作者未定位）",
+  "source_published_at": "2025-08-10T00:16:26+08:00",
+  "captured_at": "2026-07-28",
+  "test_context": "2025 年 8 月先锋测试的印尼语十人副本转载录像，归入旧构建 PIONEER-A，并与 2026 启燃测试 TEST-B 及国服严格隔离。全片按 10 秒抽取并复核 403 张故事板；死亡候选段另复核 321 张半秒帧、141 张四分之一秒帧、101 张一秒帧，最终对 2223.0–2226.2 秒按 0.1 秒精抽 33 帧。连续画面形成 AliveCombat → DeadGhostWithSOS → TeammateReviveInvite → AcceptPointer → HudRestored → ReviveSuccessAndOpportunityDecrement 的副本队友复活链。",
+  "copyright_note": "仅保留验证旧十人副本死亡、SOS、队友邀请、恢复 HUD、成功提示与次数变化所需的六帧。父帧仍含转载水印、队伍昵称、聊天和其他玩家信息；裁图避开这些区域，但全部资产只供内部可追溯研究，公开训练集或再分发前必须另行完成授权、隐私与版权审查。",
+  "frames": [
+    {
+      "file": "frames/02153.00-alive-combat.png",
+      "timestamp_seconds": 2153,
+      "sha256": "22694634ad9609642765ec0c7dff31229fddab09c5c8740c4eac5161ef407472",
+      "dimensions": [852, 480],
+      "supports": [
+        "同一连续片段中角色仍存活，生命条、快捷技能栏和战斗 HUD 完整可见",
+        "左侧可见印尼语 Kesempatan Respawn: 2，为随后死亡与接受复活建立资源基线"
+      ],
+      "limitations": [
+        "战斗特效和单位重叠严重，单帧不能确定致死攻击或服务端伤害判定时间",
+        "这是 2025 印尼语旧构建十人副本，不得用作 TEST-B、国服或开放世界视觉模板"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/02154.00-dead-sos.png",
+      "timestamp_seconds": 2154,
+      "sha256": "882c3136e1b4217a2d7e92e93878624a3e84203d769324594197e0066d474b6a",
+      "dimensions": [852, 480],
+      "supports": [
+        "相邻采样中画面变暗、常规技能栏消失，角色进入小幽灵观察态",
+        "右下出现蓝色十字 SOS 圆形按钮，左侧可复活次数仍为 2"
+      ],
+      "limitations": [
+        "录像没有输入事件叠层，且该轮未点击 SOS，不能据此确定按钮请求对象、冷却或资源后果",
+        "死亡观察态只属于旧十人副本，不能替代 TEST-B／国服野外自身死亡选项"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/02223.60-revive-invite.png",
+      "timestamp_seconds": 2223.6,
+      "sha256": "1bcd50a88b084cd9ae08f0742c8902fec8f4cf1003cbb11566a73f8488321c51",
+      "dimensions": [852, 480],
+      "supports": [
+        "持续死亡等待期间右上出现队友 Hroar 发起的 Respawn 邀请",
+        "弹窗包含邀请者头像、蓝色时限条以及 Tolak／Setuju 拒绝和同意按钮；SOS 仍同时可见"
+      ],
+      "limitations": [
+        "单帧不能确定邀请总时限、超时默认结果或多个邀请的优先级",
+        "印尼语旧构建只用于跨语言布局与状态语义复核，不得混入国服模板"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/02225.30-accept-pointer.png",
+      "timestamp_seconds": 2225.3,
+      "sha256": "567b96c1a6083f4ec762bd0aebb78dee5a7bd429c7a3561934cb45e6fe773e93",
+      "dimensions": [852, 480],
+      "supports": [
+        "鼠标指针位于 Setuju 同意按钮，邀请弹窗和死亡态仍存在",
+        "下一相邻 0.1 秒采样中弹窗消失并恢复战斗 HUD，为接受动作建立画面边界"
+      ],
+      "limitations": [
+        "录像没有按键／鼠标日志，不能把指针位置单独当作点击证明；必须联合后续恢复和成功提示",
+        "按钮没有观察到可稳定分离的悬停或按下外观，因此不登记虚构的 hover／pressed 模板"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/02225.40-hud-restored.png",
+      "timestamp_seconds": 2225.4,
+      "sha256": "8533f6889e6c3ab2ecd0c497c0dd61e9b40db41bce2acb50f1502d3e29513cd3",
+      "dimensions": [852, 480],
+      "supports": [
+        "邀请弹窗、SOS 和死亡暗层消失，角色生命条、技能栏与可操作战斗 HUD 恢复",
+        "Boss 仍为约 45% 血量，证明这是战斗中队友复活而非团灭后 Boss 重置"
+      ],
+      "limitations": [
+        "这一瞬间左侧次数尚未刷新，成功判据仍需等待下一帧的明确提示和资源变化",
+        "HUD 恢复不证明无敌保护、自动战斗、原目标或位置状态已恢复"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/02225.90-revive-success.png",
+      "timestamp_seconds": 2225.9,
+      "sha256": "3493773c35ebcb6e45db4746a264743a1d1e07f5080d10eff916c72defe23823",
+      "dimensions": [852, 480],
+      "supports": [
+        "顶部出现 Kamu telah berhasil di-Respawn oleh Hroar!，明确确认已由队友复活",
+        "左侧 Kesempatan Respawn 从接受前的 2 变为 1，同时技能栏和战斗继续存在"
+      ],
+      "limitations": [
+        "录像不能确定该次数是个人、队伍、Boss 或难度级共享资源，也不能外推其他模式的初始值",
+        "资源可见消耗使自动接受属于高风险动作；旧构建画面不构成国服执行授权"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}
