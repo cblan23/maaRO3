@@ -2753,6 +2753,54 @@
       "tags": ["test_b", "twitch", "mixed_stream", "full_sparse_storyboard_reviewed", "public_chat_reviewed", "survival_mode", "pet", "no_target_state", "no_evidence_saved", "no_cookie"]
     },
     {
+      "id": "twitch-non-ro3-vod-2805537507",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_and_chat_reviewed_non_ro3_exclusion",
+      "title": "阿土Atu 6/26 意外來了",
+      "url": "https://www.twitch.tv/videos/2805537507",
+      "primary_author": "阿土（q158688920）",
+      "published_at": "2026-06-26T10:39:54+08:00",
+      "duration_seconds": 26720,
+      "tags": ["twitch", "false_positive", "just_chatting", "sand_raiders_of_sophie", "non_ro3", "full_sparse_storyboard_reviewed", "public_chat_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "twitch-non-ro3-vod-2806233059",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_and_chat_reviewed_non_ro3_exclusion",
+      "title": "阿土Atu 6/27 農個",
+      "url": "https://www.twitch.tv/videos/2806233059",
+      "primary_author": "阿土（q158688920）",
+      "published_at": "2026-06-27T08:48:41+08:00",
+      "duration_seconds": 26830,
+      "tags": ["twitch", "false_positive", "sand_raiders_of_sophie", "nobunaga_shinsen", "non_ro3", "full_sparse_storyboard_reviewed", "public_chat_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "twitch-non-ro3-vod-2807039815",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_and_chat_reviewed_non_ro3_exclusion",
+      "title": "阿土Atu 6/28 早起農",
+      "url": "https://www.twitch.tv/videos/2807039815",
+      "primary_author": "阿土（q158688920）",
+      "published_at": "2026-06-28T09:04:42+08:00",
+      "duration_seconds": 30240,
+      "tags": ["twitch", "false_positive", "sand_raiders_of_sophie", "non_ro3", "full_sparse_storyboard_reviewed", "public_chat_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "twitch-non-ro3-vod-2807894009",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_and_chat_reviewed_non_ro3_exclusion",
+      "title": "阿土Atu 6/29 嗚嗚哇哇",
+      "url": "https://www.twitch.tv/videos/2807894009",
+      "primary_author": "阿土（q158688920）",
+      "published_at": "2026-06-29T10:57:25+08:00",
+      "duration_seconds": 15530,
+      "tags": ["twitch", "false_positive", "sand_raiders_of_sophie", "non_ro3", "full_sparse_storyboard_reviewed", "public_chat_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
       "id": "twitch-non-ro3-vod-2807194691",
       "kind": "excluded_non_ro3_vod",
       "grade": "D",
