@@ -3317,7 +3317,10 @@
       "sample_type": "dialog",
       "file": "crops/survival-teammate-revive-prompt-test-b-01.png",
       "sha256": "4ba19a3b1897df90dac4fa34b1ea99d2a0f1e263b9ad684207859b69be7e99e6",
-      "dimensions": [220, 128],
+      "dimensions": [
+        220,
+        128
+      ],
       "source_id": "bilibili-test-b-long-review-bv1rrmw6qeom",
       "source_timestamp_seconds": 544.9,
       "build": "TEST-B",
@@ -3343,6 +3346,234 @@
       },
       "limitations": [
         "这是 TEST-B 生存竞争模式队友复活提示，且没有按钮后的连续结果；不得替代玩家自身死亡页、开放世界复活选项或国服高清成功／失败变体。"
+      ]
+    },
+    {
+      "id": "launcher-start-game-ready-test-b-01",
+      "icon_key": "launcher_game_entry",
+      "state": "start_game_ready",
+      "sample_type": "state_indicator",
+      "file": "crops/launcher-start-game-ready-test-b-01.png",
+      "sha256": "c306f452cb55c9f806df6ac85efac42f1edc93925aec0405e305f90b1157e016",
+      "dimensions": [
+        170,
+        105
+      ],
+      "source_id": "twitch-vod-2805774434",
+      "source_timestamp_seconds": 11274,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805774434/frames/11274.00-launcher-start-game-ready.jpg",
+      "parent_sha256": "37659a0358bac57d71b529e7eb1c657adad1cea73cb98975110b2b543d3c52fe",
+      "crop": {
+        "x": 790,
+        "y": 430,
+        "width": 170,
+        "height": 105
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留启动器版本文字、黄色 Start Game 按钮与设置入口；桌面图标、账号标识、主播摄像头和聊天均在裁区外。"
+      },
+      "limitations": [
+        "只证明 TEST-B 启动器就绪态；没有账号认证、补丁、版本不符、维护或按钮禁用变体，也不授权自动启动。"
+      ]
+    },
+    {
+      "id": "login-notice-ready-test-b-01",
+      "icon_key": "login_notice_panel",
+      "state": "announcement_ready",
+      "sample_type": "dialog",
+      "file": "crops/login-notice-ready-test-b-01.png",
+      "sha256": "527ac734ff7662f25db131f0ee3a07d2bbcda8ec69e7b4fd4b8b2d380967c093",
+      "dimensions": [
+        645,
+        365
+      ],
+      "source_id": "twitch-vod-2805774434",
+      "source_timestamp_seconds": 11309,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805774434/frames/11309.00-notice-ready.jpg",
+      "parent_sha256": "19e83c0cca87fd47f5cf5107af11edc2faca7e0b2ffe94c192f757d345f4bcf1",
+      "crop": {
+        "x": 320,
+        "y": 195,
+        "width": 645,
+        "height": 365
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区完整保留公告列表、NEW 标签、启燃测试开服公告正文与关闭控件；主播、聊天、UID 和右侧系统入口均在裁区外。"
+      },
+      "limitations": [
+        "公告内容和日期不可固化；录像没有显示关闭输入，不能假设 ready 状态会自动进入服务器页。"
+      ]
+    },
+    {
+      "id": "login-server-entry-ready-test-b-01",
+      "icon_key": "login_server_entry",
+      "state": "s1_01_selected_entry_enabled",
+      "sample_type": "state_indicator",
+      "file": "crops/login-server-entry-ready-test-b-01.png",
+      "sha256": "5cec359278f088c397a9a642b61876322730d23cd04688cd438dda7852d332e6",
+      "dimensions": [
+        300,
+        165
+      ],
+      "source_id": "twitch-vod-2805774434",
+      "source_timestamp_seconds": 11316,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805774434/frames/11316.00-server-entry-ready.jpg",
+      "parent_sha256": "12a5e8d89850fa86d147541f653558500e7f8b966a8e938476b8b4c344ca5baa",
+      "crop": {
+        "x": 500,
+        "y": 370,
+        "width": 300,
+        "height": 165
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留 S1-01、启燃测试服务器行、绿色状态图案及黄色进入游戏按钮；直播叠层均在裁区外。"
+      },
+      "limitations": [
+        "仅见单服可进入态；绿色图案含义、选服、排队、维护、满员和禁用状态仍未知。"
+      ]
+    },
+    {
+      "id": "login-character-selection-test-b-01",
+      "icon_key": "login_character_selection",
+      "state": "recent_character_selected_create_slot_visible",
+      "sample_type": "state_indicator",
+      "file": "crops/login-character-selection-test-b-01.png",
+      "sha256": "1f3168419fb8c25e104930a6765f07e84e6f99e36e71d4cb068d1d49f57ed238",
+      "dimensions": [
+        310,
+        180
+      ],
+      "source_id": "twitch-vod-2805774434",
+      "source_timestamp_seconds": 11325,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805774434/frames/11325.00-character-selection-test-b.jpg",
+      "parent_sha256": "e781df0c5d8232dd8b9802123e67478411c91ec185398c9745db31b5fc981643",
+      "crop": {
+        "x": 480,
+        "y": 510,
+        "width": 310,
+        "height": 180
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区同时保留金色选中的最近角色、Lv.30、普通新建空位和进入游戏按钮；主播、聊天及赞助叠层均在裁区外。"
+      },
+      "limitations": [
+        "单角色账号不能覆盖角色上限、翻页、删除、重名、创建确认或多角色默认焦点；未来国服仍须重采。"
+      ]
+    },
+    {
+      "id": "login-scene-loading-95-test-b-02",
+      "icon_key": "login_scene_loading",
+      "state": "loading_95_percent",
+      "sample_type": "state_indicator",
+      "file": "crops/login-scene-loading-95-test-b-02.png",
+      "sha256": "378b302fed2a35a7edeeb35f8af5c644aa05787b929ad364649d8768a80fdafc",
+      "dimensions": [
+        230,
+        70
+      ],
+      "source_id": "twitch-vod-2805774434",
+      "source_timestamp_seconds": 11334,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805774434/frames/11334.00-scene-loading-95-percent.jpg",
+      "parent_sha256": "5067e0178ae3ebe50c34581e61ae04b7c8fed4bad6d8e7e20148b17308621665",
+      "crop": {
+        "x": 990,
+        "y": 570,
+        "width": 230,
+        "height": 70
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留载入中、95% 和进度条，停在右下赞助叠层上方。"
+      },
+      "limitations": [
+        "95% 不是完成阈值或超时阈值；加载背景、百分比和资源序号均可能变化。"
+      ]
+    },
+    {
+      "id": "ui-layout-editor-test-b-01",
+      "icon_key": "ui_layout_editor",
+      "state": "custom_layout_filter_dialog",
+      "sample_type": "dialog",
+      "file": "crops/ui-layout-editor-test-b-01.png",
+      "sha256": "6f50c25735f7dc06ff5952dd740c99e39f21d20f265eb000e962f39b8a752e25",
+      "dimensions": [
+        530,
+        250
+      ],
+      "source_id": "twitch-vod-2805774434",
+      "source_timestamp_seconds": 15914,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2805774434/frames/15914.00-custom-layout-editor.jpg",
+      "parent_sha256": "0a8b0e2f36deb1deb9eb9f5d10309e1348e8b57150581f9aeb1e3796533c96bd",
+      "crop": {
+        "x": 748,
+        "y": 65,
+        "width": 530,
+        "height": 250
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留自订布局标题、拖移控制框说明与全部／常驻／提示／战斗筛选；下方订阅提示、主播和聊天不在裁区内。"
+      },
+      "limitations": [
+        "没有保存、取消、拖移或恢复预设后的连续结果；该样本只证明布局可变和编辑器入口存在。"
       ]
     }
   ]

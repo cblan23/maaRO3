@@ -180,10 +180,23 @@ TEST-B 直接来源：[GVG 骑士完整录像](https://www.bilibili.com/video/BV
 | 13:05.7 → 13:07.0 | [要求重新登入](../../research/evidence/video/gvg-knight-bv1h2kf6qefz/frames/0785.7-relogin-required.png) → [标题页](../../research/evidence/video/gvg-knight-bv1h2kf6qefz/frames/0787.0-title-screen.png) | 可重试失败态会转为单按钮重新登录终态 | 没有账号验证、服务器或角色选择画面 |
 | 13:12.0 → 13:15.0 | [公告载入](../../research/evidence/video/gvg-knight-bv1h2kf6qefz/frames/0792.0-notice-loading.png) → [场景加载](../../research/evidence/video/gvg-knight-bv1h2kf6qefz/frames/0794.0-scene-loading.png) → [回到 GVG](../../research/evidence/video/gvg-knight-bv1h2kf6qefz/frames/0795.0-returned-to-gvg.png) | 本次最终恢复到世界而非停在登录页 | 不能证明全程无人干预、原坐标、AutoOn 或任务状态保留 |
 
+另一条 TEST-B 直接来源是 [KanonXO 混合长直播](https://www.twitch.tv/videos/2805774434)，完整七帧见[启动与角色进入 Manifest](../../research/evidence/video/twitch-vod-2805774434/manifest.json)。Twitch 分类字段虽为 Corepunk，但 `11269–20510s` 是连续 RO3 段；以下页面按真实 VOD 时间回抽：
+
+| 时间 | 画面／状态 | 支持的状态 | 设计边界 |
+|---:|---|---|---|
+| 03:07:54 | [启动器 Start Game 就绪](../../research/evidence/video/twitch-vod-2805774434/frames/11274.00-launcher-start-game-ready.jpg) | TEST-B 在标题页之前存在独立桌面启动器就绪态 | 无账号认证、补丁、版本过期、维护或按钮禁用；输入不可见 |
+| 03:08:29 | [公告已载入](../../research/evidence/video/twitch-vod-2805774434/frames/11309.00-notice-ready.jpg) | 与既有 `NoticeLoading` 区分出 `NoticeReady` | 公告正文不可固化；关闭来源未知 |
+| 03:08:36 | [S1-01 服务器入口](../../research/evidence/video/twitch-vod-2805774434/frames/11316.00-server-entry-ready.jpg) | 单服、绿色状态图案和黄色“进入游戏”可识别 | 未见排队、维护、满员、选服或禁用变体 |
+| 03:08:45 | [TEST-B 角色选择](../../research/evidence/video/twitch-vod-2805774434/frames/11325.00-character-selection-test-b.jpg) | 最近角色金色选中、新建空位和进入按钮同页出现 | 单角色账号；创建、删除、多角色焦点和输入未知 |
+| 03:08:54 → 03:08:57 | [95% 场景载入](../../research/evidence/video/twitch-vod-2805774434/frames/11334.00-scene-loading-95-percent.jpg) → [开放世界 HUD](../../research/evidence/video/twitch-vod-2805774434/frames/11337.00-open-world-entered.jpg) | 高进度载入后恢复角色 HUD | 95% 不是完成／超时阈值；不证明 Auto 或任务状态保留 |
+| 04:25:14 | [自订 UI 布局编辑器](../../research/evidence/video/twitch-vod-2805774434/frames/15914.00-custom-layout-editor.jpg) | HUD 控制框可拖移，且有筛选与恢复预设入口 | 未见拖移、保存、取消或恢复后的连续结果 |
+
+这条录像把 TEST-B 页面存在性推进为 `LauncherReady → NoticeReady → ServerEntryReady → CharacterSelection → SceneLoading95 → OpenWorld`，但没有输入事件，因此不是无人干预登录闭环。观众在 `13071–14042s` 多次讨论 fatigue，客户端全窗口复核仍未出现低倍／疲劳页，该窗口只登记负例。
+
 PIONEER-A 只作跨构建语义对照，不进入 TEST-B／国服模板：
 
 - [英文开放世界连接失败链](../../research/evidence/video/twitch-vod-2540550896/manifest.json)：`OpenWorld → UnableToConnect 双按钮 → TitleScreen`；
-- [角色进入链](../../research/evidence/video/twitch-vod-2541630934/manifest.json)：`CharacterSelection → ControlModeSelection → OpenWorld`，证明旧构建存在角色选择，但 TEST-B 与国服仍缺该页直接样本；
+- [角色进入链](../../research/evidence/video/twitch-vod-2541630934/manifest.json)：`CharacterSelection → ControlModeSelection → OpenWorld`，只补充旧构建的三角色与操作模式语义；TEST-B 已另有单角色页，国服仍须重采；
 - [模拟对抗赛自动复活链](../../research/evidence/video/pioneer-simulation-revive-bv1qwtm6besg/manifest.json)：`AliveCombat → DeadCountdown → RevivePointWait → CountdownZero → RevivedHud`，只证明旧竞技模式状态机。
 
 ### PIONEER-A 竞技死亡／自动复活对照

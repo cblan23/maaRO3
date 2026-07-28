@@ -1007,6 +1007,18 @@
       "tags": ["ignition_test", "twitch", "storyboard_reviewed", "multilingual_chat_reviewed", "longplay", "ui_candidate"]
     },
     {
+      "id": "twitch-vod-2805774434",
+      "kind": "mixed_game_livestream",
+      "grade": "B",
+      "status": "mixed_stream_ro3_segment_full_reviewed_with_login_and_layout_frames",
+      "title": "KanonXO 混合直播：Corepunk 后切入 RO3 启燃测试，再切换 Throne and Liberty",
+      "url": "https://www.twitch.tv/videos/2805774434",
+      "primary_author": "KanonXO",
+      "published_at": "2026-06-26T20:49:59+08:00",
+      "duration_seconds": 39587,
+      "tags": ["ignition_test", "test_b", "twitch", "mixed_game_stream", "misclassified_category", "ro3_segment_11269_to_20510", "launcher", "notice_ready", "server_entry", "character_selection", "scene_loading", "open_world_entry", "custom_ui_layout", "multilingual_chat_reviewed", "fatigue_chat_false_positive", "evidence_frames"]
+    },
+    {
       "id": "twitch-vod-2805739995",
       "kind": "test_livestream",
       "grade": "B",

@@ -68,7 +68,7 @@ Twitch 公开分类 GraphQL 定位到游戏 ID `298800660`、分类名 `Ragnarok
 77:04:29；另登记 10 条没有 RO3 实机的排除源。首批 17 条人工检查 2,925 张全程
 故事板；后续使用 [`search_twitch_chat.py`](../../tools/research/search_twitch_chat.py)
 扫描全部 23 条的 8,716 条公开聊天，47 条关键词命中均回抽视频确认。聊天只用于
-定位，不直接成为证据。该组 TEST-B VOD 当前有 6 条来源生成正式 Manifest，共保存 24 帧；另有 1 条 TEST-B 十人本 Clip 保存 1 帧，加上下述两条 PIONEER-A 证据，总计 9 条 Twitch Manifest、31 帧。
+定位，不直接成为证据。分类内 TEST-B VOD 当前有 6 条来源生成正式 Manifest，共保存 24 帧；另有 1 条 TEST-B 十人本 Clip 保存 1 帧，加上下述两条 PIONEER-A 证据为 9 条 Twitch Manifest、31 帧。Clip 父 VOD 引用后来又反查到 1 条分类字段误标的 TEST-B 混合直播，新增 1 份 Manifest／7 帧，因此仓库内 Twitch 证据当前合计 10 份 Manifest／38 帧。
 
 | Twitch VOD | 作者 | 时长 | 审阅状态 | 与核心缺口有关的结论 |
 |---|---|---:|---|---|
@@ -145,7 +145,25 @@ Twitch 公开分类 GraphQL 定位到游戏 ID `298800660`、分类名 `Ragnarok
 
 复核结论：地图卡住、地块错误和隐形墙均为人工移动演示，没有 AutoOn／自动寻路失败提示或恢复结果；`Flaccid…` 是玩家手动按 TAB 在 Rocker／Poring 等目标间循环，没有自动战斗或业务后置变化；两条怪物 Clip 分别记录目标头像缺图和错图；技能／说明 Clip 展示旧构建的悬停浮层、说明面板或重复输入 BUG；副本／GVG Clip 均未出现玩家死亡终态，其中 `Honest…` 只补到旧副本 `胜利 → 结果 → 返回场地`。因此 22 条均已升级为 `full_timeline_reviewed`，但只登记负例，不新增 Manifest，且禁止混入 TEST-B／国服模板。
 
-#### 2.1.2 PIONEER-A 分类补审与误标排除
+#### 2.1.3 分类外混合直播 `2805774434`
+
+TEST-B Clip `RoughKawaiiKoala…` 的完整 VOD 引用指向 [KanonXO 的 `2805774434`](https://www.twitch.tv/videos/2805774434)。Twitch 当前游戏字段为 Corepunk，但全时段故事板确认直播在约 `11269s` 从桌面切入 RO3，并持续到约 `20510s` 的游戏内问卷后才换到其他游戏；RO3 段约 2 小时 34 分，不能因当前分类字段而排除。
+
+该段已先后按 10 秒与 5 秒全程审阅；观众在 `13071–14042s` 多次讨论 fatigue／stamina 的窗口再按 2 秒连续复核，客户端始终没有打开挂机低倍或疲劳页面，所以聊天只形成明确负例。真正新增的直接画面按 720p 亚秒回抽并保存为[七帧 Manifest](../../research/evidence/video/twitch-vod-2805774434/manifest.json)：
+
+```text
+11274  LauncherReady（Start Game）
+11309  NoticeReady（启燃测试开服公告）
+11316  ServerEntryReady（S1-01／进入游戏）
+11325  CharacterSelection（最近角色＋新建空位）
+11334  SceneLoading95
+11337  OpenWorld
+15914  CustomUILayoutEditor
+```
+
+前六帧形成同一录像内的 TEST-B 正常进入页面链，并已裁出启动器、公告就绪、服务器入口、角色选择和 95% 载入五个状态样本；第七帧另裁出自订布局编辑器。录像没有键鼠叠层或输入日志，不能把页面顺序解释为全程无人干预，也没有账号认证、排队、维护、角色创建／删除或异常恢复。主播摄像头、聊天、桌面图标、UID 与赞助叠层只保留在内部父帧；独立裁图已避开这些污染区。
+
+#### 2.1.4 PIONEER-A 分类补审与误标排除
 
 为避免旧构建混入 TEST-B，新增九条来源均显式标记构建或排除原因：
 

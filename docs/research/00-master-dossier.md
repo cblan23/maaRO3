@@ -377,15 +377,16 @@ UnknownRewardTier
 ### 7.4 连接与安全
 
 ```text
-LauncherUpdate / LauncherReady / Announcement
-Login / ServerList / Queue / CharacterSelect / Loading
+LauncherUpdate / LauncherReady / AccountAuthentication
+NoticeLoading / NoticeReady / ServerEntryReady / Queue
+CharacterSelect / Loading
 OpenWorldStable / DisconnectPopup / Reconnecting
 ReconnectFailed / Maintenance / ClientCrashed
 Payment / Trade / SelectionReward / Agreement / Captcha
 GMOrReport / UnknownConnection / SafetyStop
 ```
 
-国服登录、排队、掉线和重连链仍完全缺失；但同项目 TEST-B 已有一条自然 GVG 断线链，覆盖 `Reconnecting → RetryDialog → ReloginRequired → Title → NoticeLoading → SceneLoading → ReturnedToWorld`，PIONEER-A 另有英文双按钮与角色选择语义样本。它们足以建立连接状态分类与安全停机，不足以证明输入来源、无人干预重登、开放世界原坐标或 Auto 状态保留。任何连接页仍不能先猜按钮，更不能无限重试。
+国服整条登录／连接链仍无客户端样本；同项目 TEST-B 则已分别保存两条互补链：自然 GVG 断线链覆盖 `Reconnecting → RetryDialog → ReloginRequired → Title → NoticeLoading → SceneLoading → ReturnedToWorld`，另一条混合长直播覆盖 `LauncherReady → NoticeReady → ServerEntryReady → CharacterSelection → SceneLoading95 → OpenWorld`。后者首次补到 TEST-B 启动器、公告就绪、单服入口和角色页，PIONEER-A 英文双按钮只再作跨构建语义样本。这些画面足以建立页面分类与安全停机，但仍没有账号认证、排队／维护、可见输入事件、无人干预重登、开放世界原坐标或 Auto 状态保留。任何连接页仍不能先猜按钮，更不能无限重试。
 
 ## 8. 未来动作的事务合同
 
@@ -428,7 +429,7 @@ finished_at:
 | 未知项 | 为什么阻断 | 最小补证 |
 |---|---|---|
 | 国服专项协议 | 决定截图、OCR 和输入是否合法／合规 | 8/25–27 保存全部协议并逐条审阅 |
-| 登录／服务器／排队 | 无法安全判断进入世界 | 启动器到稳定世界全程人工录像 |
+| 登录／服务器／排队 | TEST-B 已见启动器就绪、公告就绪、单服入口、角色选择、95% 加载与世界，但认证、排队／维护和输入来源未知 | 国服从冷启动到稳定世界的全程人工录像，并同步记录输入事件 |
 | 呆呆完整一轮 | 不知道何时需人工、何时完成 | 入口到最后活跃变化连续录像 |
 | 公会物资安全分支 | 单批正常装载、第四批 `4/8` 禁用 → `5/8` 发车可用已拍到，但可能消耗稀有／生活材料或跳商城 | 提交后背包数量、不足／购买、点击发车后的确认／终局和每日变化 |
 | 生活采集异常 | 五次与 `100/100 已完成`已拍到，但无人值守边界未知 | `80/100 → 100/100`、节点被抢／消失、活力不足和满包 |
@@ -436,7 +437,7 @@ finished_at:
 | 满包／掉落去向 | 可能丢失收益或触发邮件／临时包 | 接近满、满、下一掉落去向 |
 | 药尽 | 已见“HP 低于 70% 自动使用”启用态与数量 `36 → 35`，但决定最终死亡风险的归零行为未知 | `1 → 0`、战斗内耗尽提示、低血量行为和补槽规则 |
 | 野外死亡／复活 | 副本按钮与 PIONEER-A 竞技自动复活都不能复用为开放世界动作 | TEST-B／国服开放世界 HP 归零前、全部选项／费用、玩家人工复活、落点、保护和 Auto 状态全程 |
-| 掉线／重连 | TEST-B 已有失败到回世界链，但输入来源和开放世界保留未知 | 启动器／认证／排队、输入事件，以及开放世界原点／任务／Auto 前后值 |
+| 掉线／重连 | TEST-B 已有失败到回世界链和独立正常进入链，但输入来源与开放世界保留未知 | 认证／排队／维护、输入事件，以及开放世界原点／任务／Auto 前后值 |
 | 卡位自恢复 | 14 秒候选过短 | 清晰 AutoOn、目标、击杀、位置与最终恢复／停止 |
 
 ## 10. 8 月国服测试的优先采样
@@ -491,8 +492,8 @@ UNOBSERVED / BLOCKED_BY_POLICY / REMOVED
 - 机器可读来源目录：[sources.json](../../research/catalog/sources.json)；
 - 国服官方宣传与日期帧：[国服首曝 Manifest](../../research/evidence/video/official-cn-pv-bv1fmkh63ept/manifest.json)；
 - 每日、挂机、生活、精炼、宠物、公会、异常等多组视频证据及哈希；
-- 29 份视频 Manifest／127 张关键帧、1 份静态图 Manifest／1 张论坛一手原图；
-- 88 张可逐像素回溯到父图的正式图标／状态裁图，覆盖 46 个键：[裁图目录](../../research/evidence/icons/README.md)；
+- 30 份视频 Manifest／134 张关键帧、1 份静态图 Manifest／1 张论坛一手原图；
+- 94 张可逐像素回溯到父图的正式图标／状态裁图，覆盖 50 个键：[裁图目录](../../research/evidence/icons/README.md)；
 - 宠物孵化房与主战／支援结构：[宠物系统 Manifest](../../research/evidence/video/pet-system-bv14gtk6lelc/manifest.json)；
 - 首个自动挂机卡位候选序列：[卡位 Manifest](../../research/evidence/video/auto-blocked-terrain-bv1rg376ue6k/manifest.json)；
 - 流程缺口与负向检索：[08-direct-evidence-gap-log.md](08-direct-evidence-gap-log.md)；
@@ -520,6 +521,8 @@ UNOBSERVED / BLOCKED_BY_POLICY / REMOVED
 
 分类补审另登记 9 条旧 VOD／误标来源：其中 PIONEER-A 的 `2540550896` 补到开放世界英文连接失败双按钮，`2541630934` 补到角色选择；其余重复、播客、其他游戏、旧 RO 或无目标状态均明确排除。连接画面与旧角色页只作语义对照，禁止混入 TEST-B 或国服模板。
 
+Twitch Clip 的完整 VOD 引用又反查到分类字段误标为 Corepunk 的 `2805774434`。其 `11269–20510s` 实为约 2 小时 34 分的 TEST-B 段，已按 5／10 秒全程审阅；观众集中讨论 fatigue 的 `13071–14042s` 另按 2 秒复核，但客户端始终没有打开低倍／疲劳页面，作为明确负例。录像真正补到的是[启动与角色进入链](../../research/evidence/video/twitch-vod-2805774434/manifest.json)及自订 UI 布局编辑器：保存 7 张 1280×720 父帧和 6 张独立裁图。页面存在不等于录像授权或证明任何一次点击。
+
 定向 Bilibili 复检又新增两条 PIONEER-A 来源：[模拟对抗赛第二场](../../research/evidence/video/pioneer-simulation-revive-bv1qwtm6besg/manifest.json)保存 `Alive → 9／8／5／2／0 秒 → HUD 恢复`七帧链，并裁出 `8／5／2／0 秒`四个数值变体；另一条 12:34 公会战全程复核后没有可靠死亡 UI。前者证明旧竞技模式存在自动复活状态机及 `0 秒`后的短等待，仍不能替代 TEST-B／国服开放世界页面、费用、落点或 Auto 状态证据，也不提高开放世界无人值守评分。
 
 Twitch 全时段 Clip 目录随后完成 30 条全片复核。8 条 TEST-B Clip 中，一条十人本 Clip 补到持续 `DungeonDeadWait`，保存[父帧与 Manifest](../../research/evidence/video/twitch-clip-test-b-raid-dead-wait-g93cchbtrszole42/manifest.json)及独立裁图；另一条开放世界候选右上角经原帧确认是主播“加班剩余时间”，并非游戏“加倍时间”，已作为直播叠层负例排除。其余六条没有满包、低倍／疲劳、连接或新死亡边界。22 条 2025 旧 Clip 通过无账号、无 Cookie 的公开短期播放令牌取得完整 360p 媒体并按 1 秒复核：地图／移动 BUG、手动 TAB 目标循环、怪物目标头像缺图／错图、技能悬停／说明 BUG、普通副本和 GVG 均只作旧构建负例；没有新增满包、疲劳或玩家死亡终态，也不混入 TEST-B／国服模板。
@@ -537,7 +540,7 @@ Bilibili 公开相关推荐又以 70 个已登记种子枚举出 140 条相关�
 - 生活节点被抢／消失、活力不足和即时 `80/100 → 100/100`；
 - 高倍非零跨零、耗尽后客户端命名的低倍／掉率，再到疲劳的连续边界；
 - 卡位的 AutoOn、目标、击杀和恢复结果；
-- 真正满包、药品 `1 → 0`、野外死亡，以及连接链中的启动器／认证／排队、输入来源、开放世界落点和 Auto 状态保留；
+- 真正满包、药品 `1 → 0`、野外死亡，以及连接链中的账号认证、排队／维护、输入来源、角色创建／删除／多角色边界、开放世界落点和 Auto 状态保留；
 - 国服官方新增公告、FAQ、视频和协议。
 
 在这些缺口关闭前，可靠产品仍是“状态看板、提醒、证据和人工接管”，不是无人值守脚本。

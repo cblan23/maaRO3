@@ -51,7 +51,7 @@ uv run --python 3.12 --with av --with pillow python tools/research/extract_frame
 或验证码绕过：
 
 ```powershell
-uv run --python 3.12 --with av --with yt-dlp python `
+uv run --python 3.12 --with av --with pillow --with yt-dlp python `
   tools/research/extract_twitch_hls_ranges.py `
   --url "https://www.twitch.tv/videos/2804737558" `
   --format 720p60 `
@@ -62,6 +62,8 @@ uv run --python 3.12 --with av --with yt-dlp python `
 
 生成的 `review.json` 保存 VOD 元数据、格式、分片范围及每张帧的原始时间点。
 临时故事板和目标区间只能用于人工排查；未命中目标事实时不得复制进正式证据库。
+工具同时兼容传统 MPEG-TS 与带 `EXT-X-MAP` 初始化段的 fragmented MP4
+播放列表；下载中断后应换新临时目录，避免把半截分片误当作可复用缓存。
 故事板的 slide／tile 文件名只表示候选窗口起点，不是目标事件的精确时间戳；必须扫描完整窗口，再以 HLS 帧的真实 VOD 时间回抽高清。`2540550896` 的连接弹窗就是从约 756 秒故事板候选块校正到约 817 秒高清事件。
 
 公开聊天只能用作短事件时间定位，同样不能代替画面：

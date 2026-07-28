@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "source_id": "twitch-vod-2805774434",
+  "primary_url": "https://www.twitch.tv/videos/2805774434",
+  "capture_url": "https://www.twitch.tv/videos/2805774434",
+  "source_title": "DROPS 🎁 COREPUNK FRESH START SERVER WIPE - BIG UPDATE, IS IT WORTH PLAYING NOW? ➡️ !THRONE DUNGEONS W/ STREAMERS LATER❗!exitlag",
+  "source_author": "KanonXO",
+  "source_published_at": "2026-06-26T12:49:59Z",
+  "captured_at": "2026-07-28",
+  "test_context": "混合游戏长直播；Twitch 当前分类字段为 Corepunk，但 11269 秒左右从桌面启动器进入台港澳 TEST-B，11309–11337 秒连续经过公告、服务器入口、角色选择、95% 场景载入和开放世界，约 20510 秒在游戏内问卷后结束 RO3 段。另于 15914 秒直接显示自订布局编辑模式。RO3 段按 5／10 秒全程审阅，观众 fatigue 提问窗口另按 2 秒复核并对直接状态做 720p 亚秒回抽。",
+  "copyright_note": "仅保存证明启动／登录前半链、TEST-B 角色选择与可变 UI 布局所需的七帧。父帧含公开直播中的主播摄像头、聊天、桌面图标、UID／测试标识及赞助叠层，仅作内部可追溯研究证据；裁图尽量排除这些区域，公开再分发或训练前仍须完成授权与隐私审查。",
+  "frames": [
+    {
+      "file": "frames/11274.00-launcher-start-game-ready.jpg",
+      "timestamp_seconds": 11274,
+      "sha256": "37659a0358bac57d71b529e7eb1c657adad1cea73cb98975110b2b543d3c52fe",
+      "dimensions": [1280, 720],
+      "supports": [
+        "桌面上的 RO3 启燃测试启动器窗口完整显示游戏标志、版本号和黄色 Start Game 按钮。",
+        "证明 TEST-B 在客户端标题页之前存在可独立识别的桌面启动器就绪态。"
+      ],
+      "limitations": [
+        "画面没有账号认证、验证码、补丁下载或版本校验步骤，不能把 Start Game 等同于已完成登录。",
+        "录像未记录鼠标点击来源，也不能证明启动器会自动进入下一状态；桌面与直播叠层不得进入模板裁区。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/11309.00-notice-ready.jpg",
+      "timestamp_seconds": 11309,
+      "sha256": "19e83c0cca87fd47f5cf5107af11edc2faca7e0b2ffe94c192f757d345f4bcf1",
+      "dimensions": [1280, 720],
+      "supports": [
+        "客户端公告窗口已载入“启燃测试 开服公告”、日期、测试时间与关闭控件。",
+        "与既有公告载入中样本组成 notice_loading → notice_ready 的两个可区分状态。"
+      ],
+      "limitations": [
+        "没有可见输入事件，不能判断公告是由用户关闭、自动关闭还是其他快捷键通过。",
+        "公告正文、日期与图片属于测试期内容，不能作为未来国服固定文本模板。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/11316.00-server-entry-ready.jpg",
+      "timestamp_seconds": 11316,
+      "sha256": "12a5e8d89850fa86d147541f653558500e7f8b966a8e938476b8b4c344ca5baa",
+      "dimensions": [1280, 720],
+      "supports": [
+        "TEST-B 标题页直接显示 S1-01、启燃测试服务器行与黄色“进入游戏”按钮。",
+        "补出标题标志之外的服务器入口就绪态，可与维护、排队或按钮禁用状态在未来采样中比较。"
+      ],
+      "limitations": [
+        "只见一个服务器且未出现排队、选服下拉、维护或满员变体。",
+        "服务器行已有绿色状态图标，但录像不足以把颜色解释为延迟、可用性或推荐状态。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/11325.00-character-selection-test-b.jpg",
+      "timestamp_seconds": 11325,
+      "sha256": "e781df0c5d8232dd8b9802123e67478411c91ec185398c9745db31b5fc981643",
+      "dimensions": [1280, 720],
+      "supports": [
+        "TEST-B“选择角色”页显示一个标有“最近”的 Lv.30 角色、一个“新建”空位和黄色“进入游戏”按钮。",
+        "现有角色卡为金色选中边框，新建槽为普通深色边框，提供同页默认焦点与创建入口的直接视觉对照。"
+      ],
+      "limitations": [
+        "只含单角色账号，不能证明角色数量上限、左右翻页、删除确认或键盘导航规则。",
+        "选择角色后的输入不可见；技术上可识别页面不等于获准自动进入或创建角色。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/11334.00-scene-loading-95-percent.jpg",
+      "timestamp_seconds": 11334,
+      "sha256": "5067e0178ae3ebe50c34581e61ae04b7c8fed4bad6d8e7e20148b17308621665",
+      "dimensions": [1280, 720],
+      "supports": [
+        "角色选择后进入场景载入页，右下角显示“载入中”、进度条和 95%。",
+        "与两秒后的开放世界帧构成高进度加载 → 可操作 HUD 的连续边界。"
+      ],
+      "limitations": [
+        "95% 只是瞬时数值，不能作为完成阈值或卡死超时判据；载入背景会随地图变化。",
+        "右下直播赞助叠层靠近进度区，正式裁图必须避开污染区域。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/11337.00-open-world-entered.jpg",
+      "timestamp_seconds": 11337,
+      "sha256": "629b2a7a7c05b068ee5c779924b17098552c08e57c812aac0d3c3a1f789976ec",
+      "dimensions": [1280, 720],
+      "supports": [
+        "95% 载入后约三秒进入开放世界，Base／Job、HP／SP、任务、技能栏、小地图与系统入口同时恢复。",
+        "把 LauncherReady → NoticeReady → ServerEntry → CharacterSelection → SceneLoading → OpenWorld 串成同一录像的 TEST-B 进入链。"
+      ],
+      "limitations": [
+        "角色在录像开始前已有 Lv.30 进度，不能证明新角色首次进入或角色创建流程。",
+        "未显示自动战斗开启状态、断线前坐标或任务导航是否被保留。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/15914.00-custom-layout-editor.jpg",
+      "timestamp_seconds": 15914,
+      "sha256": "0a8b0e2f36deb1deb9eb9f5d10309e1348e8b57150581f9aeb1e3796533c96bd",
+      "dimensions": [1280, 720],
+      "supports": [
+        "TEST-B 自订布局模式把社群功能、队伍、玩家资讯、技能、增减益、活动提醒等 HUD 区域显示为独立可拖移控制框。",
+        "“拖移控制框可以调整位置”弹窗提供全部／常驻／提示／战斗筛选及恢复预设入口，直接证明固定绝对坐标不是可靠前提。"
+      ],
+      "limitations": [
+        "录像没有完整记录拖移、保存、取消或恢复预设的结果，不能定义标准布局恢复步骤。",
+        "直播叠层覆盖右侧局部区域；自动化必须先采集分辨率、DPI、缩放和布局指纹，未知布局应安全停机。"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

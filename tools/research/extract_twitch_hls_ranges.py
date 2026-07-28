@@ -10,15 +10,13 @@ from __future__ import annotations
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import asdict, dataclass
+import io
 import json
 from pathlib import Path
+import re
 import time
 from urllib.parse import urljoin
 from urllib.request import Request, urlopen
-
-import av
-import yt_dlp
-
 
 USER_AGENT = "Mozilla/5.0 maaRO3-public-research/1.0"
 
@@ -29,6 +27,7 @@ class Segment:
     start: float
     duration: float
     url: str
+    init_url: str | None = None
 
     @property
     def end(self) -> float:
@@ -107,6 +106,8 @@ def request_bytes(url: str, attempts: int = 4) -> bytes:
 
 
 def extract_format(video_url: str, format_id: str) -> tuple[dict, dict]:
+    import yt_dlp
+
     options = {"quiet": True, "no_warnings": True, "skip_download": True}
     with yt_dlp.YoutubeDL(options) as downloader:
         info = downloader.extract_info(video_url, download=False)
@@ -131,8 +132,17 @@ def parse_media_playlist(url: str) -> list[Segment]:
     segments: list[Segment] = []
     elapsed = 0.0
     pending_duration: float | None = None
+    initialization_url: str | None = None
     for line in lines:
-        if line.startswith("#EXTINF:"):
+        if line.startswith("#EXT-X-MAP:"):
+            attributes = line.removeprefix("#EXT-X-MAP:")
+            match = re.search(
+                r'(?:^|,)URI=(?:"([^"]*)"|([^,]*))', attributes
+            )
+            if not match:
+                raise SystemExit("EXT-X-MAP did not contain a URI")
+            initialization_url = urljoin(url, match.group(1) or match.group(2))
+        elif line.startswith("#EXTINF:"):
             pending_duration = float(line.removeprefix("#EXTINF:").split(",", 1)[0])
         elif not line.startswith("#") and pending_duration is not None:
             segments.append(
@@ -141,6 +151,7 @@ def parse_media_playlist(url: str) -> list[Segment]:
                     start=elapsed,
                     duration=pending_duration,
                     url=urljoin(url, line),
+                    init_url=initialization_url,
                 )
             )
             elapsed += pending_duration
@@ -166,6 +177,8 @@ def extract_review_frames(
     requested_end: float,
     interval: float,
 ) -> list[dict]:
+    import av
+
     output.mkdir(parents=True, exist_ok=True)
     container = av.open(video)
     stream = container.streams.video[0]
@@ -208,12 +221,20 @@ def extract_sparse_frames(
     output: Path,
     source_start: float,
     requested_points: list[float],
+    initialization: bytes | None = None,
 ) -> list[dict]:
     """Decode one HLS segment once and save frames at requested source points."""
 
+    import av
+
     output.mkdir(parents=True, exist_ok=True)
     points = sorted(requested_points)
-    container = av.open(video)
+    media: Path | io.BytesIO
+    if initialization is None:
+        media = video
+    else:
+        media = io.BytesIO(initialization + video.read_bytes())
+    container = av.open(media)
     stream = container.streams.video[0]
     first_time: float | None = None
     point_index = 0
@@ -256,6 +277,14 @@ def main() -> None:
     if not playlist_url:
         raise SystemExit(f"Selected format {args.format!r} has no media URL")
     segments = parse_media_playlist(playlist_url)
+    initialization_cache: dict[str, bytes] = {}
+
+    def initialization_bytes(url: str | None) -> bytes | None:
+        if url is None:
+            return None
+        if url not in initialization_cache:
+            initialization_cache[url] = request_bytes(url)
+        return initialization_cache[url]
 
     review_ranges: list[dict] = []
     for range_index, (requested_start, requested_end) in enumerate(args.ranges or []):
@@ -281,7 +310,13 @@ def main() -> None:
 
         joined = range_root / "range.ts"
         with joined.open("wb") as output_stream:
-            for destination in destinations:
+            previous_init_url: str | None | object = object()
+            for segment, destination in zip(selected, destinations):
+                if segment.init_url != previous_init_url:
+                    init = initialization_bytes(segment.init_url)
+                    if init is not None:
+                        output_stream.write(init)
+                    previous_init_url = segment.init_url
                 output_stream.write(destination.read_bytes())
 
         frames = extract_review_frames(
@@ -358,6 +393,7 @@ def main() -> None:
                     frame_root,
                     source_start=segment.start,
                     requested_points=points,
+                    initialization=initialization_bytes(segment.init_url),
                 )
             )
         frames.sort(key=lambda item: item["requested_timestamp_seconds"])
@@ -387,6 +423,9 @@ def main() -> None:
         "playlist": {
             "segment_count": len(segments),
             "duration": round(segments[-1].end, 3),
+            "initialization_segment_count": len(
+                {segment.init_url for segment in segments if segment.init_url}
+            ),
         },
         "interval": args.interval,
         "ranges": review_ranges,
