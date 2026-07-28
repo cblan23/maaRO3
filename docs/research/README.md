@@ -19,7 +19,7 @@
 - [`06-video-review-queue.md`](06-video-review-queue.md)：已审阅与待审视频队列；
 - [`07-daily-system-encyclopedia.md`](07-daily-system-encyclopedia.md)：逐项记录入口、步骤、资源、完成判据、异常与首期自动化边界；
 - [`08-direct-evidence-gap-log.md`](08-direct-evidence-gap-log.md)：流程级直接证据、已审但未找到项、检索范围和最小补证序列；
-- [`09-icon-evidence-catalog.md`](09-icon-evidence-catalog.md)：44 个机器可读图标／状态键、84 张正式裁图、父帧可见种类及缺失变体；
-- [`10-detailed-research-report.md`](10-detailed-research-report.md)：222 条来源、图片资产、Twitch VOD／Clip 与巴哈 74 主题深审、三项自动化把握、直接证据与国服补证计划的完整汇总；
+- [`09-icon-evidence-catalog.md`](09-icon-evidence-catalog.md)：46 个机器可读图标／状态键、88 张正式裁图、父帧可见种类及缺失变体；
+- [`10-detailed-research-report.md`](10-detailed-research-report.md)：225 条来源、图片资产、Twitch VOD／Clip、Bilibili 相关推荐长视频与巴哈 74 主题深审、三项自动化把握、直接证据与国服补证计划的完整汇总；
 - [`official_sources.md`](official_sources.md)：官方／准官方原始来源台账；
 - [`../design/compliance_gate.md`](../design/compliance_gate.md)：用户协议、授权和运行门禁。

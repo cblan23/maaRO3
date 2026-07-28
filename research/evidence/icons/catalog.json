@@ -1251,7 +1251,7 @@
         "watermark": false,
         "subtitles": false,
         "streamer_overlay": false,
-        "notes": "裁区只保留高倍耗尽页左侧同步出现的四条奖励通知：齿轮 X50、Base经验 X3、齿轮 X70 和物品 X1；聊天、角色、UID 与主播立绘均在裁区外。"
+        "notes": "裁区只保留高倍耗尽页左侧同步出现的四条奖励通知：齿轮 X50、Base经验 X3、齿轮 X70 和连帽披肩 X1；聊天、角色、UID 与主播立绘均在裁区外。"
       },
       "limitations": [
         "该裁区本身不含 0秒/180分 文字，必须与可追溯父帧联合判断；它证明耗尽期间奖励通知仍变化，但不能命名低倍阶段、估算掉率或识别疲劳。"
@@ -3194,6 +3194,155 @@
       },
       "limitations": [
         "这是 TEST-B 十人副本的持续等待态；没有死亡触发、复活邀请或 HUD 恢复边界，不能替代野外死亡／复活选项样本。"
+      ]
+    },
+    {
+      "id": "guild-caravan-batch-four-active-test-b-01",
+      "icon_key": "guild_caravan_batch",
+      "state": "batch_four_of_four_active",
+      "sample_type": "state_indicator",
+      "file": "crops/guild-caravan-batch-four-active-test-b-01.png",
+      "sha256": "e5b59f9cc9e83982860dbe5a583f5fd3363b45081cab11d14723623adf7192af",
+      "dimensions": [
+        100,
+        30
+      ],
+      "source_id": "bilibili-test-b-long-review-bv1rrmw6qeom",
+      "source_timestamp_seconds": 48,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/test-b-long-review-bv1rrmw6qeom/frames/0048.00-guild-caravan-batch-four-active.png",
+      "parent_sha256": "6aaa503898f2417b3599f2c3255ffcbedd960100c874cd9615658afbe3ad6914",
+      "crop": {
+        "x": 340,
+        "y": 112,
+        "width": 100,
+        "height": 30
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留公会商队页面顶部的装运商队 4/4 状态字样；上传者字幕、测试 UID、角色、材料清单和背景均在裁区外。"
+      },
+      "limitations": [
+        "该裁图证明第四批正在显示，不证明第四批已装满或全部四批最终结算；公开视频源只有 854×456，国服必须补采高清终态。"
+      ]
+    },
+    {
+      "id": "guild-caravan-dispatch-disabled-4-of-8-test-b-01",
+      "icon_key": "guild_caravan_dispatch",
+      "state": "disabled_at_4_of_8",
+      "sample_type": "state_indicator",
+      "file": "crops/guild-caravan-dispatch-disabled-4-of-8-test-b-01.png",
+      "sha256": "ed195bdfe5c99d16beacfd79a76b3557eb155f33b50d327996333bc6c44af78a",
+      "dimensions": [
+        130,
+        50
+      ],
+      "source_id": "bilibili-test-b-long-review-bv1rrmw6qeom",
+      "source_timestamp_seconds": 50.75,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/test-b-long-review-bv1rrmw6qeom/frames/0050.75-guild-caravan-dispatch-disabled.png",
+      "parent_sha256": "ae8db8dbde9ea8ffdf1a0f1298c48b8feae119359445e5c83f569dfa795d759e",
+      "crop": {
+        "x": 530,
+        "y": 315,
+        "width": 130,
+        "height": 50
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区同时保留载货量 4/8、深色禁用区域及达到 5 以上才可发车的红色提示；上传者字幕、测试 UID、角色和材料详情均在裁区外。"
+      },
+      "limitations": [
+        "只证明该次 TEST-B 第四批的 4/8 禁用态；不得硬编码到其他批次或国服，也不得据此自动购买、装载或发车。"
+      ]
+    },
+    {
+      "id": "guild-caravan-dispatch-enabled-5-of-8-test-b-01",
+      "icon_key": "guild_caravan_dispatch",
+      "state": "enabled_at_5_of_8",
+      "sample_type": "state_indicator",
+      "file": "crops/guild-caravan-dispatch-enabled-5-of-8-test-b-01.png",
+      "sha256": "b211fc381b65ece63d1d321841513cc8b10f714b0d4c0e606d33ad2cbae77619",
+      "dimensions": [
+        130,
+        50
+      ],
+      "source_id": "bilibili-test-b-long-review-bv1rrmw6qeom",
+      "source_timestamp_seconds": 51.5,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/test-b-long-review-bv1rrmw6qeom/frames/0051.50-guild-caravan-dispatch-enabled.png",
+      "parent_sha256": "1d62809f3c8e1c0804cf7343387966d842806e633787e61e76e0d44fb6f17d23",
+      "crop": {
+        "x": 530,
+        "y": 315,
+        "width": 130,
+        "height": 50
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区同时保留载货量 5/8 与黄色发车按钮；上传者字幕、测试 UID、角色和材料详情均在裁区外。"
+      },
+      "limitations": [
+        "按钮只被观察为可用，没有在视频中点击；不得把识别到 5/8 当作自动发车授权，也不能声称第四批最终完成。"
+      ]
+    },
+    {
+      "id": "survival-teammate-revive-prompt-test-b-01",
+      "icon_key": "competitive_teammate_revive_dialog",
+      "state": "ambulance_teammate_revive_prompt",
+      "sample_type": "dialog",
+      "file": "crops/survival-teammate-revive-prompt-test-b-01.png",
+      "sha256": "4ba19a3b1897df90dac4fa34b1ea99d2a0f1e263b9ad684207859b69be7e99e6",
+      "dimensions": [220, 128],
+      "source_id": "bilibili-test-b-long-review-bv1rrmw6qeom",
+      "source_timestamp_seconds": 544.9,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/test-b-long-review-bv1rrmw6qeom/frames/0544.90-survival-teammate-revive-prompt.png",
+      "parent_sha256": "9cc5995057ba5a5a77bbbd93a7875d585cfcd63ffa1ece5343a3500b6a20a51c",
+      "crop": {
+        "x": 316,
+        "y": 165,
+        "width": 220,
+        "height": 128
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留完整队友复活确认弹窗、身份牌样式图标与复活按钮；上传者字幕、测试 UID、队伍栏、地图和角色均在裁区外。"
+      },
+      "limitations": [
+        "这是 TEST-B 生存竞争模式队友复活提示，且没有按钮后的连续结果；不得替代玩家自身死亡页、开放世界复活选项或国服高清成功／失败变体。"
       ]
     }
   ]

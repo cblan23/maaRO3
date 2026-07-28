@@ -50,6 +50,9 @@
 | 22:15.6 | [提交奖励提示](../../research/evidence/video/twitch-vod-2805645541/frames/1335.60-guild-submit-rewards.jpg) | 公会贡献 200、钱币 5000 提示与后续红点 | 其他背景掉落通知不能归入商队奖励 |
 | 22:16.4 | [满载奖励覆盖层](../../research/evidence/video/twitch-vod-2805645541/frames/1336.40-guild-caravan-reward-overlay.jpg) | 奖励层出现，背景已刷新为 2/4 | 奖励物品名不可读 |
 | 22:16.8 | [下一批 2/4](../../research/evidence/video/twitch-vod-2805645541/frames/1336.80-guild-caravan-next-batch.jpg) | 新需求同时含满足与不足项目 | 只覆盖 1/4 → 2/4，不证明四批终局 |
+| 长评 00:48.0 | [第四批进行中](../../research/evidence/video/test-b-long-review-bv1rrmw6qeom/frames/0048.00-guild-caravan-batch-four-active.png) | 页面顶部直接显示“装运商队 `4/4`”，材料、求助与装载控件仍在 | 二次剪辑单段、854×456；不含 `4/4` 装满、终奖或每日变化 |
+| 长评 00:50.75 | [载货 4/8、发车禁用](../../research/evidence/video/test-b-long-review-bv1rrmw6qeom/frames/0050.75-guild-caravan-dispatch-disabled.png) | 第四批底部为 `4/8`，发车区域深色禁用并提示至少达到 5 | 不代表页面其他装载操作禁用，也不能外推国服阈值 |
+| 长评 00:51.50 | [载货 5/8、发车可用](../../research/evidence/video/test-b-long-review-bv1rrmw6qeom/frames/0051.50-guild-caravan-dispatch-enabled.png) | 同一短片段第五项变绿，`5/8` 时黄色“发车”按钮启用 | 未点击发车；不证明确认框、最终奖励或每日变化 |
 
 ### 生活职业、配方与采矿
 
@@ -87,7 +90,7 @@
 |---|---|---|---|
 | `2805739995` 01:38:15 | [高倍可开启 `60分/180分`](../../research/evidence/video/twitch-vod-2805739995/frames/5895.00-farming-boost-available-clean.jpg) | 有额度、金色开启按钮 | 不证明点击后启动；数值不可固化 |
 | `2804892798` 03:05:30 → 03:05:40 | [运行起点](../../research/evidence/video/twitch-vod-2804892798/frames/11130.00-farming-boost-active-countdown-start.jpg)、[十秒后](../../research/evidence/video/twitch-vod-2804892798/frames/11140.00-farming-boost-active-countdown-later.jpg) | `59:50 → 59:40`，关闭按钮持续可见 | 未跨到零；与其他两态不是同账号 |
-| `2804807809` 06:46:51 → 06:47:15 | [耗尽](../../research/evidence/video/twitch-vod-2804807809/frames/24411.00-farming-boost-exhausted.jpg)、[耗尽时奖励通知变化](../../research/evidence/video/twitch-vod-2804807809/frames/24420.00-farming-boost-exhausted-reward-feed.jpg)、[稳定耗尽](../../research/evidence/video/twitch-vod-2804807809/frames/24435.00-farming-boost-exhausted-stable.jpg) | `0秒/180分`、次日 5:00 补充；页面保持耗尽时齿轮、经验和物品通知仍变化，背景有伤害 | 排除“归零即停战／必然零收益”；仍无低倍／疲劳标签与掉率 |
+| `2804807809` 06:46:51 → 06:47:15 | [耗尽](../../research/evidence/video/twitch-vod-2804807809/frames/24411.00-farming-boost-exhausted.jpg)、[耗尽时奖励通知变化](../../research/evidence/video/twitch-vod-2804807809/frames/24420.00-farming-boost-exhausted-reward-feed.jpg)、[稳定耗尽](../../research/evidence/video/twitch-vod-2804807809/frames/24435.00-farming-boost-exhausted-stable.jpg) | `0秒/180分`、次日 5:00 补充；页面保持耗尽时齿轮、`Base经验 X3`和`连帽披肩 X1`通知仍变化，背景有伤害 | 排除“归零即停战／必然零收益”；仍无低倍／疲劳标签与掉率 |
 | `2804892798` 00:07:25 | [空背包 `0/300`](../../research/evidence/video/twitch-vod-2804892798/frames/0445.00-inventory-capacity-empty-0-of-300.jpg) | 空容量与 HUD 背包入口 | 不证明国服／扩容后上限 |
 | `2804807809` 05:01:32 | [正常背包 `36/300`](../../research/evidence/video/twitch-vod-2804807809/frames/18092.00-inventory-capacity-normal-36-of-300.jpg) | 远未满的正常容量基准 | 仍不是真正满包 |
 | `2805739995` 01:41:50.5 | [自动用药启用、数量 36](../../research/evidence/video/twitch-vod-2805739995/frames/6110.50-quick-potion-auto-use-before.jpg) | 勾选“HP 低于 70% 时自动使用” | 70% 是账号配置，不是推荐常量 |
@@ -158,6 +161,14 @@
 | 28:40 | [团队拍卖面板](../../research/evidence/video/ten-player-raid-bv1cnkd6ye4s/frames/1720-team-auction-panel.png) | `TeamAuction`，物品和倒计时 | 经济行为默认排除 |
 | 29:00 | [拍卖二次确认](../../research/evidence/video/ten-player-raid-bv1cnkd6ye4s/frames/1740-auction-confirmation.png) | 带货币价格的确认弹窗 | 不可当作普通奖励确认 |
 
+### TEST-B 生存竞争模式队友复活负例
+
+来源：[骨灰玩家启燃长评转载](https://www.bilibili.com/video/BV1RRMw6QEom/)，完整元数据见[长评 Manifest](../../research/evidence/video/test-b-long-review-bv1rrmw6qeom/manifest.json)。
+
+| 时间 | 画面／状态 | 支持的状态 | 设计边界 |
+|---:|---|---|---|
+| 09:04.90 | [救护车队友复活弹窗](../../research/evidence/video/test-b-long-review-bv1rrmw6qeom/frames/0544.90-survival-teammate-revive-prompt.png) | 生存竞争模式出现“复活已死亡队友”的单按钮提示与身份牌资源图标 | 只维持约半秒且未点击；不是玩家自身死亡页，不能替代野外复活选项／费用／落点样本 |
+
 ### 连接恢复、标题返回与角色选择
 
 TEST-B 直接来源：[GVG 骑士完整录像](https://www.bilibili.com/video/BV1h2Kf6qEFz/)，完整元数据和九帧连续链见 [Manifest](../../research/evidence/video/gvg-knight-bv1h2kf6qefz/manifest.json)。竞争场景本身仍排除自动参与，但连接层可作为同构建状态证据。
@@ -225,7 +236,11 @@ PIONEER-A 只作跨构建语义对照，不进入 TEST-B／国服模板：
 | [TEST-B 七日心得转载剪版](https://www.bilibili.com/video/BV1wJTb6BEdY/) | 03:58 | 全程 2 秒复核，负向登记 | 副本、PVP、活动、商城与普通战斗；无目标异常或新图标 |
 | [经典 RO 标题误标](https://www.bilibili.com/video/BV1w9736mETV/) | 00:40 | 全程 0.5 秒复核，D 级排除 | 标题中的“小站Ro3”不是《仙境传说3》；画面为经典 RO，不保存模板 |
 | [巴哈 RO3 板目录快照](https://m.gamer.com.tw/forum/B.php?bsn=81475) | 74 主题 | TEST-B 时段正文／留言关键词扫描＋39 个原图引用复核 | 只补到分类背包接近满与疲劳后低收益的文字报告；原图无对应 UI，零帧入库 |
-| [全职业三转试玩＋跑图](https://www.bilibili.com/video/BV1vhhizdEeX/) | 09:46 | storyboard 已审阅 | 职业技能、跑图、旧先锋构建 HUD |
+| [全职业三转试玩＋跑图](https://www.bilibili.com/video/BV1vhhizdEeX/) | 09:46 | 293 张二秒采样全审 | 职业技能、跑图、旧先锋构建 HUD；无目标异常，不进入 TEST-B／国服模板 |
+| [巴哈电玩疯 TEST-B 长实机转载](https://www.bilibili.com/video/BV1D67V6PEMq/) | 22:28 | 674 张二秒采样全审，负向登记 | 角色创建至 PVP／GVG；没有目标异常状态，不保存新父帧 |
+| [老玩家启燃心得转载](https://www.bilibili.com/video/BV1xeMw6TEub/) | 07:41 | 230 张二秒采样全审，评论来源 | 流派手册误似背包；没有目标异常状态 |
+| [骨灰玩家启燃长评转载](https://www.bilibili.com/video/BV1RRMw6QEom/) | 21:52 | 657 张二秒采样＋离线转写／亚秒定点复核，4 帧入库 | `48–51.50s` 补到公会第四批发车边界；`544.90s` 补到生存竞争模式队友复活弹窗负例；另有重复耗尽页和普通背包 |
+| [制作人问答二次整理](https://www.bilibili.com/video/BV1hpKG6qEda/) | 08:40 | 260 张二秒采样全审，二手政策来源 | 商业化与反馈讨论；无目标异常或新按钮变体 |
 | [制作人对搬砖／宏的回应切片](https://www.bilibili.com/video/BV1aqMc6LEN7/) | 07:28 | 已审阅，语义有歧义 | 只能作运营态度线索，不能推翻正式协议 |
 
 ## 3. Day1 精细时间轴

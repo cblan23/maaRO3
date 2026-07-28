@@ -156,7 +156,7 @@ Twitch storyboard 的文件名时间是候选窗口起点，不保证等于事�
 | [BV1YqTK6oE7g](https://www.bilibili.com/video/BV1YqTK6oE7g/) | Day4 三转、灵魂残响 | 06:03 | reviewed + timeline | 主线后日常、五人本红装、地图／裂隙残响、配置 |
 | [4Gamers Day3 图文／视频](https://www.4gamers.com.tw/saged/detail/kex9jeq3mo6dnn) | 49 等、自动技能配置、卡片、PVP／公会联赛 | 视频待补 | article partially reviewed | 图文明列自动战斗技能配置、施放顺序和栏位摆放；卡片与多人部分仍需回看视频，不把攻略建议当 UI 事实 |
 | [BV1oKNi6kEzy](https://www.bilibili.com/video/BV1oKNi6kEzy/) | 启燃测试一周体验，方块_23 | 17:49 | transcribed + reviewed | 日常负担、挂机、图鉴、生活、宠物、经济和版本评价 |
-| [BV1hpKG6qEda](https://www.bilibili.com/video/BV1hpKG6qEda/) | 制作人直播问答整理 | 08:40 | queued | 日常调整、辅助战斗、运营态度；需对照完整直播 |
+| [BV1hpKG6qEda](https://www.bilibili.com/video/BV1hpKG6qEda/) | 制作人直播问答整理 | 08:40 | full 2 s timeline reviewed, secondary only | 260 张二秒采样全审；商业化、受众取舍和反馈收集二次剪辑，没有满包、疲劳、复活、公会／生活异常或新按钮变体；政策仍需对照完整直播 |
 | [BV1QyT964EHc](https://www.bilibili.com/video/BV1QyT964EHc/) | 测试版本批评与系统分析 | 07:20 | transcribed + reviewed + 1 frame | 养成、公会和生活职业；全览 UI 直接确认矿工／厨师／园艺师标签，评价仍只作玩家观点 |
 | [BV1YbNy6fEzE](https://www.bilibili.com/video/BV1YbNy6fEzE/) | 启燃测试结束小结 | 03:13 | transcribed + reviewed + 3 frames | 宠物助战 1–5 号位、公会活动日历、自动战斗设置结构 |
 | [BV19HTn6PEo2](https://www.bilibili.com/video/BV19HTn6PEo2/) | RO3 真的很烂吗 | 06:33 | transcribed + reviewed + 2 frames | 槽位精炼、下一步成功率／属性／材料和获得途径；价值判断不作事实 |
@@ -178,7 +178,12 @@ Twitch storyboard 的文件名时间是候选窗口起点，不保证等于事�
 | [BV1mo356SEyS](https://www.bilibili.com/video/BV1mo356SEyS/) | 国服首测／职业介绍评论，烈酒Liquor | 02:58 | storyboard reviewed, exclusion only | 官网与职业介绍，没有新图标状态 |
 | [BV1qQTr6PEKS](https://www.bilibili.com/video/BV1qQTr6PEKS/) | TEST-B 体验评论，和东东一起战斗吧 | 04:04 | full 2 s timeline reviewed, exclusion only | 装备、宠物、商城和活动评论；仅重复 `100/100` 每日页，没有新增流程或图标证据 |
 | [BV1wJTb6BEdY](https://www.bilibili.com/video/BV1wJTb6BEdY/) | TEST-B 七日心得剪版，自由高达seed 转载 | 03:58 | full 2 s timeline reviewed, exclusion only | 已定位“游戏Boy不要S”素材的剪版；只有副本、PVP、活动、商城和普通战斗，没有满包、疲劳状态、死亡、物资终局或新图标 |
+| [BV1D67V6PEMq](https://www.bilibili.com/video/BV1D67V6PEMq/) | 巴哈姆特电玩疯 TEST-B 实机转载 | 22:28 | full 2 s timeline reviewed, B-grade negative | 674 张二秒采样全审；角色创建、飞艇、开放世界、卡片、宠物、副本、PVP／GVG 均有覆盖，但没有目标异常状态；零帧正式入库 |
+| [BV1xeMw6TEub](https://www.bilibili.com/video/BV1xeMw6TEub/) | RO 老玩家启燃测试心得转载 | 07:41 | full 2 s timeline reviewed, commentary only | 230 张二秒采样全审；`68–78s` 是流派手册／配装方案，不是背包，也没有目标异常状态 |
+| [BV1RRMw6QEom](https://www.bilibili.com/video/BV1RRMw6QEom/) | RO 骨灰玩家启燃测试长评转载 | 21:52 | full 2 s timeline + local transcript + 4 frames | 657 张二秒采样全审并做亚秒回抽；`48–51.50s` 直接显示公会第四批 `4/8` 发车禁用 → `5/8` 可用，3 张父帧／裁图入库但未发车；`544.90s` 另存生存竞争模式队友复活弹窗，只作野外自身复活负例；`432–450s` 是 15v15 PVP 而非疲劳，普通背包也非满包 |
 | [BV1w9736mETV](https://www.bilibili.com/video/BV1w9736mETV/) | “小站Ro3”经典 RO 直播回放 | 00:40 | full 0.5 s timeline reviewed, D-grade exclusion | 标题命中精确 UI 检索，但“Ro3”不是游戏名；画面为经典 RO 深渊出卡，不属于《仙境传说3》，零帧入库 |
+
+站内搜索触发公开接口 `-352/412` 风控后立即停止，没有使用 Cookie、验证码或规避手段。改由无需登录的公开相关推荐接口对 70 个已登记种子做一层枚举，得到 140 条标题／简介相关视频，其中 67 条尚未登记；上述三条新增长视频来自这批候选。后续只优先审能触达缺口的长实机，不因宣传复读或评论数量增加来源数字。
 
 上述评论／混剪与经典 RO 误标素材只补强排除台账。真正新增的 TEST-B 流程证据来自长实机回抽：公会商队单批、生活 `100/100`、高倍三态、耗尽时仍变化的经验／物品通知、背包正常基准、快捷用药和 GVG 自然断线恢复链；呆呆整轮、客户端命名的低倍／疲劳与掉率边界、真正满包、开放世界死亡，以及连接前半链／输入来源／开放世界状态保留仍未闭环。
 
@@ -211,7 +216,7 @@ Twitch storyboard 的文件名时间是候选窗口起点，不保证等于事�
 
 | BVID／链接 | 内容 | 构建 | 状态 | 研究目标 |
 |---|---|---|---|---|
-| [BV1vhhizdEeX](https://www.bilibili.com/video/BV1vhhizdEeX/) | 全职业三转试玩＋跑图 | 2025 先锋构建 | storyboard reviewed | 职业特效、移动和旧 HUD 差异 |
+| [BV1vhhizdEeX](https://www.bilibili.com/video/BV1vhhizdEeX/) | 全职业三转试玩＋跑图 | 09:46，2025 先锋构建 | full 2 s timeline reviewed | 293 张二秒采样全审；全职业三转、跑图、技能与地图均属旧构建，无目标异常；不得进入 TEST-B／国服模板 |
 | [BV1QRTq61EHH](https://www.bilibili.com/video/BV1QRTq61EHH/) | 攻城战初体验 | 2026 启燃 | 2 storyboards reviewed | GVG 场景、团队列表、区域和器械 |
 | [BV1h2Kf6qEFz](https://www.bilibili.com/video/BV1h2Kf6qEFz/) | GVG 骑士视角 | 2026 启燃 | full reviewed + disconnect timeline + 9 frames | `重连中 → 双按钮失败 → 再次重连 → 要求重登 → 标题／公告／加载 → 回到 GVG`；只用于连接层分类 |
 | [BV1QwTM6bESg](https://www.bilibili.com/video/BV1QwTM6bESg/) | 模拟对抗赛机械工匠第二场 | PIONEER-A | full 2 s review + 0.25／0.02 s boundary extraction + 7 frames | 两轮 `死亡倒计时 → 复活点等待 → 0 秒 → HUD 恢复`；严格隔离旧构建 |
@@ -277,7 +282,7 @@ timeline:
 ## 10. 下一轮深审顺序
 
 1. 呆呆委托：找到从接取到最终交付的一整轮，逐环标注寻路、跨图、对话、打怪和完成变化；
-2. 公会物资：已有单批正常链，继续找库存不足、普通货币购买、背包扣除、四批终局与每日变化；
+2. 公会物资：已有单批正常链和第四批 `4/8` 发车禁用 → `5/8` 可用，继续找不足项选择结果、普通货币购买、背包扣除、发车确认／终局与每日变化；
 3. 每日采集：已有五次和 `100/100 已完成`，继续补 `80/100 → 100/100`、节点被抢／消失、活力不足和中断；
 4. 挂机：已有高倍可用／运行／耗尽和耗尽时奖励通知继续，继续寻找同账号跨零、客户端低倍标签／掉率 → 疲劳连续边界，并建立 AutoOn／目标切换／无目标序列；
 5. 自动战斗设置：逐职业验证热键栏映射、禁用格、战斗中换格、施放节奏和停止条件；

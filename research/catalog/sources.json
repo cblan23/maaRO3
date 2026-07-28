@@ -164,10 +164,13 @@
       "id": "full-class-run-bv1vhhizdeex",
       "kind": "test_video",
       "grade": "B",
-      "status": "queued",
-      "title": "RO3 全职业三转试玩与跑图",
+      "status": "full_two_second_timeline_reviewed_old_build_exclusion_only",
+      "title": "仙境传说MMO端游续作 内测游戏实录 RO3 全职业三转试玩+跑图",
       "url": "https://www.bilibili.com/video/BV1vhhizdEeX/",
-      "tags": ["movement", "hud", "world_map", "skills"]
+      "primary_author": "云千影Sorcer",
+      "published_at": "2025-08-30T21:39:42+08:00",
+      "duration_seconds": 586,
+      "tags": ["pioneer_build", "old_build", "movement", "hud", "world_map", "skills", "all_classes", "third_job", "full_timeline_reviewed", "no_target_exception", "excluded_from_test_b_templates", "no_evidence_saved"]
     },
     {
       "id": "gstar-mobile-demo-bv11vmdytesx",
@@ -186,10 +189,13 @@
       "id": "producer-qa-bv1hpkg6qeda",
       "kind": "test_video",
       "grade": "B",
-      "status": "queued",
-      "title": "RO3 制作人直播问答整理",
+      "status": "full_two_second_timeline_reviewed_secondary_qa_no_target_state",
+      "title": "《RO3》制作人直播都聊了什么？官方回应玩家提问",
       "url": "https://www.bilibili.com/video/BV1hpKG6qEda/",
-      "tags": ["planned_changes", "daily_rework", "policy"]
+      "primary_author": "波利搬运工",
+      "published_at": "2026-07-16T18:20:17+08:00",
+      "duration_seconds": 520,
+      "tags": ["planned_changes", "daily_rework", "policy", "commentary", "secondary_edit", "full_timeline_reviewed", "no_target_ui_state", "no_evidence_saved"]
     },
     {
       "id": "test-critique-bv1qyt964ehc",
@@ -2515,6 +2521,43 @@
       "url": "https://m.gamer.com.tw/forum/B.php?bsn=81475",
       "effective_at": "2026-07-28",
       "tags": ["bahamut", "forum_catalog", "seventy_four_threads", "test_b", "keyword_reviewed", "original_images_reviewed", "no_cookie"]
+    },
+    {
+      "id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "kind": "test_video",
+      "grade": "B",
+      "status": "full_two_second_timeline_reviewed_test_b_no_target_exception",
+      "title": "【巴哈姆特电玩疯】《RO仙境传说3》启燃测试实机试玩",
+      "url": "https://www.bilibili.com/video/BV1D67V6PEMq/",
+      "primary_url": "https://www.youtube.com/watch?v=1S8-6dr2lN4",
+      "primary_author": "巴哈姆特电玩疯（Bilibili 转载：KG-Area21）",
+      "published_at": "2026-06-26T19:40:44+08:00",
+      "duration_seconds": 1348,
+      "tags": ["test_b", "bilibili_repost", "bahamut", "character_creation", "open_world", "card", "pet", "dungeon", "pvp", "gvg", "full_timeline_reviewed", "no_target_exception", "no_evidence_saved"]
+    },
+    {
+      "id": "bilibili-test-b-veteran-review-bv1xemw6teub",
+      "kind": "commentary_video",
+      "grade": "C",
+      "status": "full_two_second_timeline_reviewed_commentary_no_target_state",
+      "title": "【仙境传说 3】RO老玩家启燃测试心得",
+      "url": "https://www.bilibili.com/video/BV1xeMw6TEub/",
+      "primary_author": "自由高达seed（转载）",
+      "published_at": "2026-07-04T19:24:09+08:00",
+      "duration_seconds": 461,
+      "tags": ["test_b", "repost", "commentary", "veteran_review", "build_guide", "inventory_false_positive", "full_timeline_reviewed", "no_new_evidence"]
+    },
+    {
+      "id": "bilibili-test-b-long-review-bv1rrmw6qeom",
+      "kind": "commentary_video",
+      "grade": "C",
+      "status": "full_timeline_and_targeted_review_with_guild_dispatch_and_teammate_revive_frames",
+      "title": "转载：RO骨灰玩家启燃测试长评",
+      "url": "https://www.bilibili.com/video/BV1RRMw6QEom/",
+      "primary_author": "自由高达seed（转载）",
+      "published_at": "2026-07-04T17:32:59+08:00",
+      "duration_seconds": 1312,
+      "tags": ["test_b", "repost", "commentary", "boost_exhausted", "health_time_claim", "inventory_normal", "guild_caravan", "batch_four_of_four", "dispatch_disabled_4_of_8", "dispatch_enabled_5_of_8", "survival_mode", "teammate_revive_prompt", "gvg", "dungeon", "full_timeline_reviewed", "targeted_subsecond_review", "evidence_saved"]
     },
     {
       "id": "bilibili-classic-ro-title-false-positive-bv1w9736metv",
