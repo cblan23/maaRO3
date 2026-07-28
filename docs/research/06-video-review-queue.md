@@ -61,7 +61,7 @@
 
 已反查到 `0FyScW_0A90` 对应 `granthjs`、`fHqchpIkRLM` 对应 `ytdd1003`，以及 `happypp_520` 曾于 6 月 27 日直播 RO3，但六月 Twitch VOD 均已过期。`cadmiumsheep` 与“清燉小羔羊”不是同一主播，不再混用。
 
-公开 oEmbed 另核对到三条候选元数据：烈焰的 [`JhPGGgdXKr8`](https://www.youtube.com/watch?v=JhPGGgdXKr8)（商人开局／机械工匠／一周活动）、CHA LIN 的 [`C-LCo3b5zOY`](https://www.youtube.com/watch?v=C-LCo3b5zOY)（实况 #8 GVG）和 [`PUxs5mXClc4`](https://www.youtube.com/watch?v=PUxs5mXClc4)（实况 #2 营火晚会／狩猎挑战）。标准播放页仍返回 429，精确 ID 暂无合法公开镜像；三条只保留候选定位，不计已审画面、不保存图片，也不进入本快照 245 条正式来源总数。
+公开 oEmbed 另核对到三条候选元数据：烈焰的 [`JhPGGgdXKr8`](https://www.youtube.com/watch?v=JhPGGgdXKr8)（商人开局／机械工匠／一周活动）、CHA LIN 的 [`C-LCo3b5zOY`](https://www.youtube.com/watch?v=C-LCo3b5zOY)（实况 #8 GVG）和 [`PUxs5mXClc4`](https://www.youtube.com/watch?v=PUxs5mXClc4)（实况 #2 营火晚会／狩猎挑战）。标准播放页仍返回 429，精确 ID 暂无合法公开镜像；三条只保留候选定位，不计已审画面、不保存图片，也不进入本快照 248 条正式来源总数。
 
 ### 2.1 Twitch `Ragnarok Online 3` 分类补审
 
@@ -107,7 +107,7 @@ Twitch 公开分类 GraphQL 定位到游戏 ID `298800660`、分类名 `Ragnarok
 
 #### 2.1.1 相邻 Twitch VOD 的非 RO3 污染排除
 
-对已知主播相邻 VOD 的扩展枚举现共排除 13 条，合计 `81:53:10`。每条均按全时长等距抽取 200 帧，共复核 2,600 张故事板；Twitch 公开 GraphQL 返回的游戏字段和画面一致，全部是其他游戏或换游录像，没有 RO3 客户端画面。它们登记为 D 级污染源，不保存父帧或裁图。
+对已知主播相邻 VOD 的扩展枚举现共排除 16 条，合计 `107:35:10`。每条均按全时长等距抽取 200 帧，共复核 3,200 张故事板；Twitch 公开 GraphQL 返回的游戏字段和画面一致，全部是其他游戏或换游录像，没有 RO3 客户端画面。它们登记为 D 级污染源，不保存父帧或裁图。
 
 | Twitch VOD | 作者 | 时长 | 公开游戏字段／画面 | 结论 |
 |---|---|---:|---|---|
@@ -124,8 +124,11 @@ Twitch 公开分类 GraphQL 定位到游戏 ID `298800660`、分类名 `Ragnarok
 | [`2806233059`](https://www.twitch.tv/videos/2806233059) | 阿土 | 07:27:10 | Sand: Raiders Of Sophie → Nobunaga Shinsen → Sand | 非 RO3，排除 |
 | [`2807039815`](https://www.twitch.tv/videos/2807039815) | 阿土 | 08:24:00 | Sand: Raiders Of Sophie | 非 RO3，排除 |
 | [`2807894009`](https://www.twitch.tv/videos/2807894009) | 阿土 | 04:18:50 | Sand: Raiders Of Sophie | 非 RO3，排除 |
+| [`2808601866`](https://www.twitch.tv/videos/2808601866) | 阿土 | 06:09:10 | Just Chatting → Sand → Nobunaga Shinsen → Just Chatting | 非 RO3；聊天另有人直接问“阿土不玩 RO3 吗” |
+| [`2809317308`](https://www.twitch.tv/videos/2809317308) | 阿土 | 07:12:50 | Just Chatting／网页与其他内容 | 非 RO3，排除 |
+| [`2810080697`](https://www.twitch.tv/videos/2810080697) | 阿土 | 12:20:00 | Just Chatting／网页与其他内容 | 非 RO3，排除 |
 
-阿土四条又并行扫描 7,349 条公开聊天（208 页），47 个字面命中全部属于船只／箱子／仓库／复活等其他游戏语境；没有任何 RO3 客户端画面或可回抽目标秒数。标题中的“農個”等普通词不能作为 RO3 线索。
+阿土七条又并行扫描 15,340 条公开聊天（403 页），122 个字面命中全部属于船只／箱子／仓库／复活、饮食健康或普通聊天语境；唯一精确 RO3 命中是 `2808601866 @ 7671s` 的“阿土不玩 RO3 吗”，与全程画面排除相互印证。没有任何 RO3 客户端画面或可回抽目标秒数；标题中的“農個”等普通词不能作为 RO3 线索。
 
 #### 2.1.2 Twitch Clip 全目录复核
 

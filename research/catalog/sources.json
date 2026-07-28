@@ -2801,6 +2801,42 @@
       "tags": ["twitch", "false_positive", "sand_raiders_of_sophie", "non_ro3", "full_sparse_storyboard_reviewed", "public_chat_reviewed", "no_evidence_saved", "no_cookie"]
     },
     {
+      "id": "twitch-non-ro3-vod-2808601866",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_and_chat_reviewed_non_ro3_exclusion",
+      "title": "阿土Atu 6/30 乾 結果德國又搞了一坨",
+      "url": "https://www.twitch.tv/videos/2808601866",
+      "primary_author": "阿土（q158688920）",
+      "published_at": "2026-06-30T09:57:09+08:00",
+      "duration_seconds": 22150,
+      "tags": ["twitch", "false_positive", "just_chatting", "sand_raiders_of_sophie", "nobunaga_shinsen", "non_ro3", "full_sparse_storyboard_reviewed", "public_chat_reviewed", "explicit_chat_confirms_not_playing_ro3", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "twitch-non-ro3-vod-2809317308",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_and_chat_reviewed_non_ro3_exclusion",
+      "title": "阿土Atu 7/1 今天中午帝王蟹局,Ft綠寶 哈耿 簡到槍",
+      "url": "https://www.twitch.tv/videos/2809317308",
+      "primary_author": "阿土（q158688920）",
+      "published_at": "2026-07-01T08:50:51+08:00",
+      "duration_seconds": 25970,
+      "tags": ["twitch", "false_positive", "just_chatting", "non_ro3", "full_sparse_storyboard_reviewed", "public_chat_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "twitch-non-ro3-vod-2810080697",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_and_chat_reviewed_non_ro3_exclusion",
+      "title": "阿土Atu 7/1 今天中午帝王蟹局,Ft綠寶 哈耿 簡到槍",
+      "url": "https://www.twitch.tv/videos/2810080697",
+      "primary_author": "阿土（q158688920）",
+      "published_at": "2026-07-02T08:46:01+08:00",
+      "duration_seconds": 44400,
+      "tags": ["twitch", "false_positive", "just_chatting", "non_ro3", "full_sparse_storyboard_reviewed", "public_chat_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
       "id": "twitch-non-ro3-vod-2807194691",
       "kind": "excluded_non_ro3_vod",
       "grade": "D",

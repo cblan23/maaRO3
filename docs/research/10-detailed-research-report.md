@@ -3,7 +3,7 @@
 > 快照日期：2026-07-28（Asia/Shanghai）  
 > 研究对象：Bilibili 中国大陆国服《RO 仙境传说 3 / Ragnarok Online 3》  
 > 当前阶段：`OFFLINE_RESEARCH`；国服“重逢测试”计划于 2026-08-27 开始  
-> 校验基线：245 条来源、31 份视频 Manifest／138 张视频帧、1 份静态 Manifest／1 张一手原图、99 张正式裁图／52 个键
+> 校验基线：248 条来源、31 份视频 Manifest／138 张视频帧、1 份静态 Manifest／1 张一手原图、99 张正式裁图／52 个键
 
 ## 1. 执行结论
 
@@ -54,7 +54,7 @@
 总校验器会从父图重新裁切并逐像素比较，因此“目录里有文件但来源或像素对不上”的图片不能通过。当前校验结果为：
 
 ```text
-245 sources
+248 sources
 31 video manifests / 138 frames
 1 still manifest / 1 still image
 99 icon crops across 52 keys
@@ -70,8 +70,8 @@ all evidence hashes and crop pixels verified
 | A | 19 | 官方公告、协议、官方视频和监管文件 |
 | B | 161 | 启燃／先锋测试参与者实机、一手截图／长文 |
 | C | 45 | 评论、媒体、访问受阻的已定位长录屏／目录快照，只作交叉验证或线索 |
-| D | 20 | 明确排除、重复、误标、错误游戏或无 RO3 实机 |
-| 合计 | 245 | 每条都有唯一 ID、URL、grade 和 status |
+| D | 23 | 明确排除、重复、误标、错误游戏或无 RO3 实机 |
+| 合计 | 248 | 每条都有唯一 ID、URL、grade 和 status |
 
 玩法存在性与流程判断至少需要 A／B 级证据。按钮坐标、颜色、文案、次数、数值和重置时间即使来自 B 级，也只绑定 `TEST-B`，必须在国服同 build 重新采样。
 
@@ -94,7 +94,7 @@ Twitch 公开分类中现有 23 条有效 RO3 VOD，合计 77:04:29；另有 10 
 
 分类补审另登记 9 条旧 VOD／误标来源。PIONEER-A 的 `2540550896` 保存开放世界英文双按钮连接失败链，`2541630934` 保存角色选择进入链；另 7 条分别为重复 Highlight、播客、其他游戏、旧 RO 误标、六秒面板或无目标异常，均写明排除原因。故事板时间只视为候选窗口起点，`2540550896` 的事件从约 756 秒候选块校正到约 817 秒高清实时时间。
 
-相邻主播 VOD 扩展现完整复核 13 条候选，合计 `81:53:10`：每条等距抽取 200 帧，共 2,600 张故事板。Twitch 公共 GraphQL 游戏字段与画面交叉一致，内容分别是 Aion 2／鸣潮、Warhammer 40,000: Darktide、Magicka 2／Lost Ark、燕云十六声，以及 Sand: Raiders Of Sophie／Nobunaga Shinsen，没有 RO3 客户端画面。十三条全部作为 D 级污染源登记，不保存图片，也不把其他游戏的相似 HUD 混入状态字典。阿土四条另扫描 7,349 条聊天、47 个字面命中，全部属于其他游戏语境。
+相邻主播 VOD 扩展现完整复核 16 条候选，合计 `107:35:10`：每条等距抽取 200 帧，共 3,200 张故事板。Twitch 公共 GraphQL 游戏字段与画面交叉一致，内容分别是 Aion 2／鸣潮、Warhammer 40,000: Darktide、Magicka 2／Lost Ark、燕云十六声，以及 Sand: Raiders Of Sophie／Nobunaga Shinsen／Just Chatting，没有 RO3 客户端画面。十六条全部作为 D 级污染源登记，不保存图片，也不把其他游戏的相似 HUD 混入状态字典。阿土七条另扫描 15,340 条聊天、122 个字面命中；唯一精确 RO3 命中反而是观众问“阿土不玩 RO3 吗”，其余全属其他游戏或普通聊天语境。
 
 ### 3.3 YouTube 长录屏扩展队列
 
@@ -102,7 +102,7 @@ Twitch 公开分类中现有 23 条有效 RO3 VOD，合计 77:04:29；另有 10 
 
 标准公开视频／媒体请求仍触发 YouTube “Sign in to confirm you’re not a bot”。研究没有读取浏览器 Cookie，也没有更换播放器客户端规避验证，因此这些来源统一标为 `located_metadata_reviewed_media_access_blocked`：可以进入待审队列，不能关闭流程缺口，不能声称保存了新图标。完整 ID 与优先目标见[视频审阅队列](06-video-review-queue.md)。
 
-另以公开 oEmbed 核对烈焰 `JhPGGgdXKr8` 及 CHA LIN `C-LCo3b5zOY`／`PUxs5mXClc4` 的标题与作者；标准播放页仍为 429，且没有找到合法公开镜像。它们只是候选线索，不计入 245 条已登记来源，也没有保存画面。
+另以公开 oEmbed 核对烈焰 `JhPGGgdXKr8` 及 CHA LIN `C-LCo3b5zOY`／`PUxs5mXClc4` 的标题与作者；标准播放页仍为 429，且没有找到合法公开镜像。它们只是候选线索，不计入 248 条已登记来源，也没有保存画面。
 
 ### 3.4 最新 Bilibili 复检
 
@@ -477,7 +477,7 @@ uv run --python 3.12 --with jsonschema --with pillow python tools/validate_resea
 当前结果：
 
 ```text
-Research scaffold OK: 245 sources, 31 video manifests, 138 frames;
+Research scaffold OK: 248 sources, 31 video manifests, 138 frames;
 1 still manifests, 1 still images;
 99 icon crops across 52 keys;
 all evidence hashes and crop pixels verified.
@@ -506,7 +506,7 @@ all evidence hashes and crop pixels verified.
 | [日常系统百科](07-daily-system-encyclopedia.md) | 每项入口、资源、完成判据和异常 |
 | [直接证据缺口日志](08-direct-evidence-gap-log.md) | 已关闭／缩小／未关闭和负向回抽 |
 | [图标证据目录](09-icon-evidence-catalog.md) | 52 个键、99 张正式裁图及缺失变体 |
-| [来源目录](../../research/catalog/sources.json) | 245 条机器可读来源 |
+| [来源目录](../../research/catalog/sources.json) | 248 条机器可读来源 |
 | [裁图库说明](../../research/evidence/icons/README.md) | 裁图 schema、生成和逐像素验证 |
 
 ## 12. 最终判断
