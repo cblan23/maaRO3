@@ -210,6 +210,8 @@ PIONEER-A 只作跨构建语义对照，不进入 TEST-B／国服模板：
 - [角色进入链](../../research/evidence/video/twitch-vod-2541630934/manifest.json)：`CharacterSelection → ControlModeSelection → OpenWorld`，只补充旧构建的三角色与操作模式语义；TEST-B 已另有单角色页，国服仍须重采；
 - [模拟对抗赛自动复活链](../../research/evidence/video/pioneer-simulation-revive-bv1qwtm6besg/manifest.json)：`AliveCombat → DeadCountdown → RevivePointWait → CountdownZero → RevivedHud`，只证明旧竞技模式状态机。
 
+更早的 `GSTAR-2024` 也单独隔离：[官方首日舞台直播镜像](../../research/evidence/video/gstar-2024-boss-self-revive-bv1atmsy9erc/manifest.json)补到韩文 Boss 场 `AliveHud → 原地复活覆盖层 → RevivedHud`，但它既不归入 PIONEER-A，也不进入 TEST-B／国服模板。
+
 ### PIONEER-A 竞技死亡／自动复活对照
 
 来源：[模拟对抗赛第二场](https://www.bilibili.com/video/BV1QwTM6bESg/)，完整元数据和七帧连续链见 [Manifest](../../research/evidence/video/pioneer-simulation-revive-bv1qwtm6besg/manifest.json)。全片按 2 秒复核；首轮按 0.25 秒精抽，触发与恢复边界再按 0.02–0.05 秒请求相邻解码帧。请求秒数不是原视频帧 PTS，以下只写可复核的观测边界。
@@ -225,6 +227,19 @@ PIONEER-A 只作跨构建语义对照，不进入 TEST-B／国服模板：
 | 01:30.70 | [HUD 恢复](../../research/evidence/video/pioneer-simulation-revive-bv1qwtm6besg/frames/0090.70-auto-revived-hud.png) | 生命条、目标框和技能栏重新出现，闭合自动复活链 | 不证明 AutoOn 恢复或角色会自动离开复活点 |
 
 约 `03:49–03:58` 还出现第二轮同类死亡／复活循环，说明首轮不是孤立剪辑帧。另一条 12:34 的[先锋公会战](https://www.bilibili.com/video/BV1WGbhz2EMB/)已全程按 2 秒复核；红／绿区域切换属于战场传送或控制点变化，没有找到可靠玩家死亡终态。两条都属于 PIONEER-A 竞争内容，既不能关闭 TEST-B 开放世界死亡缺口，也不能提高开放世界无人值守评分。
+
+### GSTAR-2024 Boss 场自身原地复活对照
+
+来源：[G-STAR 2024 首日直播第二段镜像](https://www.bilibili.com/video/BV1atmSY9ERC/)，主源是 Gravity 官方 [YouTube 直播](https://www.youtube.com/watch?v=7wGQ1uv1XeQ)。完整元数据与四帧见 [Manifest](../../research/evidence/video/gstar-2024-boss-self-revive-bv1atmsy9erc/manifest.json)。
+
+| 时间 | 画面／状态 | 可确认事实 | 不能外推 |
+|---:|---|---|---|
+| 22:49.25 | [正常／致死命中前 HUD](../../research/evidence/video/gstar-2024-boss-self-revive-bv1atmsy9erc/frames/01369.25.png) | 正常生命与技能 HUD 尚在 | 致死原因、服务端判定点 |
+| 22:49.50 | [韩文原地复活覆盖层](../../research/evidence/video/gstar-2024-boss-self-revive-bv1atmsy9erc/frames/01369.50.png) | 画面变暗、`제자리 부활`标题出现、正常 HUD 不再成立 | 是否需点击、费用、固定计时 |
+| 22:54.50 | [覆盖层仍在](../../research/evidence/video/gstar-2024-boss-self-revive-bv1atmsy9erc/frames/01374.50.png) | 同一覆盖层至少持续约五秒 | 无倒计时，不能硬编码五秒 |
+| 22:54.75 | [复活后 HUD](../../research/evidence/video/gstar-2024-boss-self-revive-bv1atmsy9erc/frames/01374.75.png) | 覆盖层消失，生命与技能 HUD 恢复 | Auto、目标、位置与开放世界规则 |
+
+父帧只有 852×480，且含官方舞台直播合成区。仓库保存可追溯父帧但不裁成现行图标模板；这条证据只证明早期 Boss 演示存在自身原地复活语义，无法关闭 TEST-B／国服开放世界复活缺口。
 
 ## 2. 已审阅但未入库的录像
 
@@ -257,6 +272,7 @@ PIONEER-A 只作跨构建语义对照，不进入 TEST-B／国服模板：
 | [攻城战初体验](https://www.bilibili.com/video/BV1QRTq61EHH/) | 12:08 | 两张 storyboard 已审阅 | 大量玩家、团队 UI、区域、器械与阶段 |
 | [PIONEER-A 模拟对抗赛第二场](https://www.bilibili.com/video/BV1QwTM6bESg/) | 05:21 | 全程 2 秒复核＋首轮 0.25／0.02 秒边界精抽＋7 帧入库 | 两轮竞技死亡自动复活；旧构建隔离，不替代开放世界证据 |
 | [PIONEER-A 先锋公会战](https://www.bilibili.com/video/BV1WGbhz2EMB/) | 12:34 | 全程 2 秒复核，负向登记 | 战场传送／控制点变化；无可靠玩家死亡 UI |
+| [GSTAR-2024 首日直播镜像第二段](https://www.bilibili.com/video/BV1atmSY9ERC/) | 25:12 | 152 张十秒帧全审＋目标 81 张 0.25 秒帧＋4 帧入库 | Boss 场自身原地复活覆盖层与 HUD 恢复；比 PIONEER-A 更早且不替代开放世界证据 |
 | [TEST-B 七日心得转载剪版](https://www.bilibili.com/video/BV1wJTb6BEdY/) | 03:58 | 全程 2 秒复核，负向登记 | 副本、PVP、活动、商城与普通战斗；无目标异常或新图标 |
 | [经典 RO 标题误标](https://www.bilibili.com/video/BV1w9736mETV/) | 00:40 | 全程 0.5 秒复核，D 级排除 | 标题中的“小站Ro3”不是《仙境传说3》；画面为经典 RO，不保存模板 |
 | [巴哈 RO3 板目录快照](https://m.gamer.com.tw/forum/B.php?bsn=81475) | 74 主题 | TEST-B 时段正文／留言关键词扫描＋39 个原图引用复核 | 只补到分类背包接近满与疲劳后低收益的文字报告；原图无对应 UI，零帧入库 |

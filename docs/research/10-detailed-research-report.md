@@ -3,7 +3,7 @@
 > 快照日期：2026-07-28（Asia/Shanghai）  
 > 研究对象：Bilibili 中国大陆国服《RO 仙境传说 3 / Ragnarok Online 3》  
 > 当前阶段：`OFFLINE_RESEARCH`；国服“重逢测试”计划于 2026-08-27 开始  
-> 校验基线：248 条来源、31 份视频 Manifest／138 张视频帧、1 份静态 Manifest／1 张一手原图、99 张正式裁图／52 个键
+> 校验基线：255 条来源、32 份视频 Manifest／142 张视频帧、1 份静态 Manifest／1 张一手原图、99 张正式裁图／52 个键
 
 ## 1. 执行结论
 
@@ -28,6 +28,7 @@
 - TEST-B 自订 UI 布局编辑器直接显示 HUD 控制框可拖移及恢复预设入口，进一步否定固定绝对坐标前提；
 - PIONEER-A 英文连接失败双按钮与角色选择页，严格隔离作跨构建语义样本；
 - PIONEER-A 模拟对抗赛两轮 `死亡倒计时 → 复活点等待 → 0 秒 → HUD 恢复`，严格隔离作竞技死亡状态机与开放世界负例；
+- GSTAR-2024 韩文 Boss 演示补出 `AliveHud → 原地复活覆盖层 → 覆盖层持续 → RevivedHud` 四帧边界；这是比 PIONEER-A 更早的副本自身复活语义，只作隔离负例，不能替代 TEST-B／国服野外复活；
 - TEST-B 十人本持续个人死亡等待，新增父帧及 `dungeon_dead_wait` 裁图；另纠正“加班剩余时间”直播叠层被误读为游戏“加倍时间”的候选；
 - TEST-B 生存竞争模式救护车“复活已死亡队友”弹窗，保存父帧与裁图，但严格作为竞技队友交互和野外自身复活负例；
 - 背包容量正常样本扩展到 `56/300`、`62/300`、`110/300`，但最高仍只有 36.7%，不算接近满；
@@ -42,8 +43,8 @@
 
 | 资产 | 数量 | 实际位置 | 可追溯信息 |
 |---|---:|---|---|
-| 视频证据 Manifest | 31 | [`research/evidence/video/`](../../research/evidence/video/) | 来源、作者、发布时间、时间戳、事实、限制、SHA-256 |
-| 视频关键帧 | 138 | 各视频目录的 `frames/` | 文件哈希、尺寸、国服复验标记 |
+| 视频证据 Manifest | 32 | [`research/evidence/video/`](../../research/evidence/video/) | 来源、作者、发布时间、时间戳、事实、限制、SHA-256 |
+| 视频关键帧 | 142 | 各视频目录的 `frames/` | 文件哈希、尺寸、国服复验标记 |
 | 静态证据 Manifest | 1 | [`research/evidence/still/`](../../research/evidence/still/) | 论坛原文 URL、原图 URL、作者、发布时间、哈希 |
 | 静态一手原图 | 1 | [`wardrobe-lock-selected-states.jpg`](../../research/evidence/still/bahamut-system-overview-187/images/wardrobe-lock-selected-states.jpg) | 1920×1080 巴哈测试玩家原图 |
 | 独立图标／状态裁图 | 99 | [`research/evidence/icons/crops/`](../../research/evidence/icons/crops/) | 父图、父图哈希、坐标、尺寸、裁图哈希、污染说明 |
@@ -54,8 +55,8 @@
 总校验器会从父图重新裁切并逐像素比较，因此“目录里有文件但来源或像素对不上”的图片不能通过。当前校验结果为：
 
 ```text
-248 sources
-31 video manifests / 138 frames
+255 sources
+32 video manifests / 142 frames
 1 still manifest / 1 still image
 99 icon crops across 52 keys
 all evidence hashes and crop pixels verified
@@ -68,10 +69,10 @@ all evidence hashes and crop pixels verified
 | 等级 | 数量 | 使用边界 |
 |---|---:|---|
 | A | 19 | 官方公告、协议、官方视频和监管文件 |
-| B | 161 | 启燃／先锋测试参与者实机、一手截图／长文 |
+| B | 168 | 启燃／先锋测试参与者实机、一手截图／长文及可追溯官方直播镜像 |
 | C | 45 | 评论、媒体、访问受阻的已定位长录屏／目录快照，只作交叉验证或线索 |
 | D | 23 | 明确排除、重复、误标、错误游戏或无 RO3 实机 |
-| 合计 | 248 | 每条都有唯一 ID、URL、grade 和 status |
+| 合计 | 255 | 每条都有唯一 ID、URL、grade 和 status |
 
 玩法存在性与流程判断至少需要 A／B 级证据。按钮坐标、颜色、文案、次数、数值和重置时间即使来自 B 级，也只绑定 `TEST-B`，必须在国服同 build 重新采样。
 
@@ -102,11 +103,11 @@ Twitch 公开分类中现有 23 条有效 RO3 VOD，合计 77:04:29；另有 10 
 
 标准公开视频／媒体请求仍触发 YouTube “Sign in to confirm you’re not a bot”。研究没有读取浏览器 Cookie，也没有更换播放器客户端规避验证，因此这些来源统一标为 `located_metadata_reviewed_media_access_blocked`：可以进入待审队列，不能关闭流程缺口，不能声称保存了新图标。完整 ID 与优先目标见[视频审阅队列](06-video-review-queue.md)。
 
-另以公开 oEmbed 核对烈焰 `JhPGGgdXKr8` 及 CHA LIN `C-LCo3b5zOY`／`PUxs5mXClc4` 的标题与作者；标准播放页仍为 429，且没有找到合法公开镜像。它们只是候选线索，不计入 248 条已登记来源，也没有保存画面。
+另以公开 oEmbed 核对烈焰 `JhPGGgdXKr8` 及 CHA LIN `C-LCo3b5zOY`／`PUxs5mXClc4` 的标题与作者；标准播放页仍为 429，且没有找到合法公开镜像。它们只是候选线索，不计入 255 条已登记来源，也没有保存画面。
 
 ### 3.4 最新 Bilibili 复检
 
-十六条最新／定向命中视频已逐帧审阅并登记：
+二十三条最新／定向命中视频已逐帧审阅并登记；下表前十六条沿用上一批，末七条是本批公开搜索差集：
 
 | BVID | 实际内容 | 处理 |
 |---|---|---|
@@ -126,6 +127,13 @@ Twitch 公开分类中现有 23 条有效 RO3 VOD，合计 77:04:29；另有 10 
 | `BV19Mw7zZEov` | 旧线下闭门测试评论 | 全程 2 秒复核；旧构建评论／宣传画面，无当前目标状态，零帧入库 |
 | `BV1iENJ68ECk` | MMO 评论与 GVG 宣传混剪 | 全程 2 秒复核；没有连续目标 UI，零帧入库 |
 | `BV13xN96XEny` | TEST-B 十字军位移短片 | 全程 0.5 秒复核；只有 11 秒战斗位移，无异常或新状态，零帧入库 |
+| `BV1AYUVYzEMT` | G-STAR 2024 首日官方直播镜像第一段 | 92 张十秒故事板全审；教程、职业与技能树均属韩文早期构建，无目标异常，零帧入库 |
+| `BV1atmSY9ERC` | G-STAR 2024 首日官方直播镜像第二段 | 152 张十秒故事板全审；`1360–1380s` 再审 81 张 0.25 秒帧，保存 `AliveHud → 原地复活覆盖层 → RevivedHud` 四帧；严格标为 GSTAR-2024，不进入当前模板 |
+| `BV1tCtVzBETW` | 18:06 早期构建游戏界面展示转载 | 218 张五秒故事板全审；画面为倾斜拍摄显示器，覆盖背包、装备、队伍、地图和功能菜单，但没有当前目标异常且污染重，零帧入库 |
+| `BV1KhN46vEQN` | TEST-B 奈莎普通攻略 | 146 张逐秒帧全审；全程 Boss 战至胜利，无玩家自身死亡或目标异常，零帧入库 |
+| `BV1UhN76CEcy` | TEST-B 伊絲緹普通攻略 | 126 张逐秒帧全审；全程 Boss 战至胜利，无玩家自身死亡或目标异常，零帧入库 |
+| `BV1M7NC6EEqX` | TEST-B 彌爾寇攻略 | 119 张逐秒帧全审；全程 Boss 战至胜利，无玩家自身死亡或目标异常，零帧入库 |
+| `BV1fj3B6NECz` | 非 GVG 活动时段制作人回应短切片 | 58 张逐秒帧＋公会面板 61 张 0.25 秒复核；所谓彩色／灰色变化来自剪辑过渡，不能标成选中／锁定变体，零帧入库 |
 
 最新检索还出现 `BV1TMKa6SE3e`，简介明确说明它切自已登记的 Day1 原视频，只讲新手职业选择；没有重复保存。
 
@@ -312,7 +320,20 @@ AliveCombat @ 80.58
 
 裁图库同步保存 `8／5／2／0 秒`四个新变体，且裁区排除了聊天、UID、队伍栏和水印。另一条 12:34 的 PIONEER-A 公会战全程复核后没有可靠玩家死亡 UI。两条来源都属于旧竞技构建，不能关闭 TEST-B／国服开放世界的复活选项、费用、惩罚、落点、保护或 AutoOn 保留，也不改变三个优先场景的广义无人值守评分。
 
-### 4.9 TEST-B 十人本个人死亡等待
+### 4.9 GSTAR-2024 Boss 场自身原地复活
+
+[G-STAR 2024 四帧 Manifest](../../research/evidence/video/gstar-2024-boss-self-revive-bv1atmsy9erc/manifest.json)来自官方首日舞台直播的 Bilibili 公开镜像。官方 YouTube 主源仍触发播放验证，但镜像描述明确指回同一官方 ID `7wGQ1uv1XeQ`。第二段 25:12 录像按 10 秒全审 152 帧，`1360–1380s` 又按 0.25 秒连续复核 81 帧：
+
+```text
+AliveHud @ 1369.25
+→ KoreanSelfReviveOverlay @ 1369.50
+→ OverlayStillPresent @ 1374.50
+→ RevivedHud @ 1374.75
+```
+
+韩文标题 `제자리 부활`意为“原地复活”；它与画面变暗、正常 HUD 失效及约五秒后的生命／技能 HUD 恢复共同构成早期 Boss 场自身复活闭环。录像没有倒计时、可辨按钮、费用、输入叠层或 Auto 状态，因此不能推断固定五秒自动复活，更不能外推开放世界。父帧只有 852×480，且是含主持人／参赛者的官方直播合成画面；为避免低清旧构建污染，保存四张父帧但不新增图标裁图。构建显式标为 `GSTAR-2024`，既不归入 `PIONEER-A`，也不得进入 TEST-B／国服模板。
+
+### 4.10 TEST-B 十人本个人死亡等待
 
 [Twitch Clip Manifest](../../research/evidence/video/twitch-clip-test-b-raid-dead-wait-g93cchbtrszole42/manifest.json)保存一张 1280×720 父帧：十人本个人死亡后画面变暗，常规技能栏消失，底部中央出现复活标志和“等待复活”，而队友与 Boss 战仍继续。全片 59 秒保持该状态，使 `DungeonDeadWait` 不再只有五人本单一来源。
 
@@ -320,7 +341,7 @@ AliveCombat @ 80.58
 
 `BV1RRMw6QEom @ 544.90s` 还直接出现生存竞争模式救护车“复活已死亡队友”弹窗，已保存父帧及 `competitive_teammate_revive_dialog` 裁图。弹窗仅维持约半秒，视频没有点击、资源扣除或队友恢复结果；它扩充的是“队友复活交互”分类，必须与玩家自身死亡页严格区分。
 
-### 4.10 TEST-B 精灵之塔状态与领奖
+### 4.11 TEST-B 精灵之塔状态与领奖
 
 [四帧 Manifest](../../research/evidence/video/twitch-vod-2804721854/manifest.json)把楼层与奖励拆成两个状态族。`17661.50s` 同屏提供普通未通关、黄色选中未通关、绿色已通关勾；这能训练页面内分类，但不是一次挑战前后链。荣誉榜随后形成真正的领取变化：第 20 层橙色格在下一帧变成绿色勾，第 30 层随后也变绿，左下出现“宠物蛋 ×3”。
 
@@ -334,7 +355,7 @@ AliveCombat @ 80.58
 | 低倍／疲劳 | 高倍耗尽及耗尽时奖励通知继续已直接出现，规则有口述 | 同账号跨零、客户端阶段标签、击杀阈值、同怪相对掉率／卡片资格变化 | 知道“仍有奖励”但仍不能判断继续挂机是否值得／安全 |
 | 真正满包 | `0/300` 及 `36/300`、`56/300`、`62/300`、`110/300` 正常档 | 接近满、满包、下一掉落去向、邮件／临时包 | 可能丢收益，不能长时间离人 |
 | 药尽 | 启用态与 `36 → 35` | `1 → 0`、原生警告、低血量后行为 | 最后一瓶后的死亡风险未知 |
-| 野外死亡／复活 | TEST-B 五人／十人本死亡等待与生存模式队友复活弹窗可作反例；PIONEER-A 竞技自动复活已有两轮闭环 | TEST-B／国服开放世界玩家自身选项、费用、惩罚、落点、保护、Auto 状态 | 现有链可训练分类和等待 HUD；开放世界仍无法自动恢复，只能停机 |
+| 野外死亡／复活 | TEST-B 五人／十人本死亡等待与生存模式队友复活弹窗可作反例；PIONEER-A 竞技自动复活已有两轮闭环；GSTAR-2024 Boss 场另见韩文自身原地复活覆盖层与 HUD 恢复 | TEST-B／国服开放世界玩家自身选项、费用、惩罚、落点、保护、Auto 状态 | 现有链可训练分类和等待 HUD；更早的低清 Boss 覆盖层也不能授权开放世界恢复，仍只能停机 |
 | 连接剩余分支 | TEST-B 有启动器就绪至世界页面链，也有失败、重登、加载和回世界链；PIONEER-A 只补旧构建语义 | 账号认证、排队／维护／满员、角色创建／删除／多角色边界、全部国服页面；输入来源；开放世界原点、任务与 Auto 状态保留 | 页面可分类和停机，仍不能承诺无人干预进入／恢复 |
 | 精灵之塔剩余边界 | 楼层普通／选中／已通关及奖励可领／已领已直接出现 | 锁定／禁用、挑战胜负、次数／重置、扫荡、领取失败／满包和国服状态 | 可离线识别状态；不能据此自动挑战或无人值守领奖 |
 | 国服视觉变体 | TEST-B 繁中和国服宣传 HUD | 同 build 简中全状态、DPI／UI 缩放 | 现有模板不能直接上线 |
@@ -477,7 +498,7 @@ uv run --python 3.12 --with jsonschema --with pillow python tools/validate_resea
 当前结果：
 
 ```text
-Research scaffold OK: 248 sources, 31 video manifests, 138 frames;
+Research scaffold OK: 255 sources, 32 video manifests, 142 frames;
 1 still manifests, 1 still images;
 99 icon crops across 52 keys;
 all evidence hashes and crop pixels verified.
@@ -506,7 +527,7 @@ all evidence hashes and crop pixels verified.
 | [日常系统百科](07-daily-system-encyclopedia.md) | 每项入口、资源、完成判据和异常 |
 | [直接证据缺口日志](08-direct-evidence-gap-log.md) | 已关闭／缩小／未关闭和负向回抽 |
 | [图标证据目录](09-icon-evidence-catalog.md) | 52 个键、99 张正式裁图及缺失变体 |
-| [来源目录](../../research/catalog/sources.json) | 248 条机器可读来源 |
+| [来源目录](../../research/catalog/sources.json) | 255 条机器可读来源 |
 | [裁图库说明](../../research/evidence/icons/README.md) | 裁图 schema、生成和逐像素验证 |
 
 ## 12. 最终判断

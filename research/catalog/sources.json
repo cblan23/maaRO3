@@ -1292,11 +1292,11 @@
       "id": "gravity-gstar-2024-day1-youtube-7wgq1uv1xeq",
       "kind": "official_livestream",
       "grade": "A",
-      "status": "metadata_confirmed_playback_login_challenge_unreviewed",
+      "status": "official_primary_metadata_confirmed_public_mirror_targeted_review_with_self_revive_frames",
       "title": "2024 그라비티와 함께하는 G-STAR (1일차)",
       "url": "https://www.youtube.com/watch?v=7wGQ1uv1XeQ",
       "primary_author": "Gravity YouTube Brand Channel",
-      "tags": ["official", "gstar_2024", "early_build", "longplay", "playback_blocked", "mirror_search_candidate"]
+      "tags": ["official", "gstar_2024", "early_build", "longplay", "primary_playback_blocked", "public_mirror_reviewed", "boss_self_revive", "evidence_saved"]
     },
     {
       "id": "producer-qa-summary-bv1ehtn6peyb",
@@ -2847,6 +2847,92 @@
       "published_at": "2026-06-28T13:41:58+08:00",
       "duration_seconds": 17896,
       "tags": ["twitch", "false_positive", "warhammer_40000_darktide", "variety_stream", "non_ro3", "full_sparse_storyboard_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "gstar-2024-day1-part1-bv1ayuvyzemt",
+      "kind": "official_livestream_mirror",
+      "grade": "B",
+      "status": "full_ten_second_storyboard_reviewed_early_build_no_target_exception_state",
+      "title": "【仙境传说】RO3试玩展示(Ragnarok3)G-STAR 2024第一天",
+      "url": "https://www.bilibili.com/video/BV1AYUVYzEMT/",
+      "primary_url": "https://www.youtube.com/watch?v=7wGQ1uv1XeQ",
+      "primary_author": "Gravity YouTube Brand Channel／人為善（Bilibili 镜像）",
+      "published_at": "2024-11-14T15:55:05+08:00",
+      "duration_seconds": 920,
+      "tags": ["gstar_2024", "early_build", "official_livestream_mirror", "tutorial", "skill_tree", "full_storyboard_reviewed", "no_target_exception_state", "excluded_from_test_b_templates", "no_evidence_saved"]
+    },
+    {
+      "id": "gstar-2024-day1-part2-bv1atmsy9erc",
+      "kind": "official_livestream_mirror",
+      "grade": "B",
+      "status": "full_ten_second_storyboard_and_quarter_second_target_review_with_self_revive_frames",
+      "title": "【仙境传说】RO3试玩展示第二部分(Ragnarok3)G-STAR 2024第一天",
+      "url": "https://www.bilibili.com/video/BV1atmSY9ERC/",
+      "primary_url": "https://www.youtube.com/watch?v=7wGQ1uv1XeQ",
+      "primary_author": "Gravity YouTube Brand Channel／人為善（Bilibili 镜像）",
+      "published_at": "2024-11-15T00:38:08+08:00",
+      "duration_seconds": 1512,
+      "tags": ["gstar_2024", "early_build", "official_livestream_mirror", "boss", "self_death", "self_revive_overlay", "hud_recovery", "full_storyboard_reviewed", "targeted_quarter_second_review", "evidence_saved", "excluded_from_test_b_templates"]
+    },
+    {
+      "id": "early-ui-overview-bv1tctvzbetw",
+      "kind": "reposted_test_video",
+      "grade": "B",
+      "status": "full_five_second_storyboard_reviewed_early_build_ui_no_target_exception_state",
+      "title": "转载【仙境传说3】Ragnarok Online 3 一些游戏界面的展示",
+      "url": "https://www.bilibili.com/video/BV1tCtVzBETW/",
+      "primary_author": "多巴胺归零（转载；画面标注 LittleFattyGG）",
+      "published_at": "2025-08-05T01:17:01+08:00",
+      "duration_seconds": 1086,
+      "tags": ["early_build", "repost", "ui_overview", "angled_display", "inventory", "equipment", "party", "map", "features", "full_storyboard_reviewed", "no_target_exception_state", "excluded_from_test_b_templates", "no_evidence_saved"]
+    },
+    {
+      "id": "test-b-raid-nasha-guide-bv1khn46veqn",
+      "kind": "test_video",
+      "grade": "B",
+      "status": "full_one_second_timeline_reviewed_victory_no_player_death_no_target_state",
+      "title": "仙境传说3（RO3）神之境界-奈莎普通攻略",
+      "url": "https://www.bilibili.com/video/BV1KhN46vEQN/",
+      "primary_author": "调皮捣蛋熙格格",
+      "published_at": "2026-07-11T14:21:04+08:00",
+      "duration_seconds": 146,
+      "tags": ["test_b", "raid", "nasha", "guide", "full_one_second_timeline_reviewed", "victory", "no_player_death", "no_target_state", "no_evidence_saved"]
+    },
+    {
+      "id": "test-b-raid-istie-guide-bv1uhn76cecy",
+      "kind": "test_video",
+      "grade": "B",
+      "status": "full_one_second_timeline_reviewed_victory_no_player_death_no_target_state",
+      "title": "仙境传说3（RO3）神之境界—伊絲緹普通攻略",
+      "url": "https://www.bilibili.com/video/BV1UhN76CEcy/",
+      "primary_author": "调皮捣蛋熙格格",
+      "published_at": "2026-07-10T17:49:34+08:00",
+      "duration_seconds": 126,
+      "tags": ["test_b", "raid", "istie", "guide", "full_one_second_timeline_reviewed", "victory", "no_player_death", "no_target_state", "no_evidence_saved"]
+    },
+    {
+      "id": "test-b-raid-mirko-guide-bv1m7nc6eeqx",
+      "kind": "test_video",
+      "grade": "B",
+      "status": "full_one_second_timeline_reviewed_victory_no_player_death_no_target_state",
+      "title": "仙境传说3（RO3）神之境界—彌爾寇攻略",
+      "url": "https://www.bilibili.com/video/BV1M7NC6EEqX/",
+      "primary_author": "调皮捣蛋熙格格",
+      "published_at": "2026-07-13T12:16:16+08:00",
+      "duration_seconds": 119,
+      "tags": ["test_b", "raid", "mirko", "guide", "full_one_second_timeline_reviewed", "victory", "no_player_death", "no_target_state", "no_evidence_saved"]
+    },
+    {
+      "id": "producer-activity-time-cut-bv1fj3b6necz",
+      "kind": "test_video",
+      "grade": "B",
+      "status": "full_one_second_timeline_and_quarter_second_guild_panel_reviewed_no_new_state",
+      "title": "【仙境传说３】制作人回应：非GVG类活动取消开放时段限制？",
+      "url": "https://www.bilibili.com/video/BV1fj3B6NECz/",
+      "primary_author": "波利搬运工",
+      "published_at": "2026-07-28T18:44:41+08:00",
+      "duration_seconds": 58,
+      "tags": ["test_b", "producer_qa", "planned_changes", "guild_activity", "secondary_edit", "edited_overlay", "full_timeline_reviewed", "targeted_quarter_second_review", "no_new_ui_state", "no_evidence_saved"]
     }
   ]
 }

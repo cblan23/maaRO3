@@ -61,7 +61,7 @@
 
 已反查到 `0FyScW_0A90` 对应 `granthjs`、`fHqchpIkRLM` 对应 `ytdd1003`，以及 `happypp_520` 曾于 6 月 27 日直播 RO3，但六月 Twitch VOD 均已过期。`cadmiumsheep` 与“清燉小羔羊”不是同一主播，不再混用。
 
-公开 oEmbed 另核对到三条候选元数据：烈焰的 [`JhPGGgdXKr8`](https://www.youtube.com/watch?v=JhPGGgdXKr8)（商人开局／机械工匠／一周活动）、CHA LIN 的 [`C-LCo3b5zOY`](https://www.youtube.com/watch?v=C-LCo3b5zOY)（实况 #8 GVG）和 [`PUxs5mXClc4`](https://www.youtube.com/watch?v=PUxs5mXClc4)（实况 #2 营火晚会／狩猎挑战）。标准播放页仍返回 429，精确 ID 暂无合法公开镜像；三条只保留候选定位，不计已审画面、不保存图片，也不进入本快照 248 条正式来源总数。
+公开 oEmbed 另核对到三条候选元数据：烈焰的 [`JhPGGgdXKr8`](https://www.youtube.com/watch?v=JhPGGgdXKr8)（商人开局／机械工匠／一周活动）、CHA LIN 的 [`C-LCo3b5zOY`](https://www.youtube.com/watch?v=C-LCo3b5zOY)（实况 #8 GVG）和 [`PUxs5mXClc4`](https://www.youtube.com/watch?v=PUxs5mXClc4)（实况 #2 营火晚会／狩猎挑战）。标准播放页仍返回 429，精确 ID 暂无合法公开镜像；三条只保留候选定位，不计已审画面、不保存图片，也不进入本快照 255 条正式来源总数。
 
 ### 2.1 Twitch `Ragnarok Online 3` 分类补审
 
@@ -246,6 +246,22 @@ Twitch storyboard 的文件名时间是候选窗口起点，不保证等于事�
 站内搜索触发公开接口 `-352/412` 风控后立即停止，没有使用 Cookie、验证码或规避手段。改由无需登录的公开相关推荐接口对 70 个已登记种子做一层枚举，得到 140 条标题／简介相关视频，其中 67 条尚未登记；上述三条新增长视频来自这批候选。后续只优先审能触达缺口的长实机，不因宣传复读或评论数量增加来源数字。
 
 上述评论／混剪与经典 RO 误标素材只补强排除台账。真正新增的 TEST-B 流程证据来自长实机回抽：公会商队单批、生活 `100/100`、高倍三态、耗尽时仍变化的经验／物品通知、背包正常基准、快捷用药和 GVG 自然断线恢复链；呆呆整轮、客户端命名的低倍／疲劳与掉率边界、真正满包、开放世界死亡，以及连接前半链／输入来源／开放世界状态保留仍未闭环。
+
+### 3.1 公开搜索差集七条全审
+
+2026-07-28 晚间恢复 Bilibili 公开搜索后，将广搜结果与当时 248 条来源做 BVID 差集，筛出七条真实 RO3 录像。全部媒体仅下载到 D 盘忽略目录作临时审阅；总计生成并查看 1,011 张全程故事板／逐秒帧，命中目标再做 0.25 秒复核：
+
+| BVID | 构建／内容 | 审阅强度 | 结果 |
+|---|---|---|---|
+| [`BV1AYUVYzEMT`](https://www.bilibili.com/video/BV1AYUVYzEMT/) | GSTAR-2024 官方首日直播镜像第一段 | 92 张／10 秒 | 教程、职业、技能树；无目标异常，零帧入库 |
+| [`BV1atmSY9ERC`](https://www.bilibili.com/video/BV1atmSY9ERC/) | GSTAR-2024 官方首日直播镜像第二段 | 152 张／10 秒＋目标 81 张／0.25 秒 | `1369.25–1374.75s` 形成自身“原地复活”覆盖层与 HUD 恢复四帧链；[Manifest](../../research/evidence/video/gstar-2024-boss-self-revive-bv1atmsy9erc/manifest.json)已保存，严格隔离旧构建 |
+| [`BV1tCtVzBETW`](https://www.bilibili.com/video/BV1tCtVzBETW/) | 18:06 早期 UI 展示转载 | 218 张／5 秒 | 倾斜拍屏，覆盖背包、装备、队伍、地图等正常页；无目标异常且污染重，零帧入库 |
+| [`BV1KhN46vEQN`](https://www.bilibili.com/video/BV1KhN46vEQN/) | TEST-B 奈莎普通攻略 | 146 张／1 秒 | 正常 Boss 战至胜利，无玩家自身死亡，零帧入库 |
+| [`BV1UhN76CEcy`](https://www.bilibili.com/video/BV1UhN76CEcy/) | TEST-B 伊絲緹普通攻略 | 126 张／1 秒 | 正常 Boss 战至胜利，无玩家自身死亡，零帧入库 |
+| [`BV1M7NC6EEqX`](https://www.bilibili.com/video/BV1M7NC6EEqX/) | TEST-B 彌爾寇攻略 | 119 张／1 秒 | 正常 Boss 战至胜利，无玩家自身死亡，零帧入库 |
+| [`BV1fj3B6NECz`](https://www.bilibili.com/video/BV1fj3B6NECz/) | 制作人活动时段回应切片 | 58 张／1 秒＋公会页 61 张／0.25 秒 | 彩色／灰色图标变化是剪辑过渡，不是选中／锁定状态；零帧入库 |
+
+`BV1atmSY9ERC` 的简介明确指向 Gravity 官方 YouTube `7wGQ1uv1XeQ`，因此原来“主源播放受阻”的官方条目已升级为“公开镜像完成目标复核”。四张父帧只有 852×480 且含舞台直播合成区，不生成现行图标裁图；它们只补早期 Boss 自身复活语义，不能关闭 TEST-B／国服开放世界费用、选项、落点、保护或 Auto 状态。
 
 ## 4. 野外挂机、自动战斗与 MVP
 

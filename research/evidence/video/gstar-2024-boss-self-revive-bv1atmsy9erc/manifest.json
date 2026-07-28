@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "source_id": "gstar-2024-day1-part2-bv1atmsy9erc",
+  "primary_url": "https://www.youtube.com/watch?v=7wGQ1uv1XeQ",
+  "capture_url": "https://www.bilibili.com/video/BV1atmSY9ERC/",
+  "bvid": "BV1atmSY9ERC",
+  "cid": "26761628709",
+  "source_title": "【仙境传说】RO3试玩展示第二部分(Ragnarok3)G-STAR 2024第一天",
+  "source_author": "Gravity YouTube Brand Channel／人為善（Bilibili 镜像）",
+  "source_published_at": "2024-11-15T00:38:08+08:00",
+  "captured_at": "2026-07-28",
+  "test_context": "G-STAR 2024 首日官方舞台直播的 Bilibili 公开镜像，属于远早于 PIONEER-A 与 TEST-B 的韩文早期构建（GSTAR-2024）。全片按 10 秒抽样复核 152 帧；Boss 演示的 1360–1380 秒再按 0.25 秒连续复核 81 帧，形成战斗 HUD、原地复活覆盖层及 HUD 恢复的直接边界。该链只作旧副本自身死亡／复活语义与负例研究，严格禁止混入 PIONEER-A、TEST-B 或国服模板。",
+  "copyright_note": "只保留验证早期 Boss 场自身死亡覆盖层与恢复边界所需的四张公开视频帧。父帧是 852×480 官方舞台直播合成画面，含主持人、参赛者、Gravity 标记与韩文客户端；仅供内部可追溯研究，不作素材再分发或训练集使用。",
+  "frames": [
+    {
+      "file": "frames/01369.25.png",
+      "timestamp_seconds": 1369.25,
+      "sha256": "3827983940e0e170e840f07d37f7ef2ff3d48bf22a51c86047f5ace000f407e5",
+      "dimensions": [852, 480],
+      "supports": [
+        "Boss 攻击命中后的最后一张明确保留正常生命／技能 HUD、且尚未出现死亡覆盖层的观测帧",
+        "与 0.25 秒后的死亡画面属于同一官方直播连续时间轴，可作为触发前基线"
+      ],
+      "limitations": [
+        "画面没有输入设备叠层，不能确认致死原因、服务端判定时点或是否存在隐藏操作",
+        "这是 2024 韩文 Boss 演示早期构建，不是开放世界、PIONEER-A、TEST-B 或国服"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/01369.50.png",
+      "timestamp_seconds": 1369.5,
+      "sha256": "4d2c247a31debd5ce14eb22083fe81626c325699e0f25e276512a48537c64217",
+      "dimensions": [852, 480],
+      "supports": [
+        "画面变暗并出现韩文“제자리 부활”（原地复活）标题及死亡装饰层，正常可操作 HUD 不再成立",
+        "把死亡覆盖层首次观测边界约束在 1369.25–1369.50 秒的相邻 0.25 秒抽样之间"
+      ],
+      "limitations": [
+        "覆盖层没有清晰可辨的按钮、费用或倒计时，不能据标题推断需要点击、免费复活或固定等待",
+        "852×480 直播合成画面只适合流程语义证据，不适合作为当前客户端 OCR／模板样本"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/01374.50.png",
+      "timestamp_seconds": 1374.5,
+      "sha256": "6fa251677647d197c085daf8826b7fb4bfc2a2c36ba3b45c8d0c806f8346a89f",
+      "dimensions": [852, 480],
+      "supports": [
+        "同一“原地复活”覆盖层在首次出现约五秒后仍然存在，排除只有一个视频帧的瞬时装饰",
+        "为下一张 HUD 恢复帧建立死亡覆盖层的最后明确观测点"
+      ],
+      "limitations": [
+        "没有可见倒计时或输入日志，不能把约五秒解释为客户端固定复活计时器",
+        "Boss、队友及攻击仍在背景变化，整屏模板会混入大量场景和直播合成污染"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/01374.75.png",
+      "timestamp_seconds": 1374.75,
+      "sha256": "a8367a07d03c84c345998781a1e731f2e440d6644d5fc236914d7531f803287e",
+      "dimensions": [852, 480],
+      "supports": [
+        "死亡覆盖层已经消失，角色生命条、技能轮及战斗画面恢复",
+        "与前三帧形成 AliveHud → SelfReviveOverlay → OverlayPersists → RevivedHud 的旧 Boss 场直接闭环"
+      ],
+      "limitations": [
+        "HUD 恢复不证明自动战斗、目标锁定、队伍状态或死亡前位置全部保留",
+        "该旧构建闭环只能用于状态分类研究；TEST-B／国服开放世界仍必须重新采集选项、费用、落点、保护和 Auto 状态"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}
