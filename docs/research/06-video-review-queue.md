@@ -65,7 +65,7 @@
 
 Twitch 公开分类 GraphQL 定位到游戏 ID `298800660`、分类名 `Ragnarok Online 3`。
 在不使用账号、Cookie 或验证码绕过的前提下，现已登记 23 条有效 RO3 VOD，合计
-77:04:29；另登记 1 条没有 RO3 实机的排除源。首批 17 条人工检查 2,925 张全程
+77:04:29；另登记 10 条没有 RO3 实机的排除源。首批 17 条人工检查 2,925 张全程
 故事板；后续使用 [`search_twitch_chat.py`](../../tools/research/search_twitch_chat.py)
 扫描全部 23 条的 8,716 条公开聊天，47 条关键词命中均回抽视频确认。聊天只用于
 定位，不直接成为证据。该组 TEST-B VOD 当前有 6 条来源生成正式 Manifest，共保存 24 帧；另有 1 条 TEST-B 十人本 Clip 保存 1 帧，加上下述两条 PIONEER-A 证据，总计 9 条 Twitch Manifest、31 帧。
@@ -103,7 +103,23 @@ Twitch 公开分类 GraphQL 定位到游戏 ID `298800660`、分类名 `Ragnarok
 
 2026-07-28 对全部 23 条 TEST-B VOD 再补常见英／葡／西异常词。本轮接口快照报告 8,883 条聊天、23 条字面命中；其中 19 条来自 OuluH 四场，4 条来自其余 19 场。背包展示／无掉落两个葡语候选及 PIONEER-A `respawn` 候选已回抽高清，其余为怪物刷新、技能／用户名／表情、一般掉落和“满是抽卡”等语义噪声。最终零条新增满包、疲劳、玩家死亡或连接证据。
 
-#### 2.1.1 Twitch Clip 全目录复核
+#### 2.1.1 相邻 Twitch VOD 的非 RO3 污染排除
+
+对已知主播相邻 VOD 的扩展枚举另得到 9 条候选，合计 `54:17:50`。每条均按全时长等距抽取 200 帧，共复核 1,800 张故事板；Twitch 公开 GraphQL 返回的游戏字段和画面一致，全部是其他游戏或换游录像，没有 RO3 客户端画面。它们登记为 D 级污染源，不保存父帧或裁图。
+
+| Twitch VOD | 作者 | 时长 | 公开游戏字段／画面 | 结论 |
+|---|---|---:|---|---|
+| [`2804970164`](https://www.twitch.tv/videos/2804970164) | 剑剑子 | 05:28:53 | Aion 2 | 非 RO3，排除 |
+| [`2805725916`](https://www.twitch.tv/videos/2805725916) | 剑剑子 | 07:35:57 | 鸣潮／Aion 2 | 非 RO3，排除 |
+| [`2807190781`](https://www.twitch.tv/videos/2807190781) | 剑剑子 | 12:07:22 | Aion 2 | 非 RO3，排除 |
+| [`2806497081`](https://www.twitch.tv/videos/2806497081) | 剑剑子 | 11:41:20 | Aion 2 | 非 RO3，排除 |
+| [`2805828384`](https://www.twitch.tv/videos/2805828384) | 阿海 | 02:55:20 | Warhammer 40,000: Darktide | 非 RO3，排除 |
+| [`2805074836`](https://www.twitch.tv/videos/2805074836) | 阿海 | 02:41:10 | Warhammer 40,000: Darktide | 非 RO3，排除 |
+| [`2807456564`](https://www.twitch.tv/videos/2807456564) | 阿海 | 02:03:35 | Magicka 2／Lost Ark | 非 RO3，排除 |
+| [`2807194691`](https://www.twitch.tv/videos/2807194691) | 阿海 | 04:58:16 | Darktide／换游片段 | 非 RO3，排除 |
+| [`2806476246`](https://www.twitch.tv/videos/2806476246) | 米饼미빈 | 04:45:57 | 燕云十六声／杂项游戏 | 非 RO3，排除 |
+
+#### 2.1.2 Twitch Clip 全目录复核
 
 2026-07-28 通过 Twitch 无账号、无 Cookie 的公开 GraphQL 分类响应复核游戏 ID `298800660`。全时段目录共返回 30 条 Clip：8 条来自 `TEST-B`，22 条来自 2025 旧构建。8 条 TEST-B Clip 均已下载公开视频并按 1 秒间隔全片复核：
 
@@ -175,6 +191,7 @@ Twitch storyboard 的文件名时间是候选窗口起点，不保证等于事�
 | [BV12bgv6iEjY](https://www.bilibili.com/video/BV12bgv6iEjY/) | 制作人“尖锐问题”切片，波利搬运工 | 00:54 | storyboard reviewed, exclusion only | 问答短切片配一般实机背景，没有目标 UI 状态 |
 | [BV18mgS6SEp6](https://www.bilibili.com/video/BV18mgS6SEp6/) | B 站代理新 MMO 评论，老管子游戏 | 04:00 | storyboard reviewed, exclusion only | 宣传／评论混剪，没有流程证据 |
 | [BV1v4K86ZEoN](https://www.bilibili.com/video/BV1v4K86ZEoN/) | 国服定档评论，会长初代 | 05:20 | storyboard reviewed, exclusion only | RO 历史与 RO3 宣传混剪 |
+| [BV1xZwezbELi](https://www.bilibili.com/video/BV1xZwezbELi/) | 3 月闭门测试读后感，会长初代 | 30:36 | full 10 s storyboard reviewed, commentary only | 183 张十秒采样几乎全为静态封面，末段仅有线下照片与世界地图照片；没有客户端 UI 或目标状态，零帧入库 |
 | [BV1mo356SEyS](https://www.bilibili.com/video/BV1mo356SEyS/) | 国服首测／职业介绍评论，烈酒Liquor | 02:58 | storyboard reviewed, exclusion only | 官网与职业介绍，没有新图标状态 |
 | [BV1qQTr6PEKS](https://www.bilibili.com/video/BV1qQTr6PEKS/) | TEST-B 体验评论，和东东一起战斗吧 | 04:04 | full 2 s timeline reviewed, exclusion only | 装备、宠物、商城和活动评论；仅重复 `100/100` 每日页，没有新增流程或图标证据 |
 | [BV1wJTb6BEdY](https://www.bilibili.com/video/BV1wJTb6BEdY/) | TEST-B 七日心得剪版，自由高达seed 转载 | 03:58 | full 2 s timeline reviewed, exclusion only | 已定位“游戏Boy不要S”素材的剪版；只有副本、PVP、活动、商城和普通战斗，没有满包、疲劳状态、死亡、物资终局或新图标 |

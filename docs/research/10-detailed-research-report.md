@@ -3,7 +3,7 @@
 > 快照日期：2026-07-28（Asia/Shanghai）  
 > 研究对象：Bilibili 中国大陆国服《RO 仙境传说 3 / Ragnarok Online 3》  
 > 当前阶段：`OFFLINE_RESEARCH`；国服“重逢测试”计划于 2026-08-27 开始  
-> 校验基线：225 条来源、29 份视频 Manifest／127 张视频帧、1 份静态 Manifest／1 张一手原图、88 张正式裁图／46 个键
+> 校验基线：235 条来源、29 份视频 Manifest／127 张视频帧、1 份静态 Manifest／1 张一手原图、88 张正式裁图／46 个键
 
 ## 1. 执行结论
 
@@ -51,7 +51,7 @@
 总校验器会从父图重新裁切并逐像素比较，因此“目录里有文件但来源或像素对不上”的图片不能通过。当前校验结果为：
 
 ```text
-225 sources
+235 sources
 29 video manifests / 127 frames
 1 still manifest / 1 still image
 88 icon crops across 46 keys
@@ -66,15 +66,15 @@ all evidence hashes and crop pixels verified
 |---|---:|---|
 | A | 19 | 官方公告、协议、官方视频和监管文件 |
 | B | 157 | 启燃／先锋测试参与者实机、一手截图／长文 |
-| C | 42 | 评论、媒体、访问受阻的已定位长录屏／目录快照，只作交叉验证或线索 |
-| D | 7 | 明确排除、重复、误标、错误游戏或无 RO3 实机 |
-| 合计 | 225 | 每条都有唯一 ID、URL、grade 和 status |
+| C | 43 | 评论、媒体、访问受阻的已定位长录屏／目录快照，只作交叉验证或线索 |
+| D | 16 | 明确排除、重复、误标、错误游戏或无 RO3 实机 |
+| 合计 | 235 | 每条都有唯一 ID、URL、grade 和 status |
 
 玩法存在性与流程判断至少需要 A／B 级证据。按钮坐标、颜色、文案、次数、数值和重置时间即使来自 B 级，也只绑定 `TEST-B`，必须在国服同 build 重新采样。
 
 ### 3.2 视频与聊天审阅
 
-Twitch 公开分类中现有 23 条有效 RO3 VOD，合计 77:04:29；另有 1 条没有 RO3 实机的排除源。首批 17 条检查 2,925 张全程故事板。随后新增公开聊天定位工具：
+Twitch 公开分类中现有 23 条有效 RO3 VOD，合计 77:04:29；另有 10 条没有 RO3 实机的排除源。首批 17 条检查 2,925 张全程故事板。随后新增公开聊天定位工具：
 
 - 不使用账号、Cookie 或 OAuth；
 - 扫描 23 条 VOD 的 8,716 条聊天；
@@ -89,6 +89,8 @@ Twitch 公开分类中现有 23 条有效 RO3 VOD，合计 77:04:29；另有 1 �
 
 分类补审另登记 9 条旧 VOD／误标来源。PIONEER-A 的 `2540550896` 保存开放世界英文双按钮连接失败链，`2541630934` 保存角色选择进入链；另 7 条分别为重复 Highlight、播客、其他游戏、旧 RO 误标、六秒面板或无目标异常，均写明排除原因。故事板时间只视为候选窗口起点，`2540550896` 的事件从约 756 秒候选块校正到约 817 秒高清实时时间。
 
+相邻主播 VOD 扩展又完整复核 9 条候选，合计 `54:17:50`：每条等距抽取 200 帧，共 1,800 张故事板。Twitch 公共 GraphQL 游戏字段与画面交叉一致，内容分别是 Aion 2／鸣潮、Warhammer 40,000: Darktide、Magicka 2／Lost Ark、燕云十六声等，没有 RO3 客户端画面。九条全部作为 D 级污染源登记，不保存图片，也不把其他 MMO 的相似 HUD 混入状态字典。
+
 ### 3.3 YouTube 长录屏扩展队列
 
 除“我叫小麦”约 87 小时队列外，本轮新增夜嵐 Day1–Day7 约 34.5 小时，以及 PFY、懿岐、DingDing、清燉小羔羊、Ruka、十人娱乐、祥可可等 10 条启燃测试长录屏。共 17 条新增视频已取得公开 oEmbed 标题、作者和时长，并写入来源目录。
@@ -97,13 +99,14 @@ Twitch 公开分类中现有 23 条有效 RO3 VOD，合计 77:04:29；另有 1 �
 
 ### 3.4 最新 Bilibili 复检
 
-十二条最新／定向命中视频已逐帧审阅并登记：
+十三条最新／定向命中视频已逐帧审阅并登记：
 
 | BVID | 实际内容 | 处理 |
 |---|---|---|
 | `BV12bgv6iEjY` | 54 秒制作人问答短切片，一般实机背景 | 排除；不存新图 |
 | `BV18mgS6SEp6` | 宣传／评论混剪 | 排除；不存新图 |
 | `BV1v4K86ZEoN` | RO 历史和国服定档宣传混剪 | 排除；不存新图 |
+| `BV1xZwezbELi` | 3 月闭门测试读后感；183 张十秒采样几乎全是静态封面，末段仅有线下照片和世界地图照片 | 评论来源登记；没有客户端 UI，不存图 |
 | `BV1mo356SEyS` | 官网与职业介绍评论 | 排除；不存新图 |
 | `BV1QwTM6bESg` | PIONEER-A 模拟对抗赛第二场，两轮玩家死亡／自动复活 | 首轮 0.25 秒精抽、边界 0.02–0.05 秒复核；7 帧与 4 张倒计时裁图入库 |
 | `BV1WGbhz2EMB` | PIONEER-A 公会战，战场传送和控制点变化 | 全程 2 秒复核；没有可靠玩家死亡 UI，负向登记 |
@@ -426,7 +429,7 @@ uv run --python 3.12 --with jsonschema --with pillow python tools/validate_resea
 当前结果：
 
 ```text
-Research scaffold OK: 225 sources, 29 video manifests, 127 frames;
+Research scaffold OK: 235 sources, 29 video manifests, 127 frames;
 1 still manifests, 1 still images;
 88 icon crops across 46 keys;
 all evidence hashes and crop pixels verified.
@@ -455,7 +458,7 @@ all evidence hashes and crop pixels verified.
 | [日常系统百科](07-daily-system-encyclopedia.md) | 每项入口、资源、完成判据和异常 |
 | [直接证据缺口日志](08-direct-evidence-gap-log.md) | 已关闭／缩小／未关闭和负向回抽 |
 | [图标证据目录](09-icon-evidence-catalog.md) | 46 个键、88 张正式裁图及缺失变体 |
-| [来源目录](../../research/catalog/sources.json) | 225 条机器可读来源 |
+| [来源目录](../../research/catalog/sources.json) | 235 条机器可读来源 |
 | [裁图库说明](../../research/evidence/icons/README.md) | 裁图 schema、生成和逐像素验证 |
 
 ## 12. 最终判断

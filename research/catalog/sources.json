@@ -2570,6 +2570,126 @@
       "published_at": "2026-06-26T16:54:07+08:00",
       "duration_seconds": 40,
       "tags": ["bilibili", "classic_ro", "title_false_positive", "full_half_second_timeline_reviewed", "not_ragnarok_online_3", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "bilibili-closed-test-commentary-bv1xzwezbeli",
+      "kind": "commentary_video",
+      "grade": "C",
+      "status": "full_ten_second_storyboard_reviewed_no_client_ui",
+      "title": "《RO3》3月14日线下闭门测试后的读后感",
+      "url": "https://www.bilibili.com/video/BV1xZwezbELi/",
+      "primary_author": "会长初代",
+      "published_at": "2026-03-18T15:38:26+08:00",
+      "duration_seconds": 1836,
+      "tags": ["closed_test", "march_2026", "commentary", "static_title_card", "offline_photos", "world_map_photo", "full_ten_second_storyboard_reviewed", "no_client_ui", "no_target_state", "no_evidence_saved"]
+    },
+    {
+      "id": "twitch-non-ro3-vod-2804970164",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_reviewed_non_ro3_exclusion",
+      "title": "明天 A2 国际服直播",
+      "url": "https://www.twitch.tv/videos/2804970164",
+      "primary_author": "剑剑子（aaorlol）",
+      "published_at": "2026-06-25T19:45:57+08:00",
+      "duration_seconds": 19733,
+      "tags": ["twitch", "false_positive", "aion_2", "non_ro3", "full_sparse_storyboard_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "twitch-non-ro3-vod-2805725916",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_reviewed_non_ro3_exclusion",
+      "title": "先看鸣潮前瞻，待会农本",
+      "url": "https://www.twitch.tv/videos/2805725916",
+      "primary_author": "剑剑子（aaorlol）",
+      "published_at": "2026-06-26T18:55:02+08:00",
+      "duration_seconds": 27357,
+      "tags": ["twitch", "false_positive", "wuthering_waves", "aion_2", "non_ro3", "full_sparse_storyboard_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "twitch-non-ro3-vod-2807190781",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_reviewed_non_ro3_exclusion",
+      "title": "刷刷刷",
+      "url": "https://www.twitch.tv/videos/2807190781",
+      "primary_author": "剑剑子（aaorlol）",
+      "published_at": "2026-06-28T13:32:49+08:00",
+      "duration_seconds": 43642,
+      "tags": ["twitch", "false_positive", "aion_2", "non_ro3", "full_sparse_storyboard_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "twitch-non-ro3-vod-2805828384",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_reviewed_non_ro3_exclusion",
+      "title": "【阿海】下大雨勒",
+      "url": "https://www.twitch.tv/videos/2805828384",
+      "primary_author": "阿海（oceanstars）",
+      "published_at": "2026-06-26T22:34:28+08:00",
+      "duration_seconds": 10520,
+      "tags": ["twitch", "false_positive", "warhammer_40000_darktide", "non_ro3", "full_sparse_storyboard_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "twitch-non-ro3-vod-2806497081",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_reviewed_non_ro3_exclusion",
+      "title": "刷刷刷",
+      "url": "https://www.twitch.tv/videos/2806497081",
+      "primary_author": "剑剑子（aaorlol）",
+      "published_at": "2026-06-27T17:44:34+08:00",
+      "duration_seconds": 42080,
+      "tags": ["twitch", "false_positive", "aion_2", "non_ro3", "full_sparse_storyboard_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "twitch-non-ro3-vod-2805074836",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_reviewed_non_ro3_exclusion",
+      "title": "【阿海】开一下下",
+      "url": "https://www.twitch.tv/videos/2805074836",
+      "primary_author": "阿海（oceanstars）",
+      "published_at": "2026-06-25T23:16:19+08:00",
+      "duration_seconds": 9670,
+      "tags": ["twitch", "false_positive", "warhammer_40000_darktide", "non_ro3", "full_sparse_storyboard_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "twitch-non-ro3-vod-2807456564",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_reviewed_non_ro3_exclusion",
+      "title": "【阿海】有点ㄎㄧㄤ",
+      "url": "https://www.twitch.tv/videos/2807456564",
+      "primary_author": "阿海（oceanstars）",
+      "published_at": "2026-06-28T23:55:31+08:00",
+      "duration_seconds": 7415,
+      "tags": ["twitch", "false_positive", "magicka_2", "lost_ark", "non_ro3", "full_sparse_storyboard_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "twitch-non-ro3-vod-2806476246",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_reviewed_non_ro3_exclusion",
+      "title": "6/25 扑街饼：挂台忠诚点数兑换大奖",
+      "url": "https://www.twitch.tv/videos/2806476246",
+      "primary_author": "米饼미빈（kathyvv）",
+      "published_at": "2026-06-27T16:39:32+08:00",
+      "duration_seconds": 17157,
+      "tags": ["twitch", "false_positive", "where_winds_meet", "variety_stream", "non_ro3", "full_sparse_storyboard_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "twitch-non-ro3-vod-2807194691",
+      "kind": "excluded_non_ro3_vod",
+      "grade": "D",
+      "status": "full_sparse_storyboard_reviewed_non_ro3_exclusion",
+      "title": "【阿海】开",
+      "url": "https://www.twitch.tv/videos/2807194691",
+      "primary_author": "阿海（oceanstars）",
+      "published_at": "2026-06-28T13:41:58+08:00",
+      "duration_seconds": 17896,
+      "tags": ["twitch", "false_positive", "warhammer_40000_darktide", "variety_stream", "non_ro3", "full_sparse_storyboard_reviewed", "no_evidence_saved", "no_cookie"]
     }
   ]
 }

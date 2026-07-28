@@ -240,6 +240,7 @@ PIONEER-A 只作跨构建语义对照，不进入 TEST-B／国服模板：
 | [巴哈电玩疯 TEST-B 长实机转载](https://www.bilibili.com/video/BV1D67V6PEMq/) | 22:28 | 674 张二秒采样全审，负向登记 | 角色创建至 PVP／GVG；没有目标异常状态，不保存新父帧 |
 | [老玩家启燃心得转载](https://www.bilibili.com/video/BV1xeMw6TEub/) | 07:41 | 230 张二秒采样全审，评论来源 | 流派手册误似背包；没有目标异常状态 |
 | [骨灰玩家启燃长评转载](https://www.bilibili.com/video/BV1RRMw6QEom/) | 21:52 | 657 张二秒采样＋离线转写／亚秒定点复核，4 帧入库 | `48–51.50s` 补到公会第四批发车边界；`544.90s` 补到生存竞争模式队友复活弹窗负例；另有重复耗尽页和普通背包 |
+| [3 月闭门测试读后感](https://www.bilibili.com/video/BV1xZwezbELi/) | 30:36 | 183 张十秒采样全审，评论来源 | 几乎全为静态封面，末段仅有线下照片与世界地图照片；没有客户端 UI，不保存模板 |
 | [制作人问答二次整理](https://www.bilibili.com/video/BV1hpKG6qEda/) | 08:40 | 260 张二秒采样全审，二手政策来源 | 商业化与反馈讨论；无目标异常或新按钮变体 |
 | [制作人对搬砖／宏的回应切片](https://www.bilibili.com/video/BV1aqMc6LEN7/) | 07:28 | 已审阅，语义有歧义 | 只能作运营态度线索，不能推翻正式协议 |
 
