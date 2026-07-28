@@ -327,6 +327,8 @@ Victory → BaseReward → Result／MVP → TeamAuction → ExitAvailable
 
 宠物系统含主战、支援、额外助战位置、孵化／养成与宠物塔。[阵容页](../../research/evidence/video/pet-system-bv14gtk6lelc/frames/0510-pet-main-support-slots.png)直接显示一个主战位、支援 1–3，并在支援 3 上显示 Base 50 门槛；[助战页](../../research/evidence/video/test-closeout-bv1ybny6feze/frames/0062-pet-support-five-slots.png)另显示助战 1–5 号位以及宠物稀有度、星级和名称。[孵化房页](../../research/evidence/video/pet-system-bv14gtk6lelc/frames/0210-pet-incubation-level-probability.png)直接显示房间等级、总熟练度和品质概率，但不证明升级／保底链，也不证明解说中的属性继承比例。上述均为 TEST-B，高风险孵化、升阶和抽取不应作为自动决策；助手候选仅限读取编队和塔层状态。
 
+[精灵之塔连续父帧](../../research/evidence/video/twitch-vod-2804721854/manifest.json)进一步直接显示普通未通关、黄色选中未通关、绿色已通关勾三类楼层外观；荣誉榜中第 20 层奖励由橙色可领格变为绿色已领勾，第 30 层随后同样变化，并出现“宠物蛋 ×3”到账提示。正式裁图把楼层和奖励分成两个键，奖励前后使用同一坐标且不绑定具体物品。仍未知锁定／禁用、挑战胜负、次数、重置、扫荡、领取失败与满包结果，国服也必须重采。
+
 ### 10.3 公会
 
 公开内容包括公会物资／商队、营火、狩猎挑战、公会 Boss、百人 GVE、GVG、语音和团队指挥。[TEST-B 公会活动页](../../research/evidence/video/test-closeout-bv1ybny6feze/frames/0092-guild-activity-calendar.png)还分别展示领地争霸战、抢亲大作战、公会联赛、自然之神伊尔玛塔和狩猎挑战卡片。固定时段、参与次数和奖励在测试期被压缩，必须以国服活动日历为准；这些定时、多人或竞争场景只用于识别并排除。

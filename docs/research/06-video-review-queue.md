@@ -61,6 +61,8 @@
 
 已反查到 `0FyScW_0A90` 对应 `granthjs`、`fHqchpIkRLM` 对应 `ytdd1003`，以及 `happypp_520` 曾于 6 月 27 日直播 RO3，但六月 Twitch VOD 均已过期。`cadmiumsheep` 与“清燉小羔羊”不是同一主播，不再混用。
 
+公开 oEmbed 另核对到三条候选元数据：烈焰的 [`JhPGGgdXKr8`](https://www.youtube.com/watch?v=JhPGGgdXKr8)（商人开局／机械工匠／一周活动）、CHA LIN 的 [`C-LCo3b5zOY`](https://www.youtube.com/watch?v=C-LCo3b5zOY)（实况 #8 GVG）和 [`PUxs5mXClc4`](https://www.youtube.com/watch?v=PUxs5mXClc4)（实况 #2 营火晚会／狩猎挑战）。标准播放页仍返回 429，精确 ID 暂无合法公开镜像；三条只保留候选定位，不计已审画面、不保存图片，也不进入本快照 241 条正式来源总数。
+
 ### 2.1 Twitch `Ragnarok Online 3` 分类补审
 
 Twitch 公开分类 GraphQL 定位到游戏 ID `298800660`、分类名 `Ragnarok Online 3`。
@@ -68,7 +70,7 @@ Twitch 公开分类 GraphQL 定位到游戏 ID `298800660`、分类名 `Ragnarok
 77:04:29；另登记 10 条没有 RO3 实机的排除源。首批 17 条人工检查 2,925 张全程
 故事板；后续使用 [`search_twitch_chat.py`](../../tools/research/search_twitch_chat.py)
 扫描全部 23 条的 8,716 条公开聊天，47 条关键词命中均回抽视频确认。聊天只用于
-定位，不直接成为证据。分类内 TEST-B VOD 当前有 6 条来源生成正式 Manifest，共保存 24 帧；另有 1 条 TEST-B 十人本 Clip 保存 1 帧，加上下述两条 PIONEER-A 证据为 9 条 Twitch Manifest、31 帧。Clip 父 VOD 引用后来又反查到 1 条分类字段误标的 TEST-B 混合直播，新增 1 份 Manifest／7 帧，因此仓库内 Twitch 证据当前合计 10 份 Manifest／38 帧。
+定位，不直接成为证据。分类内 TEST-B VOD 当前有 6 条来源生成正式 Manifest，共保存 24 帧；另有 1 条 TEST-B 十人本 Clip 保存 1 帧，加上下述两条 PIONEER-A 证据为 9 条 Twitch Manifest、31 帧。分类外／混合直播现又深审 3 条：`2805774434` 保存 7 帧，`2804721854` 保存 4 帧，`2804938391` 零帧。仓库内 Twitch 证据因此合计 11 份 Manifest／42 帧。
 
 | Twitch VOD | 作者 | 时长 | 审阅状态 | 与核心缺口有关的结论 |
 |---|---|---:|---|---|
@@ -163,7 +165,18 @@ TEST-B Clip `RoughKawaiiKoala…` 的完整 VOD 引用指向 [KanonXO 的 `28057
 
 前六帧形成同一录像内的 TEST-B 正常进入页面链，并已裁出启动器、公告就绪、服务器入口、角色选择和 95% 载入五个状态样本；第七帧另裁出自订布局编辑器。录像没有键鼠叠层或输入日志，不能把页面顺序解释为全程无人干预，也没有账号认证、排队、维护、角色创建／删除或异常恢复。主播摄像头、聊天、桌面图标、UID 与赞助叠层只保留在内部父帧；独立裁图已避开这些污染区。
 
-#### 2.1.4 PIONEER-A 分类补审与误标排除
+#### 2.1.4 阿土两条分类外混合直播
+
+公开历史索引与完整故事板又定位到阿土（`q158688920`）的两条混合 VOD。两条都先扫描全时长稀疏故事板，再扫描所有可公开读取的聊天，聊天只用于回抽秒数：
+
+| Twitch VOD | 总时长 | RO3 窗口 | 审阅结果 |
+|---|---:|---|---|
+| [`2804721854`](https://www.twitch.tv/videos/2804721854) | 05:28:10 | 约 `1279–12109s`、`16835–17669s` | 2,128 条聊天、21 条字面命中全部语义筛选；`3348s`“卡住”是商人玩法教学，`8755s`“复活”是队伍讨论复活术，`17608s`“复活”指天使波利刷新，均非目标异常。`17661.50–17663.50s` 的精灵之塔楼层／奖励链保存 4 帧与 5 张裁图。 |
+| [`2804938391`](https://www.twitch.tv/videos/2804938391) | 04:57:50 | 约 `7684–10900s` | 完整稀疏故事板及 771 条聊天均已审；主要是生存模式、宠物和普通战斗，没有公会提交、生活完成、满包、低倍／疲劳、野外自身复活或重连闭环，零帧入库。 |
+
+精灵之塔连续帧同时补到普通未通关、黄色选中未通关、绿色已通关勾，以及荣誉榜里程碑奖励橙色可领格 → 绿色已领勾；第 30 层领取后左下出现“宠物蛋 ×3”到账提示。正式奖励裁图使用同坐标的通用状态标签，不把物品图案或层数固化进模板。详见[四帧 Manifest](../../research/evidence/video/twitch-vod-2804721854/manifest.json)。
+
+#### 2.1.5 PIONEER-A 分类补审与误标排除
 
 为避免旧构建混入 TEST-B，新增九条来源均显式标记构建或排除原因：
 
@@ -193,7 +206,7 @@ Twitch storyboard 的文件名时间是候选窗口起点，不保证等于事�
 | [BV1hpKG6qEda](https://www.bilibili.com/video/BV1hpKG6qEda/) | 制作人直播问答整理 | 08:40 | full 2 s timeline reviewed, secondary only | 260 张二秒采样全审；商业化、受众取舍和反馈收集二次剪辑，没有满包、疲劳、复活、公会／生活异常或新按钮变体；政策仍需对照完整直播 |
 | [BV1QyT964EHc](https://www.bilibili.com/video/BV1QyT964EHc/) | 测试版本批评与系统分析 | 07:20 | transcribed + reviewed + 1 frame | 养成、公会和生活职业；全览 UI 直接确认矿工／厨师／园艺师标签，评价仍只作玩家观点 |
 | [BV1YbNy6fEzE](https://www.bilibili.com/video/BV1YbNy6fEzE/) | 启燃测试结束小结 | 03:13 | transcribed + reviewed + 3 frames | 宠物助战 1–5 号位、公会活动日历、自动战斗设置结构 |
-| [BV19HTn6PEo2](https://www.bilibili.com/video/BV19HTn6PEo2/) | RO3 真的很烂吗 | 06:33 | transcribed + reviewed + 2 frames | 槽位精炼、下一步成功率／属性／材料和获得途径；价值判断不作事实 |
+| [BV19HTn6PEo2](https://www.bilibili.com/video/BV19HTn6PEo2/) | RO3 真的很烂吗 | 06:33 | transcribed + reviewed + 2 frames + creator comment locator | 槽位精炼、下一步成功率／属性／材料和获得途径；作者评论把挂机分为“健康正常收益／无健康降低收益／疲劳等同没收益”，定位 `rpid=307490554561`、`root_rpid=307252711969`、`2026-07-25T03:03:50Z`，但仍只是作者一手文字线索，不替代客户端阶段画面 |
 | [BV1mCTL6CEfh](https://www.bilibili.com/video/BV1mCTL6CEfh/) | 职业、卡片、交易体验 | 05:51 | transcribed + reviewed, low confidence | 部分内容与一手资料冲突；“宠物派遣采集／货币三分法／无限交易”等不得采用，库存仅作搜索线索 |
 | [BV1cEN26LE35](https://www.bilibili.com/video/BV1cEN26LE35/) | 人物数值系统详解，大卷海豹 | 15:03 | transcribed + reviewed | `00:45–02:25` 天赋，`02:40–05:10` 残响，`05:10–09:00` 卡片，`09:30–12:50` 装备／精炼；`00:58–01:35` 的每日 60 分钟与即时开关属于 TEST-B 玩家解说，不是阶段闭环 |
 | [BV1DB7V6vE19](https://www.bilibili.com/video/BV1DB7V6vE19/) | 启燃首日汇报，刘村小董卓 | 04:12 | transcribed + reviewed with conflict | `00:00–00:30` 交易口述，`00:30–01:25` 职业／副本，`01:20–02:25` 天赋／打造，`02:25–03:15` 生活／日常／公会，`03:15–03:45` 宠物／卡片；“拍卖／摆摊均不限价”与其他一手资料冲突，只保留为待核冲突 |
@@ -201,6 +214,9 @@ Twitch storyboard 的文件名时间是候选窗口起点，不保证等于事�
 | [BV1m6736xErd](https://www.bilibili.com/video/BV1m6736xErd/) | 内测杂谈＋制作人直播问答转述，大卷海豹 | 16:23 | reviewed, primary required | `02:50–04:50` 工作室态度转述，`07:45–09:20` 玩家交易／经济控制转述，其余混有作者推测；不是直播原片，所有“制作人原话”均等待主源复核 |
 | [BV1mCKX6LESD](https://www.bilibili.com/video/BV1mCKX6LESD/) | 封测五日心得转载，多巴胺归零 | 04:05 | transcribed + reviewed, cross-check only | `00:20–02:00` 精炼，`02:00–03:10` 宠物，`03:10–04:05` PVP／定时活动；YouTube 转载且以评价为主，只作既有 TEST-B 结论交叉验证 |
 | [BV19a7V6zEpK](https://www.bilibili.com/video/BV19a7V6zEpK/) | 启燃体验后分享，謝財財 | 07:32 | transcribed + reviewed | `01:35–03:55` 卡槽／打造／天赋，`03:55–04:40` 宠物／每日，`04:35–04:55` 挂机三阶段口述，`04:50–06:50` 副本；没有录到每日或阶段转换闭环 |
+| [BV19Mw7zZEov](https://www.bilibili.com/video/BV19Mw7zZEov/) | 线下闭门测试结束评论，方块_23 | 08:07 | full 2 s timeline reviewed, older build | 旧闭门构建的评论与宣传画面；没有当前核心状态，零帧入库 |
+| [BV1iENJ68ECk](https://www.bilibili.com/video/BV1iENJ68ECk/) | MMO 评论／GVG 宣传混剪，油鸡-高雪扬 | 04:50 | full 2 s timeline reviewed, promotional | 宣传、GVG 和战斗混剪；没有可连续验证的目标 UI，零帧入库 |
+| [BV13xN96XEny](https://www.bilibili.com/video/BV13xN96XEny/) | TEST-B 十字军位移，单人旅团 | 00:11 | full 0.5 s timeline reviewed | 只有职业位移战斗演示；没有异常／日常／图标状态，零帧入库 |
 | [BV1MZ7H6RE9s](https://www.bilibili.com/video/BV1MZ7H6RE9s/) | 核心玩法大盘点，郭郭咕咕- | 03:46 | reviewed, exclusion only | `00:00–01:45` 十人副本，`01:50–03:30` GVG／攻城；主要是剪辑画面和二次解说，属于副本／竞争排除样本，不用于日常状态机 |
 | [BV1TcK862ETr](https://www.bilibili.com/video/BV1TcK862ETr/) | 国服定档后的传统 MMO 玩法解析，AKA阿蹦 | 07:00 | transcribed + reviewed, exclusion only | `00:00–03:00` 定档／IP／MMO 观点，`03:00–05:30` 养成／PVP／交易观点，画面主要为宣传、职业、副本和 GVG 剪辑；没有流程证据，国服日期仍引用官方源 |
 | [BV1gKg66oE8g](https://www.bilibili.com/video/BV1gKg66oE8g/) | 国服首测玩法介绍，主播20投 | 02:54 | transcribed + reviewed, secondary only | 作者在 `00:45–01:00` 明确说明主要内容来自台港澳测试素材及观看其他视频；后续是养成、货币、公会和副本口述，没有直接日常或异常序列 |

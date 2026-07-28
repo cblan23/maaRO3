@@ -3575,6 +3575,196 @@
       "limitations": [
         "没有保存、取消、拖移或恢复预设后的连续结果；该样本只证明布局可变和编辑器入口存在。"
       ]
+    },
+    {
+      "id": "spirit-tower-floor-normal-not-cleared-test-b-01",
+      "icon_key": "spirit_tower_floor_status",
+      "state": "normal_not_cleared",
+      "sample_type": "state_indicator",
+      "file": "crops/spirit-tower-floor-normal-not-cleared-test-b-01.png",
+      "sha256": "581d6bac36b9fb8493465cd316a7d4a0175e83d152973394b8f224dff6a0318e",
+      "dimensions": [
+        180,
+        50
+      ],
+      "source_id": "twitch-vod-2804721854",
+      "source_timestamp_seconds": 17661.5,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2804721854/frames/17661.50-spirit-tower-floor-states.jpg",
+      "parent_sha256": "8c633cf559a01095587d5e1cf697d9708638223aca7c3029556c1c6d3030d7a1",
+      "crop": {
+        "x": 600,
+        "y": 151,
+        "width": 180,
+        "height": 50
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留第 17 层右侧普通未通关横条；测试 UID、聊天叠层、楼层数字和其他状态均在裁区外。"
+      },
+      "limitations": [
+        "未通关不等于锁定或不可进入；国服必须另采真正锁形／禁用状态。"
+      ]
+    },
+    {
+      "id": "spirit-tower-floor-selected-not-cleared-test-b-01",
+      "icon_key": "spirit_tower_floor_status",
+      "state": "selected_not_cleared",
+      "sample_type": "state_indicator",
+      "file": "crops/spirit-tower-floor-selected-not-cleared-test-b-01.png",
+      "sha256": "bc76f1411b1619244780524df3c8967e96cb339e115802c1d72e5607177dfcc4",
+      "dimensions": [
+        190,
+        50
+      ],
+      "source_id": "twitch-vod-2804721854",
+      "source_timestamp_seconds": 17661.5,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2804721854/frames/17661.50-spirit-tower-floor-states.jpg",
+      "parent_sha256": "8c633cf559a01095587d5e1cf697d9708638223aca7c3029556c1c6d3030d7a1",
+      "crop": {
+        "x": 310,
+        "y": 269,
+        "width": 190,
+        "height": 50
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留第 16 层黄色选中未通关横条和选中圆点；聊天叠层与其他楼层状态均在裁区外。"
+      },
+      "limitations": [
+        "只证明当前焦点状态；没有挑战结果、悬停、按下或禁用变体。"
+      ]
+    },
+    {
+      "id": "spirit-tower-floor-completed-test-b-01",
+      "icon_key": "spirit_tower_floor_status",
+      "state": "completed_green_check",
+      "sample_type": "state_indicator",
+      "file": "crops/spirit-tower-floor-completed-test-b-01.png",
+      "sha256": "3eff0af88abcc8a87f61ffe0cee273c1632662c649b330a56af49406bc182266",
+      "dimensions": [
+        175,
+        50
+      ],
+      "source_id": "twitch-vod-2804721854",
+      "source_timestamp_seconds": 17661.5,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2804721854/frames/17661.50-spirit-tower-floor-states.jpg",
+      "parent_sha256": "8c633cf559a01095587d5e1cf697d9708638223aca7c3029556c1c6d3030d7a1",
+      "crop": {
+        "x": 601,
+        "y": 360,
+        "width": 175,
+        "height": 50
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留第 15 层绿色已通关文字与勾选；聊天叠层、楼层数字和奖励区域均在裁区外。"
+      },
+      "limitations": [
+        "楼层通关与里程碑奖励已领取是不同状态；不得共用一个业务标签。"
+      ]
+    },
+    {
+      "id": "spirit-tower-milestone-reward-claimable-test-b-01",
+      "icon_key": "spirit_tower_milestone_reward",
+      "state": "claimable_orange_item_tile",
+      "sample_type": "state_indicator",
+      "file": "crops/spirit-tower-milestone-reward-claimable-test-b-01.png",
+      "sha256": "a4eea25e86d14e59a37d77b9f6c154beddcc9acc43e8a9f3cab473abfc8f0cdc",
+      "dimensions": [
+        48,
+        48
+      ],
+      "source_id": "twitch-vod-2804721854",
+      "source_timestamp_seconds": 17662.25,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2804721854/frames/17662.25-spirit-tower-rewards-before-claims.jpg",
+      "parent_sha256": "0cde00c30f2ae8d543224eacc9a5b6c22dcc27fec1741484ea3e27a23d186385",
+      "crop": {
+        "x": 418,
+        "y": 367,
+        "width": 48,
+        "height": 48
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留里程碑奖励的橙色可领格；鼠标、聊天叠层、层数、奖励名称和角色名称均在裁区外。"
+      },
+      "limitations": [
+        "橙色格外观可能随奖励物品变化；状态识别应结合后续同坐标绿色勾变化，而不能绑定裁区内的具体物品图案。"
+      ]
+    },
+    {
+      "id": "spirit-tower-milestone-reward-claimed-test-b-01",
+      "icon_key": "spirit_tower_milestone_reward",
+      "state": "claimed_green_check_tile",
+      "sample_type": "state_indicator",
+      "file": "crops/spirit-tower-milestone-reward-claimed-test-b-01.png",
+      "sha256": "83adc2138674ddc1567371267ec36085277da8c259979ccc52d094c3cad61bbd",
+      "dimensions": [
+        48,
+        48
+      ],
+      "source_id": "twitch-vod-2804721854",
+      "source_timestamp_seconds": 17663.5,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/twitch-vod-2804721854/frames/17663.50-spirit-tower-floor30-claimed-toast.jpg",
+      "parent_sha256": "da75f0c3ac1ee3e26b3e85e687e448c43df19aac47b561a3c4316787a417cad2",
+      "crop": {
+        "x": 418,
+        "y": 367,
+        "width": 48,
+        "height": 48
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "与可领样本使用同一坐标，只保留点击后的绿色已领勾选格；层数、奖励名称和到账提示在裁区外并保留于父帧。"
+      },
+      "limitations": [
+        "绿色勾只证明该里程碑奖励已领取，不表示对应楼层当前可进入或每日活动已完成。"
+      ]
     }
   ]
 }

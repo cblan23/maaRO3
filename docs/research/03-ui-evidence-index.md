@@ -115,6 +115,17 @@
 | 03:30 | [孵化房等级与品质概率](../../research/evidence/video/pet-system-bv14gtk6lelc/frames/0210-pet-incubation-level-probability.png) | 孵化房 `6 → 7` 升级预览、总熟练度进度和多个品质概率变化是独立 UI 字段 | 不证明熟练度来源、孵化耗时、升级触发方式；等级和概率只属 TEST-B |
 | 08:30 | [主战位与三支援槽](../../research/evidence/video/pet-system-bv14gtk6lelc/frames/0510-pet-main-support-slots.png) | 一个主战位、支援 1／2／3；支援 3 显示 Base 50 解锁门槛 | 不证明主战／支援技能效果、替换消耗或解说者所称的属性继承比例 |
 
+### 精灵之塔楼层与里程碑奖励
+
+来源：[阿土 Twitch VOD `2804721854`](https://www.twitch.tv/videos/2804721854)，完整元数据见[四帧 Manifest](../../research/evidence/video/twitch-vod-2804721854/manifest.json)。
+
+| 时间 | 画面 | 支持的状态 | 设计边界 |
+|---:|---|---|---|
+| 04:54:21.50 | [楼层三态同屏](../../research/evidence/video/twitch-vod-2804721854/frames/17661.50-spirit-tower-floor-states.jpg) | 普通未通关、黄色选中未通关、绿色已通关勾属于三个独立视觉状态 | 同屏不是挑战前后链；画面没有锁定／禁用楼层 |
+| 04:54:22.25 | [领取前荣誉榜](../../research/evidence/video/twitch-vod-2804721854/frames/17662.25-spirit-tower-rewards-before-claims.jpg) | 已领绿勾与多档橙色可领格同屏，可建立直接对照 | 奖励图案随层数变化，不能固化宠物蛋或具体层数 |
+| 04:54:22.75 | [第 20 层领取后](../../research/evidence/video/twitch-vod-2804721854/frames/17662.75-spirit-tower-floor20-claimed.jpg) | 第 20 层同格由橙色变绿色勾，第 30 层仍橙色 | 成功检测应等待同 ROI 持久变化，不能只认点击 |
+| 04:54:23.50 | [第 30 层领取与到账](../../research/evidence/video/twitch-vod-2804721854/frames/17663.50-spirit-tower-floor30-claimed-toast.jpg) | 第 30 层也变绿，左下“宠物蛋 ×3”作第二确认信号 | 到账提示短暂；主判据仍是奖励格状态，国服需重采 |
+
 ### 自动挂机卡位候选序列
 
 来源：[近战职业自动挂机被地形卡住](https://www.bilibili.com/video/BV1rg376UE6k/)，完整元数据见 [Manifest](../../research/evidence/video/auto-blocked-terrain-bv1rg376ue6k/manifest.json)。作者标题的原因判断与画面事实必须分开。

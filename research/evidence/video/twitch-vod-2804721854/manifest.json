@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "source_id": "twitch-vod-2804721854",
+  "primary_url": "https://www.twitch.tv/videos/2804721854",
+  "capture_url": "https://www.twitch.tv/videos/2804721854",
+  "source_title": "阿土Atu 6/25 欸欸台股漲欸",
+  "source_author": "阿土（q158688920）",
+  "source_published_at": "2026-06-25T09:35:10+08:00",
+  "captured_at": "2026-07-28",
+  "test_context": "台港澳启燃技术测试 TEST-B 首日的公开混合直播；第三方历史索引记录直播中途标题为‘等等 RO3’，完整故事板与聊天定位确认约 1279–12109 秒及 16835–17669 秒为 RO3。这里只保存精灵之塔楼层与奖励状态的最小连续序列。",
+  "copyright_note": "仅保存证明自动化状态分类所需的最少连续关键帧。原画面含主播聊天叠层、测试 UID、角色与其他玩家信息，仅作为内部可追溯研究证据，不作素材再分发或训练集使用。",
+  "frames": [
+    {
+      "file": "frames/17661.50-spirit-tower-floor-states.jpg",
+      "timestamp_seconds": 17661.5,
+      "sha256": "8c633cf559a01095587d5e1cf697d9708638223aca7c3029556c1c6d3030d7a1",
+      "dimensions": [1280, 720],
+      "supports": [
+        "精灵之塔页面同时显示 18、17 层普通未通关，16 层黄色选中未通关，以及 15、14、13 层绿色已通关勾选三类楼层状态。",
+        "左侧奖励估算写明再爬 5 层即可获得，右侧普通奖励与开始挑战按钮可见，可把楼层状态与业务入口分开识别。"
+      ],
+      "limitations": [
+        "页面没有显示不可进入的锁形图标，因此未通关不得改写成锁定；也不证明 16 层挑战一定成功。",
+        "这是 TEST-B 繁体中文 1280×720 直播帧；国服字体、楼层布局、按钮与状态颜色必须重采。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/17662.25-spirit-tower-rewards-before-claims.jpg",
+      "timestamp_seconds": 17662.25,
+      "sha256": "0cde00c30f2ae8d543224eacc9a5b6c22dcc27fec1741484ea3e27a23d186385",
+      "dimensions": [1280, 720],
+      "supports": [
+        "荣誉榜弹层打开后，第 10 层奖励为绿色勾选已领态，第 20 层绿色物品与第 30、40、50 层宠物蛋均处于橙色可领格。",
+        "同一帧同时提供已领与可领的直接视觉对照，下一帧序列可验证点击后的状态变化。"
+      ],
+      "limitations": [
+        "画面只证明这次账号的奖励状态；层数、奖励内容和补领规则不得外推到其他账号或国服。",
+        "主播聊天叠层覆盖右侧塔外区域，但不覆盖荣誉榜弹层及本目录声明的裁区。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/17662.75-spirit-tower-floor20-claimed.jpg",
+      "timestamp_seconds": 17662.75,
+      "sha256": "b5d212ff1827eef371e826d0947208c91fb8a14c6b7161f6b135095e8179fbba",
+      "dimensions": [1280, 720],
+      "supports": [
+        "第 20 层橙色可领格在点击后变为绿色勾选，而第 30 层宠物蛋仍保持橙色可领态。",
+        "0.5 秒连续边界证明奖励确认应等待目标格视觉变化，而不是只根据鼠标点击或固定延时推断成功。"
+      ],
+      "limitations": [
+        "录像采样不能给出服务器响应上限；脚本仍须采用状态等待、超时和人工接管。",
+        "该帧没有单独显示第 20 层具体到账物品名称，不能从图案猜测奖励。"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/17663.50-spirit-tower-floor30-claimed-toast.jpg",
+      "timestamp_seconds": 17663.5,
+      "sha256": "da75f0c3ac1ee3e26b3e85e687e448c43df19aac47b561a3c4316787a417cad2",
+      "dimensions": [1280, 720],
+      "supports": [
+        "第 30 层宠物蛋橙色可领格随后变为绿色勾选，第 10、20、30 层均为已领态，而第 40、50 层仍保持橙色可领格。",
+        "左下同时出现宠物蛋 ×3 到账提示，为第 30 层奖励领取成功提供第二个独立确认信号。"
+      ],
+      "limitations": [
+        "到账提示可能短暂出现，不能作为唯一成功判据；稳定的奖励格变更应作为主信号。",
+        "自动领取奖励会改变账号状态；当前证据只支持离线分类与人工确认，不等于授权国服自动点击。"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

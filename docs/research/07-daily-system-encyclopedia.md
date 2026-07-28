@@ -308,14 +308,16 @@ Day2 录像约 04:44–04:59 展示地图魔物图鉴和分阶段击杀目标。
 
 旧测试约 Lv33 开放宠物。[阵容直接证据](../../research/evidence/video/pet-system-bv14gtk6lelc/frames/0510-pet-main-support-slots.png)明确展示一个主战位和支援 1–3 三个槽位，其中支援 3 在该角色状态下显示 Base 50 解锁；另一个[助战页面](../../research/evidence/video/test-closeout-bv1ybny6feze/frames/0062-pet-support-five-slots.png)展示额外助战 1–5 号位、稀有度和星级。[孵化房页面](../../research/evidence/video/pet-system-bv14gtk6lelc/frames/0210-pet-incubation-level-probability.png)还把房间等级、总熟练度和品质概率列为独立字段。玩家关于主战／支援技能效果和“助战继承 30% 属性”的解说没有得到这些 UI 帧直接证明，继续保留为待验证说法。宠物塔中宠物行为高度自动，不能简单命令它们躲避 Boss 区域；宠物孵化、升阶、抽取和养成会消耗稀缺或付费资源，不属于自动化范围。
 
+新增[精灵之塔四帧链](../../research/evidence/video/twitch-vod-2804721854/manifest.json)同屏区分普通未通关、黄色选中未通关、绿色已通关，并连续记录里程碑奖励橙色可领格 → 绿色已领勾；第 30 层领取后还有“宠物蛋 ×3”到账提示。楼层通关勾与奖励已领勾属于不同父区域和业务键，不能共用标签。该链只证明页面状态和人工领取结果，不证明挑战流程可自动化。
+
 | 字段 | 当前结论 |
 |---|---|
-| 构建／证据 | `TEST-B`；Day1 攻略、每日面板、宠物阵容／孵化房 UI 和玩家一手长文交叉支持 |
+| 构建／证据 | `TEST-B`；Day1 攻略、每日面板、宠物阵容／孵化房 UI、精灵之塔四帧领取链和玩家一手长文交叉支持 |
 | 解锁与入口 | 旧测试约 Lv33 宠物；每日页有“精灵之塔”前往入口；塔层随角色等级逐步开放的说法待复验 |
 | 操作链 | 打开塔 → 读取层数／锁定／奖励 → 查看当前宠物编队 → 玩家人工调整／挑战 → 读取胜利、失败、奖励和剩余次数 |
 | 次数／资源／重置 | 每日／每周次数、失败是否消耗、重置层和扫荡均未知；宠物蛋属于高风险资源 |
 | 完成判据 | 层标记通关、下一层解锁、奖励可领／已领；失败页面和无消耗退出必须另建状态 |
-| UI 证据 | [每日面板](../../research/evidence/video/day1-guide-bv1yqtk6oekk/frames/0392-daily-panel.png)证明入口；[主战／三支援](../../research/evidence/video/pet-system-bv14gtk6lelc/frames/0510-pet-main-support-slots.png)、[助战五槽](../../research/evidence/video/test-closeout-bv1ybny6feze/frames/0062-pet-support-five-slots.png)和[孵化房](../../research/evidence/video/pet-system-bv14gtk6lelc/frames/0210-pet-incubation-level-probability.png)证明编队／养成字段；没有完整塔层／结算证据帧 |
+| UI 证据 | [每日面板](../../research/evidence/video/day1-guide-bv1yqtk6oekk/frames/0392-daily-panel.png)证明入口；[主战／三支援](../../research/evidence/video/pet-system-bv14gtk6lelc/frames/0510-pet-main-support-slots.png)、[助战五槽](../../research/evidence/video/test-closeout-bv1ybny6feze/frames/0062-pet-support-five-slots.png)和[孵化房](../../research/evidence/video/pet-system-bv14gtk6lelc/frames/0210-pet-incubation-level-probability.png)证明编队／养成字段；[塔层／奖励 Manifest](../../research/evidence/video/twitch-vod-2804721854/manifest.json)证明楼层三态和奖励可领／已领，但没有挑战胜负或失败链 |
 | 自动化风险 | 误抽宠、误升阶／分解、改变主战技能、自动战斗无法处理 Boss 区域、失败消耗、进入付费页面 |
 | 首期建议 | 只读编队、层数和可领奖；不抽取、不养成、不自动进塔战斗 |
 | 国服待验证 | 主战／支援／助战槽位及等级门槛、属性和技能生效、孵化字段、塔层与重置、挑战资源、失败结果、扫荡和奖励领取 |

@@ -528,12 +528,13 @@
       "id": "refine-ui-bv19htn6peo2",
       "kind": "test_video",
       "grade": "B",
-      "status": "transcribed_reviewed_with_frames",
+      "status": "transcribed_reviewed_with_frames_and_creator_comment_context",
       "title": "RO仙境传说3：RO3 真的很烂吗",
       "url": "https://www.bilibili.com/video/BV19HTn6PEo2/",
+      "primary_author": "謝財財",
       "published_at": "2026-07-02T23:57:03+08:00",
       "duration_seconds": 393,
-      "tags": ["refine", "equipment_slots", "material_sources", "monetization"]
+      "tags": ["refine", "equipment_slots", "material_sources", "monetization", "farming_stages", "creator_comment", "normal_yield", "reduced_yield", "fatigue", "comment_locator_only"]
     },
     {
       "id": "bahamut-test-feedback-sna73",
@@ -2690,6 +2691,66 @@
       "published_at": "2026-06-27T16:39:32+08:00",
       "duration_seconds": 17157,
       "tags": ["twitch", "false_positive", "where_winds_meet", "variety_stream", "non_ro3", "full_sparse_storyboard_reviewed", "no_evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "closed-test-review-bv19mw7zzeov",
+      "kind": "commentary_video",
+      "grade": "C",
+      "status": "full_two_second_timeline_reviewed_older_build_no_target_state",
+      "title": "仙境传说3线下闭门测试结束后的胡言乱语",
+      "url": "https://www.bilibili.com/video/BV19Mw7zZEov/",
+      "primary_author": "方块_23",
+      "published_at": "2026-03-16T20:46:34+08:00",
+      "duration_seconds": 487,
+      "tags": ["closed_test", "older_build", "commentary", "promotional_footage", "full_timeline_reviewed", "no_target_state", "no_evidence_saved"]
+    },
+    {
+      "id": "bilibili-ro3-promo-gvg-bv1ienj68eck",
+      "kind": "commentary_video",
+      "grade": "C",
+      "status": "full_two_second_timeline_reviewed_promotional_no_target_state",
+      "title": "仙境传说3：等了好久的 MMO 终于快来了",
+      "url": "https://www.bilibili.com/video/BV1iENJ68ECk/",
+      "primary_author": "油鸡-高雪扬",
+      "published_at": "2026-07-10T20:34:13+08:00",
+      "duration_seconds": 290,
+      "tags": ["promotional_footage", "gvg", "combat", "commentary", "full_timeline_reviewed", "no_target_state", "no_evidence_saved"]
+    },
+    {
+      "id": "test-b-crusader-mobility-bv13xn96xeny",
+      "kind": "test_video",
+      "grade": "B",
+      "status": "full_half_second_timeline_reviewed_no_target_state",
+      "title": "RO3 仙境传说3：十字军位移技能",
+      "url": "https://www.bilibili.com/video/BV13xN96XEny/",
+      "primary_author": "单人旅团",
+      "published_at": "2026-07-14T14:24:51+08:00",
+      "duration_seconds": 11,
+      "tags": ["test_b", "crusader", "mobility", "combat", "full_timeline_reviewed", "no_target_state", "no_evidence_saved"]
+    },
+    {
+      "id": "twitch-vod-2804721854",
+      "kind": "test_livestream_vod",
+      "grade": "B",
+      "status": "storyboard_chat_targeted_review_with_spirit_tower_frames",
+      "title": "阿土Atu 6/25 欸欸台股涨欸",
+      "url": "https://www.twitch.tv/videos/2804721854",
+      "primary_author": "阿土（q158688920）",
+      "published_at": "2026-06-25T09:35:10+08:00",
+      "duration_seconds": 19690,
+      "tags": ["test_b", "twitch", "mixed_stream", "full_sparse_storyboard_reviewed", "public_chat_reviewed", "spirit_tower", "floor_states", "reward_claimable", "reward_claimed", "targeted_subsecond_review", "evidence_saved", "no_cookie"]
+    },
+    {
+      "id": "twitch-vod-2804938391",
+      "kind": "test_livestream_vod",
+      "grade": "B",
+      "status": "full_sparse_storyboard_and_chat_reviewed_mixed_stream_no_target_state",
+      "title": "阿土Atu 6/25 2开开",
+      "url": "https://www.twitch.tv/videos/2804938391",
+      "primary_author": "阿土（q158688920）",
+      "published_at": "2026-06-25T18:16:53+08:00",
+      "duration_seconds": 17870,
+      "tags": ["test_b", "twitch", "mixed_stream", "full_sparse_storyboard_reviewed", "public_chat_reviewed", "survival_mode", "pet", "no_target_state", "no_evidence_saved", "no_cookie"]
     },
     {
       "id": "twitch-non-ro3-vod-2807194691",
