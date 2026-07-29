@@ -1,9 +1,9 @@
 # RO3 前客户端详细研究报告
 
-> 快照日期：2026-07-28（Asia/Shanghai）  
+> 快照日期：2026-07-29（Asia/Shanghai）
 > 研究对象：Bilibili 中国大陆国服《RO 仙境传说 3 / Ragnarok Online 3》  
 > 当前阶段：`OFFLINE_RESEARCH`；国服“重逢测试”计划于 2026-08-27 开始  
-> 校验基线：259 条来源、35 份视频 Manifest／162 张视频帧、1 份静态 Manifest／1 张一手原图、115 张正式裁图／61 个键
+> 校验基线：259 条来源、36 份视频 Manifest／166 张视频帧、1 份静态 Manifest／1 张一手原图、121 张正式裁图／64 个键
 
 ## 1. 执行结论
 
@@ -21,6 +21,7 @@
 - 公会商队 `7/8 → 8/8 → 提交反馈 → 奖励 → 2/4`，以及第四批 `4/8` 发车禁用 → `5/8` 黄色发车可用；
 - 五次采矿严格资源变化，随后每日页 `100/100 已完成`；
 - TEST-B 绿色药水 `锁定 → 1000 道具解锁确认 → 配方解锁 → 制作 → 道具不足`，并证明金色制作按钮不等于材料充足；
+- TEST-B 成长徽章同任务 `126/120＋领取／晋升1/7 → 行移除／2/7 → 120/120＋已完成`，并证明成功后旧坐标立即复用；
 - 高倍可开启、运行倒计时、`0秒/180分` 稳定耗尽，以及耗尽页保持时经验、齿轮和`连帽披肩 X1`通知继续变化；
 - 背包 `0/300` 与 `36/300` 正常容量基准；
 - 快捷用药“HP 低于 70% 自动使用”、数量 `36 → 35`、配置缺药反馈；
@@ -46,22 +47,22 @@
 
 | 资产 | 数量 | 实际位置 | 可追溯信息 |
 |---|---:|---|---|
-| 视频证据 Manifest | 35 | [`research/evidence/video/`](../../research/evidence/video/) | 来源、作者、发布时间、时间戳、事实、限制、SHA-256 |
-| 视频关键帧 | 162 | 各视频目录的 `frames/` | 文件哈希、尺寸、国服复验标记 |
+| 视频证据 Manifest | 36 | [`research/evidence/video/`](../../research/evidence/video/) | 来源、作者、发布时间、时间戳、事实、限制、SHA-256 |
+| 视频关键帧 | 166 | 各视频目录的 `frames/` | 文件哈希、尺寸、国服复验标记 |
 | 静态证据 Manifest | 1 | [`research/evidence/still/`](../../research/evidence/still/) | 论坛原文 URL、原图 URL、作者、发布时间、哈希 |
 | 静态一手原图 | 1 | [`wardrobe-lock-selected-states.jpg`](../../research/evidence/still/bahamut-system-overview-187/images/wardrobe-lock-selected-states.jpg) | 1920×1080 巴哈测试玩家原图 |
-| 独立图标／状态裁图 | 115 | [`research/evidence/icons/crops/`](../../research/evidence/icons/crops/) | 父图、父图哈希、坐标、尺寸、裁图哈希、污染说明 |
-| 裁图覆盖键 | 61 | [`icons/catalog.json`](../../research/evidence/icons/catalog.json) | 唯一样本 ID、状态、样本类型、构建、限制 |
+| 独立图标／状态裁图 | 121 | [`research/evidence/icons/crops/`](../../research/evidence/icons/crops/) | 父图、父图哈希、坐标、尺寸、裁图哈希、污染说明 |
+| 裁图覆盖键 | 64 | [`icons/catalog.json`](../../research/evidence/icons/catalog.json) | 唯一样本 ID、状态、样本类型、构建、限制 |
 
-115 张裁图中 112 张为 `direct_clear`，3 张为 `contextual_candidate`；97 张绑定 `TEST-B`、18 张绑定 `PIONEER-A`。样本类型为 12 张图标、80 张状态指示、13 张状态行和 10 张弹窗／提示。全部保持父图原像素，`scale.applied = false`，没有透明底补绘、生成式图片或其他 RO 产品素材。
+121 张裁图中 118 张为 `direct_clear`，3 张为 `contextual_candidate`；103 张绑定 `TEST-B`、18 张绑定 `PIONEER-A`。样本类型为 12 张图标、83 张状态指示、16 张状态行和 10 张弹窗／提示。全部保持父图原像素，`scale.applied = false`，没有透明底补绘、生成式图片或其他 RO 产品素材。
 
 总校验器会从父图重新裁切并逐像素比较，因此“目录里有文件但来源或像素对不上”的图片不能通过。当前校验结果为：
 
 ```text
 259 sources
-35 video manifests / 162 frames
+36 video manifests / 166 frames
 1 still manifest / 1 still image
-115 icon crops across 61 keys
+121 icon crops across 64 keys
 all evidence hashes and crop pixels verified
 ```
 
@@ -123,7 +124,7 @@ Twitch 公开分类中现有 23 条有效 RO3 VOD，合计 77:04:29；另有 10 
 | `BV1WGbhz2EMB` | PIONEER-A 公会战，战场传送和控制点变化 | 全程 2 秒复核；没有可靠玩家死亡 UI，负向登记 |
 | `BV1qQTr6PEKS` | TEST-B 装备、宠物、商城与活动评论 | 全程 2 秒复核；只有重复 `100/100` 每日页，无新图标或流程证据 |
 | `BV1wJTb6BEdY` | TEST-B 七日心得转载剪版 | 全程 2 秒复核；只有副本、PVP、活动、商城和普通战斗，无目标异常或新图标 |
-| `BV1D67V6PEMq` | 巴哈姆特电玩疯 22:28 TEST-B 长实机转载 | 674 张二秒采样后重审生活窗口，追加 220 张 0.1 秒帧；绿色药水锁定／解锁／制作材料不足六帧与七张裁图入库。与 `BV18H756KEhz` 为同一原始视频，不算独立佐证；其余区间仍为负向 |
+| `BV1D67V6PEMq` | 巴哈姆特电玩疯 22:28 TEST-B 长实机转载 | 674 张二秒采样后重审生活／成长窗口，追加 220／201 张 0.1 秒帧；绿色药水六帧／七裁图和成长徽章四帧／六裁图入库。与 `BV18H756KEhz` 为同一原始视频，不算独立佐证；其余区间仍为负向 |
 | `BV1xeMw6TEub` | 07:41 老玩家启燃心得转载 | 230 张二秒采样全审；流派手册候选不是背包，无目标异常，零帧入库 |
 | `BV1RRMw6QEom` | 21:52 骨灰玩家启燃长评转载 | 657 张二秒采样＋离线转写和亚秒定点复核；`48–51.50s` 的公会第四批三帧入库；`544.90s` 生存竞争模式队友复活弹窗另存父帧／裁图，只作竞技负例。未点击发车或复活；`432–450s` 是 15v15 PVP 而非疲劳，其余为重复耗尽页、普通背包和语义误候选 |
 | `BV1w9736mETV` | 标题含“小站Ro3”的经典 RO 直播片段 | 全程 0.5 秒复核；不是《仙境传说3》，D 级排除且零帧入库 |
@@ -259,6 +260,19 @@ GreenPotionSelectedLocked + UnlockAction
 ```
 
 六张父帧和七张裁图建立同配方锁定／解锁、同坐标主动作变化、确认／成功和失败反馈。制作前后活力都为 `700/5000`，而页面显示单次消耗 `20`，所以这次失败是材料／道具不足，不是活力不足。金色制作按钮仍然可见且能进入失败分支，识别器必须把“按钮可见”“材料满足”“事务成功”拆成三个状态。录像仍缺输入日志、具体缺料、真正成功制作、批量、满包和扣除账本，任何解锁／制作动作继续保留人工门。
+
+#### 4.3.2 成长徽章可领、重排与已完成
+
+[成长徽章 Manifest](../../research/evidence/video/growth-badge-bv1d67v6pemq/manifest.json)对 `1118–1138s` 复核 201 张 0.1 秒帧，并以原生帧确认：
+
+```text
+TrackerClaimable
+→ TalentLevelTask 126/120 + 领取，晋升任务 1/7
+→ 约 0.033 秒后：原行移除、列表重排、晋升任务 2/7
+→ 下滚：同任务 120/120 + 已完成
+```
+
+四张父帧和六张裁图把成长徽章入口、蓝色“前往”、金色“领取”、绿色“已完成”和阶段计数拆成三个业务键。领取成功后原按钮坐标立即被下一任务的“前往”复用，右侧入口“可领取”也仍保留；因此固定坐标重复点击和入口消失判据都不成立。客户端没有“已领取”字面，`126/120→120/120`只作完成态封顶候选；没有奖励 toast／库存账本，故页面事务虽闭环，奖励到账和自动领取仍未闭环。
 
 ### 4.4 高倍挂机三态
 
@@ -514,9 +528,10 @@ Bilibili 通用协议目前把模拟操作、自动练级／任务等列为未�
 
 ## 8. 图标与状态覆盖
 
-115 张正式裁图覆盖 61 个键，完整逐项表见[图标证据目录](09-icon-evidence-catalog.md)。对三个优先场景及通用状态分类最有用的已保存变体是：
+121 张正式裁图覆盖 64 个键，完整逐项表见[图标证据目录](09-icon-evidence-catalog.md)。对三个优先场景及通用状态分类最有用的已保存变体是：
 
 - 每日：六类入口、呆呆完成行、生活 `0/100`／`100/100`、挂机 `0/60`、MVP `1/5`、公会 `1/1 已完成`、活跃箱未达／可领／已领；
+- 成长徽章：入口可领取、任务低于目标＋前往、达标＋领取、同任务已完成，以及晋升任务 `1/7／2/7`；
 - 公会：材料满足 `6/6`／不足 `0/6`、提交反馈、`7/8`、`8/8`、奖励层、`2/4`、`4/4` 进行中，以及第四批 `4/8` 发车禁用／`5/8` 发车可用；
 - 生活制作：绿色药水同坐标锁定／解锁、同坐标“解锁”／“制作”、1000 道具确认、配方解锁成功和材料不足提示；
 - 挂机：高倍可用／运行／耗尽、耗尽时奖励通知、背包入口、容量空／正常、自动用药、药量 36／35、配置缺药；
@@ -539,6 +554,7 @@ Bilibili 通用协议目前把模拟操作、自动练级／任务等列为未�
 | 生活异常 | 采集补 `80/100 → 100/100`、节点被抢／消失、活力不足、满包；制作以已知材料不足为负例，补材料满足 → 人工制作 → 材料／活力／产物／熟练度账本及批量分支 |
 | 公会剩余分支 | 不足／购买入口（不执行）、背包扣除、已知 `5/8` 发车可用后的人工点击、确认／成功／失败、第四批终局、每日变化 |
 | 呆呆整轮 | 每日入口 → 接取 → 至少两类子目标 → 最后一环 → 交付 → 完成／活跃变化 |
+| 成长徽章 | 以现有领取→重排→计数增加→已完成作种子，补奖励到账、入口清空、整阶段 `7/7`／晋升、领取失败和背包满 |
 
 采样不得为制造边界故意送死、丢弃稀有物、购买扩容或影响其他玩家；只记录自然出现的异常。
 
@@ -553,9 +569,9 @@ uv run --python 3.12 --with jsonschema --with pillow python tools/validate_resea
 当前结果：
 
 ```text
-Research scaffold OK: 259 sources, 35 video manifests, 162 frames;
+Research scaffold OK: 259 sources, 36 video manifests, 166 frames;
 1 still manifests, 1 still images;
-115 icon crops across 61 keys;
+121 icon crops across 64 keys;
 all evidence hashes and crop pixels verified.
 ```
 
@@ -581,7 +597,7 @@ all evidence hashes and crop pixels verified.
 | [视频审阅队列](06-video-review-queue.md) | Bilibili、YouTube、Twitch 的逐条状态 |
 | [日常系统百科](07-daily-system-encyclopedia.md) | 每项入口、资源、完成判据和异常 |
 | [直接证据缺口日志](08-direct-evidence-gap-log.md) | 已关闭／缩小／未关闭和负向回抽 |
-| [图标证据目录](09-icon-evidence-catalog.md) | 61 个键、115 张正式裁图及缺失变体 |
+| [图标证据目录](09-icon-evidence-catalog.md) | 64 个键、121 张正式裁图及缺失变体 |
 | [来源目录](../../research/catalog/sources.json) | 259 条机器可读来源 |
 | [裁图库说明](../../research/evidence/icons/README.md) | 裁图 schema、生成和逐像素验证 |
 

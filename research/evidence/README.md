@@ -18,7 +18,9 @@
 成 `0 秒视频帧`。生活职业与采矿证据见
 [`life-mining-bv18h756kehz/manifest.json`](video/life-mining-bv18h756kehz/manifest.json)，
 同一原始视频的配方解锁与材料不足精抽见
-[`life-crafting-bv1d67v6pemq/manifest.json`](video/life-crafting-bv1d67v6pemq/manifest.json)。
+[`life-crafting-bv1d67v6pemq/manifest.json`](video/life-crafting-bv1d67v6pemq/manifest.json)，
+成长徽章领取与完成精抽见
+[`growth-badge-bv1d67v6pemq/manifest.json`](video/growth-badge-bv1d67v6pemq/manifest.json)。
 
 独立图标与 UI 状态裁图见 [`icons/`](icons/README.md)。裁图不能脱离父帧：
 目录必须记录来源、视频时间戳或静态图片序号、父图 SHA-256、裁切坐标、缩放算法、污染说明与自身

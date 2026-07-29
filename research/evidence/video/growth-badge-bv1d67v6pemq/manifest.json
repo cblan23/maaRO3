@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+  "primary_url": "https://www.youtube.com/watch?v=1S8-6dr2lN4",
+  "capture_url": "https://www.bilibili.com/video/BV1D67V6PEMq/",
+  "bvid": "BV1D67V6PEMq",
+  "cid": "39427900847",
+  "source_title": "【巴哈姆特电玩疯】《RO仙境传说3》启燃测试实机试玩",
+  "source_author": "巴哈姆特电玩疯（Bilibili 转载：KG-Area21）",
+  "source_published_at": "2026-06-26T19:40:44+08:00",
+  "captured_at": "2026-07-29",
+  "test_context": "台港澳启燃技术测试 TEST-B 实机。对同一已登记长视频的 1118.0–1138.0 秒成长徽章窗口复核 201 张 0.1 秒采样，并用原生 29.97fps 收紧 1121.754→1121.787 秒领取边界。连续画面形成 TrackerClaimable → TalentTaskClaimable126Of120AndPromotion1Of7 → RowRemovedAndPromotion2Of7 → SameTaskCompleted120Of120；该转载与 life-mining-bv18h756kehz 指向同一上游 YouTube，不作为独立交叉佐证。",
+  "copyright_note": "仅保留证明成长徽章入口可领取、单任务领取、列表重排、晋升任务计数变化和同任务已完成状态所需的四帧。父帧仍含转载标志、测试 UID、队伍昵称、聊天与战斗画面；裁图均避开这些区域，但全部资产只供内部可追溯研究，公开训练集或再分发前必须另行完成授权、隐私与版权审查。",
+  "frames": [
+    {
+      "file": "frames/1120.886-growth-tracker-claimable.png",
+      "timestamp_seconds": 1120.886,
+      "sha256": "cb563627b7c833210a151c2eedd3bb0878bb2960147c549da23f60c556442a43",
+      "dimensions": [852, 480],
+      "supports": [
+        "开放世界右侧追踪栏显示成长徽章及绿色可领取，证明页面入口存在待处理状态",
+        "角色仍处于战斗 HUD，入口提示与开放世界任务追踪、队伍和技能栏同时存在"
+      ],
+      "limitations": [
+        "入口可领取不能指出具体哪一条成长任务或奖励可领，也不能作为任一单行领取成功的后置条件",
+        "该帧没有显示页面打开输入；固定右侧坐标会随国服布局、DPI 和追踪条目变化"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1121.754-growth-task-claimable.png",
+      "timestamp_seconds": 1121.754,
+      "sha256": "228839e9bf7171a974afca6c31eb39e70a34733dbbe7a0751ad44175d9fbffa2",
+      "dimensions": [852, 480],
+      "supports": [
+        "成长徽章页面中天赋总等级达到120级显示 126/120，右侧为金色领取按钮并带红点",
+        "左侧新叶徽章 I 的晋升任务计数为 1/7；同页其他未达目标行使用蓝色前往按钮"
+      ],
+      "limitations": [
+        "录像没有输入事件日志；指针位于领取按钮只构成与下一原生帧 UI 响应联合使用的动作边界",
+        "126/120 是领取前可见值，不能推断超额等级的结算或奖励数量"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1121.787-growth-claim-postcondition.png",
+      "timestamp_seconds": 1121.787,
+      "sha256": "af2a0ad69fc867f98ab251a5ca9b7c35cddff7f15e9b99748ecabd8ec6eb36e8",
+      "dimensions": [852, 480],
+      "supports": [
+        "相邻约 0.033 秒原生帧中原天赋任务行已经移除，列表立即向上重排",
+        "左侧晋升任务从 1/7 变为 2/7；原槽位现由打造6件3阶装备 1/6 和蓝色前往占用"
+      ],
+      "limitations": [
+        "页面没有独立奖励到账提示或背包账本，因此这里只证明任务领取事务在 UI 中完成",
+        "领取后原坐标立即复用为另一条前往按钮，自动化不得在旧坐标重复点击"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1130.529-growth-task-completed.png",
+      "timestamp_seconds": 1130.529,
+      "sha256": "d78626888bca09281929fc77671f7525af62227fc392390ba55bb776547f8e49",
+      "dimensions": [852, 480],
+      "supports": [
+        "列表下滚后，同名天赋总等级达到120级和同一问号奖励图标重新出现在底部",
+        "该任务稳定显示 120/120 与绿色已完成，结合领取前行、立即重排和 1/7→2/7 形成同任务领取→完成链"
+      ],
+      "limitations": [
+        "客户端字面是已完成而不是已领取，不得把该裁图标成通用已领状态",
+        "126/120→120/120 很可能是完成态封顶显示，不能解释为天赋属性下降；国服排序和阈值也可能变化"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

@@ -80,6 +80,17 @@
 |---:|---|---|---|
 | 05:47 | [生活职业全览标签](../../research/evidence/video/life-professions-bv1qyt964ehc/frames/0347-life-profession-overview.png) | 客户端直接显示矿工、厨师、园艺师；矿工／厨师已有等级，园艺师未选用 | 论坛“采药／制药／挖矿”更像功能概括；国服名称、换职与第二槽规则仍待验证 |
 
+### 成长徽章任务领取与完成
+
+来源仍为同一条[巴哈姆特 TEST-B 实机转载](https://www.bilibili.com/video/BV1D67V6PEMq/)，对 `1118–1138s` 做 0.1 秒复核并用原生帧收紧领取边界；四帧元数据见[成长徽章 Manifest](../../research/evidence/video/growth-badge-bv1d67v6pemq/manifest.json)。
+
+| 时间 | 画面 | 支持的状态 | 设计边界 |
+|---:|---|---|---|
+| 18:40.886 | [追踪栏可领取](../../research/evidence/video/growth-badge-bv1d67v6pemq/frames/1120.886-growth-tracker-claimable.png) | 开放世界右侧显示“成长徽章／可领取” | 不定位具体任务；单条领取后仍保留，不是成功判据 |
+| 18:41.754 | [任务可领取](../../research/evidence/video/growth-badge-bv1d67v6pemq/frames/1121.754-growth-task-claimable.png) | “天赋总等级达到120级” `126/120`、金色“领取”；左侧晋升任务 `1/7` | 无输入日志；指针不单独证明点击 |
+| 18:41.787 | [领取后立即重排](../../research/evidence/video/growth-badge-bv1d67v6pemq/frames/1121.787-growth-claim-postcondition.png) | 约 0.033 秒后原行移除、列表上移，晋升任务 `1/7→2/7`；原槽位变成 `1/6` 蓝色“前往” | 固定坐标会立即命中另一任务，不能连续点击；无奖励到账账本 |
+| 18:50.529 | [同任务已完成](../../research/evidence/video/growth-badge-bv1d67v6pemq/frames/1130.529-growth-task-completed.png) | 下滚后同标题、同奖励图标显示 `120/120` 与绿色“已完成” | 字面不是“已领取”；`126→120`不能解释成属性下降 |
+
 ### 内建自动战斗、宠物助战与公会日历
 
 来源：[启燃测试结束小结](https://www.bilibili.com/video/BV1YbNy6fEzE/)，完整元数据见 [Manifest](../../research/evidence/video/test-closeout-bv1ybny6feze/manifest.json)。
@@ -319,7 +330,7 @@ PIONEER-A 只作跨构建语义对照，不进入 TEST-B／国服模板：
 | [经典 RO 标题误标](https://www.bilibili.com/video/BV1w9736mETV/) | 00:40 | 全程 0.5 秒复核，D 级排除 | 标题中的“小站Ro3”不是《仙境传说3》；画面为经典 RO，不保存模板 |
 | [巴哈 RO3 板目录快照](https://m.gamer.com.tw/forum/B.php?bsn=81475) | 74 主题 | TEST-B 时段正文／留言关键词扫描＋39 个原图引用复核 | 只补到分类背包接近满与疲劳后低收益的文字报告；原图无对应 UI，零帧入库 |
 | [全职业三转试玩＋跑图](https://www.bilibili.com/video/BV1vhhizdEeX/) | 09:46 | 293 张二秒采样全审 | 职业技能、跑图、旧先锋构建 HUD；无目标异常，不进入 TEST-B／国服模板 |
-| [巴哈电玩疯 TEST-B 长实机转载](https://www.bilibili.com/video/BV1D67V6PEMq/) | 22:28 | 674 张二秒采样全审＋生活窗口 220 张 0.1 秒精抽＋6 帧入库 | 与既有来源为同一原始视频；补出绿色药水锁定→解锁→制作材料不足链，不作第二份独立佐证 |
+| [巴哈电玩疯 TEST-B 长实机转载](https://www.bilibili.com/video/BV1D67V6PEMq/) | 22:28 | 674 张二秒采样＋生活 220 张／成长 201 张 0.1 秒精抽＋10 帧入库 | 与既有来源为同一原始视频；补出绿色药水锁定→解锁→材料不足，以及成长任务领取→重排→已完成；不作第二份独立佐证 |
 | [老玩家启燃心得转载](https://www.bilibili.com/video/BV1xeMw6TEub/) | 07:41 | 230 张二秒采样全审，评论来源 | 流派手册误似背包；没有目标异常状态 |
 | [骨灰玩家启燃长评转载](https://www.bilibili.com/video/BV1RRMw6QEom/) | 21:52 | 657 张二秒采样＋离线转写／亚秒定点复核，4 帧入库 | `48–51.50s` 补到公会第四批发车边界；`544.90s` 补到生存竞争模式队友复活弹窗负例；另有重复耗尽页和普通背包 |
 | [3 月闭门测试读后感](https://www.bilibili.com/video/BV1xZwezbELi/) | 30:36 | 183 张十秒采样全审，评论来源 | 几乎全为静态封面，末段仅有线下照片与世界地图照片；没有客户端 UI，不保存模板 |

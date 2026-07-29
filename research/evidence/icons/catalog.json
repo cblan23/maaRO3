@@ -4373,6 +4373,234 @@
       "limitations": [
         "该提示只覆盖制作材料／道具不足，不可复用为活力不足、满包、等级锁定或通用禁用状态。"
       ]
+    },
+    {
+      "id": "growth-badge-tracker-claimable-test-b-01",
+      "icon_key": "growth_badge_tracker",
+      "state": "claimable_green_text",
+      "sample_type": "state_indicator",
+      "file": "crops/growth-badge-tracker-claimable-test-b-01.png",
+      "sha256": "7c26a1a75a56fa6b82fcb1202100c8aa217b7635672d12c9ca84e8fc38437f79",
+      "dimensions": [
+        134,
+        29
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 1120.886,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/growth-badge-bv1d67v6pemq/frames/1120.886-growth-tracker-claimable.png",
+      "parent_sha256": "cb563627b7c833210a151c2eedd3bb0878bb2960147c549da23f60c556442a43",
+      "crop": {
+        "x": 716,
+        "y": 122,
+        "width": 134,
+        "height": 29
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留右侧追踪栏的成长徽章图标、标题和绿色可领取；战斗、队伍、聊天、UID 与转载标志均在裁区外。"
+      },
+      "limitations": [
+        "入口级可领取不能定位具体任务；领取一条任务后右侧入口仍保留，不能用它确认单行事务成功。"
+      ]
+    },
+    {
+      "id": "growth-badge-task-claimable-test-b-01",
+      "icon_key": "growth_badge_task_row",
+      "state": "claimable_gold_126_of_120",
+      "sample_type": "state_row",
+      "file": "crops/growth-badge-task-claimable-test-b-01.png",
+      "sha256": "221744fac887def12d1fc1353179aecb3323d902bb59c0ff123228d43eadc9eb",
+      "dimensions": [
+        306,
+        52
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 1121.754,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/growth-badge-bv1d67v6pemq/frames/1121.754-growth-task-claimable.png",
+      "parent_sha256": "228839e9bf7171a974afca6c31eb39e70a34733dbbe7a0751ad44175d9fbffa2",
+      "crop": {
+        "x": 337,
+        "y": 117,
+        "width": 306,
+        "height": 52
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区完整保留天赋总等级达到120级、126/120、奖励图标、红点、金色领取按钮和指针；外部战斗与个人信息均排除。"
+      },
+      "limitations": [
+        "指针位置不单独证明点击；领取动作必须联合下一原生帧的行移除和晋升任务计数变化。"
+      ]
+    },
+    {
+      "id": "growth-badge-task-incomplete-go-to-test-b-01",
+      "icon_key": "growth_badge_task_row",
+      "state": "below_target_1_of_6_go_to_blue",
+      "sample_type": "state_row",
+      "file": "crops/growth-badge-task-incomplete-go-to-test-b-01.png",
+      "sha256": "4ce0d01484ec357fa1a20da6e20bd59ea2287ba13ec2ace461e6198f0a782e5c",
+      "dimensions": [
+        306,
+        52
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 1121.787,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/growth-badge-bv1d67v6pemq/frames/1121.787-growth-claim-postcondition.png",
+      "parent_sha256": "af2a0ad69fc867f98ab251a5ca9b7c35cddff7f15e9b99748ecabd8ec6eb36e8",
+      "crop": {
+        "x": 337,
+        "y": 117,
+        "width": 306,
+        "height": 52
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "与领取前样本使用同一坐标；原任务移除后，该槽位立即由打造6件3阶装备、1/6、奖励与蓝色前往占用。"
+      },
+      "limitations": [
+        "客户端没有字面未完成；状态名只陈述低于目标的 1/6 与蓝色前往，不能泛化为所有未完成控件。"
+      ]
+    },
+    {
+      "id": "growth-badge-task-completed-test-b-01",
+      "icon_key": "growth_badge_task_row",
+      "state": "completed_green_120_of_120",
+      "sample_type": "state_row",
+      "file": "crops/growth-badge-task-completed-test-b-01.png",
+      "sha256": "340866be85201589e4e070ff241ea1161016806b7f1ad2d52b21fc15e4ee67b7",
+      "dimensions": [
+        306,
+        52
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 1130.529,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/growth-badge-bv1d67v6pemq/frames/1130.529-growth-task-completed.png",
+      "parent_sha256": "d78626888bca09281929fc77671f7525af62227fc392390ba55bb776547f8e49",
+      "crop": {
+        "x": 337,
+        "y": 323,
+        "width": 306,
+        "height": 52
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留与领取前相同任务标题和奖励图标，以及 120/120、绿色已完成；外部战斗、聊天与个人信息均排除。"
+      },
+      "limitations": [
+        "字面状态是已完成而不是已领取；不能复用为活跃箱、邮件或其他页面的通用已领模板。"
+      ]
+    },
+    {
+      "id": "growth-badge-promotion-progress-1-test-b-01",
+      "icon_key": "growth_badge_promotion_progress",
+      "state": "one_of_seven_before_claim",
+      "sample_type": "state_indicator",
+      "file": "crops/growth-badge-promotion-progress-1-test-b-01.png",
+      "sha256": "43b57e6220f6d1bba165324b9ebefbbac534d0ae4651982a72c7d3480321e2f4",
+      "dimensions": [
+        158,
+        98
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 1121.754,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/growth-badge-bv1d67v6pemq/frames/1121.754-growth-task-claimable.png",
+      "parent_sha256": "228839e9bf7171a974afca6c31eb39e70a34733dbbe7a0751ad44175d9fbffa2",
+      "crop": {
+        "x": 184,
+        "y": 279,
+        "width": 158,
+        "height": 98
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留下阶段奖励预览、晋升任务标签、进度条和 1/7；页面外个人信息均不在裁区。"
+      },
+      "limitations": [
+        "1/7 是该徽章阶段领取前的瞬时值；国服阶段总数、奖励和晋升规则必须重采。"
+      ]
+    },
+    {
+      "id": "growth-badge-promotion-progress-2-test-b-01",
+      "icon_key": "growth_badge_promotion_progress",
+      "state": "two_of_seven_after_claim",
+      "sample_type": "state_indicator",
+      "file": "crops/growth-badge-promotion-progress-2-test-b-01.png",
+      "sha256": "01b6666871f1de359b0e53fcc3f1e043c887b6b602de2b9fa224e108d6e173b3",
+      "dimensions": [
+        158,
+        98
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 1121.787,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/growth-badge-bv1d67v6pemq/frames/1121.787-growth-claim-postcondition.png",
+      "parent_sha256": "af2a0ad69fc867f98ab251a5ca9b7c35cddff7f15e9b99748ecabd8ec6eb36e8",
+      "crop": {
+        "x": 184,
+        "y": 279,
+        "width": 158,
+        "height": 98
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "与领取前样本使用同一坐标；下阶段奖励不变，晋升任务由 1/7 更新为 2/7。"
+      },
+      "limitations": [
+        "只证明本次任务领取后阶段计数增加 1；不能推出每种任务权重、阶段奖励到账或国服总数。"
+      ]
     }
   ]
 }

@@ -238,7 +238,7 @@ Twitch storyboard 的文件名时间是候选窗口起点，不保证等于事�
 | [BV1mo356SEyS](https://www.bilibili.com/video/BV1mo356SEyS/) | 国服首测／职业介绍评论，烈酒Liquor | 02:58 | storyboard reviewed, exclusion only | 官网与职业介绍，没有新图标状态 |
 | [BV1qQTr6PEKS](https://www.bilibili.com/video/BV1qQTr6PEKS/) | TEST-B 体验评论，和东东一起战斗吧 | 04:04 | full 2 s timeline reviewed, exclusion only | 装备、宠物、商城和活动评论；仅重复 `100/100` 每日页，没有新增流程或图标证据 |
 | [BV1wJTb6BEdY](https://www.bilibili.com/video/BV1wJTb6BEdY/) | TEST-B 七日心得剪版，自由高达seed 转载 | 03:58 | full 2 s timeline reviewed, exclusion only | 已定位“游戏Boy不要S”素材的剪版；只有副本、PVP、活动、商城和普通战斗，没有满包、疲劳状态、死亡、物资终局或新图标 |
-| [BV1D67V6PEMq](https://www.bilibili.com/video/BV1D67V6PEMq/) | 巴哈姆特电玩疯 TEST-B 实机转载 | 22:28 | full 2 s timeline + life 0.1 s review + 6 frames | 674 张二秒采样后重审 `948–970s`，追加 220 张 0.1 秒帧；补出绿色药水锁定→1000 道具解锁确认→配方解锁→金色制作按钮→“道具不足，无法制造”链。与 `BV18H756KEhz` 指向同一原始 YouTube，不计独立佐证；其余角色创建至 PVP／GVG 区间仍无目标异常 |
+| [BV1D67V6PEMq](https://www.bilibili.com/video/BV1D67V6PEMq/) | 巴哈姆特电玩疯 TEST-B 实机转载 | 22:28 | full 2 s timeline + life／growth 0.1 s review + 10 frames | 674 张二秒采样后重审 `948–970s` 生活窗口 220 帧及 `1118–1138s` 成长窗口 201 帧；前者补绿色药水锁定→解锁→道具不足，后者补成长任务 `126/120＋领取／1/7 → 行移除／2/7 → 120/120＋已完成`。与 `BV18H756KEhz` 指向同一原始 YouTube，不计独立佐证；其余区间仍无目标异常 |
 | [BV1xeMw6TEub](https://www.bilibili.com/video/BV1xeMw6TEub/) | RO 老玩家启燃测试心得转载 | 07:41 | full 2 s timeline reviewed, commentary only | 230 张二秒采样全审；`68–78s` 是流派手册／配装方案，不是背包，也没有目标异常状态 |
 | [BV1RRMw6QEom](https://www.bilibili.com/video/BV1RRMw6QEom/) | RO 骨灰玩家启燃测试长评转载 | 21:52 | full 2 s timeline + local transcript + 4 frames | 657 张二秒采样全审并做亚秒回抽；`48–51.50s` 直接显示公会第四批 `4/8` 发车禁用 → `5/8` 可用，3 张父帧／裁图入库但未发车；`544.90s` 另存生存竞争模式队友复活弹窗，只作野外自身复活负例；`432–450s` 是 15v15 PVP 而非疲劳，普通背包也非满包 |
 | [BV1w9736mETV](https://www.bilibili.com/video/BV1w9736mETV/) | “小站Ro3”经典 RO 直播回放 | 00:40 | full 0.5 s timeline reviewed, D-grade exclusion | 标题命中精确 UI 检索，但“Ro3”不是游戏名；画面为经典 RO 深渊出卡，不属于《仙境传说3》，零帧入库 |
@@ -397,8 +397,9 @@ timeline:
 1. 呆呆委托：找到从接取到最终交付的一整轮，逐环标注寻路、跨图、对话、打怪和完成变化；
 2. 公会物资：已有单批正常链和第四批 `4/8` 发车禁用 → `5/8` 可用，继续找不足项选择结果、普通货币购买、背包扣除、发车确认／终局与每日变化；
 3. 生活：已有五次采集和 `100/100 已完成`，制作又有锁定→解锁及材料不足；继续补 `80/100 → 100/100`、一次真正制作成功账本、批量、活力不足／满包、节点被抢／消失和中断；
-4. 挂机：已有高倍可用／运行／耗尽和耗尽时奖励通知继续，继续寻找同账号跨零、客户端低倍标签／掉率 → 疲劳连续边界，并建立 AutoOn／目标切换／无目标序列；
-5. 自动战斗设置：逐职业验证热键栏映射、禁用格、战斗中换格、施放节奏和停止条件；
-6. 制作人问答：找到完整直播原源，避免依赖切片；
-7. 专门搜索登录、排队、断线、维护、野外死亡、真正满包和战斗药尽录像；
-8. 8 月国服测试后用原生截图替换所有坐标／字体相关旧测试证据。
+4. 成长徽章：已有单任务领取→行移除／重排→晋升计数增加→同任务已完成；继续补奖励到账、入口可领取清空、整阶段 `7/7`／晋升、领取失败与背包满；
+5. 挂机：已有高倍可用／运行／耗尽和耗尽时奖励通知继续，继续寻找同账号跨零、客户端低倍标签／掉率 → 疲劳连续边界，并建立 AutoOn／目标切换／无目标序列；
+6. 自动战斗设置：逐职业验证热键栏映射、禁用格、战斗中换格、施放节奏和停止条件；
+7. 制作人问答：找到完整直播原源，避免依赖切片；
+8. 专门搜索登录、排队、断线、维护、野外死亡、真正满包和战斗药尽录像；
+9. 8 月国服测试后用原生截图替换所有坐标／字体相关旧测试证据。
