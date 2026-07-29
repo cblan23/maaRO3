@@ -2539,14 +2539,14 @@
       "id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
       "kind": "test_video",
       "grade": "B",
-      "status": "full_two_second_timeline_reviewed_test_b_no_target_exception",
+      "status": "reviewed_with_crafting_unlock_and_item_shortage_frames_duplicate_mirror",
       "title": "【巴哈姆特电玩疯】《RO仙境传说3》启燃测试实机试玩",
       "url": "https://www.bilibili.com/video/BV1D67V6PEMq/",
       "primary_url": "https://www.youtube.com/watch?v=1S8-6dr2lN4",
       "primary_author": "巴哈姆特电玩疯（Bilibili 转载：KG-Area21）",
       "published_at": "2026-06-26T19:40:44+08:00",
       "duration_seconds": 1348,
-      "tags": ["test_b", "bilibili_repost", "bahamut", "character_creation", "open_world", "card", "pet", "dungeon", "pvp", "gvg", "full_timeline_reviewed", "no_target_exception", "no_evidence_saved"]
+      "tags": ["test_b", "bilibili_repost", "bahamut", "duplicate_primary_video", "full_timeline_reviewed", "life", "recipe_unlock", "crafting", "item_shortage", "reviewed_with_frames"]
     },
     {
       "id": "bilibili-test-b-veteran-review-bv1xemw6teub",

@@ -165,20 +165,22 @@ server_reset_text / observed_at / region / build_id
 
 ## 6. 生活职业、采集与制作
 
-2026-06-26 的完整启燃实机提供了目前最完整的连续证据：[Bilibili 录像](https://www.bilibili.com/video/BV18H756KEhz/)、[原 YouTube](https://www.youtube.com/watch?v=1S8-6dr2lN4)。四张最小证据帧及哈希见 [Manifest](../../research/evidence/video/life-mining-bv18h756kehz/manifest.json)。另一段[职业全览帧](../../research/evidence/video/life-professions-bv1qyt964ehc/frames/0347-life-profession-overview.png)直接显示矿工、厨师、园艺师三个正式 UI 标签；论坛“采药／制药／挖矿”目前按功能概括而非正式职业名处理。
+2026-06-26 的完整启燃实机提供了目前最完整的连续证据：[Bilibili 录像](https://www.bilibili.com/video/BV18H756KEhz/)、[原 YouTube](https://www.youtube.com/watch?v=1S8-6dr2lN4)。九张职业／采矿帧及哈希见[生活采矿 Manifest](../../research/evidence/video/life-mining-bv18h756kehz/manifest.json)。同一原始视频的另一条转载经 0.1 秒精抽，又补出六张[配方解锁与材料不足帧](../../research/evidence/video/life-crafting-bv1d67v6pemq/manifest.json)；它只补状态，不计独立交叉来源。另一段[职业全览帧](../../research/evidence/video/life-professions-bv1qyt964ehc/frames/0347-life-profession-overview.png)直接显示矿工、厨师、园艺师三个正式 UI 标签；论坛“采药／制药／挖矿”目前按功能概括而非正式职业名处理。
 
 ### 6.1 已实证的 TEST-B 参数
 
 | 时间 | 画面事实 | 能证明什么 | 不能证明什么 |
 |---:|---|---|---|
 | 15:50 | [职业总览](../../research/evidence/video/life-mining-bv18h756kehz/frames/0950-life-profession-overview.png) | 第一职业厨师、第二职业矿工；均为 1 级 `0/5000`；活力 `700/5000` | 可选职业总数、第二槽何时开放、能否重选 |
-| 16:00 | [绿色药水配方](../../research/evidence/video/life-mining-bv18h756kehz/frames/0960-green-potion-recipe.png) | 材料槽、数量步进、制作按钮、活力消耗 `20`；其他配方受职业等级限制 | 真正制作成功、批量扣除、材料不足和满包行为 |
+| 15:53.2–15:56.1 | [锁定配方](../../research/evidence/video/life-crafting-bv1d67v6pemq/frames/0953.20-green-potion-locked.png) → [学习确认](../../research/evidence/video/life-crafting-bv1d67v6pemq/frames/0954.00-recipe-unlock-confirm.png) → [解锁成功](../../research/evidence/video/life-crafting-bv1d67v6pemq/frames/0955.70-recipe-unlock-success.png) → [稳定解锁页](../../research/evidence/video/life-crafting-bv1d67v6pemq/frames/0956.10-green-potion-unlocked.png) | 同一绿色药水由锁变为药水图标；确认框显示 1000 道具，主动作由解锁切为制作 | 道具正式名称、扣费后余额、国服成本与自动执行授权 |
+| 16:00 | [绿色药水配方](../../research/evidence/video/life-mining-bv18h756kehz/frames/0960-green-potion-recipe.png) | 材料槽、数量步进、制作按钮、活力消耗 `20`；其他配方受职业等级限制 | 真正制作成功、批量扣除和满包行为 |
+| 16:01.1–16:01.2 | [制作动作边界](../../research/evidence/video/life-crafting-bv1d67v6pemq/frames/0961.10-crafting-pointer.png) → [道具不足提示](../../research/evidence/video/life-crafting-bv1d67v6pemq/frames/0961.20-crafting-item-shortage.png) | 金色制作按钮点击后仍可因“所需消耗的道具不足”失败；活力 `700/5000` 未变，失败不是活力不足 | 具体缺料、缺口、满包和一次成功制作账本 |
 | 16:40 | [采矿进度](../../research/evidence/video/life-mining-bv18h756kehz/frames/1000-mining-progress-45s.png) | “1 级矿脉”、镐子交互、底部进度 `3.7/4.5s` | 是否自动导航、节点被抢／中断行为 |
 | 16:42–17:08 | [五次逐次结果](../../research/evidence/video/life-mining-bv18h756kehz/manifest.json) | 活力严格 `700 → 600`、矿工经验 `0 → 1100`，每次 `-20／+220` | 自动连采、节点刷新、活力恢复、背包满 |
 | 19:10 | [每日 `100/100 已完成`](../../research/evidence/video/life-mining-bv18h756kehz/frames/1150-daily-life-100-completed.png) | 同一实机稍后显示“消耗活力值 100/100、已完成” | 没有即时 `80/100 → 100/100`，活跃 60 还含其他任务 |
 | 05:47 | [职业全览标签](../../research/evidence/video/life-professions-bv1qyt964ehc/frames/0347-life-profession-overview.png) | 全览中可见矿工、厨师、园艺师，且已有职业与未选职业状态不同 | 国服本地化、可选总数、换职和第二槽规则 |
 
-连续录像中角色在相邻节点之间移动并重复 4.5 秒采集，从活力 `700 → 600`、矿工经验 `0 → 1100` 可直接核对五次成功动作；同一实机稍后每日页显示 `100/100 已完成`。画面不能排除玩家逐节点点击，所以必须按“人工逐节点”建模。旧 `0/5`／`5/5` 假设已经否定：画面采用“累计消耗活力值／100”，不是次数计数。
+连续录像中角色在相邻节点之间移动并重复 4.5 秒采集，从活力 `700 → 600`、矿工经验 `0 → 1100` 可直接核对五次成功动作；同一实机稍后每日页显示 `100/100 已完成`。画面不能排除玩家逐节点点击，所以必须按“人工逐节点”建模。旧 `0/5`／`5/5` 假设已经否定：画面采用“累计消耗活力值／100”，不是次数计数。制作页又证明“金色主按钮”不等于前置条件满足，必须读取成功／失败反馈和资源账本。
 
 ### 6.2 采集任务卡
 
@@ -198,14 +200,15 @@ server_reset_text / observed_at / region / build_id
 
 | 字段 | 当前结论 |
 |---|---|
-| 构建／证据 | `TEST-B`；绿色药水配方页面有画面，实际制作前后尚未录到 |
-| 解锁与入口 | 生活职业 → 厨师 → 已解锁配方；全览画面证明园艺师标签存在，连续录像则只证明当前角色已选厨师／矿工两个槽 |
-| 操作链 | 选配方 → 读材料、持有量、职业等级和活力 → 设数量 → 预览总消耗 → 人工确认制作 → 检查材料、产物、活力、熟练度 |
+| 构建／证据 | `TEST-B`；同一绿色药水已有锁定→解锁确认→成功→制作按钮→材料不足连续链，仍缺真正制作成功 |
+| 解锁与入口 | 生活职业 → 厨师 → 配方；画面证明绿色药水可用 1000 道具解锁，其他配方还存在厨师等级锁；全览仅确认当前角色已选厨师／矿工两个槽 |
+| 操作链 | 选配方 → 区分可解锁锁态／等级锁 → 读解锁成本、材料、职业等级和活力 → 解锁或制作均人工确认 → 设数量 → 检查明确结果、材料、产物、活力和熟练度 |
 | 次数／资源／重置 | 绿色药水页面显示单次活力 20；数量上限、批量扣除、成功率和每日制作目标未知 |
 | 完成判据 | 产物增加、材料减少、活力／熟练度变化与数量一致；配方页关闭不算成功 |
-| 自动化风险 | 批量数量残留、替代材料、背包满、稀有材料、活力药剂／商城跳转、职业重选、误做高价值配方 |
+| 自动化风险 | 金色按钮在材料不足时仍可见；另有批量数量残留、替代材料、背包满、稀有材料、活力药剂／商城跳转、职业重选和误做高价值配方 |
+| 安全停机 | 出现“所需消耗的道具不足，无法制造！”、材料 OCR 不确定、活力低于预算、配方锁／确认框与意图不符、产物或账本未按预算变化 |
 | 首期建议 | 配方和材料缺口报告；不自动制作、购买、使用活力药或改变生活职业 |
-| 国服待验证 | 批量规则、失败率、产物绑定、药品说明、冷却、制作队列、材料替代和满包结果 |
+| 国服待验证 | 解锁道具与成本、一次真正成功制作的四方账本、批量规则、失败率、产物绑定、药品说明、冷却、制作队列、材料替代、活力不足和满包结果 |
 
 ## 7. 野外挂机、三阶段收益与内建辅助战斗
 
@@ -444,7 +447,7 @@ reset_text / expires_at / evidence_frame
 5. 一次人工启动／停止游戏内辅助战斗，以及 `Z` 在传送、死亡、掉线后的状态；
 6. 接近满／真正满包掉落去向、药品 `1 → 0` 和野外死亡；
 7. 公会物资不足／购买分支、背包扣除和已知 `5/8` 发车可用之后的确认／终局，但不为采样购买或消耗稀有材料；
-8. 生活 `80/100 → 100/100`、节点被抢／消失、活力恢复与一次制作前后；
+8. 生活 `80/100 → 100/100`、节点被抢／消失、活力恢复、活力不足／满包与一次真正制作成功账本；材料不足分支已有直接证据；
 9. 图鉴阶段奖励、组队归属、疲劳后计数；
 10. 宠物塔层数、失败、奖励和重置，只读抽取／养成页面。
 

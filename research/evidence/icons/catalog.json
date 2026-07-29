@@ -4107,6 +4107,272 @@
       "limitations": [
         "旧构建印尼语提示只能作为成功状态交叉样本；自动化仍须同时检查死亡层消失和可操作 HUD 恢复。"
       ]
+    },
+    {
+      "id": "life-green-potion-selected-locked-test-b-01",
+      "icon_key": "life_green_potion_recipe",
+      "state": "selected_locked_unlockable",
+      "sample_type": "state_row",
+      "file": "crops/life-green-potion-selected-locked-test-b-01.png",
+      "sha256": "cd20f90412f4caa9d391c5b2b32c5a94163daebaa8f690fdd8e7eacfb9c4c5aa",
+      "dimensions": [
+        172,
+        56
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 953.2,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/life-crafting-bv1d67v6pemq/frames/0953.20-green-potion-locked.png",
+      "parent_sha256": "85a5a33647b248301cf36d6ab0a5a163683165b2fc3ffdf15ee73dc49195f523",
+      "crop": {
+        "x": 18,
+        "y": 67,
+        "width": 172,
+        "height": 56
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留已选中的绿色药水列表行、金色选中框和锁图标；左上转载标志与底部后期字幕均在裁区外。"
+      },
+      "limitations": [
+        "这是可进入解锁流程的配方锁，不等同于列表中厨师等级 2／3 条件未满足的锁定行；国服应分别采样。"
+      ]
+    },
+    {
+      "id": "life-green-potion-selected-unlocked-test-b-01",
+      "icon_key": "life_green_potion_recipe",
+      "state": "selected_unlocked",
+      "sample_type": "state_row",
+      "file": "crops/life-green-potion-selected-unlocked-test-b-01.png",
+      "sha256": "9c72fbd5900b846731a534ba982185184db5354abc77f0c27116e2c81ef24cc2",
+      "dimensions": [
+        172,
+        56
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 956.1,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/life-crafting-bv1d67v6pemq/frames/0956.10-green-potion-unlocked.png",
+      "parent_sha256": "bea34508da0498ed94c36f61469b6a2831505d7d510df91f9022845970262a14",
+      "crop": {
+        "x": 18,
+        "y": 67,
+        "width": 172,
+        "height": 56
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "与锁定样本使用同一坐标，裁区只保留解锁后的药水图标、名称和选中框。"
+      },
+      "limitations": [
+        "解锁图标只说明配方状态已改变，不说明当前材料足够、制作成功率或背包空间。"
+      ]
+    },
+    {
+      "id": "life-recipe-unlock-confirm-test-b-01",
+      "icon_key": "life_recipe_unlock_confirmation",
+      "state": "awaiting_choice_cost_1000",
+      "sample_type": "dialog",
+      "file": "crops/life-recipe-unlock-confirm-test-b-01.png",
+      "sha256": "7f3bb16a6180a4fdff28e66e1945567ce776b9ddad3a8e6dcedaef2e2f22465d",
+      "dimensions": [
+        232,
+        132
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 954.0,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/life-crafting-bv1d67v6pemq/frames/0954.00-recipe-unlock-confirm.png",
+      "parent_sha256": "323603f30c43656d13b02ecf5392e5dd628c35cb85977f87278dac640316d48b",
+      "crop": {
+        "x": 310,
+        "y": 174,
+        "width": 232,
+        "height": 132
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区完整保留学习标题、1000 道具、取消／解锁按钮；转载标志、UID 和后期字幕均在裁区外。"
+      },
+      "limitations": [
+        "道具图标的正式名称未在裁区内给出；该确认框涉及资源消耗，只能作为人工门与状态识别样本。"
+      ]
+    },
+    {
+      "id": "life-recipe-unlock-success-test-b-01",
+      "icon_key": "life_recipe_unlock_success",
+      "state": "green_potion_unlocked",
+      "sample_type": "state_indicator",
+      "file": "crops/life-recipe-unlock-success-test-b-01.png",
+      "sha256": "9ed76b32f9942c4e87da1c4ab6684bcb0274efc12c518dce7de4c93aac732247",
+      "dimensions": [
+        310,
+        164
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 955.7,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/life-crafting-bv1d67v6pemq/frames/0955.70-recipe-unlock-success.png",
+      "parent_sha256": "258c37eed0305aa7a3996931c30c17ee764fec8bffb6b4aabc293669e41fe98c",
+      "crop": {
+        "x": 282,
+        "y": 94,
+        "width": 310,
+        "height": 164
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留游戏内配方解锁、厨师和绿色药水覆盖层；底部后期字幕与测试 UID 不在裁区内。"
+      },
+      "limitations": [
+        "动画只确认业务成功态，不包含扣费后余额；账本校验仍需读取资源变化。"
+      ]
+    },
+    {
+      "id": "life-recipe-action-unlock-test-b-01",
+      "icon_key": "life_recipe_primary_action",
+      "state": "unlock_available_gold",
+      "sample_type": "state_indicator",
+      "file": "crops/life-recipe-action-unlock-test-b-01.png",
+      "sha256": "3ba6662af02ad1018228cae6cb88472a7a80b4e1f0ac4c73a0f0819bff052464",
+      "dimensions": [
+        90,
+        30
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 953.2,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/life-crafting-bv1d67v6pemq/frames/0953.20-green-potion-locked.png",
+      "parent_sha256": "85a5a33647b248301cf36d6ab0a5a163683165b2fc3ffdf15ee73dc49195f523",
+      "crop": {
+        "x": 694,
+        "y": 413,
+        "width": 90,
+        "height": 30
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留右侧底部金色解锁主动作及少量安全边距。"
+      },
+      "limitations": [
+        "金色外观不构成自动点击授权；该动作会消耗资源并改变配方状态。"
+      ]
+    },
+    {
+      "id": "life-recipe-action-craft-test-b-01",
+      "icon_key": "life_recipe_primary_action",
+      "state": "craft_available_gold",
+      "sample_type": "state_indicator",
+      "file": "crops/life-recipe-action-craft-test-b-01.png",
+      "sha256": "4d9b8eb0704ed506d93871b524ea190e80b770c126af759e663923d9b800275e",
+      "dimensions": [
+        90,
+        30
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 956.1,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/life-crafting-bv1d67v6pemq/frames/0956.10-green-potion-unlocked.png",
+      "parent_sha256": "bea34508da0498ed94c36f61469b6a2831505d7d510df91f9022845970262a14",
+      "crop": {
+        "x": 694,
+        "y": 413,
+        "width": 90,
+        "height": 30
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "与解锁主动作使用同一坐标，裁区只保留解锁后切换出的金色制作按钮。"
+      },
+      "limitations": [
+        "该按钮看似可用但实际点击返回道具不足；识别器不得用按钮颜色替代材料校验。"
+      ]
+    },
+    {
+      "id": "life-craft-item-shortage-test-b-01",
+      "icon_key": "life_craft_failure",
+      "state": "item_shortage_traditional_chinese",
+      "sample_type": "state_indicator",
+      "file": "crops/life-craft-item-shortage-test-b-01.png",
+      "sha256": "0e0a95dedc71c43a80b4c227e0f7dafe43d6513548dedf54006b3fd492ff98af",
+      "dimensions": [
+        250,
+        28
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 961.2,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/life-crafting-bv1d67v6pemq/frames/0961.20-crafting-item-shortage.png",
+      "parent_sha256": "1a6f55e4ee9b930bd8dc688824f0dc4825e44ce61a2bb4c2cf5b6640c4e9cca4",
+      "crop": {
+        "x": 348,
+        "y": 64,
+        "width": 250,
+        "height": 28
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留游戏内所需消耗的道具不足，无法制造！提示及其状态图标；转载标志和后期字幕均在裁区外。"
+      },
+      "limitations": [
+        "该提示只覆盖制作材料／道具不足，不可复用为活力不足、满包、等级锁定或通用禁用状态。"
+      ]
     }
   ]
 }

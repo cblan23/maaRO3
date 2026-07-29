@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+  "primary_url": "https://www.youtube.com/watch?v=1S8-6dr2lN4",
+  "capture_url": "https://www.bilibili.com/video/BV1D67V6PEMq/",
+  "bvid": "BV1D67V6PEMq",
+  "cid": "39427900847",
+  "source_title": "【巴哈姆特电玩疯】《RO仙境传说3》启燃测试实机试玩",
+  "source_author": "巴哈姆特电玩疯（Bilibili 转载：KG-Area21）",
+  "source_published_at": "2026-06-26T19:40:44+08:00",
+  "captured_at": "2026-07-28",
+  "test_context": "台港澳启燃技术测试 TEST-B 实机。该 Bilibili 条目与 life-mining-bv18h756kehz 指向同一段巴哈姆特原始视频，因此不作为第二份独立佐证；在既有 674 张二秒全片采样之外，对 948.0–970.0 秒生活职业窗口追加 220 张 0.1 秒采样，补出 GreenPotionLocked → UnlockConfirmation → RecipeUnlocked → CraftPointer → ItemShortage 的连续制作状态链。",
+  "copyright_note": "只保留证明同一配方锁定／解锁、确认、成功覆盖层、制作动作边界和材料不足反馈所需的六帧。父帧包含转载标志、测试 UID 与后期中文字幕；裁图均避开字幕和 UID，但全部资产仍只供内部可追溯研究，公开训练集或再分发前必须另行完成授权、隐私与版权审查。",
+  "frames": [
+    {
+      "file": "frames/0953.20-green-potion-locked.png",
+      "timestamp_seconds": 953.2,
+      "sha256": "85a5a33647b248301cf36d6ab0a5a163683165b2fc3ffdf15ee73dc49195f523",
+      "dimensions": [852, 480],
+      "supports": [
+        "厨师页已选中绿色药水，但列表图标和右侧详情仍显示锁标志，底部主动作是解锁而不是制作",
+        "右上活力为 700/5000，右侧同时显示单次活力消耗 20；配方锁定与活力余额是两个独立前置状态"
+      ],
+      "limitations": [
+        "画面只证明当前配方可进入解锁流程；不能把图标下方的 1000 道具外观推断成具体货币名称",
+        "解锁会消耗资源且改变账号状态，离线研究不能据此授权脚本自动执行"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0954.00-recipe-unlock-confirm.png",
+      "timestamp_seconds": 954.0,
+      "sha256": "323603f30c43656d13b02ecf5392e5dd628c35cb85977f87278dac640316d48b",
+      "dimensions": [852, 480],
+      "supports": [
+        "紧邻锁定页出现标题为学习的模态框，正文询问是否消耗以下道具解锁配方",
+        "模态框明确展示数量 1000，并提供取消与解锁两个互斥按钮"
+      ],
+      "limitations": [
+        "录像没有输入事件日志，不能从单帧确定弹窗由鼠标还是键盘触发",
+        "数量、道具种类和按钮文案属于 TEST-B 繁中旧构建，国服必须重新采样"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0955.70-recipe-unlock-success.png",
+      "timestamp_seconds": 955.7,
+      "sha256": "258c37eed0305aa7a3996931c30c17ee764fec8bffb6b4aabc293669e41fe98c",
+      "dimensions": [852, 480],
+      "supports": [
+        "确认框消失后出现配方解锁覆盖层，并直接标注厨师与绿色药水",
+        "该明确成功反馈把前一帧的解锁确认与后一帧的可制作页面连接为一次完成的状态事务"
+      ],
+      "limitations": [
+        "成功覆盖层没有显示扣除后的道具余额，不能只靠动画验证资源账本",
+        "解锁成功不代表材料足够、背包有空间或随后制作一定成功"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0956.10-green-potion-unlocked.png",
+      "timestamp_seconds": 956.1,
+      "sha256": "bea34508da0498ed94c36f61469b6a2831505d7d510df91f9022845970262a14",
+      "dimensions": [852, 480],
+      "supports": [
+        "同一绿色药水列表项由锁标志切换为药水图标，右侧新增材料清单、数量步进器和制作按钮",
+        "主动作由解锁切换为制作，数量为 1、可见活力消耗为 20，构成解锁后的稳定页面状态"
+      ],
+      "limitations": [
+        "金色制作按钮的可点击外观不能作为材料充足判据；后续实际点击仍返回道具不足",
+        "画面没有给出所有材料的可读库存数量，不能推断具体缺少哪一种或缺口多少"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0961.10-crafting-pointer.png",
+      "timestamp_seconds": 961.1,
+      "sha256": "9b7cb80412f986931123c2c2b27327d183a48d03bade9c585c5b0e3d9dcb45f9",
+      "dimensions": [852, 480],
+      "supports": [
+        "鼠标指针位于制作按钮，顶部尚未出现失败提示，绿色药水页面和活力 700/5000 均保持可见",
+        "下一张相邻 0.1 秒采样出现明确道具不足提示，为制作尝试建立画面边界"
+      ],
+      "limitations": [
+        "没有鼠标按键日志，指针位置不能单独证明点击；必须与 961.2 秒的即时反馈联合使用",
+        "按钮未观察到可稳定分离的 hover 或 pressed 外观，因此不登记虚构的悬停／按下模板"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/0961.20-crafting-item-shortage.png",
+      "timestamp_seconds": 961.2,
+      "sha256": "1a6f55e4ee9b930bd8dc688824f0dc4825e44ce61a2bb4c2cf5b6640c4e9cca4",
+      "dimensions": [852, 480],
+      "supports": [
+        "制作按钮上方的指针仍可见，顶部立即出现所需消耗的道具不足，无法制造！游戏内提示",
+        "右上活力仍显示 700/5000，且前后均远高于单次消耗 20；该次可见失败原因是材料／道具不足，不是活力不足"
+      ],
+      "limitations": [
+        "提示没有指出缺少的具体材料、所需数量或库存位置，也不等同于满包、活力不足或职业等级不足",
+        "0.1 秒前后没有可见资源变化只能证明 UI 未显示扣除；事务恢复仍应在国服检查材料、活力、产物和背包四方账本"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}

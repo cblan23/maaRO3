@@ -323,7 +323,9 @@ Victory → BaseReward → Result／MVP → TeamAuction → ExitAvailable
 
 同一录像提供了完整操作片段：厨师的绿色药水配方有材料槽、数量步进器和活力消耗 `20`；野外资源直接标注“1 级矿脉”，单次采集进度为 `4.5s`；五次完成帧依次显示活力 `700 → 680 → 660 → 640 → 620 → 600`、矿工经验 `0 → 220 → 440 → 660 → 880 → 1100`。约两分钟后每日页明确显示生活玩法“消耗活力值 `100/100`、已完成”。证据：[绿色药水配方](../../research/evidence/video/life-mining-bv18h756kehz/frames/0960-green-potion-recipe.png)、[采矿进度](../../research/evidence/video/life-mining-bv18h756kehz/frames/1000-mining-progress-45s.png)、[第五次结果](../../research/evidence/video/life-mining-bv18h756kehz/frames/1028-mining-yield-cumulative.png)、[每日完成](../../research/evidence/video/life-mining-bv18h756kehz/frames/1150-daily-life-100-completed.png)。画面不能证明自动连采，应按玩家逐节点操作处理。
 
-候选操作链：选择配方／采集物 → 检查职业等级、活力和工具／材料 → 导航到资源点或制作 → 执行一次 → 检查产物、活力和熟练度。旧文档把任务误写成 `4/5 → 5/5`；实际 UI 是按活力值累计的 `100/100`。国服仍未知目标值、职业重选、活力恢复、节点归属、失败和批量制作规则。详见[日常系统百科](07-daily-system-encyclopedia.md)。
+同一原始实机的[配方制作精抽](../../research/evidence/video/life-crafting-bv1d67v6pemq/manifest.json)还直接显示：绿色药水锁定 → 1000 道具“学习”确认 → “配方解锁” → 列表与主动作切换为药水图标／制作 → 指针位于制作按钮 → 0.1 秒后提示“所需消耗的道具不足，无法制造！”。前后活力均为 `700/5000`，可排除这次是活力不足；但提示没有说明缺哪种材料，录像也没有成功制作、批量或满包。两条 Bilibili 记录指向同一原始 YouTube，因此这只是补帧，不是第二份独立佐证。`TEST-B`
+
+候选操作链：选择配方／采集物 → 区分可解锁锁态、职业等级锁与已解锁 → 检查职业等级、活力和工具／材料 → 导航到资源点或制作 → 执行一次 → 检查明确反馈及材料、产物、活力和熟练度。金色制作按钮不能代表材料满足。旧文档把任务误写成 `4/5 → 5/5`；实际 UI 是按活力值累计的 `100/100`。国服仍未知目标值、职业重选、活力恢复、节点归属、一次成功制作账本、活力不足、满包和批量规则。详见[日常系统百科](07-daily-system-encyclopedia.md)。
 
 ### 10.2 宠物与精灵之塔
 

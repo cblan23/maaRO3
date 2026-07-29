@@ -58,10 +58,16 @@
 
 来源：[启燃测试完整实机](https://www.bilibili.com/video/BV18H756KEhz/)，原始 [YouTube](https://www.youtube.com/watch?v=1S8-6dr2lN4)，完整元数据见 [Manifest](../../research/evidence/video/life-mining-bv18h756kehz/manifest.json)。
 
+同一原始视频的另一条 [Bilibili 转载](https://www.bilibili.com/video/BV1D67V6PEMq/)用于 0.1 秒补抽；它不是独立交叉来源，新增六帧见[制作状态 Manifest](../../research/evidence/video/life-crafting-bv1d67v6pemq/manifest.json)。
+
 | 时间 | 画面 | 支持的状态 | 设计边界 |
 |---:|---|---|---|
 | 15:50 | [生活职业总览](../../research/evidence/video/life-mining-bv18h756kehz/frames/0950-life-profession-overview.png) | 厨师／矿工两个已选职业槽、等级进度、活力 `700/5000` | 不能推出职业总数、第二槽解锁或重选规则 |
-| 16:00 | [绿色药水配方](../../research/evidence/video/life-mining-bv18h756kehz/frames/0960-green-potion-recipe.png) | 材料、数量、制作、职业等级锁和活力消耗 `20` | 没有实际制作、批量、满包或材料不足结果 |
+| 15:53.2 | [绿色药水锁定](../../research/evidence/video/life-crafting-bv1d67v6pemq/frames/0953.20-green-potion-locked.png) | 同配方选中但带锁，主动作是“解锁”；活力 `700/5000` 与配方锁是独立状态 | 可解锁锁态不等于旁边的厨师等级锁；不自动消耗资源 |
+| 15:54.0 | [解锁确认](../../research/evidence/video/life-crafting-bv1d67v6pemq/frames/0954.00-recipe-unlock-confirm.png) | “学习”模态框、1000 道具、取消／解锁两个按钮 | 道具正式名称不可读；国服成本与文案待重采 |
+| 15:55.7–15:56.1 | [配方解锁成功](../../research/evidence/video/life-crafting-bv1d67v6pemq/frames/0955.70-recipe-unlock-success.png) → [稳定解锁页](../../research/evidence/video/life-crafting-bv1d67v6pemq/frames/0956.10-green-potion-unlocked.png) | 成功覆盖层明确写“配方解锁／厨师／绿色药水”；同坐标图标和主动作由锁／解锁切为药水／制作 | 成功层无扣费后余额；解锁不代表材料充足 |
+| 16:00 | [绿色药水配方](../../research/evidence/video/life-mining-bv18h756kehz/frames/0960-green-potion-recipe.png) | 材料、数量、制作、职业等级锁和活力消耗 `20` | 仍没有真正制作成功、批量或满包结果 |
+| 16:01.1–16:01.2 | [制作指针边界](../../research/evidence/video/life-crafting-bv1d67v6pemq/frames/0961.10-crafting-pointer.png) → [道具不足](../../research/evidence/video/life-crafting-bv1d67v6pemq/frames/0961.20-crafting-item-shortage.png) | 相邻 0.1 秒出现“所需消耗的道具不足，无法制造！”；活力仍为 `700/5000`，可排除活力不足 | 无输入日志；不指出缺哪种材料，也不等同于满包或等级锁 |
 | 16:40 | [采矿进度](../../research/evidence/video/life-mining-bv18h756kehz/frames/1000-mining-progress-45s.png) | `1 级矿脉`、镐子交互、进度 `3.7/4.5s` | 不证明自动导航／连采和中断行为 |
 | 16:42 | [第一次结果](../../research/evidence/video/life-mining-bv18h756kehz/frames/1002-mining-yield-1-of-5.png) | 活力 `680`、矿工经验 `220` | 不能单帧推出每日完成 |
 | 16:50–17:01 | [第二次](../../research/evidence/video/life-mining-bv18h756kehz/frames/1010-mining-yield-2-of-5.png)、[第三次](../../research/evidence/video/life-mining-bv18h756kehz/frames/1015-mining-yield-3-of-5.png)、[第四次](../../research/evidence/video/life-mining-bv18h756kehz/frames/1021-mining-yield-4-of-5.png) | 严格等差的 `-20／+220` 累计序列 | 不能证明自动选取下一节点 |
@@ -313,7 +319,7 @@ PIONEER-A 只作跨构建语义对照，不进入 TEST-B／国服模板：
 | [经典 RO 标题误标](https://www.bilibili.com/video/BV1w9736mETV/) | 00:40 | 全程 0.5 秒复核，D 级排除 | 标题中的“小站Ro3”不是《仙境传说3》；画面为经典 RO，不保存模板 |
 | [巴哈 RO3 板目录快照](https://m.gamer.com.tw/forum/B.php?bsn=81475) | 74 主题 | TEST-B 时段正文／留言关键词扫描＋39 个原图引用复核 | 只补到分类背包接近满与疲劳后低收益的文字报告；原图无对应 UI，零帧入库 |
 | [全职业三转试玩＋跑图](https://www.bilibili.com/video/BV1vhhizdEeX/) | 09:46 | 293 张二秒采样全审 | 职业技能、跑图、旧先锋构建 HUD；无目标异常，不进入 TEST-B／国服模板 |
-| [巴哈电玩疯 TEST-B 长实机转载](https://www.bilibili.com/video/BV1D67V6PEMq/) | 22:28 | 674 张二秒采样全审，负向登记 | 角色创建至 PVP／GVG；没有目标异常状态，不保存新父帧 |
+| [巴哈电玩疯 TEST-B 长实机转载](https://www.bilibili.com/video/BV1D67V6PEMq/) | 22:28 | 674 张二秒采样全审＋生活窗口 220 张 0.1 秒精抽＋6 帧入库 | 与既有来源为同一原始视频；补出绿色药水锁定→解锁→制作材料不足链，不作第二份独立佐证 |
 | [老玩家启燃心得转载](https://www.bilibili.com/video/BV1xeMw6TEub/) | 07:41 | 230 张二秒采样全审，评论来源 | 流派手册误似背包；没有目标异常状态 |
 | [骨灰玩家启燃长评转载](https://www.bilibili.com/video/BV1RRMw6QEom/) | 21:52 | 657 张二秒采样＋离线转写／亚秒定点复核，4 帧入库 | `48–51.50s` 补到公会第四批发车边界；`544.90s` 补到生存竞争模式队友复活弹窗负例；另有重复耗尽页和普通背包 |
 | [3 月闭门测试读后感](https://www.bilibili.com/video/BV1xZwezbELi/) | 30:36 | 183 张十秒采样全审，评论来源 | 几乎全为静态封面，末段仅有线下照片与世界地图照片；没有客户端 UI，不保存模板 |
