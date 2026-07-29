@@ -107,6 +107,8 @@
 
 TEST-B 精炼实机采用按装备部位列等级的页面，选中槽位后同时显示下一等级、成功率、属性变化、材料与来源：[槽位精炼](../../research/evidence/video/refine-ui-bv19htn6peo2/frames/0182-refine-slot-level.png)、[材料来源](../../research/evidence/video/refine-ui-bv19htn6peo2/frames/0212-refine-material-sources.png)。它适合未来生成只读缺口报告，但成功率、材料、货币和换装继承都必须国服复验，精炼本身始终排除自动执行。
 
+[职业天赋九帧链](../../research/evidence/video/talent-profession-bv1d67v6pemq/manifest.json)直接显示同一特殊节点由深灰问号锁定变为金色问号可启用，进入双分支／四能力的“请选择职业天赋”；同一能力行由白色变金色，确认后问号变具体图标并稳定出现 `%` 子能力徽标。另一页签 `II+-1` 黄色选中时锁图标仍存在、树为灰色 `0/10`，证明“选中”和“已解锁”是独立状态。技能名／数值在 480p 下不硬编码，取消、重置、改选、点数不足和升级异常仍未知。`TEST-B`
+
 如果未来取得授权，助手应选择玩家事先保存的流派，而不是自行做不可逆加点、精炼、宠物抽取或换装决策。
 
 ### 4.3 旧测试等级快照

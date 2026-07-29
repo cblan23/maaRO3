@@ -91,6 +91,19 @@
 | 18:41.787 | [领取后立即重排](../../research/evidence/video/growth-badge-bv1d67v6pemq/frames/1121.787-growth-claim-postcondition.png) | 约 0.033 秒后原行移除、列表上移，晋升任务 `1/7→2/7`；原槽位变成 `1/6` 蓝色“前往” | 固定坐标会立即命中另一任务，不能连续点击；无奖励到账账本 |
 | 18:50.529 | [同任务已完成](../../research/evidence/video/growth-badge-bv1d67v6pemq/frames/1130.529-growth-task-completed.png) | 下滚后同标题、同奖励图标显示 `120/120` 与绿色“已完成” | 字面不是“已领取”；`126→120`不能解释成属性下降 |
 
+### 职业天赋节点、二选一与锁定预览
+
+同一来源的 `1036–1066s` 按原生帧复核，九帧元数据见[职业天赋 Manifest](../../research/evidence/video/talent-profession-bv1d67v6pemq/manifest.json)。
+
+| 时间 | 画面 | 支持的状态 | 设计边界 |
+|---:|---|---|---|
+| 17:19.972 | [职业节点锁定](../../research/evidence/video/talent-profession-bv1d67v6pemq/frames/1039.972-profession-node-locked.png) | 深灰问号、黑色连线、右栏无可执行详情 | 不显示将提供的具体技能或国服解锁条件 |
+| 17:20.540 | [金色问号可启用](../../research/evidence/video/talent-profession-bv1d67v6pemq/frames/1040.540-profession-node-enable.png) | 同节点金色选中，右栏列两个分支／四项能力并出现“启用” | 可进入选择不等于已激活 |
+| 17:22.008 | [请选择职业天赋](../../research/evidence/video/talent-profession-bv1d67v6pemq/frames/1042.008-profession-choice-dialog.png) | 双分支、四能力均为白色普通态 | 480p 小字不强转技能名／数值；构筑选择人工 |
+| 17:38.557–17:39.225 | [能力未选中](../../research/evidence/video/talent-profession-bv1d67v6pemq/frames/1058.557-profession-option-unselected.png) → [稳定选中](../../research/evidence/video/talent-profession-bv1d67v6pemq/frames/1059.225-profession-option-selected.png) | 同一能力行白色→金色，父分支同步金色，底部出现“确定” | 金色只是待确认，不等于生效 |
+| 17:39.759–17:40.593 | [确认指针](../../research/evidence/video/talent-profession-bv1d67v6pemq/frames/1059.759-profession-choice-confirm-pointer.png) → [返回树](../../research/evidence/video/talent-profession-bv1d67v6pemq/frames/1059.825-profession-tree-returned.png) → [稳定激活](../../research/evidence/video/talent-profession-bv1d67v6pemq/frames/1060.593-profession-choice-activated.png) | 弹层消失，问号变具体图标，随后 `%` 徽标与绿色属性增量稳定 | 无输入日志；升级／重置仍是资源与构筑动作 |
+| 17:43.396 | [选中但仍锁定](../../research/evidence/video/talent-profession-bv1d67v6pemq/frames/1063.396-rank-selected-locked-preview.png) | `II+-1` 页签黄色选中且锁仍在；树为灰色 `0/10`、底部为条件提示 | selected 与 locked 正交；黄色绝不等于已解锁／可升级 |
+
 ### 内建自动战斗、宠物助战与公会日历
 
 来源：[启燃测试结束小结](https://www.bilibili.com/video/BV1YbNy6fEzE/)，完整元数据见 [Manifest](../../research/evidence/video/test-closeout-bv1ybny6feze/manifest.json)。
@@ -330,7 +343,7 @@ PIONEER-A 只作跨构建语义对照，不进入 TEST-B／国服模板：
 | [经典 RO 标题误标](https://www.bilibili.com/video/BV1w9736mETV/) | 00:40 | 全程 0.5 秒复核，D 级排除 | 标题中的“小站Ro3”不是《仙境传说3》；画面为经典 RO，不保存模板 |
 | [巴哈 RO3 板目录快照](https://m.gamer.com.tw/forum/B.php?bsn=81475) | 74 主题 | TEST-B 时段正文／留言关键词扫描＋39 个原图引用复核 | 只补到分类背包接近满与疲劳后低收益的文字报告；原图无对应 UI，零帧入库 |
 | [全职业三转试玩＋跑图](https://www.bilibili.com/video/BV1vhhizdEeX/) | 09:46 | 293 张二秒采样全审 | 职业技能、跑图、旧先锋构建 HUD；无目标异常，不进入 TEST-B／国服模板 |
-| [巴哈电玩疯 TEST-B 长实机转载](https://www.bilibili.com/video/BV1D67V6PEMq/) | 22:28 | 674 张二秒采样＋生活 220 张／成长 201 张 0.1 秒精抽＋10 帧入库 | 与既有来源为同一原始视频；补出绿色药水锁定→解锁→材料不足，以及成长任务领取→重排→已完成；不作第二份独立佐证 |
+| [巴哈电玩疯 TEST-B 长实机转载](https://www.bilibili.com/video/BV1D67V6PEMq/) | 22:28 | 674 张二秒采样＋生活／成长亚秒复核＋天赋原生帧精审，共 19 帧入库 | 与既有来源为同一原始视频；补生活材料不足、成长领取→完成及职业天赋锁定→二选一→激活／选中仍锁定；不作第二份独立佐证 |
 | [老玩家启燃心得转载](https://www.bilibili.com/video/BV1xeMw6TEub/) | 07:41 | 230 张二秒采样全审，评论来源 | 流派手册误似背包；没有目标异常状态 |
 | [骨灰玩家启燃长评转载](https://www.bilibili.com/video/BV1RRMw6QEom/) | 21:52 | 657 张二秒采样＋离线转写／亚秒定点复核，4 帧入库 | `48–51.50s` 补到公会第四批发车边界；`544.90s` 补到生存竞争模式队友复活弹窗负例；另有重复耗尽页和普通背包 |
 | [3 月闭门测试读后感](https://www.bilibili.com/video/BV1xZwezbELi/) | 30:36 | 183 张十秒采样全审，评论来源 | 几乎全为静态封面，末段仅有线下照片与世界地图照片；没有客户端 UI，不保存模板 |

@@ -4601,6 +4601,348 @@
       "limitations": [
         "只证明本次任务领取后阶段计数增加 1；不能推出每种任务权重、阶段奖励到账或国服总数。"
       ]
+    },
+    {
+      "id": "talent-profession-node-locked-test-b-01",
+      "icon_key": "talent_profession_node",
+      "state": "locked_grey_question",
+      "sample_type": "state_indicator",
+      "file": "crops/talent-profession-node-locked-test-b-01.png",
+      "sha256": "8eee006f0d1f5994abee59bd3e8f1c18808196e1d713db5b51e38b658478a8c6",
+      "dimensions": [
+        90,
+        94
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 1039.972,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/talent-profession-bv1d67v6pemq/frames/1039.972-profession-node-locked.png",
+      "parent_sha256": "167a06d831598ba88db2540319efc605e28036fc86f36de0f283888311807d6f",
+      "crop": {
+        "x": 395,
+        "y": 238,
+        "width": 90,
+        "height": 94
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留同一职业天赋节点的深灰问号、黑色连线和少量属性行；转载标志、字幕、掉落与个人信息均排除。"
+      },
+      "limitations": [
+        "问号锁态不显示将提供的具体职业天赋；国服解锁条件和节点位置必须重采。"
+      ]
+    },
+    {
+      "id": "talent-profession-node-enable-test-b-01",
+      "icon_key": "talent_profession_node",
+      "state": "available_selected_gold_question",
+      "sample_type": "state_indicator",
+      "file": "crops/talent-profession-node-enable-test-b-01.png",
+      "sha256": "b6d846f171b6d44bce5f7dda3999eb379b9ca0e334aefa9797ca3a8c302334fd",
+      "dimensions": [
+        90,
+        94
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 1040.54,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/talent-profession-bv1d67v6pemq/frames/1040.540-profession-node-enable.png",
+      "parent_sha256": "517fbd3dabc7c75c448cd1a9bb132559749d444c3d96a16d981297e1d222286d",
+      "crop": {
+        "x": 395,
+        "y": 238,
+        "width": 90,
+        "height": 94
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "与锁定和激活样本使用同一坐标，裁区保留金色问号、选中外框、金色连线与绿色属性增量。"
+      },
+      "limitations": [
+        "金色问号表示可进入选择流程且当前被选中，不表示任一职业天赋已经生效。"
+      ]
+    },
+    {
+      "id": "talent-profession-node-activated-test-b-01",
+      "icon_key": "talent_profession_node",
+      "state": "activated_choice_with_percent_badge",
+      "sample_type": "state_indicator",
+      "file": "crops/talent-profession-node-activated-test-b-01.png",
+      "sha256": "a251abce93b0d6ed7493f178c3d67599d641187270b7338707a035780b87f402",
+      "dimensions": [
+        90,
+        94
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 1060.593,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/talent-profession-bv1d67v6pemq/frames/1060.593-profession-choice-activated.png",
+      "parent_sha256": "edda32c8a6dcbe4c413963215cb877944643352d55058ebffa8189472d3b9468",
+      "crop": {
+        "x": 395,
+        "y": 238,
+        "width": 90,
+        "height": 94
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "与前两态同坐标，裁区保留所选主能力鸟形图标、百分号子能力徽标和金色连线。"
+      },
+      "limitations": [
+        "已激活视觉不证明可免费重置、改选或继续升级，也不外推国服技能名称和数值。"
+      ]
+    },
+    {
+      "id": "talent-profession-enable-action-test-b-01",
+      "icon_key": "talent_profession_primary_action",
+      "state": "enable_available_gold",
+      "sample_type": "state_indicator",
+      "file": "crops/talent-profession-enable-action-test-b-01.png",
+      "sha256": "24e7136d0a044aa8863dc4df506ca3482e5be87b1da0df4a0747dde7f23044d2",
+      "dimensions": [
+        92,
+        30
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 1040.54,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/talent-profession-bv1d67v6pemq/frames/1040.540-profession-node-enable.png",
+      "parent_sha256": "517fbd3dabc7c75c448cd1a9bb132559749d444c3d96a16d981297e1d222286d",
+      "crop": {
+        "x": 693,
+        "y": 413,
+        "width": 92,
+        "height": 30
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留右侧详情底部黄色启用按钮与指针。"
+      },
+      "limitations": [
+        "启用会进入角色构筑选择，不能因按钮可见就自动执行。"
+      ]
+    },
+    {
+      "id": "talent-profession-choice-dialog-test-b-01",
+      "icon_key": "talent_profession_choice_dialog",
+      "state": "awaiting_choice_four_options",
+      "sample_type": "dialog",
+      "file": "crops/talent-profession-choice-dialog-test-b-01.png",
+      "sha256": "17ac90a5214e88bc98b5366ffaf964827cc3a27e03cbacb8f9742351834c8012",
+      "dimensions": [
+        404,
+        380
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 1042.008,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/talent-profession-bv1d67v6pemq/frames/1042.008-profession-choice-dialog.png",
+      "parent_sha256": "64dbe7695e79f45f51af2d26895d46d8b247b046eee6ff1973cf543cf86ba30c",
+      "crop": {
+        "x": 222,
+        "y": 35,
+        "width": 404,
+        "height": 380
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留请选择职业天赋标题、左右分支和四个白色能力行；底部后期字幕、左侧掉落、UID 与转载标志均排除。"
+      },
+      "limitations": [
+        "480p 小字不登记为精确技能名／数值；该弹层涉及构筑选择，默认保留人工门。"
+      ]
+    },
+    {
+      "id": "talent-profession-option-unselected-test-b-01",
+      "icon_key": "talent_profession_ability_option",
+      "state": "unselected_white",
+      "sample_type": "state_row",
+      "file": "crops/talent-profession-option-unselected-test-b-01.png",
+      "sha256": "c2344d6e34c98edd86f7b751350bae51072ad83fcfd3a2f3a5531eaa15c07dc2",
+      "dimensions": [
+        170,
+        59
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 1058.557,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/talent-profession-bv1d67v6pemq/frames/1058.557-profession-option-unselected.png",
+      "parent_sha256": "79bb8afd0b33ca3cdb6ece87d2135cfa1f915afd331725d508808bb88eb683f9",
+      "crop": {
+        "x": 240,
+        "y": 204,
+        "width": 170,
+        "height": 59
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区保留左上百分号能力行的白色普通态、图标、说明和指针；页面外信息全部排除。"
+      },
+      "limitations": [
+        "白色只说明当前未选中，不代表推荐、永久可选或国服普通态颜色。"
+      ]
+    },
+    {
+      "id": "talent-profession-option-selected-test-b-01",
+      "icon_key": "talent_profession_ability_option",
+      "state": "selected_gold",
+      "sample_type": "state_row",
+      "file": "crops/talent-profession-option-selected-test-b-01.png",
+      "sha256": "707a5710df82ad138b7ab94e47ce4296e50bb1f557acbd1d1f09d94f948e0eb9",
+      "dimensions": [
+        170,
+        59
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 1059.225,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/talent-profession-bv1d67v6pemq/frames/1059.225-profession-option-selected.png",
+      "parent_sha256": "727a0d5c23421660cdb72b0a53c13bca8ae850bb433fcc83c325152c1baa2ecd",
+      "crop": {
+        "x": 240,
+        "y": 204,
+        "width": 170,
+        "height": 59
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "与未选中样本同坐标，裁区保留稳定金色能力行与父分支边缘；指针已移出能力行。"
+      },
+      "limitations": [
+        "金色选中是待确认状态，不等于职业天赋已写入角色构筑。"
+      ]
+    },
+    {
+      "id": "talent-profession-confirm-action-test-b-01",
+      "icon_key": "talent_profession_choice_action",
+      "state": "confirm_available_gold",
+      "sample_type": "state_indicator",
+      "file": "crops/talent-profession-confirm-action-test-b-01.png",
+      "sha256": "83a2637f00b6f8ecd7fe9437e1166882474085b05b0b536022784db66380f1c0",
+      "dimensions": [
+        90,
+        30
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 1059.225,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/talent-profession-bv1d67v6pemq/frames/1059.225-profession-option-selected.png",
+      "parent_sha256": "727a0d5c23421660cdb72b0a53c13bca8ae850bb433fcc83c325152c1baa2ecd",
+      "crop": {
+        "x": 380,
+        "y": 420,
+        "width": 90,
+        "height": 30
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留选择能力后出现的黄色确定按钮。"
+      },
+      "limitations": [
+        "确认按钮可见只说明选择完整；必须等待弹层消失、树返回和稳定激活图标。"
+      ]
+    },
+    {
+      "id": "talent-rank-tab-selected-locked-test-b-01",
+      "icon_key": "talent_rank_tab",
+      "state": "selected_locked_ii_plus_1",
+      "sample_type": "state_row",
+      "file": "crops/talent-rank-tab-selected-locked-test-b-01.png",
+      "sha256": "0e4e19f699aafc536025f6fa82e29ae5bc4834874f2c5e70951fb9b75bc87cb0",
+      "dimensions": [
+        85,
+        55
+      ],
+      "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+      "source_timestamp_seconds": 1063.396,
+      "build": "TEST-B",
+      "parent_frame": "research/evidence/video/talent-profession-bv1d67v6pemq/frames/1063.396-rank-selected-locked-preview.png",
+      "parent_sha256": "74a3c3dd8aa825ca97b8ddee624f7d561ff331d908035a87588e5b9ca50b430f",
+      "crop": {
+        "x": 0,
+        "y": 135,
+        "width": 85,
+        "height": 55
+      },
+      "scale": {
+        "applied": false,
+        "algorithm": "none"
+      },
+      "confidence": "direct_clear",
+      "recheck_in_cn_test": true,
+      "contamination": {
+        "watermark": false,
+        "subtitles": false,
+        "streamer_overlay": false,
+        "notes": "裁区只保留黄色当前选中的 II+-1 页签及仍存在的锁图标。"
+      },
+      "limitations": [
+        "该样本直接证明选中与锁定可同时成立；黄色底绝不能被当作已解锁或可升级。"
+      ]
     }
   ]
 }

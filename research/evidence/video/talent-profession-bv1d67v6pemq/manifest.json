@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "source_id": "bilibili-test-b-bahamut-showcase-bv1d67v6pemq",
+  "primary_url": "https://www.youtube.com/watch?v=1S8-6dr2lN4",
+  "capture_url": "https://www.bilibili.com/video/BV1D67V6PEMq/",
+  "bvid": "BV1D67V6PEMq",
+  "cid": "39427900847",
+  "source_title": "【巴哈姆特电玩疯】《RO仙境传说3》启燃测试实机试玩",
+  "source_author": "巴哈姆特电玩疯（Bilibili 转载：KG-Area21）",
+  "source_published_at": "2026-06-26T19:40:44+08:00",
+  "captured_at": "2026-07-29",
+  "test_context": "台港澳启燃技术测试 TEST-B 实机。对 1036–1066 秒按原生 29.97fps 复核天赋树，形成同一职业天赋特殊节点 GreyQuestionLocked → GoldQuestionEnable → ChoiceDialog → OptionUnselected → OptionSelectedAndConfirm → TreeReturned → ActivatedWithPercentBadge 的连续链；随后又记录进阶页签在锁图标保留时被黄色选中的正交状态。该转载与 life-mining-bv18h756kehz 指向同一上游 YouTube，不作为独立交叉佐证。",
+  "copyright_note": "仅保留证明职业天赋节点锁定／可启用／已激活、二选一普通／选中、确认边界及选中但仍锁定页签所需的九帧。父帧包含转载标志、测试 UID、掉落通知和部分后期字幕；裁图均避开个人信息，字幕污染仅保留在父帧上下文。全部资产只供内部可追溯研究，公开训练集或再分发前必须另行完成授权、隐私与版权审查。",
+  "frames": [
+    {
+      "file": "frames/1039.972-profession-node-locked.png",
+      "timestamp_seconds": 1039.972,
+      "sha256": "167a06d831598ba88db2540319efc605e28036fc86f36de0f283888311807d6f",
+      "dimensions": [852, 480],
+      "supports": [
+        "天赋树中的特殊职业天赋节点为深灰问号，连向下一节点的线为黑色，右侧没有可执行详情",
+        "该帧为同坐标金色解锁动画之前的稳定锁定基线"
+      ],
+      "limitations": [
+        "问号节点不显示具体职业天赋名称，不能从外观推断将提供哪组能力",
+        "这是 TEST-B 天赋点变化中的自然边界，不证明国服解锁等级、前置节点或资源成本"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1040.540-profession-node-enable.png",
+      "timestamp_seconds": 1040.54,
+      "sha256": "517fbd3dabc7c75c448cd1a9bb132559749d444c3d96a16d981297e1d222286d",
+      "dimensions": [852, 480],
+      "supports": [
+        "同一问号节点变为金色并处于当前选中态，连线和节点属性增量也转为可用显示",
+        "右侧职业天赋详情列出两个分支及各自两个子能力，底部出现黄色启用按钮"
+      ],
+      "limitations": [
+        "分支／能力小字只有约 6–9 像素高，不强行登记低置信的精确名称与数值",
+        "金色节点和启用按钮只说明可进入选择流程，不表示某项职业天赋已生效"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1042.008-profession-choice-dialog.png",
+      "timestamp_seconds": 1042.008,
+      "sha256": "64dbe7695e79f45f51af2d26895d46d8b247b046eee6ff1973cf543cf86ba30c",
+      "dimensions": [852, 480],
+      "supports": [
+        "选择层标题明确显示请选择职业天赋，左右两张分支卡各列两个可选能力行",
+        "四个能力行均为白色普通态，页面尚未出现可执行的金色确认按钮"
+      ],
+      "limitations": [
+        "该帧没有记录启用按钮的输入事件或弹层打开动画的触发来源",
+        "两个分支的具体技能名和完整说明不作为机器字段，国服需用高清原生截图重采"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1058.557-profession-option-unselected.png",
+      "timestamp_seconds": 1058.557,
+      "sha256": "79bb8afd0b33ca3cdb6ece87d2135cfa1f915afd331725d508808bb88eb683f9",
+      "dimensions": [852, 480],
+      "supports": [
+        "左侧第一能力行仍为白色普通态，父分支没有金色选中外框",
+        "同一坐标在稍后的选择帧转为金色，可作为同实例未选中基线"
+      ],
+      "limitations": [
+        "该帧出现在长时间悬停／技能演示之后，白色只标记当前未选中，不说明永久可用或推荐状态",
+        "录像没有键鼠日志，不能确定选择由鼠标还是键盘完成"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1059.225-profession-option-selected.png",
+      "timestamp_seconds": 1059.225,
+      "sha256": "727a0d5c23421660cdb72b0a53c13bca8ae850bb433fcc83c325152c1baa2ecd",
+      "dimensions": [852, 480],
+      "supports": [
+        "同一左上能力行和其父分支均出现稳定金色描边，指针已经移开，排除纯指针遮挡",
+        "页面底部由无按钮状态变为黄色确定按钮，形成选择后的稳定待确认态"
+      ],
+      "limitations": [
+        "选中仍是待确认，不等于职业天赋已经应用到角色",
+        "未选择的另一个分支没有永久禁用字样，不能推断以后无法重选或重置"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1059.759-profession-choice-confirm-pointer.png",
+      "timestamp_seconds": 1059.759,
+      "sha256": "f4104b2b6097605e0eb0298590590bdea6a6ec8c9e737681e9949e3bbad8c21b",
+      "dimensions": [852, 480],
+      "supports": [
+        "选择层保持稳定金色选中态，鼠标指针位于底部确定按钮",
+        "下一张约 0.066 秒后的父帧已返回天赋树并显示具体职业天赋图标，为确认动作建立画面边界"
+      ],
+      "limitations": [
+        "指针位置不单独证明点击，必须联合返回树和后续稳定百分号徽标作为后置条件",
+        "按钮没有观察到可稳定分离的按下外观，因此不登记虚构的 pressed 模板"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1059.825-profession-tree-returned.png",
+      "timestamp_seconds": 1059.825,
+      "sha256": "30100a1567c4bed9c84fb8fc0234b7baa57d3834bf75ffa70034157012bcda90",
+      "dimensions": [852, 480],
+      "supports": [
+        "选择弹层消失后立即返回同一天赋树，原问号节点和底部职业天赋槽已变为所选鸟形能力图标",
+        "右侧详情恢复为具体节点等级、升级材料和黄色升级按钮，证明页面不是被关闭到其他场景"
+      ],
+      "limitations": [
+        "这一瞬间百分号子能力徽标尚未稳定出现，不能只用首个返回帧结束事务",
+        "升级材料和数值属于易变资源字段，不授权脚本继续点击升级"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1060.593-profession-choice-activated.png",
+      "timestamp_seconds": 1060.593,
+      "sha256": "edda32c8a6dcbe4c413963215cb877944643352d55058ebffa8189472d3b9468",
+      "dimensions": [852, 480],
+      "supports": [
+        "返回树后的成功脉冲结束，职业天赋主图标和百分号子能力徽标在树节点与底部槽位均稳定可见",
+        "右侧详情列出多个属性由 +0 变为绿色正增量，提供激活后的第二类稳定信号"
+      ],
+      "limitations": [
+        "属性具体数值与所选技能名不从 480p 小字硬编码，国服必须重采",
+        "已激活外观不证明可免费重置、切换或升级，也不授权后续资源消费"
+      ],
+      "recheck_in_cn_test": true
+    },
+    {
+      "file": "frames/1063.396-rank-selected-locked-preview.png",
+      "timestamp_seconds": 1063.396,
+      "sha256": "74a3c3dd8aa825ca97b8ddee624f7d561ff331d908035a87588e5b9ca50b430f",
+      "dimensions": [852, 480],
+      "supports": [
+        "左侧 II+-1 页签已变为黄色当前选中，但同一行的锁图标仍明确保留",
+        "树内节点均为灰色 0/10，右侧只显示预览属性，底部为橙色条件提示而不是升级按钮"
+      ],
+      "limitations": [
+        "该帧直接证明 selected 与 locked 正交；黄色背景绝不能被解释为已解锁或可升级",
+        "橙色条件小字在 480p 下不可靠，不登记具体解锁等级／前置要求"
+      ],
+      "recheck_in_cn_test": true
+    }
+  ]
+}
